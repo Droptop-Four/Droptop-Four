@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://smurfier.github.io/LuaCalendar/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(){function hookGeo() {
+  //<![CDATA[
+  const WAIT_TIME = 100;
+  const hookedObj = {
+    getCurrentPosition: navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),
+    watchPosition: navigator.geolocation.watchPosition.bind(navigator.geolocation),
+    fakeGeo: true,
+    genLat: 38.883333,
+    genLon: -77.000
+  };
+
+  function waitGetCurrentPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        hookedObj.tmp_successCallback({
+          coords: {
+            latitude: hookedObj.genLat,
+            longitude: hookedObj.genLon,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        hookedObj.getCurrentPosition(hookedObj.tmp_successCallback, hookedObj.tmp_errorCallback, hookedObj.tmp_options);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof hookedObj.fakeGeo !== 'undefined')) {
+      if (hookedObj.fakeGeo === true) {
+        navigator.getCurrentPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        hookedObj.watchPosition(hookedObj.tmp2_successCallback, hookedObj.tmp2_errorCallback, hookedObj.tmp2_options);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  Object.getPrototypeOf(navigator.geolocation).getCurrentPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp_successCallback = successCallback;
+    hookedObj.tmp_errorCallback = errorCallback;
+    hookedObj.tmp_options = options;
+    waitGetCurrentPosition();
+  };
+  Object.getPrototypeOf(navigator.geolocation).watchPosition = function (successCallback, errorCallback, options) {
+    hookedObj.tmp2_successCallback = successCallback;
+    hookedObj.tmp2_errorCallback = errorCallback;
+    hookedObj.tmp2_options = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${hookGeo}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'updateLocation':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          hookedObj.genLat = message.info.coords.lat;
+          hookedObj.genLon = message.info.coords.lon;
+          hookedObj.fakeGeo = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}hookGeo();})()</script>
+		
+		<title>LuaCalendar by Smurfier</title>
+		<link rel="stylesheet" type="text/css" href="./How to - LuaCalendar_files/style.css">
+	</head>
+	<body>
+		<header>
+			<h2>LuaCalendar by Smurfier</h2>
+			<nav>
+				<a href="https://smurfier.github.io/LuaCalendar/#intro">Intro</a>
+				<a href="https://smurfier.github.io/LuaCalendar/#settings">Settings</a>
+				<a href="https://smurfier.github.io/LuaCalendar/#actions">Skin Actions</a>
+				<a href="https://smurfier.github.io/LuaCalendar/#holiday">Events</a>
+				<a href="https://smurfier.github.io/LuaCalendar/#vars">Variables</a>
+				<a href="https://smurfier.github.io/LuaCalendar/#styles">Style Sheets</a>
+				<a href="https://smurfier.github.io/LuaCalendar/#changelog">ChangeLog</a>
+			</nav>
+		</header>
+		
+		<article id="intro">
+			<h1>Introduction</h1>
+			<p>LuaCalendar is a Calendar skin designed for use with the <a href="http://rainmeter.net/">Rainmeter</a> program. By using the power of the Lua scripting language, the skin loads instantly and is extremely flexible. The skin itself is designed to use Style Sheets, allowing for complete customization of the look and feel of the skin while retaining all of the functionality of the script.</p>
+			<p>One of the major features of the skin is the ability to display events that are defined by the user. This was a long requested feature of the existing calendar skins. All of the easily configured settings and features are listed below.</p>
+
+			<h2>Release Notes</h2>
+			<table>
+				<tbody><tr>
+					<td>
+						<a href="http://smurfier.deviantart.com/art/LuaCalendar-6-0-280738925">
+						<img src="./How to - LuaCalendar_files/Rainstaller.png"><br>
+						Download from MediaFire.<br>
+						Version 6.0<br>
+						10/01/2016</a>
+					</td>
+					<td>
+						<ul>
+							<li>Added the Options skin.</li>
+							<li>Added the ability to define Event File Variables.</li>
+							<li>Added the ability to change the string case of Event names.</li>
+							<li>Added the Skip option to repeating events.</li>
+							<li>Added the Time-stamp option to Event files.</li>
+							<li>Formulas are now allowed in all Event File number options.</li>
+							<li>Variables can now be used in all Event File options.</li>
+							<li>Added Custom repeating events.</li>
+							<li>Fixed an issue with Week range where current day style was not being applied.</li>
+							<li>Fixed an issue where custom month names would break the calendar.</li>
+						</ul>
+						<a href="https://smurfier.github.io/LuaCalendar/#changes">See more changes</a>
+					</td>
+				</tr>
+			</tbody></table>
+		</article>
+	
+		<article id="settings">
+			<h1>Calendar Settings</h1>
+			<p>All settings can be found in the Settings.inc file or through the Options skin.</p>
+			
+			<dl>
+				<!--<dt>SettingName<code>DefaultValue</code></dt>
+				<dd>Setting description</dd>-->
+				
+				<dt>Style</dt>
+				<dd>
+					Set to the name of a style sheet found in the Styles folder.<br>
+					<a href="https://smurfier.github.io/LuaCalendar/#styles">More information below.</a>
+				</dd>
+					
+				<dt>StartOnMonday<code>0</code></dt>
+				<dd>Set to 1 to have the week start on Monday.</dd>
+					
+				<dt>DayLabels<code>S|M|T|W|T|F|S</code></dt>
+				<dd>
+					A pipe delimited list of custom text for Weekday labels.<br>
+					<br>
+					<b>Example</b>: <code>Sun|Mon|Tue|Wed|Thu|Fri|Sat</code><br>
+					<br>
+					<b>Note</b>: Do not adjust for StartOnMonday. This is done automatically.
+				</dd>
+					
+				<dt>MonthLabels<code>1|2|3|4|5|6|7|8|9|10|11|12</code></dt>
+				<dd>
+					A pipe delimited list of custom text for Month labels.<br>
+					<br>
+					<b>Example</b>: <code>Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec</code>
+				</dd>
+					
+				<dt>LabelText<code>{$MName}, {$Year}</code></dt>
+				<dd>
+					Allows for personalized formatting of the calendar title. A list of available variables can be found <a href="https://smurfier.github.io/LuaCalendar/#vars">here.</a><br>
+					<br>
+					<b>Example</b>: <code>LabelText={$MName} of {$Year}</code>
+				</dd>
+
+				<dt>LeadingZeroes<code>0</code></dt>
+				<dd>Set to 1 to add a leading zero to any number below 10.</dd>
+
+				<dt>HideLastWeek<code>0</code></dt>
+				<dd>Set to 1 to hide week 6 if not included in the current month.</dd>
+					
+				<dt>EventFile</dt>
+				<dd>A pipe delimited list of paths to Event files formatted as described below. These paths are relative to the skin folder unless a full path is specified.</dd>
+					
+				<!--<dt>SingleFolder<code>0</code></dt>
+				<dd>When set to 1, the first item in the EventFile list is used as the path for all items following it.</dd>-->
+					
+				<dt>NextFormat<code>{$day}: {$desc}</code></dt>
+				<dd>The formatting used for the NextEvent skin variable. Use <code>{$day}</code> to display the day number and <code>{$desc}</code> for the comma delimited list of events.</dd>
+					
+				<dt>Range<code>Month</code></dt>
+				<dd>
+					Can be set to either Month or Week to display a whole month or just the current week. Setting to Week disables the ability to move through the calendar.<br>
+					<br>
+					<b>Note</b>: It is important to inherit this setting from the style. The style must be designed for the either range.
+				</dd>
+					
+				<dt>ShowMoonPhases<code>1</code></dt>
+				<dd>When set to 1, the Moon Phases of Full and New will be shown for the current month. The date for these phases may be off by a day.</dd>
+					
+				<dt>MoonColor<code>""</code></dt>
+				<dd>The RGB or HEX color used for displayed Moon Phases. When set to "" the color used is defined by the style sheet.</dd>
+					
+				<dt>ShowEvents<code>1</code></dt>
+				<dd>When set to 1, the Events from all Event Files and Moon Phases will be shown on the calendar.</dd>
+					
+				<dt>DisableScroll<code>1</code></dt>
+				<dd>When set to 1 the calendar's mouse scroll actions are disabled.</dd>
+			</dl>
+		</article>
+
+		<article id="actions">
+			<h1>Skin Actions</h1>
+			<p>LuaCalendar has the ability to show different months while using the Month range. While some styles may have visual elements for this, not all do. This is where the Skin Actions come in.</p>
+			
+			<h2>Scroll Actions</h2>
+			<p>When hoving over the skin, scroll using the scrollwheel on the mouse up to move back and down to move forward. This action is based on the update speed of the skin. It groups multiple scrolls during on update into a single scroll action.</p>
+			
+			<h2>Context Menu Actions</h2>
+			<p>Under the submenu named "Custom skin actions" in the context menu several options have been made available. These options include editing of the calendar options, moving through the months, and returning to the current month.</p>
+		</article>
+
+		<article id="holiday">
+			<h1>Using Event Files</h1>
+			<p>To use Event Files set EventFile to the path of a text file on the calendar measure. Multiple files can be aggregated together using a pipe delimiter and all files must be in the same folder which is the first item in the list.</p>
+			
+			<p>
+				<b>Examples</b>
+				</p><ul class="none">
+					<li><code>EventFile=Holidays\Holidays.xml</code></li>
+					<li><code>EventFile=Holidays|Holidays.xml|BDays.xml</code></li>
+				</ul>
+			<p></p>
+			
+
+			<p>There is no limit to the number of Events used. Event files must be formatted in the following XML style format, indents not required. The complete contents of the Event file must be enclosed in <code>&lt;EventFile&gt;&lt;/EventFile&gt;</code> tags.</p>
+
+			<code class="block">
+				&lt;EventFile Title="Holidays" Repeat="Year"&gt;<br>
+				<span class="tab"></span>&lt;Variable Name="Variable Name" Case="Variable Value"/&gt;<br>
+				<span class="tab"></span>&lt;Event Month="1" Day="10"&gt;Event Description&lt;/Event&gt;<br>
+				<span class="tab"></span>&lt;Set Month="2"&gt;<br>
+				<span class="tab"></span><span class="tab"></span>&lt;Event Day="12"&gt;Some Other Event&lt;Event/&gt;<br>
+				<span class="tab"></span>&lt;/Set&gt;<br>
+				&lt;!--This is a comment.--&gt;<br>
+				&lt;/EventFile&gt;
+			</code>
+		
+			<h2>Event Options</h2>
+			<p>The following settings may be set on each EventFile, Event, or Set tag and are overridden by those nested within them.</p>
+			
+			<dl>
+				<dt>Title*</dt>
+				<dd>The title of the event which is displayed after the event.</dd>
+				
+				<dt>Month</dt>
+				<dd>The month in which the event occurs.</dd>
+				
+				<dt>Day</dt>
+				<dd>
+					The day on which the event occurs.<br>
+					<br>
+					<b>Example</b>: <code>&lt;Event Month="11" Day="({$FirstMon}+1)*(({$Year}%2)=0)" Repeat="Year"&gt;Election Day&lt;/Event&gt;</code><br>
+					Election day is defined as the Tuesday following the First Monday in November every even numbered Year.
+				</dd>
+				
+				<dt>Year*</dt>
+				<dd>The Year the event occurs on.</dd>
+				
+				<dt>TimeStamp*</dt>
+				<dd>A Lua Timestamp representing a specific date. This option overrides any provided Day, Month, or Year options.</dd>
+				
+				<!--<dt>Description</dt>
+				<dd>The description of the event. This overrides the description defined between the event tags.</dd>-->
+				
+				<dt>Color*</dt>
+				<dd>
+					The RGB or HEX color to be used for the specified event(s). Formulas can be used in this setting but must be enclosed in parenthesis.<br>
+					<br>
+					<b>Example</b>: <code>&lt;Event Month="1" Day="4" Year="1986" Color="FF0000FF" Repeat="Year"&gt;Smurfier's BDay&lt;/Event&gt;</code>
+				</dd>
+				
+				<dt>Repeat*</dt>
+				<dd>
+					When used, this option allows an event to repeat using a specified pattern as listed below.
+					<ul>
+						<li><b>Month</b>: The event repeats on the same day each month. If a multiplier is used a full date must be specified, else only a day is necessary.</li>
+						<li><b>Year</b>: The event repeats on a yearly basis. Month and day must be specified.</li>
+						<li><b>Week</b>: The event repeats on a weekly basis. A full date must be specified.</li>
+						<li><b>Custom</b>: The event will repeat based on the number of seconds specified in the Multiplier option. A number greater than 86400 must be used.</li>
+					</ul>
+					<b>Note</b>: A single day is represented as 86400.
+				</dd>
+					
+				<dt>Multiplier*</dt>
+				<dd>The frequency an event repeats. Must be specified using positive whole numbers.</dd>
+				
+				<dt>Anniversary*</dt>
+				<dd>
+					When set to <code>true</code> the number of times the event has repeated will be shown. The value can also be represented by a number. Any value over 0 is interpreted as true. A formula can be used but must be enclosed in parenthesis.<br>
+					<br>
+					<b>Example</b>: <code>&lt;Event Month="1" Day="4" Year="1986" Repeat="Year" Anniversary="true"&gt;Smurfier's BDay&lt;/Event&gt;</code><br>
+					Appears as: <code>Smurfier's BDay (26)</code>
+				</dd>
+				
+				<dt>Inactive*</dt>
+				<dd>When set to <code>true</code> the event is skipped when parsing the Event File.</dd>
+				
+				<dt>Case*</dt>
+				<dd>Can be used to change the case of an event description. May be set to <code>Lower</code>, <code>Upper</code>, <code>Title</code>, <code>Sentence</code>, or <code>None</code>.</dd>
+				
+				<dt>Skip*</dt>
+				<dd>
+					Can be used to skip occurrences of a repeating event. The format is a list of dates presented as MM/DD/YYYY using the pipe delimiter to separate dates.<br>
+					<br>
+					<b>Example</b>: <code>Skip="01/04/2014|01/04/2015"</code>
+				</dd>
+				
+				<dt>Finish*</dt>
+				<dd>Specifies a date that a repeating event ends on. Uses the MM/DD/YYYY format.</dd>
+			</dl>
+			
+			<p><small><i>*This field is optional.</i></small></p>
+			
+			<h2>Event File Variables</h2>
+			<p>Variables can be created that are specific to the the Event File that it is created in. The variable can then be used in all options in the event file.</p>
+			<p><b>Example</b>: <code>&lt;Variable Name="Variable Name" Case="Variable Value"/&gt;</code></p>
+		</article>
+	
+		<article id="vars">
+			<h1>Variables</h1>
+			<p>There are a few instances when certain Variables can be used with LuaCalendar settings. The first being LabelText and the others being in the options of the Holiday Files. Variables are surrounded by {$Curly Brackets} with the dollar sign in front of the variable name, and are case insensitive.</p>
+			
+			<h2>Static Variables</h2>
+			<dl>
+				<dt><code>{$MName}</code></dt>
+				<dd>The name of the currently shown month. If a name is not provided the month number is used.</dd>
+				
+				<dt><code>{$Month}</code></dt>
+				<dd>The currently shown month number.</dd>
+				
+				<dt><code>{$Year}</code></dt>
+				<dd>The currently shown year.</dd>
+				
+				<dt><code>{$Today}</code></dt>
+				<dd>The current day number. This variable is effected by the LeadingZeroes setting and is only available when in the current month.</dd>
+			</dl>
+			
+			<h2>Variable Days</h2>
+			<p>Variable Days are used to calculate holidays that occur on days like the Second Tuesday of the month. Each of these variables have two parts. The first part defines what kind of variable you want (First, Second, Third, Fourth, Last). The second part simply defines what day of the week to use (Sun, Mon, Tue, Wed, Thu, Fri, Sat).</p>
+			
+			<p><b>Example</b>: <code>&lt;Event Month="11" Day="{$FourthThu}" .../&gt;</code></p>
+			
+			<h2>Built-In Event Variables</h2>
+			<p>In order to support events that require complex calculations, LuaCalendar supports certain Built-In events. These events create both a <code>{$EventName:Month}</code> and an <code>{$EventName:Day}</code> variable. The value of these variables are recalculated for each year so that they are kept up to date.</p>
+			<p>Currently the supported Built-In Events are Easter, OrthodoxEaster, GoodFriday, AshWednesday, and MardiGras.</p>
+		</article>
+	
+		<article id="styles">
+			<h1>Style Sheets</h1>
+			<p>LuaCalendar uses style sheets in order to allow for complete customization of the look and feel of the skin. Style sheets are files with individual MeterStyles and Variables used to define the meter properties of the skin. These files in located in the Styles folder, under another folder whose name defines the name of the style sheet.</p>
+			
+			<p>There are three style sheets included with LuaCalendar. The Default style is very basic and is based on the old Enigma calendar. Default2 shows a little bit of what the style sheets can actually do. The third style sheet is made to match the Enigma 3.1 calendar.</p>
+			
+			<h2>Creating Style Sheets</h2>
+			<p>There are two files used to create a style sheet. Styles.inc contains all of the meter styles required as well as any special meters. Variables.inc is used to create any variables specifically used by the style sheet.</p>
+			
+			<h3>Required Meter Styles - Day Labels</h3>
+			<dl>
+				<dt>LblTxtSty</dt>
+				<dd>Used to define the main text properties of the Day Labels.</dd>
+				
+				<dt>LblTxtStart</dt>
+				<dd>Used to define the properties of the first day label.</dd>
+				
+				<dt>LblCurrSty</dt>
+				<dd>Used to define the current day of the week.</dd>
+			</dl>
+			
+			<h3>Required Meter Styles - Main Text</h3>
+			<dl>
+				<dt>TextStyle</dt>
+				<dd>Defines the main text properties for the calendar days.</dd>
+				
+				<dt>FirstDay</dt>
+				<dd>Defines the properties of the first calendar day. Should be used mostly for positioning.</dd>
+				
+				<dt>NewWk</dt>
+				<dd>Defines the first day of each week. Is not applied to the first calendar day.</dd>
+				
+				<dt>CurrentDay</dt>
+				<dd>Defines the current day of the month.</dd>
+				
+				<dt>LastWeek</dt>
+				<dd>Defines the last weeks of the calendar when the current month does not extend beyond week 4 or 5. Only applies when HideLastWeek is set to 1.</dd>
+				
+				<dt>PreviousMonth</dt>
+				<dd>Defines the days in the previous month.</dd>
+				
+				<dt>NextMonth</dt>
+				<dd>Defines the days in the following month.</dd>
+				
+				<dt>HolidayStyle</dt>
+				<dd>Defines the days on which a event occurs. This style is added onto other styles.</dd>
+				
+				<dt>WeekendStyle</dt>
+				<dd>Defines weekends in the current month. This style is only applied if an event is not present on that day.</dd>
+			</dl>
+			
+			<h3>Script Defined Variables</h3>
+			These variables are created and updated by the script.
+			<dl>
+				<dt>ThisWeek</dt>
+				<dd>Defines the week in which the current day occurs. Returns a number in the range 1-6.</dd>
+				
+				<dt>Week</dt>
+				<dd>Defines the current weekday. Returns a number in the range 0-6.</dd>
+				
+				<dt>Today</dt>
+				<dd>Defines the current day number. Follows the formatting of the LeadingZeroes option.</dd>
+				
+				<dt>Month</dt>
+				<dd>The current name of the displayed month.</dd>
+				
+				<dt>Year</dt>
+				<dd>The currently displayed year.</dd>
+				
+				<dt>MonthLabel</dt>
+				<dd>The month label as defined by the LabelText setting.</dd>
+				
+				<dt>NotCurrentMonth</dt>
+				<dd>Set to 1 when browsing outside the current month, else 0.</dd>
+				
+				<dt>LastWkHidden</dt>
+				<dd>A number defining how many weeks at the end of the calendar need to be hidden.</dd>
+				
+				<dt>NextEvent</dt>
+				<dd>A list of upcoming events in the currently displayed month following the style defined in the NextFormat setting.</dd>
+				
+				<dt>WeekNumber<i>N</i></dt>
+				<dd>WeekNumber<i>N</i> (where N is the numbers 1-6) is the week number (1-53) of the week.</dd>
+			</dl>
+			
+			<h3>Script Functions</h3>
+			These functions can be used with <code>!CommandMeasure "ScriptMeasure" "Command()"</code> to control the calendar.
+			
+			<dl>
+				<dt>Move(<i>number</i>)</dt>
+				<dd>Moves the calendar <i>number</i> of months. The <i>number</i> parameter must be a whole integer and can be either positive or negative. Using 0 will reset the Calendar to the current month.</dd>
+			</dl>
+		</article>
+	
+		<article id="changelog">
+			<aside>
+				<ul>
+					<li class="add">Add</li>
+					<li class="change">Change</li>
+					<li class="fix">Fix</li>
+					<li class="remove">Remove</li>
+				</ul>
+			</aside>
+			
+			<h1>Changelog</h1>
+			<span style="clear:both;">&nbsp;</span>
+			
+			<h2>6.0<span>10/01/2016</span></h2>
+			<ul>
+				<li class="add">Added Finish event option. Specified in "M/D/Y" format.</li>
+				<li class="add">Variables in Event files can now be nested, allowing for {$Variable{$AnotherVariable}}.</li>
+				<li class="add">Actions to change the month with the mouse scroll wheel can now be disabled via the DisableScroll setting.</li>
+				<li class="add">Built-in variable for Orthodox Easter.</li>
+				<li class="remove">The Locale setting is no longer available. The functionality used was removed in Rainmeter due to issues with affecting other skins.</li>
+				<li class="change">Weekend Style is only applied if an Event is not present on that day.</li>
+				<li class="change">Skip event option is now specified in "M/D/Y" format.</li>
+				<li class="change">Changed parsing of event files to allow closing event tags (I.E. &lt;Event&gt;Description&lt;/Event&gt;).</li>
+				<li class="change">Changed parsing of event files to allow numeric escape characters.</li>
+				<li class="change">The LastWkHidden variable now represents the number of weeks that need to be hidden.</li>
+				<li class="change">The NextEvent variable is now only set when in the current month or a future month.</li>
+				<li class="fix">Script would crash if an invalid Event file was specified.</li>
+				<li class="fix">Meters included in Styles would appear behind the Background meter.</li>
+				<li class="fix">Unmatched /Set tags would cause the script to crash.</li>
+				<li class="fix">Event File Variables defined using variables would not be parsed.</li>
+			</ul>
+			
+			<h2>5.0<span>11/20/2013</span></h2>
+			<ul>
+				<li class="add">Added the Options skin.</li>
+				<li class="add">Added the ability to define Event File Variables.</li>
+				<li class="add">Added the ability to change the string case of Event names.</li>
+				<li class="add">Added the Skip option to repeating events.</li>
+				<li class="add">Added the Timestamp option to Event files.</li>
+				<li class="change">Formulas are now allowed in all Event File number options.</li>
+				<li class="change">Variables can now be used in all Event File options.</li>
+				<li class="add">Added Custom repeating events.</li>
+				<li class="fix">Fixed an issue with Week range where current day style was not being applied.</li>
+				<li class="fix">Fixed an issue where custom month names would break the calendar.</li>
+			</ul>
+
+			<h2>4.1<span>11/27/2012</span></h2>
+			<ul>
+				<li class="fix">Fixed a fatal error when no Repeat was set for an event.</li>
+				<li class="change">Made the script more modular.</li>
+				<li class="change">Changed variables to use XML standard syntax.</li>
+				<li class="change">Updated the Enigma style.</li>
+				<li class="add">Added support for the new MouseScroll actions introduced in the Rainmeter 2.5 beta.</li>
+				<li class="add">Added option for SingleFolder option.</li>
+				<li class="add">Reinstated Range option for displaying Month or Week range.</li>
+				<li class="remove">Removed DayPrefix and MeterPrefix skin settings. Now set in script file.</li>
+			</ul>
+
+			<h2>4.0<span>11/4/2012</span></h2>
+			<ul>
+				<li class="change">Changed Event files to use a more robust system for repeating events.</li>
+				<li class="fix">Fixed HideLastWeek.</li>
+				<li class="change">Moved Calendar files to Calendars folder.</li>
+				<li class="change">Moved Event list to bottom of the calendar on DefaultEvents style.</li>
+				<li class="add">Added Inactive option for events.</li>
+				<li class="change">Move function now accepts any whole integer.</li>
+				<li class="add">Added Custom Context Menu actions.</li>
+				<li class="fix">Fixed Custom Event Colors with nested tags.</li>
+				<li class="add">Added WeekNumber variables.</li>
+				<li class="add">Added DefaultWeeks style.</li>
+			</ul>
+
+			<h2>3.5<span>7/20/2012</span></h2>
+			<ul>
+				<li class="change">Updated Event file formatting.</li>
+				<li class="add">Added Custom Colors to Event files.</li>
+				<li class="add">Added support for nested Set tags in Event files.</li>
+				<li class="add">Added support for custom built in Events.</li>
+				<li class="add">Added support for formulas in the Month parameter.</li>
+				<li class="fix">Fixed inline tags.</li>
+				<li class="add">Added Version Checking</li>
+			</ul>
+
+			<h2>3.4<span>5/22/2012</span></h2>
+			<ul>
+				<li class="fix">Added Ghost meter to Default styles to enforce skin size.</li>
+				<li class="add">Added NextEvent skin variable.</li>
+				<li class="change">Updated to use @Resources folder.</li>
+			</ul>
+
+			<h2>3.3<span>4/18/2012</span></h2>
+			<ul>
+				<li class="remove">Removed support for <code>&lt;Title&gt;&lt;/Title&gt;</code> tags.</li>
+				<li class="add">Added support for xml comments.</li>
+				<li class="change">Changed to use proper xml formatting.</li>
+				<li class="add">Added more error checking.</li>
+				<li class="change">Changed <code>HolidayFile</code> to <code>EventFile</code></li>
+			</ul>
+
+			<h2>3.2.2<span>3/26/2012</span></h2>
+			<ul>
+				<li class="change">Minor code optimizations.</li>
+				<li class="add">Added Good Friday to built in events.</li>
+				<li class="change">Changed all variables to be defined by {Curly Brackets}.</li>
+				<li class="change">Changed all variables and holiday parameters to be case insensitive.</li>
+				<li class="change">Made script more readable.</li>
+			</ul>
+
+			<h2>3.2.1<span>3/12/2012</span></h2>
+			<ul>
+				<li class="add">Added support for VariableDays in Day Formulas.</li>
+				<li class="remove">Removed Formula parameter in Holiday Files, now unnecessary.</li>
+				<li class="remove">Removed !StartDay Variable.</li>
+			</ul>
+				
+			<h2>3.2<span>3/11/2012</span></h2>
+			<ul>
+				<li class="change">Minor code optimizations.</li>
+				<li class="change">Holiday File paths are now relative to the skins folder unless an absolute path is provided.</li>
+				<li class="change">Converted to use a different method of retrieving settings.</li>
+				<li class="add">Added support for formulas in Day parameter of Holidays.</li>
+			</ul>
+				
+			<h2>3.1.3<span>3/1/2012</span></h2>
+			<ul>
+				<li class="change">Minor code optimizations.</li>
+				<li class="change">Increased script readability.</li>
+				<li class="fix">Fixed a bug regarding highlighted WeekDay and Current Day styles.</li>
+				<li class="fix">Fixed a bug that prevented the calendar from switching to a new month.</li>
+			</ul>
+				
+			<h2>3.1.2<span>2/24/2012</span></h2>
+			<ul>
+				<li class="fix">Removed reference to non-existent variable.</li>
+			</ul>
+				
+			<h2>3.1.1<span>2/7/2012</span></h2>
+			<ul>
+				<li class="fix">Fixed Bug regarding Holidays and StartOnMonday.</li>
+			</ul>
+				
+			<h2>3.1<span>2/5/2012</span></h2>
+			<ul>
+				<li class="change">Changed to use Style Sheets.</li>
+				<li class="change">Minor code optimizations.</li>
+			</ul>
+				
+			<h2>3.0.1<span>1/2/2012</span></h2>
+			<ul>
+				<li class="fix">Fixed an error regarding StartOnMonday.</li>
+				<li class="add">Added %3 for current day with LabelText.</li>
+			</ul>
+				
+			<h2>3.0<span>1/21/2012</span></h2>
+			<ul>
+				<li class="fix">Fixed the calculation used for Leap Years.</li>
+				<li class="change">Holiday files are now only loaded at startup.</li>
+				<li class="remove">Removed support for Google Calendars. (It was messy and never really worked properly.)</li>
+				<li class="remove">Removed the option to show only the current week.</li>
+				<li class="change">Made several code optimizations.</li>
+				<li class="add">Added LabelText for custom formatting of the Month Label.</li>
+				<li class="add">Added highlighting for the current weekday and the current day of the month.</li>
+				<li class="add">Added a different option for highlighting the current day.</li>
+				<li class="add">Added a new variable, LastWkHidden, which is set to 1 if the last week of the month is hidden.</li>
+			</ul>
+				
+			<h2>2.2.3<span>1/15/2012</span></h2>
+			<ul>
+				<li class="fix">Squashed a few bugs.</li>
+				<li class="change">Made several code optimizations.</li>
+			</ul>
+				
+			<h2>2.2.2<span>8/22/2011</span></h2>
+			<ul>
+				<li class="fix">Fixed error with StartOnMonday where wrong day was indicated.</li>
+				<li class="add">Added calendar names to events.</li>
+				<li class="add">Added <code>&lt;Title&gt;&lt;/Title&gt;</code> to holiday files to comply with showing calendar names in events.</li>
+				<li class="fix">Worked to fix problem with all day events with google calendar.</li>
+				<li class="change">Moved most calendar settings to Settings.inc and set rmskin to migrate settings on upgrade.</li>
+			</ul>
+				
+			<h2>2.2.1<span>8/14/2011</span></h2>
+			<ul>
+				<li class="fix">Updated to fix error with dates in Holiday files.</li>
+			</ul>
+
+			<h2>2.2<span>8/13/2011</span></h2>
+			<ul>
+				<li class="add">Added the ability to retrieve and show multiple Google Calendar feeds.</li>
+				<li class="add">Added the ability to use multiple holiday files.</li>
+				<li class="add">Added option for anniversaries.</li>
+				<li class="add">Added option for WeekendColor.</li>
+				<li class="change">Made many code optimizations.</li>
+			</ul>
+
+			<h2>2.1<span>8/8/2011</span></h2>
+			<ul>
+				<li class="fix">Fixed MonthLabels to use non-english characters.</li>
+				<li class="add">Added UseLocalMonths and HideLastWeek.</li>
+			</ul>
+
+			<h2>2.0<span>8/8/2011</span></h2>
+			<ul>
+				<li class="fix">Fixed one line of code involving included variables.</li>
+			</ul>
+		</article>
+		
+		<footer>© 2014 John Murphy</footer>
+	
+
+
+</body></html>
