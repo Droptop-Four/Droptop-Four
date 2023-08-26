@@ -22,11 +22,15 @@ AppName=Daily Quotes
 AppAuthor=Bunz
 AppVersion=1.0.3
 
-Quote1=The price of greatness is responsibility.
-Author1=Winston Churchill
+Quote1=Let us be grateful to the mirror for revealing to us our appearance only.
+Author1=Samuel Butler
 
-Quote2=The happiest people seem to be those who have no particular cause for being happy except that they are so.
-Author2=William Inge
+Quote2=Lend yourself to others, but give yourself to yourself.
+Author2=Michel de Montaigne
 
-Quote3=Man is a creature who lives not upon bread alone, but primarily by catchwords.
-Author3=Robert Louis Stevenson
+Quote3=I always entertain great hopes.
+Author3=Robert Frost
+HistoryDate1=1886
+HistoryDesc1=1st international polo meet (US vs England)
+Word1=asante sana
+Definition1=In East African English: used to express gratitude: ‘thank you very much’.
