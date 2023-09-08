@@ -19,7 +19,7 @@ disk3=E
 disk4=P
 disk5=Z
 
-NumberOfDisks=2
+NumberOfDisks=3
 FColor=0,255,0,255
 VPNOnOffText=ON
 VPNOnOff=1
