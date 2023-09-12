@@ -17,3 +17,8 @@ MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Usage_Monitor-Cariboudjan\
 ; -------------------------------------------------------------------------------
 ; Add your variables below: 
 ; -------------------------------------------------------------------------------
+
+UsageCPUInactive=0
+UsageRAMInactive=0
+UsageGPUInactive=0
+UsageHDDInactive=1

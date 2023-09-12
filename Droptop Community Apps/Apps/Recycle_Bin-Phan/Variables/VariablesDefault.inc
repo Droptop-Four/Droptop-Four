@@ -7,7 +7,7 @@
 MyAppID=Recycle_Bin-Phan
 MyAppName=Recycle Bin
 MyAppAuthor=Phan
-MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Recycle_Bin-Phan\Variables\VariablesDefault.inc
+MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Recycle_Bin-Phan\Variables\Variables.inc
 
 ; -------------------------------------------------------------------------------
 ; Add your variables below: 
