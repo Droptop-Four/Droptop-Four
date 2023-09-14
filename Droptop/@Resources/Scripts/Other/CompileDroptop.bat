@@ -510,6 +510,7 @@ powershell.exe [console]::beep(500,100); [console]::beep(1200,120)
 PAUSE
 
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
+git checkout main
 git pull
 git add .
 git commit -m %2
@@ -523,6 +524,7 @@ PAUSE
 PAUSE
 
 cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
+git checkout main
 git pull
 git add .
 git commit -m %2
