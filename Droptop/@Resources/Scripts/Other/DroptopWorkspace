@@ -361,10 +361,6 @@
         <Folder name="Themes">
             <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\99.inc" />
             <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\99Settings.inc" />
-            <Folder name="3 Big Sur">
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\3.inc" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\3Settings.inc" />
-            </Folder>
             <Folder name="10 Catalina">
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\10.inc" />
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\10Settings.inc" />
@@ -441,7 +437,11 @@
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\8.inc" />
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\8Settings.inc" />
             </Folder>
-            <Folder name="15 Windows 11">
+            <Folder name="3 Ventura">
+                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\3.inc" />
+                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\3Settings.inc" />
+            </Folder>
+            <Folder name="15 Windows 12">
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\15.inc" />
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\15Settings.inc" />
             </Folder>
