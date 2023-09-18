@@ -5,7 +5,7 @@ $skinspath=$args[3]
 $gitinit=$args[4]
 $programpath=$args[5]
 
-$exclude = @('*.rmskin','*.md','Variables.inc','*.org','.git','*.gitignore')
+$exclude = @('*.rmskin','*.md','Variables.inc','*.org')
 
 $ErrorActionPreference= 'silentlycontinue'
 
@@ -15,9 +15,9 @@ Remove-Item -Path ".\Droptop Folders\Other files\@Rmskins\Droptop Apps\$newappna
 Remove-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\*.rmskin" -Recurse
 Remove-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\*.zip" -Recurse
 
-Copy-Item -Path ".\Droptop Community Apps\Apps\$appname\*" -Destination ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname" -Recurse -Exclude $exclude
+Copy-Item -Path ".\Droptop Community Apps\Apps\$appname" -Destination ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\" -Recurse -Exclude $exclude
 
-# Remove-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\.git" -Recurse -Force
+Remove-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\.git" -Recurse -Force
 Copy-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\Plugins\32bit\*" -Destination ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Plugins\32bit\" -Recurse
 Copy-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\Plugins\64bit\*" -Destination ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Plugins\64bit\" -Recurse
 Copy-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\Images\RMSKIN.bmp" -Destination ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\" -Recurse
