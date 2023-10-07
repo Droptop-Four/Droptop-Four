@@ -13,7 +13,7 @@ MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Feeder-Cariboudjan\Variabl
 ; Add your variables below: 
 ; -------------------------------------------------------------------------------
 
-FeederRSSNum=6
+FeederRSSNum=5
 
 ShowFeederThumbnails=1
 

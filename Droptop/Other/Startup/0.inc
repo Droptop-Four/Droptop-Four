@@ -48,24 +48,5 @@ OutputType=ANSI
 OutputFile=
 FinishAction=[!WriteKeyValue Variables FirstLoad 1 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables Page 1][!WriteKeyValue Rainmeter SkinPath "C:\Users\%USERNAME%\Documents\Rainmeter\Skins\" "#SETTINGSPATH#Rainmeter.ini"][!CommandMeasure RunCommand.Restart "Run"]
 
-; [MeasurePower]
-; Measure=Plugin
-; Plugin=PowerPlugin
-; UpdateDivider=-1
-; PowerState=PERCENT
-
-; [MeasureCharging]
-; Measure=Plugin
-; Plugin=PowerPlugin
-; PowerState=ACLINE
-; DynamicVariables=1
-
-; [GuessDesktop]
-; Measure=Calc
-; IfCondition=([MeasurePower] = 100) && ([MeasureCharging] = 1)
-; IfTrueAction=[!WriteKeyValue Variables HideSubIcons 0 "#@#GlobalVar\UserSettings.inc"]
-; IfFalseAction=[!WriteKeyValue Variables HideSubIcons 1 "#@#GlobalVar\UserSettings.inc"]
-; DynamicVariables=1
-
 [Container]
 Meter=String

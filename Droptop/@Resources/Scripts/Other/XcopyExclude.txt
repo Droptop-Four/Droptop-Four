@@ -4,13 +4,13 @@
 System_Monitor-Yaron
 SearchBar-Mike_Boynton
 Fluent_Control_Center-LoadingName
-Game_Hub-Phan
 Gradient_Bar-Phan
 Location-notAperson
 Theme_Me-Mike_Boynton
-Shortcut-Phan
 VPN_Status-Mike_Boynton
 QRes-Cariboudjan
 Community_Store-Bunz
 JaxCore
 Hide_Settings_Menu-TheyCallMePapa
+Center_Infos-TheyCallMePapa
+Translator-Bunz

@@ -40,6 +40,7 @@ Remove-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\*.zip" -Recu
 if ($gitinit -eq 1)
 {
     git init ".\Droptop Community Apps\Apps\$appname"
+	Rename-Item -Path ".\Droptop Community Apps\Apps\$appname\README.md" -NewName "README (Backup).md" -Force -ErrorAction Stop
 	Copy-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\README.md" -Destination ".\Droptop Community Apps\Apps\$appname" -Recurse
 	(Get-Content ".\Droptop Community Apps\Apps\$appname\README.md") -replace "Your App Name - Author Name","$newappname - $appauthor" | out-file ".\Droptop Community Apps\Apps\$appname\README.md"
 	Set-Content -NoNewline -Encoding OEM ".\Droptop Community Apps\Apps\$appname\README.md" -Value (Get-Content -Raw -Encoding 'utf8' ".\Droptop Community Apps\Apps\$appname\README.md")
