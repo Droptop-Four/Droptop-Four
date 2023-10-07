@@ -5,7 +5,7 @@ cd ..
 cd ..
 cd ..
 cd ..
-cd "Droptop Folders\Bookmarks\News & Media"
+cd "Droptop Folders\Bookmarks\News & media"
 
 ren "Far-Left" %newsmediafol1%
 ren "Far-Right" %newsmediafol2%
@@ -110,3 +110,5 @@ ren "Online multiplayer" %gamesfol6%
 ren "Simulation" %gamesfol7%
 ren "Sports & racing" %gamesfol8%
 ren "Virtual Reality" %gamesfol9%
+
+PAUSE
