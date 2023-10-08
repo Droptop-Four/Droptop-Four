@@ -1,83 +1,75 @@
-chcp 860
+gamesfol2=Jogador individual
+gamesfol3=Casual
+gamesfol4=Independente
+gamesfol5=Multijogador local
+gamesfol6=Multijogador online
+gamesfol7=Simula‡„o
+gamesfol8=Esportes e corrida
+gamesfol9=Realidade virtual
+gamescamfol1=A‡„o
+gamescamfol2=Horror
+gamescamfol3=Relaxado
+gamescamfol4=RPG
+gamescamfol5=Sobrevivˆncia
+gameslocfol1=Cooperativo
+gameslocfol2=Festa
+gameslocfol3=Versus
+gamesonlfol1=Batalha real
+gamesonlfol2=MMO
+gamesonlfol3=Atirador
+gamesonlfol4=Estrat‚gia
 
-@echo off
+newsmediafol1=Extrema-esquerda
+newsmediafol2=Extrema-direita
+newsmediafol3=Internacional
 
-set gamesfol2="Jogador individual"
-set gamesfol3="Casual"
-set gamesfol4="Independente"
-set gamesfol5="Multijogador local"
-set gamesfol6="Multijogador online"
-set gamesfol7="Simula‡„o"
-set gamesfol8="Esportes e corrida"
-set gamesfol9="Realidade virtual"
-set gamescamfol1="A‡„o"
-set gamescamfol2="Horror"
-set gamescamfol3="Relaxado"
-set gamescamfol4="RPG"
-set gamescamfol5="Sobrevivˆncia"
-set gameslocfol1="Cooperativo"
-set gameslocfol2="Festa"
-set gameslocfol3="Versus"
-set gamesonlfol1="Batalha real"
-set gamesonlfol2="MMO"
-set gamesonlfol3="Atirador"
-set gamesonlfol4="Estrat‚gia"
+onlinetools1fol=Diagn¢stico
 
-set newsmediafol1="Extrema-esquerda"
-set newsmediafol2="Extrema-direita"
-set newsmediafol3="Internacional"
+podcastsfol1=Drama e crime
+podcastsfol2=Past & Present
+podcastsfol3=Pol¡tica
+podcastsfol4=Tecnologia e ciˆncia
+podcastsfol5=Sexo e Psicologia
+podcastsfol6=Esportes
+podcastsfol7=Talk Shows
 
-set onlinetools1fol="Diagn¢stico"
+bookmarksfol1=Meios de comunica‡„o
+bookmarksfol2=Ferramentas online
+bookmarksfol3=Spotify Podcasts
+bookmarksfol4=Compras
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="Drama e crime"
-set podcastsfol2="Past & Present"
-set podcastsfol3="Pol¡tica"
-set podcastsfol4="Tecnologia e ciˆncia"
-set podcastsfol5="Sexo e Psicologia"
-set podcastsfol6="Esportes"
-set podcastsfol7="Talk Shows"
+advanced1=Prompt de comando
+advanced2=Gerenciador de Dispositivos
+advanced3=Limpeza de disco
+advanced4=Gerenciamento de Disco
+advanced5=Editor de registro
+advanced6=Monitor de recursos
+advanced7=Aplicativos de inicializa‡„o
+advanced8=Espa‡os de armazenamento
+advanced9=Configura‡„o do sistema
+advanced10=Firewall do Windows
+advanced11=Windows PowerShell
+advanced12=Servi‡os do Windows
 
-set bookmarksfol1="Meios de comunica‡„o"
-set bookmarksfol2="Ferramentas online"
-set bookmarksfol3="Spotify Podcasts"
-set bookmarksfol4="Compras"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="Prompt de comando"
-set advanced2="Gerenciador de Dispositivos"
-set advanced3="Limpeza de disco"
-set advanced4="Gerenciamento de Disco"
-set advanced5="Editor de registro"
-set advanced6="Monitor de recursos"
-set advanced7="Aplicativos de inicializa‡„o"
-set advanced8="Espa‡os de armazenamento"
-set advanced9="Configura‡„o do sistema"
-set advanced10="Firewall do Windows"
-set advanced11="Windows PowerShell"
-set advanced12="Servi‡os do Windows"
-
-set controlfol1="Controles avan‡ados"
-set control1="Papel de parede"
-set control2="Configura‡”es do visor"
-set control3="Ampliar"
-set control4="Teclado na tela"
-set control5="Op‡”es de energia"
-set control6="Lixeira"
-set control7="Mudar exibi‡„o"
-set control8="Informa‡„o do sistema"
-set control9="Gerenciador de tarefas"
-set control10="Desinstalar um programa"
-set control11="Contas de usu rio"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=Controles avan‡ados
+control1=Papel de parede
+control2=Configura‡”es do visor
+control3=Ampliar
+control4=Teclado na tela
+control5=Op‡”es de energia
+control6=Lixeira
+control7=Mudar exibi‡„o
+control8=Informa‡„o do sistema
+control9=Gerenciador de tarefas
+control10=Desinstalar um programa
+control11=Contas de usu rio

@@ -1,83 +1,75 @@
-chcp 437
+gamesfol2=Een speler
+gamesfol3=Gewoontjes
+gamesfol4=Onafhankelijk
+gamesfol5=Lokale multiplayer
+gamesfol6=Online multiplayer
+gamesfol7=Simulatie
+gamesfol8=Sport en racen
+gamesfol9=Virtuele realiteit
+gamescamfol1=Actie
+gamescamfol2=Verschrikking
+gamescamfol3=Ontspannen
+gamescamfol4=RPG
+gamescamfol5=Overleving
+gameslocfol1=Coöperatief
+gameslocfol2=Partij
+gameslocfol3=Versus
+gamesonlfol1=Vecht tegen koninklijk
+gamesonlfol2=MMO
+gamesonlfol3=Schutter
+gamesonlfol4=Strategie
 
-@echo off
+newsmediafol1=Far-Left
+newsmediafol2=Far-Right
+newsmediafol3=Internationale
 
-set gamesfol2="Een speler"
-set gamesfol3="Gewoontjes"
-set gamesfol4="Onafhankelijk"
-set gamesfol5="Lokale multiplayer"
-set gamesfol6="Online multiplayer"
-set gamesfol7="Simulatie"
-set gamesfol8="Sport en racen"
-set gamesfol9="Virtuele realiteit"
-set gamescamfol1="Actie"
-set gamescamfol2="Verschrikking"
-set gamescamfol3="Ontspannen"
-set gamescamfol4="RPG"
-set gamescamfol5="Overleving"
-set gameslocfol1="Coöperatief"
-set gameslocfol2="Partij"
-set gameslocfol3="Versus"
-set gamesonlfol1="Vecht tegen koninklijk"
-set gamesonlfol2="MMO"
-set gamesonlfol3="Schutter"
-set gamesonlfol4="Strategie"
+onlinetools1fol=Diagnostiek
 
-set newsmediafol1="Far-Left"
-set newsmediafol2="Far-Right"
-set newsmediafol3="Internationale"
+podcastsfol1=Misdaad & Drama
+podcastsfol2=Past & Present
+podcastsfol3=Politiek
+podcastsfol4=Wetenschap & Technologie
+podcastsfol5=Seks & Psychologie
+podcastsfol6=Sport
+podcastsfol7=Talk shows
 
-set onlinetools1fol="Diagnostiek"
+bookmarksfol1=Nieuws en media
+bookmarksfol2=Online tools
+bookmarksfol3=Spotify Podcasts
+bookmarksfol4=Shopping
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="Misdaad & Drama"
-set podcastsfol2="Past & Present"
-set podcastsfol3="Politiek"
-set podcastsfol4="Wetenschap & Technologie"
-set podcastsfol5="Seks & Psychologie"
-set podcastsfol6="Sport"
-set podcastsfol7="Talk shows"
+advanced1=Commandoprompt
+advanced2=Apparaatbeheer
+advanced3=Schijf schoonmaak
+advanced4=Schijfbeheer
+advanced5=Registry beheer
+advanced6=Bronnenmonitor
+advanced7=Opstart-apps
+advanced8=Opslagruimtes
+advanced9=Systeemconfiguratie
+advanced10=Windows firewall
+advanced11=Windows PowerShell
+advanced12=Windows services
 
-set bookmarksfol1="Nieuws en media"
-set bookmarksfol2="Online tools"
-set bookmarksfol3="Spotify Podcasts"
-set bookmarksfol4="Shopping"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="Commandoprompt"
-set advanced2="Apparaatbeheer"
-set advanced3="Schijf schoonmaak"
-set advanced4="Schijfbeheer"
-set advanced5="Registry beheer"
-set advanced6="Bronnenmonitor"
-set advanced7="Opstart-apps"
-set advanced8="Opslagruimtes"
-set advanced9="Systeemconfiguratie"
-set advanced10="Windows firewall"
-set advanced11="Windows PowerShell"
-set advanced12="Windows services"
-
-set controlfol1="Geavanceerde opties"
-set control1="Bureaublad achtergrond"
-set control2="Display instellingen"
-set control3="Inzoomen"
-set control4="Scherm-toetsenbord"
-set control5="Energieopties"
-set control6="Prullenbak"
-set control7="Wissel scherm"
-set control8="Systeem informatie"
-set control9="Taak beheer"
-set control10="Programma verwijderen"
-set control11="Gebruikers accounts"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=Geavanceerde opties
+control1=Bureaublad achtergrond
+control2=Display instellingen
+control3=Inzoomen
+control4=Scherm-toetsenbord
+control5=Energieopties
+control6=Prullenbak
+control7=Wissel scherm
+control8=Systeem informatie
+control9=Taak beheer
+control10=Programma verwijderen
+control11=Gebruikers accounts

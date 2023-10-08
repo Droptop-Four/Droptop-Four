@@ -1,83 +1,75 @@
-chcp 775
+gamesfol2=Kampaìa
+gamesfol3=Kasuƒls
+gamesfol4=Indie
+gamesfol5=Lokƒls daudzsp‰l‰tƒjs
+gamesfol6=TieÕsaistes daudzsp‰l‰tƒjs
+gamesfol7=Simulƒcija
+gamesfol8=Sports un sacŒkstes
+gamesfol9=Virtuƒlƒ realitƒte
+gamescamfol1=Action
+gamescamfol2=Horror
+gamescamfol3=Atp×tas
+gamescamfol4=RPG
+gamescamfol5=IzdzŒvoÕana
+gameslocfol1=KooperatŒvs
+gameslocfol2=BallŒte
+gameslocfol3=Versus
+gamesonlfol1=Battle Royale
+gamesonlfol2=MMO
+gamesonlfol3=¾×teris
+gamesonlfol4=Strat‰…ija
 
-@echo off
+newsmediafol1=Latvijas ziìas
+newsmediafol2=Re…ionƒlƒs ziìas
+newsmediafol3=Starptautiskƒs ziìas
 
-set gamesfol2="Kampaìa"
-set gamesfol3="Kasuƒls"
-set gamesfol4="Indie"
-set gamesfol5="Lokƒls daudzsp‰l‰tƒjs"
-set gamesfol6="TieÕsaistes daudzsp‰l‰tƒjs"
-set gamesfol7="Simulƒcija"
-set gamesfol8="Sports un sacŒkstes"
-set gamesfol9="Virtuƒlƒ realitƒte"
-set gamescamfol1="Action"
-set gamescamfol2="Horror"
-set gamescamfol3="Atp×tas"
-set gamescamfol4="RPG"
-set gamescamfol5="IzdzŒvoÕana"
-set gameslocfol1="KooperatŒvs"
-set gameslocfol2="BallŒte"
-set gameslocfol3="Versus"
-set gamesonlfol1="Battle Royale"
-set gamesonlfol2="MMO"
-set gamesonlfol3="¾×teris"
-set gamesonlfol4="Strat‰…ija"
+onlinetools1fol=Diagnostika
 
-set newsmediafol1="Latvijas ziìas"
-set newsmediafol2="Re…ionƒlƒs ziìas"
-set newsmediafol3="Starptautiskƒs ziìas"
+podcastsfol1=Kriminƒls un drƒma
+podcastsfol2=Pagƒtne un tagadne
+podcastsfol3=Politika
+podcastsfol4=Zinƒtne un tehnolo…ija
+podcastsfol5=Sekss un psiholo…ija
+podcastsfol6=Sports
+podcastsfol7=Sarunu raidŒjumi
 
-set onlinetools1fol="Diagnostika"
+bookmarksfol1=Ziìas un mediji
+bookmarksfol2=TieÕsaistes rŒki
+bookmarksfol3=Spotify podkƒsti
+bookmarksfol4=Interneta veikali
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="Kriminƒls un drƒma"
-set podcastsfol2="Pagƒtne un tagadne"
-set podcastsfol3="Politika"
-set podcastsfol4="Zinƒtne un tehnolo…ija"
-set podcastsfol5="Sekss un psiholo…ija"
-set podcastsfol6="Sports"
-set podcastsfol7="Sarunu raidŒjumi"
+advanced1=Komandu uzvedne
+advanced2=IerŒÑu pƒrvaldnieks
+advanced3=Diska tŒrŒÕana
+advanced4=Disku pƒrvaldŒba
+advanced5=Re…istra redaktors
+advanced6=Resource monitor
+advanced7=Sƒkuma programmas
+advanced8=Krƒtuves vietas
+advanced9=Sist‰mas konfigurƒcija
+advanced10=Windows ugunsm×ris
+advanced11=Windows PowerShell
+advanced12=Windows services
 
-set bookmarksfol1="Ziìas un mediji"
-set bookmarksfol2="TieÕsaistes rŒki"
-set bookmarksfol3="Spotify podkƒsti"
-set bookmarksfol4="Interneta veikali"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="Komandu uzvedne"
-set advanced2="IerŒÑu pƒrvaldnieks"
-set advanced3="Diska tŒrŒÕana"
-set advanced4="Disku pƒrvaldŒba"
-set advanced5="Re…istra redaktors"
-set advanced6="Resource monitor"
-set advanced7="Sƒkuma programmas"
-set advanced8="Krƒtuves vietas"
-set advanced9="Sist‰mas konfigurƒcija"
-set advanced10="Windows ugunsm×ris"
-set advanced11="Windows PowerShell"
-set advanced12="Windows services"
-
-set controlfol1="Papildu vadŒklas"
-set control1="Personaliz‰Õana"
-set control2="Displeja iestatŒjumi"
-set control3="Lupa"
-set control4="Ekrƒntastat×ra"
-set control5="Ener…ijas opcijas"
-set control6="Atkritne"
-set control7="Att‰lojuma opcijas izv‰le"
-set control8="Sist‰mas informƒcija"
-set control9="Uzdevumu pƒrvaldnieks"
-set control10="Instal‰tƒs programmas"
-set control11="Lietotƒju konti"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=Papildu vadŒklas
+control1=Personaliz‰Õana
+control2=Displeja iestatŒjumi
+control3=Lupa
+control4=Ekrƒntastat×ra
+control5=Ener…ijas opcijas
+control6=Atkritne
+control7=Att‰lojuma opcijas izv‰le
+control8=Sist‰mas informƒcija
+control9=Uzdevumu pƒrvaldnieks
+control10=Instal‰tƒs programmas
+control11=Lietotƒju konti

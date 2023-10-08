@@ -1,83 +1,75 @@
-chcp 936
+gamesfol2=活动
+gamesfol3=休闲
+gamesfol4=游戏
+gamesfol5=本地多人
+gamesfol6=线上多人
+gamesfol7=模拟
+gamesfol8=运动和赛车
+gamesfol9=VR (虚拟实境)
+gamescamfol1=动作
+gamescamfol2=恐怖
+gamescamfol3=放松
+gamescamfol4=RPG
+gamescamfol5=生存
+gameslocfol1=合作
+gameslocfol2=派对
+gameslocfol3=对战
+gamesonlfol1=战斗
+gamesonlfol2=MMO
+gamesonlfol3=射击
+gamesonlfol4=策略
 
-@echo off
+newsmediafol1=左方
+newsmediafol2=右方
+newsmediafol3=国际
 
-set gamesfol2="活动"
-set gamesfol3="休闲"
-set gamesfol4="游戏"
-set gamesfol5="本地多人"
-set gamesfol6="线上多人"
-set gamesfol7="模拟"
-set gamesfol8="运动和赛车"
-set gamesfol9="VR (虚拟实境)"
-set gamescamfol1="动作"
-set gamescamfol2="恐怖"
-set gamescamfol3="放松"
-set gamescamfol4="RPG"
-set gamescamfol5="生存"
-set gameslocfol1="合作"
-set gameslocfol2="派对"
-set gameslocfol3="对战"
-set gamesonlfol1="战斗"
-set gamesonlfol2="MMO"
-set gamesonlfol3="射击"
-set gamesonlfol4="策略"
+onlinetools1fol=诊断
 
-set newsmediafol1="左方"
-set newsmediafol2="右方"
-set newsmediafol3="国际"
+podcastsfol1=罪案与戏剧
+podcastsfol2=Past & Present
+podcastsfol3=政治
+podcastsfol4=科学和科技
+podcastsfol5=性和心理学
+podcastsfol6=运动
+podcastsfol7=谈论节目
 
-set onlinetools1fol="诊断"
+bookmarksfol1=新闻和媒体
+bookmarksfol2=在线工具
+bookmarksfol3=电台
+bookmarksfol4=购物
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="罪案与戏剧"
-set podcastsfol2="Past & Present"
-set podcastsfol3="政治"
-set podcastsfol4="科学和科技"
-set podcastsfol5="性和心理学"
-set podcastsfol6="运动"
-set podcastsfol7="谈论节目"
+advanced1=命令提示符
+advanced2=装置管理员
+advanced3=磁碟清理
+advanced4=磁碟管理
+advanced5=注册表编辑器
+advanced6=资源检测器
+advanced7=自动启动应用程式
+advanced8=存储空间
+advanced9=系统配置
+advanced10=Windows 防火墙
+advanced11=Windows PowerShell
+advanced12=Windows 服务
 
-set bookmarksfol1="新闻和媒体"
-set bookmarksfol2="在线工具"
-set bookmarksfol3="电台"
-set bookmarksfol4="购物"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="命令提示符"
-set advanced2="装置管理员"
-set advanced3="磁碟清理"
-set advanced4="磁碟管理"
-set advanced5="注册表编辑器"
-set advanced6="资源检测器"
-set advanced7="自动启动应用程式"
-set advanced8="存储空间"
-set advanced9="系统配置"
-set advanced10="Windows 防火墙"
-set advanced11="Windows PowerShell"
-set advanced12="Windows 服务"
-
-set controlfol1="进阶控制"
-set control1="桌面背景"
-set control2="显示设定"
-set control3="放大"
-set control4="软键盘"
-set control5="能量选项"
-set control6="资源回收桶"
-set control7="转换萤幕"
-set control8="系统资讯"
-set control9="工作管理员"
-set control10="解除安装"
-set control11="用户账户"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=进阶控制
+control1=桌面背景
+control2=显示设定
+control3=放大
+control4=软键盘
+control5=能量选项
+control6=资源回收桶
+control7=转换萤幕
+control8=系统资讯
+control9=工作管理员
+control10=解除安装
+control11=用户账户

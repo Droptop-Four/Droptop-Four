@@ -1,83 +1,75 @@
-chcp 866
+gamesfol2=Один игрок
+gamesfol3=Повседневная
+gamesfol4=Независимый
+gamesfol5=Локальный мультиплеер
+gamesfol6=Сетевой мультиплеер
+gamesfol7=Моделирование
+gamesfol8=Спорт и гонки
+gamesfol9=Виртуальная реальность
+gamescamfol1=Действие
+gamescamfol2=Фильм ужасов
+gamescamfol3=Расслабленный
+gamescamfol4=RPG
+gamescamfol5=Выживание
+gameslocfol1=Кооператив
+gameslocfol2=Партия
+gameslocfol3=Против
+gamesonlfol1=Королевская битва
+gamesonlfol2=MMO
+gamesonlfol3=Стрелок
+gamesonlfol4=Стратегия
 
-@echo off
+newsmediafol1=Far-Left
+newsmediafol2=Far-Right
+newsmediafol3=Международный
 
-set gamesfol2="Один игрок"
-set gamesfol3="Повседневная"
-set gamesfol4="Независимый"
-set gamesfol5="Локальный мультиплеер"
-set gamesfol6="Сетевой мультиплеер"
-set gamesfol7="Моделирование"
-set gamesfol8="Спорт и гонки"
-set gamesfol9="Виртуальная реальность"
-set gamescamfol1="Действие"
-set gamescamfol2="Фильм ужасов"
-set gamescamfol3="Расслабленный"
-set gamescamfol4="RPG"
-set gamescamfol5="Выживание"
-set gameslocfol1="Кооператив"
-set gameslocfol2="Партия"
-set gameslocfol3="Против"
-set gamesonlfol1="Королевская битва"
-set gamesonlfol2="MMO"
-set gamesonlfol3="Стрелок"
-set gamesonlfol4="Стратегия"
+onlinetools1fol=Диагностика
 
-set newsmediafol1="Far-Left"
-set newsmediafol2="Far-Right"
-set newsmediafol3="Международный"
+podcastsfol1=Криминал и Драма
+podcastsfol2=Past & Present
+podcastsfol3=Политика
+podcastsfol4=Наука и Технологии
+podcastsfol5=Секс и Психология
+podcastsfol6=Спорт
+podcastsfol7=Ток-шоу
 
-set onlinetools1fol="Диагностика"
+bookmarksfol1=Новости и СМИ
+bookmarksfol2=Онлайн инструменты
+bookmarksfol3=Подкасты
+bookmarksfol4=Покупки
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="Криминал и Драма"
-set podcastsfol2="Past & Present"
-set podcastsfol3="Политика"
-set podcastsfol4="Наука и Технологии"
-set podcastsfol5="Секс и Психология"
-set podcastsfol6="Спорт"
-set podcastsfol7="Ток-шоу"
+advanced1=Командная строка
+advanced2=Диспечер устройств
+advanced3=Очистка диска
+advanced4=Управление диском
+advanced5=Редактор реестра
+advanced6=Монитор ресурсов
+advanced7=Приложения для запуска
+advanced8=Места для хранения
+advanced9=Конфигурация системы
+advanced10=Брандмауэр Windows
+advanced11=Windows PowerShell
+advanced12=Службы Windows
 
-set bookmarksfol1="Новости и СМИ"
-set bookmarksfol2="Онлайн инструменты"
-set bookmarksfol3="Подкасты"
-set bookmarksfol4="Покупки"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="Командная строка"
-set advanced2="Диспечер устройств"
-set advanced3="Очистка диска"
-set advanced4="Управление диском"
-set advanced5="Редактор реестра"
-set advanced6="Монитор ресурсов"
-set advanced7="Приложения для запуска"
-set advanced8="Места для хранения"
-set advanced9="Конфигурация системы"
-set advanced10="Брандмауэр Windows"
-set advanced11="Windows PowerShell"
-set advanced12="Службы Windows"
-
-set controlfol1="Дополнительные настройки"
-set control1="Фон рабочего стола"
-set control2="Настройки экрана"
-set control3="Увеличивать"
-set control4="Экранная клавиатура"
-set control5="Настройки питания"
-set control6="Корзина"
-set control7="Переключить дисплей"
-set control8="Системная информация"
-set control9="Диспечер задач"
-set control10="Удалить программу"
-set control11="Акаунты пользователя"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=Дополнительные настройки
+control1=Фон рабочего стола
+control2=Настройки экрана
+control3=Увеличивать
+control4=Экранная клавиатура
+control5=Настройки питания
+control6=Корзина
+control7=Переключить дисплей
+control8=Системная информация
+control9=Диспечер задач
+control10=Удалить программу
+control11=Акаунты пользователя

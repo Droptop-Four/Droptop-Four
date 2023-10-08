@@ -1,83 +1,75 @@
-chcp 1252
+gamesfol2=Campagna
+gamesfol3=Casual
+gamesfol4=Indie
+gamesfol5=Multiplayer Locali
+gamesfol6=Multiplayer Online
+gamesfol7=Simulazione
+gamesfol8=Sport & Corse
+gamesfol9=Realtà Virtuale
+gamescamfol1=Azione
+gamescamfol2=Horror
+gamescamfol3=Rilassanti
+gamescamfol4=RPG
+gamescamfol5=Sopravvivenza
+gameslocfol1=Co-op
+gameslocfol2=Party
+gameslocfol3=Versus
+gamesonlfol1=Battle Royale
+gamesonlfol2=MMO
+gamesonlfol3=Sparatutto
+gamesonlfol4=Strategia
 
-@echo off
+newsmediafol1=Di Sinistra
+newsmediafol2=Di Destra
+newsmediafol3=Internazionale
 
-set gamesfol2="Campagna"
-set gamesfol3="Casual"
-set gamesfol4="Indie"
-set gamesfol5="Multiplayer Locali"
-set gamesfol6="Multiplayer Online"
-set gamesfol7="Simulazione"
-set gamesfol8="Sport & Corse"
-set gamesfol9="Realtà Virtuale"
-set gamescamfol1="Azione"
-set gamescamfol2="Horror"
-set gamescamfol3="Rilassanti"
-set gamescamfol4="RPG"
-set gamescamfol5="Sopravvivenza"
-set gameslocfol1="Co-op"
-set gameslocfol2="Party"
-set gameslocfol3="Versus"
-set gamesonlfol1="Battle Royale"
-set gamesonlfol2="MMO"
-set gamesonlfol3="Sparatutto"
-set gamesonlfol4="Strategia"
+onlinetools1fol=Diagnostica
 
-set newsmediafol1="Di Sinistra"
-set newsmediafol2="Di Destra"
-set newsmediafol3="Internazionale"
+podcastsfol1=Crime & Dramma
+podcastsfol2=Past & Present
+podcastsfol3=Politica
+podcastsfol4=Scienza & Tecnologia
+podcastsfol5=Sesso & Psicologia
+podcastsfol6=Sport
+podcastsfol7=Talk Show
 
-set onlinetools1fol="Diagnostica"
+bookmarksfol1=Notizie & Media
+bookmarksfol2=Strumenti Online
+bookmarksfol3=Podcast
+bookmarksfol4=Shopping
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="Crime & Dramma"
-set podcastsfol2="Past & Present"
-set podcastsfol3="Politica"
-set podcastsfol4="Scienza & Tecnologia"
-set podcastsfol5="Sesso & Psicologia"
-set podcastsfol6="Sport"
-set podcastsfol7="Talk Show"
+advanced1=Prompt dei Comandi
+advanced2=Gestore Dispositivi
+advanced3=Pulizia del Disco
+advanced4=Gestore dei Dischi
+advanced5=Editor del Registro
+advanced6=Monitor delle Risorse
+advanced7=App all'Avvio
+advanced8=Spazi di Archiviazione
+advanced9=Configurazione di Sistema
+advanced10=Firewall di Windows
+advanced11=Powershell di Windows
+advanced12=Servizi di Windows
 
-set bookmarksfol1="Notizie & Media"
-set bookmarksfol2="Strumenti Online"
-set bookmarksfol3="Podcast"
-set bookmarksfol4="Shopping"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="Prompt dei Comandi"
-set advanced2="Gestore Dispositivi"
-set advanced3="Pulizia del Disco"
-set advanced4="Gestore dei Dischi"
-set advanced5="Editor del Registro"
-set advanced6="Monitor delle Risorse"
-set advanced7="App all'Avvio"
-set advanced8="Spazi di Archiviazione"
-set advanced9="Configurazione di Sistema"
-set advanced10="Firewall di Windows"
-set advanced11="Powershell di Windows"
-set advanced12="Servizi di Windows"
-
-set controlfol1="Controlli avanzati"
-set control1="Sfondi Desktop"
-set control2="Impostazioni Display"
-set control3="Ingrandisci"
-set control4="Tastiera sullo schermo"
-set control5="Opzioni di alimentazione"
-set control6="Cestino"
-set control7="Cambia display"
-set control8="Informazioni di Sistema"
-set control9="Task Manager"
-set control10="Disinstalla un programma"
-set control11="Account Utente"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=Controlli avanzati
+control1=Sfondi Desktop
+control2=Impostazioni Display
+control3=Ingrandisci
+control4=Tastiera sullo schermo
+control5=Opzioni di alimentazione
+control6=Cestino
+control7=Cambia display
+control8=Informazioni di Sistema
+control9=Task Manager
+control10=Disinstalla un programma
+control11=Account Utente

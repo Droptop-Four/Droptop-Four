@@ -1,83 +1,75 @@
-chcp 437
+gamesfol2=Kampanye
+gamesfol3=Kasual
+gamesfol4=Indie
+gamesfol5=Multiplayer lokal
+gamesfol6=Multiplayer daring
+gamesfol7=Simulasi
+gamesfol8=Olahraga & balapan
+gamesfol9=Realitas virtual
+gamescamfol1=Aksi
+gamescamfol2=Horror
+gamescamfol3=Santai
+gamescamfol4=RPG
+gamescamfol5=Bertahan hidup
+gameslocfol1=Kerjasama
+gameslocfol2=Pesta
+gameslocfol3=Lawan
+gamesonlfol1=Battle Royale
+gamesonlfol2=MMO
+gamesonlfol3=Tembak-tembakan
+gamesonlfol4=Strategi
 
-@echo off
+newsmediafol1=Kiri-jauh
+newsmediafol2=Kanan-jauh
+newsmediafol3=Internasional
 
-set gamesfol2="Kampanye"
-set gamesfol3="Kasual"
-set gamesfol4="Indie"
-set gamesfol5="Multiplayer lokal"
-set gamesfol6="Multiplayer daring"
-set gamesfol7="Simulasi"
-set gamesfol8="Olahraga & balapan"
-set gamesfol9="Realitas virtual"
-set gamescamfol1="Aksi"
-set gamescamfol2="Horror"
-set gamescamfol3="Santai"
-set gamescamfol4="RPG"
-set gamescamfol5="Bertahan hidup"
-set gameslocfol1="Kerjasama"
-set gameslocfol2="Pesta"
-set gameslocfol3="Lawan"
-set gamesonlfol1="Battle Royale"
-set gamesonlfol2="MMO"
-set gamesonlfol3="Tembak-tembakan"
-set gamesonlfol4="Strategi"
+onlinetools1fol=Diagnostik
 
-set newsmediafol1="Kiri-jauh"
-set newsmediafol2="Kanan-jauh"
-set newsmediafol3="Internasional"
+podcastsfol1=Kejahatan & Drama
+podcastsfol2=Dulu & Sekarang
+podcastsfol3=Politik
+podcastsfol4=Sains & Teknologi
+podcastsfol5=Seks & Psikologi
+podcastsfol6=Olahraga
+podcastsfol7=Acara bincang-bincang
 
-set onlinetools1fol="Diagnostik"
+bookmarksfol1=Berita & media
+bookmarksfol2=Alat daring
+bookmarksfol3=Podcast Spotify
+bookmarksfol4=Belanja
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="Kejahatan & Drama"
-set podcastsfol2="Dulu & Sekarang"
-set podcastsfol3="Politik"
-set podcastsfol4="Sains & Teknologi"
-set podcastsfol5="Seks & Psikologi"
-set podcastsfol6="Olahraga"
-set podcastsfol7="Acara bincang-bincang"
+advanced1=Prompt perintah
+advanced2=Pengelola perangkat
+advanced3=Pembersihan disk
+advanced4=Manajemen disk
+advanced5=Pengedit registri
+advanced6=Monitor sumber daya
+advanced7=Aplikasi startup
+advanced8=Ruang penyimpanan
+advanced9=Konfigurasi sistem
+advanced10=Windows Firewall
+advanced11=Windows PowerShell
+advanced12=Layanan windows
 
-set bookmarksfol1="Berita & media"
-set bookmarksfol2="Alat daring"
-set bookmarksfol3="Podcast Spotify"
-set bookmarksfol4="Belanja"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="Prompt perintah"
-set advanced2="Pengelola perangkat"
-set advanced3="Pembersihan disk"
-set advanced4="Manajemen disk"
-set advanced5="Pengedit registri"
-set advanced6="Monitor sumber daya"
-set advanced7="Aplikasi startup"
-set advanced8="Ruang penyimpanan"
-set advanced9="Konfigurasi sistem"
-set advanced10="Windows Firewall"
-set advanced11="Windows PowerShell"
-set advanced12="Layanan windows"
-
-set controlfol1="Kontrol lanjutan"
-set control1="Latar belakang desktop"
-set control2="Pengaturan tampilan"
-set control3="Perbesar"
-set control4="Papan ketik di layar"
-set control5="Opsi sumber daya"
-set control6="Tempat sampah"
-set control7="Alihkan tampilan"
-set control8="Informasi sistem"
-set control9="Pengelola tugas"
-set control10="Copot pemasangan program"
-set control11="Akun pengguna"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=Kontrol lanjutan
+control1=Latar belakang desktop
+control2=Pengaturan tampilan
+control3=Perbesar
+control4=Papan ketik di layar
+control5=Opsi sumber daya
+control6=Tempat sampah
+control7=Alihkan tampilan
+control8=Informasi sistem
+control9=Pengelola tugas
+control10=Copot pemasangan program
+control11=Akun pengguna

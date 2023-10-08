@@ -1,83 +1,75 @@
-chcp 1256
+gamesfol2=˜ãíä
+gamesfol3=ÚÇÏí
+gamesfol4=ãÓÊŞá
+gamesfol5=äÏäİÑå ãÍáí
+gamesfol6=äÏäİÑå ÂäáÇíä
+gamesfol7=ÔÈíå ÓÇÒí
+gamesfol8=æÑÒÔí æ ãÓÇÈŞå Çí
+gamesfol9=æÇŞÚíÊ ãÌÇÒí
+gamescamfol1=Ç˜Ôä
+gamescamfol2=ÊÑÓäÇ˜
+gamescamfol3=ÂÑÇã
+gamescamfol4=äŞÔ ÂİÑíäí
+gamescamfol5=ÈŞÇ
+gameslocfol1=ÏæäİÑå
+gameslocfol2=Ñæåí
+gameslocfol3=ÊŞÇÈáí
+gamesonlfol1=ÈÊá ÑæíÇá
+gamesonlfol2=äÏäİÑå æÓíÚ
+gamesonlfol3=ÊíÑÇäÏÇÒí
+gamesonlfol4=ÇÓÊÑÇÊí˜
 
-@echo off
+newsmediafol1=ÇÕáÇÍ ØáÈ
+newsmediafol2=ÇÕæá ÑÇ
+newsmediafol3=íä Çáãááí
 
-set gamesfol2="˜ãíä"
-set gamesfol3="ÚÇÏí"
-set gamesfol4="ãÓÊŞá"
-set gamesfol5="äÏäİÑå ãÍáí"
-set gamesfol6="äÏäİÑå ÂäáÇíä"
-set gamesfol7="ÔÈíå ÓÇÒí"
-set gamesfol8="æÑÒÔí æ ãÓÇÈŞå Çí"
-set gamesfol9="æÇŞÚíÊ ãÌÇÒí"
-set gamescamfol1="Ç˜Ôä"
-set gamescamfol2="ÊÑÓäÇ˜"
-set gamescamfol3="ÂÑÇã"
-set gamescamfol4="äŞÔ ÂİÑíäí"
-set gamescamfol5="ÈŞÇ"
-set gameslocfol1="ÏæäİÑå"
-set gameslocfol2="Ñæåí"
-set gameslocfol3="ÊŞÇÈáí"
-set gamesonlfol1="ÈÊá ÑæíÇá"
-set gamesonlfol2="äÏäİÑå æÓíÚ"
-set gamesonlfol3="ÊíÑÇäÏÇÒí"
-set gamesonlfol4="ÇÓÊÑÇÊí˜"
+onlinetools1fol=ÚíÈ íÇÈí
 
-set newsmediafol1="ÇÕáÇÍ ØáÈ"
-set newsmediafol2="ÇÕæá ÑÇ"
-set newsmediafol3="íä Çáãááí"
+podcastsfol1=ÌÑã æ ÌäÇíí
+podcastsfol2=Past & Present
+podcastsfol3=ÓíÇÓí
+podcastsfol4=Úáãí æ Ê˜äæáæí
+podcastsfol5=ÌäÓí æ ÑæÇäÔäÇÓí
+podcastsfol6=æÑÒÔí
+podcastsfol7=ÊÇ˜ Ôæ åÇ
 
-set onlinetools1fol="ÚíÈ íÇÈí"
+bookmarksfol1=ÇÎÈÇÑ æ ÑÓÇäå
+bookmarksfol2=ÇÈÒÇÑ ÂäáÇíä
+bookmarksfol3=ÇÏ˜ÓÊ åÇ
+bookmarksfol4=ÎÑíÏ
+bookmarks2=Ìíãíá
+bookmarks3=æá ˜í
+bookmarks4=æá ã
+bookmarks5=æá İæÊæ
+bookmarks6=åæáæ
+bookmarks7=äÊİáí˜Ó
+bookmarks8=ÑÏíÊ
+bookmarks9=ÇÓÊíã
+bookmarks10=Êæíí
+bookmarks11=íæÊíæÈ
 
-set podcastsfol1="ÌÑã æ ÌäÇíí"
-set podcastsfol2="Past & Present"
-set podcastsfol3="ÓíÇÓí"
-set podcastsfol4="Úáãí æ Ê˜äæáæí"
-set podcastsfol5="ÌäÓí æ ÑæÇäÔäÇÓí"
-set podcastsfol6="æÑÒÔí"
-set podcastsfol7="ÊÇ˜ Ôæ åÇ"
+advanced1=ÎØ İÑãÇä
+advanced2=ãÏíÑíÊ ÏÓÊÇå åÇ
+advanced3=Ç˜ ÓÇÒí ÏíÓ˜
+advanced4=ãÏíÑíÊ ÏíÓ˜
+advanced5=æíÑÇíÔÑ ÑÌíÓÊÑí
+advanced6=ãÇäíÊæÑ ãäÇÈÚ
+advanced7=ÈÑäÇãå åÇí ÇÓÊÇÑ Â
+advanced8=İÖÇåÇí ĞÎíÑå ÓÇÒí
+advanced9=ÊäÙíãÇÊ ÓíÓÊã
+advanced10=İÇíÑæÇá æíäÏæÒ
+advanced11=æíäÏæÒ ÇæÑÔá
+advanced12=ÓÑæíÓ åÇí æíäÏæÒ
 
-set bookmarksfol1="ÇÎÈÇÑ æ ÑÓÇäå"
-set bookmarksfol2="ÇÈÒÇÑ ÂäáÇíä"
-set bookmarksfol3="ÇÏ˜ÓÊ åÇ"
-set bookmarksfol4="ÎÑíÏ"
-set bookmarks2="Ìíãíá"
-set bookmarks3="æá ˜í"
-set bookmarks4="æá ã"
-set bookmarks5="æá İæÊæ"
-set bookmarks6="åæáæ"
-set bookmarks7="äÊİáí˜Ó"
-set bookmarks8="ÑÏíÊ"
-set bookmarks9="ÇÓÊíã"
-set bookmarks10="Êæíí"
-set bookmarks11="íæÊíæÈ"
-
-set advanced1="ÎØ İÑãÇä"
-set advanced2="ãÏíÑíÊ ÏÓÊÇå åÇ"
-set advanced3="Ç˜ ÓÇÒí ÏíÓ˜"
-set advanced4="ãÏíÑíÊ ÏíÓ˜"
-set advanced5="æíÑÇíÔÑ ÑÌíÓÊÑí"
-set advanced6="ãÇäíÊæÑ ãäÇÈÚ"
-set advanced7="ÈÑäÇãå åÇí ÇÓÊÇÑ Â"
-set advanced8="İÖÇåÇí ĞÎíÑå ÓÇÒí"
-set advanced9="ÊäÙíãÇÊ ÓíÓÊã"
-set advanced10="İÇíÑæÇá æíäÏæÒ"
-set advanced11="æíäÏæÒ ÇæÑÔá"
-set advanced12="ÓÑæíÓ åÇí æíäÏæÒ"
-
-set controlfol1="ÊäÙíãÇÊ ÍÑİå Çí"
-set control1="Ó Òãíäå åÇí ÏÓ˜ÊÇ"
-set control2="ÊäÙíãÇÊ äãÇíÔÑ"
-set control3="ĞÑå Èíä"
-set control4="˜íÈæÑÏ ãÌÇÒí"
-set control5="ÊäÙíãÇÊ ÇæÑ"
-set control6="ÓØá ÂÔÛÇá"
-set control7="ÊÛííÑ äãÇíÔÑ"
-set control8="ÇØáÇÚÊ ÓíÓÊã"
-set control9="ÊÓ˜ ãäíÌÑ"
-set control10="Ç˜ÓÇÒí ÈÑäÇãå"
-set control11="ÍÓÇÈ åÇí ˜ÇÑÈÑí"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=ÊäÙíãÇÊ ÍÑİå Çí
+control1=Ó Òãíäå åÇí ÏÓ˜ÊÇ
+control2=ÊäÙíãÇÊ äãÇíÔÑ
+control3=ĞÑå Èíä
+control4=˜íÈæÑÏ ãÌÇÒí
+control5=ÊäÙíãÇÊ ÇæÑ
+control6=ÓØá ÂÔÛÇá
+control7=ÊÛííÑ äãÇíÔÑ
+control8=ÇØáÇÚÊ ÓíÓÊã
+control9=ÊÓ˜ ãäíÌÑ
+control10=Ç˜ÓÇÒí ÈÑäÇãå
+control11=ÍÓÇÈ åÇí ˜ÇÑÈÑí

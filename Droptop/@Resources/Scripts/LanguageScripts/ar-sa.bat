@@ -1,83 +1,75 @@
-chcp 1256
+gamesfol2=Campaign
+gamesfol3=Casual
+gamesfol4=Indie
+gamesfol5=ÇßËÑ ãä áÇÚÈ ÇáãÍãáÉ
+gamesfol6=ÇßËÑ ãä áÇÚÈ İí ÇáÅäÊÑäÊ
+gamesfol7=ãÍÇßÇÉ
+gamesfol8=ÇáÑíÇÖÉ æÇáÓÈÇŞÇÊ
+gamesfol9=ÇáæÇŞÚ ÇáÇİÊÑÇÖí
+gamescamfol1=Action
+gamescamfol2=ÑÚÈ
+gamescamfol3=ÇÓÊÑÎÇÁ
+gamescamfol4=RPG
+gamescamfol5=äÌÇÉ
+gameslocfol1=ÊÚÇæäí
+gameslocfol2=Íİá
+gameslocfol3=Versus
+gamesonlfol1=ÇáãÚÑßÉ ÇáãáßíÉ
+gamesonlfol2=MMO
+gamesonlfol3=ÇáÑÇãí
+gamesonlfol4=ÅÓÊÑÇÊíÌíÉ
 
-@echo off
+newsmediafol1=ÃŞÕì ÇáíÓÇÑ
+newsmediafol2=ÇŞÕì Çáíãíä
+newsmediafol3=İí ÇáæÓØ
 
-set gamesfol2="Campaign"
-set gamesfol3="Casual"
-set gamesfol4="Indie"
-set gamesfol5="ÇßËÑ ãä áÇÚÈ ÇáãÍãáÉ"
-set gamesfol6="ÇßËÑ ãä áÇÚÈ İí ÇáÅäÊÑäÊ"
-set gamesfol7="ãÍÇßÇÉ"
-set gamesfol8="ÇáÑíÇÖÉ æÇáÓÈÇŞÇÊ"
-set gamesfol9="ÇáæÇŞÚ ÇáÇİÊÑÇÖí"
-set gamescamfol1="Action"
-set gamescamfol2="ÑÚÈ"
-set gamescamfol3="ÇÓÊÑÎÇÁ"
-set gamescamfol4="RPG"
-set gamescamfol5="äÌÇÉ"
-set gameslocfol1="ÊÚÇæäí"
-set gameslocfol2="Íİá"
-set gameslocfol3="Versus"
-set gamesonlfol1="ÇáãÚÑßÉ ÇáãáßíÉ"
-set gamesonlfol2="MMO"
-set gamesonlfol3="ÇáÑÇãí"
-set gamesonlfol4="ÅÓÊÑÇÊíÌíÉ"
+onlinetools1fol=ÇáÊÔÎíÕ
 
-set newsmediafol1="ÃŞÕì ÇáíÓÇÑ"
-set newsmediafol2="ÇŞÕì Çáíãíä"
-set newsmediafol3="İí ÇáæÓØ"
+podcastsfol1=ÇáÏÑÇãÇ æÇáÌÑíãÉ
+podcastsfol2=Past & Present
+podcastsfol3=ÓíÇÓÉ
+podcastsfol4=ÇáÚáæã æÇáÊßäæáæÌíÇ
+podcastsfol5=ÇáÌäÓ æÚáã ÇáäİÓ
+podcastsfol6=ÑíÇÖÇÊ
+podcastsfol7=ÈÑäÇãÌ ÍæÇÑí
 
-set onlinetools1fol="ÇáÊÔÎíÕ"
+bookmarksfol1=æÓÇÆá ÇáÅÚáÇã
+bookmarksfol2=ÃÏæÇÊ Úáì ÇáÅäÊÑäÊ
+bookmarksfol3=ÇáãÏæäÉ ÇáÕæÊíÉ
+bookmarksfol4=ÇáÊÓæŞ
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="ÇáÏÑÇãÇ æÇáÌÑíãÉ"
-set podcastsfol2="Past & Present"
-set podcastsfol3="ÓíÇÓÉ"
-set podcastsfol4="ÇáÚáæã æÇáÊßäæáæÌíÇ"
-set podcastsfol5="ÇáÌäÓ æÚáã ÇáäİÓ"
-set podcastsfol6="ÑíÇÖÇÊ"
-set podcastsfol7="ÈÑäÇãÌ ÍæÇÑí"
+advanced1=ãæÌå ÇáÃãÑ
+advanced2=ãÏíÑ ÇáÌåÇÒ
+advanced3=Disk cleanup
+advanced4=Disk management
+advanced5=ãÍÑÑ ÓÌá ÇáäÙÇã
+advanced6=ãÑÇŞÈ ÇáãæÑÏ
+advanced7=ÊØÈíŞÇÊ ÈÏÁ ÇáÊÔÛíá
+advanced8=ãÓÇÍÇÊ ÇáÊÎÒíä
+advanced9=ÃÚÏÇÏÇÊ ÇáäÙÇã
+advanced10=ÌÏÇÑ ÍãÇíÉ æíäÏæÒ
+advanced11=æÇÌåÉ ÇæÇãÑ æíäÏæÒ
+advanced12=ÎÏãÇÊ æíäÏæÒ
 
-set bookmarksfol1="æÓÇÆá ÇáÅÚáÇã"
-set bookmarksfol2="ÃÏæÇÊ Úáì ÇáÅäÊÑäÊ"
-set bookmarksfol3="ÇáãÏæäÉ ÇáÕæÊíÉ"
-set bookmarksfol4="ÇáÊÓæŞ"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="ãæÌå ÇáÃãÑ"
-set advanced2="ãÏíÑ ÇáÌåÇÒ"
-set advanced3="Disk cleanup"
-set advanced4="Disk management"
-set advanced5="ãÍÑÑ ÓÌá ÇáäÙÇã"
-set advanced6="ãÑÇŞÈ ÇáãæÑÏ"
-set advanced7="ÊØÈíŞÇÊ ÈÏÁ ÇáÊÔÛíá"
-set advanced8="ãÓÇÍÇÊ ÇáÊÎÒíä"
-set advanced9="ÃÚÏÇÏÇÊ ÇáäÙÇã"
-set advanced10="ÌÏÇÑ ÍãÇíÉ æíäÏæÒ"
-set advanced11="æÇÌåÉ ÇæÇãÑ æíäÏæÒ"
-set advanced12="ÎÏãÇÊ æíäÏæÒ"
-
-set controlfol1="ÖæÇÈØ ãÊŞÏãÉ"
-set control1="ÎáİíÉ ÓØÍ ÇáãßÊÈ"
-set control2="ÇÚÏÇÏÇÊ ÇáÚÑÖ"
-set control3="ÊßÈíÑ"
-set control4="áæÍÉ ãİÇÊíÍ Úáì ÇáÔÇÔÉ"
-set control5="ÎíÇÑÇÊ ÇáØÇŞÉ"
-set control6="ÓáÉ ÇáãåãáÇÊ"
-set control7="ÚÑÖ ÇáÊÈÏíá"
-set control8="ãÚáæãÇÊ ÇáäÙÇã"
-set control9="ãÏíÑ ÇáãåÇã"
-set control10="ÇáÛÇÁ ÊäÕíÈ ÈÑäÇãÌ"
-set control11="ÍÓÇÈÇÊ ÇáãÓÊÎÏãíä"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=ÖæÇÈØ ãÊŞÏãÉ
+control1=ÎáİíÉ ÓØÍ ÇáãßÊÈ
+control2=ÇÚÏÇÏÇÊ ÇáÚÑÖ
+control3=ÊßÈíÑ
+control4=áæÍÉ ãİÇÊíÍ Úáì ÇáÔÇÔÉ
+control5=ÎíÇÑÇÊ ÇáØÇŞÉ
+control6=ÓáÉ ÇáãåãáÇÊ
+control7=ÚÑÖ ÇáÊÈÏíá
+control8=ãÚáæãÇÊ ÇáäÙÇã
+control9=ãÏíÑ ÇáãåÇã
+control10=ÇáÛÇÁ ÊäÕíÈ ÈÑäÇãÌ
+control11=ÍÓÇÈÇÊ ÇáãÓÊÎÏãíä

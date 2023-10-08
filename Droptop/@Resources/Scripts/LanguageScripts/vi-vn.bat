@@ -1,83 +1,75 @@
-chcp 1258
+gamesfol2=Chi?n d?ch
+gamesfol3=Ðõn thu?n
+gamesfol4=Indie
+gamesfol5=Nhi?u ngý?i chõi c?c b?
+gamesfol6=Nhi?u ngý?i chõi tr?c tuy?n
+gamesfol7=Th? nghi?m
+gamesfol8=Th? thao & thi ðua
+gamesfol9=Th?c t? ?o
+gamescamfol1=Hành ð?ng
+gamescamfol2=Kinh d?
+gamescamfol3=Thý gi?n
+gamescamfol4=Tr? nh?p vai
+gamescamfol5=Tr? s?ng c?n
+gameslocfol1=tr? h?p tác
+gameslocfol2=Ti?c
+gameslocfol3=Thách ð?u
+gamesonlfol1=Chi?n ð?u ð?i h?ng gia
+gamesonlfol2=MMO
+gamesonlfol3=B?n súng
+gamesonlfol4=Chi?n lý?c
 
-@echo off
+newsmediafol1=Xa trái
+newsmediafol2=Xa ph?i
+newsmediafol3=Qu?c t?
 
-set gamesfol2="Chi?n d?ch"
-set gamesfol3="Ðõn thu?n"
-set gamesfol4="Indie"
-set gamesfol5="Nhi?u ngý?i chõi c?c b?"
-set gamesfol6="Nhi?u ngý?i chõi tr?c tuy?n"
-set gamesfol7="Th? nghi?m"
-set gamesfol8="Th? thao & thi ðua"
-set gamesfol9="Th?c t? ?o"
-set gamescamfol1="Hành ð?ng"
-set gamescamfol2="Kinh d?"
-set gamescamfol3="Thý gi?n"
-set gamescamfol4="Tr? nh?p vai"
-set gamescamfol5="Tr? s?ng c?n"
-set gameslocfol1="tr? h?p tác"
-set gameslocfol2="Ti?c"
-set gameslocfol3="Thách ð?u"
-set gamesonlfol1="Chi?n ð?u ð?i h?ng gia"
-set gamesonlfol2="MMO"
-set gamesonlfol3="B?n súng"
-set gamesonlfol4="Chi?n lý?c"
+onlinetools1fol=Ch?n ðoán
 
-set newsmediafol1="Xa trái"
-set newsmediafol2="Xa ph?i"
-set newsmediafol3="Qu?c t?"
+podcastsfol1=T?i ph?m
+podcastsfol2=Past & Present
+podcastsfol3=Chính tr?
+podcastsfol4=Khoa h?c & công ngh?
+podcastsfol5=T?nh d?c & Tâm l?
+podcastsfol6=Th? thao
+podcastsfol7=Chýõng tr?nh tr? chuy?n
 
-set onlinetools1fol="Ch?n ðoán"
+bookmarksfol1=Th?i s? & phýõng ti?n
+bookmarksfol2=D?ng c? tr?c tuy?n
+bookmarksfol3=Spotify Podcasts
+bookmarksfol4=Mua s?m
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="T?i ph?m"
-set podcastsfol2="Past & Present"
-set podcastsfol3="Chính tr?"
-set podcastsfol4="Khoa h?c & công ngh?"
-set podcastsfol5="T?nh d?c & Tâm l?"
-set podcastsfol6="Th? thao"
-set podcastsfol7="Chýõng tr?nh tr? chuy?n"
+advanced1=D?u nh?c l?nh
+advanced2=Qu?n l? thi?t b?
+advanced3=D?n d?p ð?a
+advanced4=Qu?n l? ð?a
+advanced5=Tr?nh ch?nh s?a s? ðãng k?
+advanced6=Giám sát tài nguyên
+advanced7=?ng d?ng kh?i ð?ng
+advanced8=Không gian dung lý?ng
+advanced9=Cài ð?t h? th?ng
+advanced10=Windows firewall
+advanced11=Windows PowerShell
+advanced12=D?ch v? Windows
 
-set bookmarksfol1="Th?i s? & phýõng ti?n"
-set bookmarksfol2="D?ng c? tr?c tuy?n"
-set bookmarksfol3="Spotify Podcasts"
-set bookmarksfol4="Mua s?m"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="D?u nh?c l?nh"
-set advanced2="Qu?n l? thi?t b?"
-set advanced3="D?n d?p ð?a"
-set advanced4="Qu?n l? ð?a"
-set advanced5="Tr?nh ch?nh s?a s? ðãng k?"
-set advanced6="Giám sát tài nguyên"
-set advanced7="?ng d?ng kh?i ð?ng"
-set advanced8="Không gian dung lý?ng"
-set advanced9="Cài ð?t h? th?ng"
-set advanced10="Windows firewall"
-set advanced11="Windows PowerShell"
-set advanced12="D?ch v? Windows"
-
-set controlfol1="Ði?u ch?nh nâng cao"
-set control1="H?nh n?n"
-set control2="Cài ð?t hi?n th?"
-set control3="Kính lúp"
-set control4="Bàn phím trên màn h?nh"
-set control5="Tùy ch?n ngu?n"
-set control6="Thùng rác tái ch?"
-set control7="Ð?i màn h?nh hi?n th?"
-set control8="Thông tin thi?t b?"
-set control9="Qu?n l? tác v?"
-set control10="G? b? ?ng d?ng"
-set control11="Tài kho?n ngý?i dùng"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=Ði?u ch?nh nâng cao
+control1=H?nh n?n
+control2=Cài ð?t hi?n th?
+control3=Kính lúp
+control4=Bàn phím trên màn h?nh
+control5=Tùy ch?n ngu?n
+control6=Thùng rác tái ch?
+control7=Ð?i màn h?nh hi?n th?
+control8=Thông tin thi?t b?
+control9=Qu?n l? tác v?
+control10=G? b? ?ng d?ng
+control11=Tài kho?n ngý?i dùng

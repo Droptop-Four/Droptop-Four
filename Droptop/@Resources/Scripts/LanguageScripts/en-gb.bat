@@ -1,83 +1,75 @@
-chcp 437
+gamesfol2=Campaign
+gamesfol3=Casual
+gamesfol4=Indie
+gamesfol5=Local multiplayer
+gamesfol6=Online multiplayer
+gamesfol7=Simulation
+gamesfol8=Sport & racing
+gamesfol9=Virtual Reality
+gamescamfol1=Action
+gamescamfol2=Horror
+gamescamfol3=Relaxed
+gamescamfol4=RPG
+gamescamfol5=Survival
+gameslocfol1=Co-op
+gameslocfol2=Party
+gameslocfol3=Versus
+gamesonlfol1=Battle Royale
+gamesonlfol2=MMO
+gamesonlfol3=Shooter
+gamesonlfol4=Strategy
 
-@echo off
+newsmediafol1=Far-Left
+newsmediafol2=Far-Right
+newsmediafol3=International
 
-set gamesfol2="Campaign"
-set gamesfol3="Casual"
-set gamesfol4="Indie"
-set gamesfol5="Local multiplayer"
-set gamesfol6="Online multiplayer"
-set gamesfol7="Simulation"
-set gamesfol8="Sport & racing"
-set gamesfol9="Virtual Reality"
-set gamescamfol1="Action"
-set gamescamfol2="Horror"
-set gamescamfol3="Relaxed"
-set gamescamfol4="RPG"
-set gamescamfol5="Survival"
-set gameslocfol1="Co-op"
-set gameslocfol2="Party"
-set gameslocfol3="Versus"
-set gamesonlfol1="Battle Royale"
-set gamesonlfol2="MMO"
-set gamesonlfol3="Shooter"
-set gamesonlfol4="Strategy"
+onlinetools1fol=Diagnostic
 
-set newsmediafol1="Far-Left"
-set newsmediafol2="Far-Right"
-set newsmediafol3="International"
+podcastsfol1=Crime & Drama
+podcastsfol2=Past & Present
+podcastsfol3=Politics
+podcastsfol4=Science & Technology
+podcastsfol5=Sex & Psychology
+podcastsfol6=Sport
+podcastsfol7=Talk shows
 
-set onlinetools1fol="Diagnostic"
+bookmarksfol1=News & media
+bookmarksfol2=Online tools
+bookmarksfol3=Spotify Podcasts
+bookmarksfol4=Shopping
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="Crime & Drama"
-set podcastsfol2="Past & Present"
-set podcastsfol3="Politics"
-set podcastsfol4="Science & Technology"
-set podcastsfol5="Sex & Psychology"
-set podcastsfol6="Sport"
-set podcastsfol7="Talk shows"
+advanced1=Command prompt
+advanced2=Device manager
+advanced3=Disk cleanup
+advanced4=Disk management
+advanced5=Registry editor
+advanced6=Resource monitor
+advanced7=Startup apps
+advanced8=Storage spaces
+advanced9=System configuration
+advanced10=Windows firewall
+advanced11=Windows PowerShell
+advanced12=Windows services
 
-set bookmarksfol1="News & media"
-set bookmarksfol2="Online tools"
-set bookmarksfol3="Spotify Podcasts"
-set bookmarksfol4="Shopping"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="Command prompt"
-set advanced2="Device manager"
-set advanced3="Disk cleanup"
-set advanced4="Disk management"
-set advanced5="Registry editor"
-set advanced6="Resource monitor"
-set advanced7="Startup apps"
-set advanced8="Storage spaces"
-set advanced9="System configuration"
-set advanced10="Windows firewall"
-set advanced11="Windows PowerShell"
-set advanced12="Windows services"
-
-set controlfol1="Advanced controls"
-set control1="Desktop background"
-set control2="Display settings"
-set control3="Magnify"
-set control4="On-screen keyboard"
-set control5="Power options"
-set control6="Recycle bin"
-set control7="Switch display"
-set control8="System information"
-set control9="Task manager"
-set control10="Uninstall a program"
-set control11="User accounts"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=Advanced controls
+control1=Desktop background
+control2=Display settings
+control3=Magnify
+control4=On-screen keyboard
+control5=Power options
+control6=Recycle bin
+control7=Switch display
+control8=System information
+control9=Task manager
+control10=Uninstall a program
+control11=User accounts

@@ -1,83 +1,75 @@
-chcp 1252
+gamesfol2=Kampagne
+gamesfol3=Gelegenheitsspiele
+gamesfol4=Indiespiele
+gamesfol5=Local multiplayer
+gamesfol6=Online multiplayer
+gamesfol7=Simulationsspiele
+gamesfol8=Sport & Rennspiele
+gamesfol9=Virtual Reality
+gamescamfol1=Action
+gamescamfol2=Horror
+gamescamfol3=Entspannung
+gamescamfol4=RPG
+gamescamfol5=Survival
+gameslocfol1=Co-op
+gameslocfol2=Party
+gameslocfol3=Versus
+gamesonlfol1=Battle Royale
+gamesonlfol2=MMO
+gamesonlfol3=Shooter
+gamesonlfol4=Strategie
 
-@echo off
+newsmediafol1=Ganz links
+newsmediafol2=Ganz rechts
+newsmediafol3=International
 
-set gamesfol2="Kampagne"
-set gamesfol3="Gelegenheitsspiele"
-set gamesfol4="Indiespiele"
-set gamesfol5="Local multiplayer"
-set gamesfol6="Online multiplayer"
-set gamesfol7="Simulationsspiele"
-set gamesfol8="Sport & Rennspiele"
-set gamesfol9="Virtual Reality"
-set gamescamfol1="Action"
-set gamescamfol2="Horror"
-set gamescamfol3="Entspannung"
-set gamescamfol4="RPG"
-set gamescamfol5="Survival"
-set gameslocfol1="Co-op"
-set gameslocfol2="Party"
-set gameslocfol3="Versus"
-set gamesonlfol1="Battle Royale"
-set gamesonlfol2="MMO"
-set gamesonlfol3="Shooter"
-set gamesonlfol4="Strategie"
+onlinetools1fol=Diagnose
 
-set newsmediafol1="Ganz links"
-set newsmediafol2="Ganz rechts"
-set newsmediafol3="International"
+podcastsfol1=Krimie & Drama
+podcastsfol2=Past & Present
+podcastsfol3=Politik
+podcastsfol4=Wirtschaft & Technologie
+podcastsfol5=Sex & Psychologie
+podcastsfol6=Sport
+podcastsfol7=Talk shows
 
-set onlinetools1fol="Diagnose"
+bookmarksfol1=Neuigkeiten & Media
+bookmarksfol2=Online tools
+bookmarksfol3=Spotify Podcasts
+bookmarksfol4=Shopping
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="Krimie & Drama"
-set podcastsfol2="Past & Present"
-set podcastsfol3="Politik"
-set podcastsfol4="Wirtschaft & Technologie"
-set podcastsfol5="Sex & Psychologie"
-set podcastsfol6="Sport"
-set podcastsfol7="Talk shows"
+advanced1=Eingabeaufforderung
+advanced2=Geräte-Manager
+advanced3=Datenträgerbereinigung
+advanced4=Festplattenmanagement
+advanced5=Registry Editor
+advanced6=Ressourcenmonitor
+advanced7=Autostart Programme
+advanced8=Speicherplatz
+advanced9=System Konfiguration
+advanced10=Windows Firewall
+advanced11=Windows PowerShell
+advanced12=Windows Systemdienst
 
-set bookmarksfol1="Neuigkeiten & Media"
-set bookmarksfol2="Online tools"
-set bookmarksfol3="Spotify Podcasts"
-set bookmarksfol4="Shopping"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="Eingabeaufforderung"
-set advanced2="Geräte-Manager"
-set advanced3="Datenträgerbereinigung"
-set advanced4="Festplattenmanagement"
-set advanced5="Registry Editor"
-set advanced6="Ressourcenmonitor"
-set advanced7="Autostart Programme"
-set advanced8="Speicherplatz"
-set advanced9="System Konfiguration"
-set advanced10="Windows Firewall"
-set advanced11="Windows PowerShell"
-set advanced12="Windows Systemdienst"
-
-set controlfol1="Erweiterte Einstellungen"
-set control1="Desktop Hintergrund"
-set control2="Bildschirmeinstellungen"
-set control3="Vergrößern"
-set control4="On-screen Tastatur"
-set control5="Powerplan Optionen"
-set control6="Papierkorb"
-set control7="Display wechseln"
-set control8="System Informationen"
-set control9="Task Manager"
-set control10="Programm deinstallieren"
-set control11="Benutzer Accounts"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=Erweiterte Einstellungen
+control1=Desktop Hintergrund
+control2=Bildschirmeinstellungen
+control3=Vergrößern
+control4=On-screen Tastatur
+control5=Powerplan Optionen
+control6=Papierkorb
+control7=Display wechseln
+control8=System Informationen
+control9=Task Manager
+control10=Programm deinstallieren
+control11=Benutzer Accounts

@@ -1,83 +1,75 @@
-chcp 1250
+gamesfol2=Campaign
+gamesfol3=Casual
+gamesfol4=Indie
+gamesfol5=Local multiplayer
+gamesfol6=Online multiplayer
+gamesfol7=Simulation
+gamesfol8=Sports & racing
+gamesfol9=Virtual Reality
+gamescamfol1=Action
+gamescamfol2=Horror
+gamescamfol3=Relaxed
+gamescamfol4=RPG
+gamescamfol5=Survival
+gameslocfol1=Co-op
+gameslocfol2=Party
+gameslocfol3=Versus
+gamesonlfol1=Battle Royale
+gamesonlfol2=MMO
+gamesonlfol3=Shooter
+gamesonlfol4=Strategy
 
-@echo off
+newsmediafol1=Væavo
+newsmediafol2=Vpravo
+newsmediafol3=Medzin·rodn˝
 
-set gamesfol2="Campaign"
-set gamesfol3="Casual"
-set gamesfol4="Indie"
-set gamesfol5="Local multiplayer"
-set gamesfol6="Online multiplayer"
-set gamesfol7="Simulation"
-set gamesfol8="Sports & racing"
-set gamesfol9="Virtual Reality"
-set gamescamfol1="Action"
-set gamescamfol2="Horror"
-set gamescamfol3="Relaxed"
-set gamescamfol4="RPG"
-set gamescamfol5="Survival"
-set gameslocfol1="Co-op"
-set gameslocfol2="Party"
-set gameslocfol3="Versus"
-set gamesonlfol1="Battle Royale"
-set gamesonlfol2="MMO"
-set gamesonlfol3="Shooter"
-set gamesonlfol4="Strategy"
+onlinetools1fol=Diaknostika
 
-set newsmediafol1="Væavo"
-set newsmediafol2="Vpravo"
-set newsmediafol3="Medzin·rodn˝"
+podcastsfol1=Krimi & dr·ma
+podcastsfol2=Past & Present
+podcastsfol3=Politika
+podcastsfol4=Veda a technolÛgia
+podcastsfol5=Sex & psycholÛgia
+podcastsfol6=äporty
+podcastsfol7=DiskusnÈ rel·cie
 
-set onlinetools1fol="Diaknostika"
+bookmarksfol1=Spr·vy & mÈdia
+bookmarksfol2=Online n·stroje
+bookmarksfol3=Podkasty
+bookmarksfol4=Nakupovanie
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="Krimi & dr·ma"
-set podcastsfol2="Past & Present"
-set podcastsfol3="Politika"
-set podcastsfol4="Veda a technolÛgia"
-set podcastsfol5="Sex & psycholÛgia"
-set podcastsfol6="äporty"
-set podcastsfol7="DiskusnÈ rel·cie"
+advanced1=PrÌkazov˝ riadok
+advanced2=Spr·vca zariadenÌ
+advanced3=»istenie disku
+advanced4=Spr·va diskov
+advanced5=Registry editor
+advanced6=Resource monitor
+advanced7=Aplik·cie pri spustenÌ
+advanced8=Ukladacie priestory
+advanced9=System configuration
+advanced10=Windows firewall
+advanced11=Windows PowerShell
+advanced12=Sluûby
 
-set bookmarksfol1="Spr·vy & mÈdia"
-set bookmarksfol2="Online n·stroje"
-set bookmarksfol3="Podkasty"
-set bookmarksfol4="Nakupovanie"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="PrÌkazov˝ riadok"
-set advanced2="Spr·vca zariadenÌ"
-set advanced3="»istenie disku"
-set advanced4="Spr·va diskov"
-set advanced5="Registry editor"
-set advanced6="Resource monitor"
-set advanced7="Aplik·cie pri spustenÌ"
-set advanced8="Ukladacie priestory"
-set advanced9="System configuration"
-set advanced10="Windows firewall"
-set advanced11="Windows PowerShell"
-set advanced12="Sluûby"
-
-set controlfol1="N·stoje na spr·vu"
-set control1="Pozadie"
-set control2="Nastavenie obrazovky"
-set control3="Zv‰Ëöovacie sklo"
-set control4="Kl·vesnica na obrazovke"
-set control5="Moûnosti nap·jania"
-set control6="KÙö"
-set control7="Premietaù"
-set control8="SystÈmovÈ inform·cie"
-set control9="Spr·vca ˙loh"
-set control10="Aplik·cie a s˙Ëasti"
-set control11="Spravovaù kont·"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=N·stoje na spr·vu
+control1=Pozadie
+control2=Nastavenie obrazovky
+control3=Zv‰Ëöovacie sklo
+control4=Kl·vesnica na obrazovke
+control5=Moûnosti nap·jania
+control6=KÙö
+control7=Premietaù
+control8=SystÈmovÈ inform·cie
+control9=Spr·vca ˙loh
+control10=Aplik·cie a s˙Ëasti
+control11=Spravovaù kont·

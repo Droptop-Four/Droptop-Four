@@ -1,83 +1,75 @@
-chcp 932
+gamesfol2=キャンペーン
+gamesfol3=カジュアル
+gamesfol4=インディーズ
+gamesfol5=ローカルマルチプレイ
+gamesfol6=オンラインマルチプレイヤー
+gamesfol7=シミュレーション
+gamesfol8=スポーツ＆レーシング
+gamesfol9=バーチャルリアリティ
+gamescamfol1=アクション
+gamescamfol2=ホラー
+gamescamfol3=リラックス
+gamescamfol4=RPG
+gamescamfol5=サバイバル
+gameslocfol1=Co-op
+gameslocfol2=パーティー
+gameslocfol3=対戦
+gamesonlfol1=大乱戦
+gamesonlfol2=MMO
+gamesonlfol3=シューティングゲーム
+gamesonlfol4=戦略ゲーム
 
-@echo off
+newsmediafol1=左端
+newsmediafol2=右端
+newsmediafol3=インターナショナル
 
-set gamesfol2="キャンペーン"
-set gamesfol3="カジュアル"
-set gamesfol4="インディーズ"
-set gamesfol5="ローカルマルチプレイ"
-set gamesfol6="オンラインマルチプレイヤー"
-set gamesfol7="シミュレーション"
-set gamesfol8="スポーツ＆レーシング"
-set gamesfol9="バーチャルリアリティ"
-set gamescamfol1="アクション"
-set gamescamfol2="ホラー"
-set gamescamfol3="リラックス"
-set gamescamfol4="RPG"
-set gamescamfol5="サバイバル"
-set gameslocfol1="Co-op"
-set gameslocfol2="パーティー"
-set gameslocfol3="対戦"
-set gamesonlfol1="大乱戦"
-set gamesonlfol2="MMO"
-set gamesonlfol3="シューティングゲーム"
-set gamesonlfol4="戦略ゲーム"
+onlinetools1fol=診断
 
-set newsmediafol1="左端"
-set newsmediafol2="右端"
-set newsmediafol3="インターナショナル"
+podcastsfol1=犯罪ドラマ
+podcastsfol2=Past & Present
+podcastsfol3=政治
+podcastsfol4=科学技術
+podcastsfol5=セックス＆心理学
+podcastsfol6=スポーツ
+podcastsfol7=トークショー
 
-set onlinetools1fol="診断"
+bookmarksfol1=ニュース＆メディア
+bookmarksfol2=オンラインツール
+bookmarksfol3=ポッドキャスト
+bookmarksfol4=ショッピング
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="犯罪ドラマ"
-set podcastsfol2="Past & Present"
-set podcastsfol3="政治"
-set podcastsfol4="科学技術"
-set podcastsfol5="セックス＆心理学"
-set podcastsfol6="スポーツ"
-set podcastsfol7="トークショー"
+advanced1=コマンド・プロンプト
+advanced2=デバイスマネージャ
+advanced3=ディスククリーンアップ
+advanced4=ディスクの管理
+advanced5=レジストリエディタ
+advanced6=リソースモニタ
+advanced7=スタートアップのアプリ
+advanced8=記憶域
+advanced9=システム構成
+advanced10=Windowsファイアウォール
+advanced11=Windows PowerShell
+advanced12=Windowsサービス
 
-set bookmarksfol1="ニュース＆メディア"
-set bookmarksfol2="オンラインツール"
-set bookmarksfol3="ポッドキャスト"
-set bookmarksfol4="ショッピング"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="コマンド・プロンプト"
-set advanced2="デバイスマネージャ"
-set advanced3="ディスククリーンアップ"
-set advanced4="ディスクの管理"
-set advanced5="レジストリエディタ"
-set advanced6="リソースモニタ"
-set advanced7="スタートアップのアプリ"
-set advanced8="記憶域"
-set advanced9="システム構成"
-set advanced10="Windowsファイアウォール"
-set advanced11="Windows PowerShell"
-set advanced12="Windowsサービス"
-
-set controlfol1="高度なコントロール"
-set control1="デスクトップの背景"
-set control2="ディスプレイの設定"
-set control3="拡大鏡"
-set control4="オンスクリーンキーボード"
-set control5="電源オプション"
-set control6="ごみ箱"
-set control7="セカンドディスプレイの設定"
-set control8="システム情報"
-set control9="タスクマネージャー"
-set control10="プログラムのアンインストール"
-set control11="ユーザーアカウント"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=高度なコントロール
+control1=デスクトップの背景
+control2=ディスプレイの設定
+control3=拡大鏡
+control4=オンスクリーンキーボード
+control5=電源オプション
+control6=ごみ箱
+control7=セカンドディスプレイの設定
+control8=システム情報
+control9=タスクマネージャー
+control10=プログラムのアンインストール
+control11=ユーザーアカウント

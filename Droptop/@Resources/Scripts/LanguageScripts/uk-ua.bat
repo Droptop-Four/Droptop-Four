@@ -1,83 +1,75 @@
-chcp 866
+gamesfol2=Сюжетки
+gamesfol3=Казуальн?
+gamesfol4=?нд?
+gamesfol5=Локальний мультиплеєр
+gamesfol6=Онлайн мультиплеєр
+gamesfol7=Симулятори
+gamesfol8=Спорт та гонки
+gamesfol9=В?ртуальна реальн?сть
+gamescamfol1=Бойовик
+gamescamfol2=Жахи
+gamescamfol3=Релаксован?
+gamescamfol4=RPG
+gamescamfol5=Виживання
+gameslocfol1=Кооперативн?
+gameslocfol2=Командн?
+gameslocfol3=Протистояння
+gamesonlfol1=Корол?вська битва
+gamesonlfol2=MMO
+gamesonlfol3=Шутер
+gamesonlfol4=Стратег?я
 
-REM @echo off
+newsmediafol1=Ультрал?в?
+newsmediafol2=Ультраправ?
+newsmediafol3=М?жнародний
 
-set gamesfol2="Сюжетки"
-set gamesfol3="Казуальн?"
-set gamesfol4="?нд?"
-set gamesfol5="Локальний мультиплеєр"
-set gamesfol6="Онлайн мультиплеєр"
-set gamesfol7="Симулятори"
-set gamesfol8="Спорт та гонки"
-set gamesfol9="В?ртуальна реальн?сть"
-set gamescamfol1="Бойовик"
-set gamescamfol2="Жахи"
-set gamescamfol3="Релаксован?"
-set gamescamfol4="RPG"
-set gamescamfol5="Виживання"
-set gameslocfol1="Кооперативн?"
-set gameslocfol2="Командн?"
-set gameslocfol3="Протистояння"
-set gamesonlfol1="Корол?вська битва"
-set gamesonlfol2="MMO"
-set gamesonlfol3="Шутер"
-set gamesonlfol4="Стратег?я"
+onlinetools1fol=Д?агностичний
 
-set newsmediafol1="Ультрал?в?"
-set newsmediafol2="Ультраправ?"
-set newsmediafol3="М?жнародний"
+podcastsfol1=Крим?нал та драмма
+podcastsfol2=Past & Present
+podcastsfol3=Пол?тика
+podcastsfol4=Наука та технолог?ї
+podcastsfol5=Секс та психолог?я
+podcastsfol6=Спорт
+podcastsfol7=Розмовн? шоу
 
-set onlinetools1fol="Д?агностичний"
+bookmarksfol1=Новини та мед?а
+bookmarksfol2=Online tools
+bookmarksfol3=Подкасти Spotify
+bookmarksfol4=Шоп?н?
+bookmarks2=Gmail
+bookmarks3=Google скриня
+bookmarks4=Google
+bookmarks5=Google Фото
+bookmarks6=Д?сней+
+bookmarks7=Нетфл?кс
+bookmarks8=Редд?т
+bookmarks9=Steam
+bookmarks10=Тв?ч
+bookmarks11=Ютуб
 
-set podcastsfol1="Крим?нал та драмма"
-set podcastsfol2="Past & Present"
-set podcastsfol3="Пол?тика"
-set podcastsfol4="Наука та технолог?ї"
-set podcastsfol5="Секс та психолог?я"
-set podcastsfol6="Спорт"
-set podcastsfol7="Розмовн? шоу"
+advanced1=Командний рядок
+advanced2=Диспетчер пристроїв
+advanced3=Очищення диска
+advanced4=Керування дисками
+advanced5=Редактор реєстру
+advanced6=Мон?тор ресурс?в
+advanced7=Автозапуск програм
+advanced8=Storage spaces
+advanced9=Конф?гурац?я системи
+advanced10=Брандмауер Windows
+advanced11=Windows PowerShell
+advanced12=Служби Windows
 
-set bookmarksfol1="Новини та мед?а"
-set bookmarksfol2="Online tools"
-set bookmarksfol3="Подкасти Spotify"
-set bookmarksfol4="Шоп?н?"
-set bookmarks2="Gmail"
-set bookmarks3="Google скриня"
-set bookmarks4="Google"
-set bookmarks5="Google Фото"
-set bookmarks6="Д?сней+"
-set bookmarks7="Нетфл?кс"
-set bookmarks8="Редд?т"
-set bookmarks9="Steam"
-set bookmarks10="Тв?ч"
-set bookmarks11="Ютуб"
-
-set advanced1="Командний рядок"
-set advanced2="Диспетчер пристроїв"
-set advanced3="Очищення диска"
-set advanced4="Керування дисками"
-set advanced5="Редактор реєстру"
-set advanced6="Мон?тор ресурс?в"
-set advanced7="Автозапуск програм"
-set advanced8="Storage spaces"
-set advanced9="Конф?гурац?я системи"
-set advanced10="Брандмауер Windows"
-set advanced11="Windows PowerShell"
-set advanced12="Служби Windows"
-
-set controlfol1="Просунут? налаштування"
-set control1="Фон робочого столу"
-set control2="Налаштування екрану"
-set control3="Екранна лупа"
-set control4="Екранна клав?атура"
-set control5="Параметри живлення"
-set control6="Кошик"
-set control7="Переключити екран"
-set control8="Про систему"
-set control9="Диспетчер завдань"
-set control10="Видалення програм"
-set control11="Обл?ков? записи"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=Просунут? налаштування
+control1=Фон робочого столу
+control2=Налаштування екрану
+control3=Екранна лупа
+control4=Екранна клав?атура
+control5=Параметри живлення
+control6=Кошик
+control7=Переключити екран
+control8=Про систему
+control9=Диспетчер завдань
+control10=Видалення програм
+control11=Обл?ков? записи

@@ -1,83 +1,75 @@
-chcp 1252
+gamesfol2=Campaña
+gamesfol3=Casual
+gamesfol4=Indie
+gamesfol5=Multijugador local
+gamesfol6=Multijugador en línea
+gamesfol7=Simulación
+gamesfol8=Deportes y carreras
+gamesfol9=Realidad virtual
+gamescamfol1=Acción
+gamescamfol2=Horror
+gamescamfol3=Relajado
+gamescamfol4=RPG
+gamescamfol5=Supervivencia
+gameslocfol1=Cooperativo
+gameslocfol2=Fiesta
+gameslocfol3=Versus
+gamesonlfol1=Battle royale
+gamesonlfol2=MMO
+gamesonlfol3=Disparos
+gamesonlfol4=Estrategia
 
-@echo off
+newsmediafol1=Extremo izquierdo
+newsmediafol2=Extremo derecho
+newsmediafol3=Internacional
 
-set gamesfol2="Campaña"
-set gamesfol3="Casual"
-set gamesfol4="Indie"
-set gamesfol5="Multijugador local"
-set gamesfol6="Multijugador en línea"
-set gamesfol7="Simulación"
-set gamesfol8="Deportes y carreras"
-set gamesfol9="Realidad virtual"
-set gamescamfol1="Acción"
-set gamescamfol2="Horror"
-set gamescamfol3="Relajado"
-set gamescamfol4="RPG"
-set gamescamfol5="Supervivencia"
-set gameslocfol1="Cooperativo"
-set gameslocfol2="Fiesta"
-set gameslocfol3="Versus"
-set gamesonlfol1="Battle royale"
-set gamesonlfol2="MMO"
-set gamesonlfol3="Disparos"
-set gamesonlfol4="Estrategia"
+onlinetools1fol=Diagnóstico
 
-set newsmediafol1="Extremo izquierdo"
-set newsmediafol2="Extremo derecho"
-set newsmediafol3="Internacional"
+podcastsfol1=Crimen y drama
+podcastsfol2=Past & Present
+podcastsfol3=Política
+podcastsfol4=Ciencia y Tecnología
+podcastsfol5=Sexo y Psicología
+podcastsfol6=Deportes
+podcastsfol7=Talk Shows
 
-set onlinetools1fol="Diagnóstico"
+bookmarksfol1=Noticias y medios
+bookmarksfol2=Herramientas en línea
+bookmarksfol3=Spotify Podcasts
+bookmarksfol4=Compras
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="Crimen y drama"
-set podcastsfol2="Past & Present"
-set podcastsfol3="Política"
-set podcastsfol4="Ciencia y Tecnología"
-set podcastsfol5="Sexo y Psicología"
-set podcastsfol6="Deportes"
-set podcastsfol7="Talk Shows"
+advanced1=Símbolo del sistema
+advanced2=Admin. de dispositivos
+advanced3=Limpieza de disco
+advanced4=Administración de discos
+advanced5=Editor del registro
+advanced6=Monitor de recursos
+advanced7=Apps de arranque
+advanced8=Espacios de almac.
+advanced9=Config. del sistema
+advanced10=Firewall de Windows
+advanced11=Windows PowerShell
+advanced12=Servicios de Windows
 
-set bookmarksfol1="Noticias y medios"
-set bookmarksfol2="Herramientas en línea"
-set bookmarksfol3="Spotify Podcasts"
-set bookmarksfol4="Compras"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="Símbolo del sistema"
-set advanced2="Admin. de dispositivos"
-set advanced3="Limpieza de disco"
-set advanced4="Administración de discos"
-set advanced5="Editor del registro"
-set advanced6="Monitor de recursos"
-set advanced7="Apps de arranque"
-set advanced8="Espacios de almac."
-set advanced9="Config. del sistema"
-set advanced10="Firewall de Windows"
-set advanced11="Windows PowerShell"
-set advanced12="Servicios de Windows"
-
-set controlfol1="Controles avanzados"
-set control1="Fondo de escritorio"
-set control2="Conf. de pantalla"
-set control3="Lupa"
-set control4="Teclado en pantalla"
-set control5="Opciones de poder"
-set control6="Papelera de reciclaje"
-set control7="Cambiar pantalla"
-set control8="Info. del sistema"
-set control9="Admin. de tareas"
-set control10="Desinstalar un programa"
-set control11="Usuarios"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=Controles avanzados
+control1=Fondo de escritorio
+control2=Conf. de pantalla
+control3=Lupa
+control4=Teclado en pantalla
+control5=Opciones de poder
+control6=Papelera de reciclaje
+control7=Cambiar pantalla
+control8=Info. del sistema
+control9=Admin. de tareas
+control10=Desinstalar un programa
+control11=Usuarios

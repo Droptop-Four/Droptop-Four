@@ -1,83 +1,75 @@
-chcp 863
+gamesfol2=Campagne
+gamesfol3=DÈcontractÈ
+gamesfol4=IndÈpendant
+gamesfol5=Multijoueur local
+gamesfol6=Multijoueur en ligne
+gamesfol7=Simulation
+gamesfol8=Sports et courses
+gamesfol9=RÈalitÈ virtuelle
+gamescamfol1=Action
+gamescamfol2=Horreur
+gamescamfol3=DÈtendu
+gamescamfol4=RPG
+gamescamfol5=Survie
+gameslocfol1=CoopÈrative
+gameslocfol2=FÍte
+gameslocfol3=Contre
+gamesonlfol1=Bataille royale
+gamesonlfol2=MMO
+gamesonlfol3=Tireur
+gamesonlfol4=StratÈgie
 
-@echo off
+newsmediafol1=Far-Left
+newsmediafol2=Far-Right
+newsmediafol3=Internationale
 
-set gamesfol2="Campagne"
-set gamesfol3="DÈcontractÈ"
-set gamesfol4="IndÈpendant"
-set gamesfol5="Multijoueur local"
-set gamesfol6="Multijoueur en ligne"
-set gamesfol7="Simulation"
-set gamesfol8="Sports et courses"
-set gamesfol9="RÈalitÈ virtuelle"
-set gamescamfol1="Action"
-set gamescamfol2="Horreur"
-set gamescamfol3="DÈtendu"
-set gamescamfol4="RPG"
-set gamescamfol5="Survie"
-set gameslocfol1="CoopÈrative"
-set gameslocfol2="FÍte"
-set gameslocfol3="Contre"
-set gamesonlfol1="Bataille royale"
-set gamesonlfol2="MMO"
-set gamesonlfol3="Tireur"
-set gamesonlfol4="StratÈgie"
+onlinetools1fol=Diagnostic
 
-set newsmediafol1="Far-Left"
-set newsmediafol2="Far-Right"
-set newsmediafol3="Internationale"
+podcastsfol1=Crime & drame
+podcastsfol2=Past & Present
+podcastsfol3=Politique
+podcastsfol4=Science & technologie
+podcastsfol5=Sexe & psychologie
+podcastsfol6=Sports
+podcastsfol7=Talk shows
 
-set onlinetools1fol="Diagnostic"
+bookmarksfol1=ActualitÇs et mÇdias
+bookmarksfol2=Outils en ligne
+bookmarksfol3=Spotify Podcasts
+bookmarksfol4=Shopping
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="Crime & drame"
-set podcastsfol2="Past & Present"
-set podcastsfol3="Politique"
-set podcastsfol4="Science & technologie"
-set podcastsfol5="Sexe & psychologie"
-set podcastsfol6="Sports"
-set podcastsfol7="Talk shows"
+advanced1=Invite de commande
+advanced2=Gestionnaire de pÇriph.
+advanced3=Nettoyage de disque
+advanced4=Gestionnaire de disque
+advanced5=êditeur de registre
+advanced6=Moniteur de ressources
+advanced7=Apps. de dÇmarrage
+advanced8=Espaces de stockage
+advanced9=Configuration du syst√®me
+advanced10=Windows firewall
+advanced11=Windows PowerShell
+advanced12=Windows services
 
-set bookmarksfol1="ActualitÇs et mÇdias"
-set bookmarksfol2="Outils en ligne"
-set bookmarksfol3="Spotify Podcasts"
-set bookmarksfol4="Shopping"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="Invite de commande"
-set advanced2="Gestionnaire de pÇriph."
-set advanced3="Nettoyage de disque"
-set advanced4="Gestionnaire de disque"
-set advanced5="êditeur de registre"
-set advanced6="Moniteur de ressources"
-set advanced7="Apps. de dÇmarrage"
-set advanced8="Espaces de stockage"
-set advanced9="Configuration du syst√®me"
-set advanced10="Windows firewall"
-set advanced11="Windows PowerShell"
-set advanced12="Windows services"
-
-set controlfol1="Contrìles avancÇs"
-set control1="Fond d'Çcran"
-set control2="Paramätres d'affichage"
-set control3="Magnifier"
-set control4="Sur clavier de l'Çcran"
-set control5="Options d'alimentation"
-set control6="Corbeille"
-set control7="Commutateur d'affichage"
-set control8="Informations systäme"
-set control9="Gestionnaire des tÉches"
-set control10="DÇsinstaller un progr."
-set control11="Comptes utilisateur"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=Contrìles avancÇs
+control1=Fond d'Çcran
+control2=Paramätres d'affichage
+control3=Magnifier
+control4=Sur clavier de l'Çcran
+control5=Options d'alimentation
+control6=Corbeille
+control7=Commutateur d'affichage
+control8=Informations systäme
+control9=Gestionnaire des tÉches
+control10=DÇsinstaller un progr.
+control11=Comptes utilisateur

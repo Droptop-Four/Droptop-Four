@@ -1,83 +1,75 @@
-chcp 1250
+gamesfol2=Fushata
+gamesfol3=Rastesishme
+gamesfol4=I pavarur
+gamesfol5=Multiplayer lokal
+gamesfol6=Multiplayer në internet
+gamesfol7=Simulimi
+gamesfol8=Sport & gara
+gamesfol9=Realitet virtual
+gamescamfol1=Veprimi
+gamescamfol2=Tmerr
+gamescamfol3=Të relaksuar
+gamescamfol4=RPG
+gamescamfol5=Mbijetesa
+gameslocfol1=Co-op
+gameslocfol2=Parti
+gameslocfol3=Kundër
+gamesonlfol1=Battle Royale
+gamesonlfol2=MMO
+gamesonlfol3=Qitës
+gamesonlfol4=Strategjia
 
-@echo off
+newsmediafol1=Far-Left
+newsmediafol2=Far-Right
+newsmediafol3=ndërkombëtar
 
-set gamesfol2="Fushata"
-set gamesfol3="Rastesishme"
-set gamesfol4="I pavarur"
-set gamesfol5="Multiplayer lokal"
-set gamesfol6="Multiplayer në internet"
-set gamesfol7="Simulimi"
-set gamesfol8="Sport & gara"
-set gamesfol9="Realitet virtual"
-set gamescamfol1="Veprimi"
-set gamescamfol2="Tmerr"
-set gamescamfol3="Të relaksuar"
-set gamescamfol4="RPG"
-set gamescamfol5="Mbijetesa"
-set gameslocfol1="Co-op"
-set gameslocfol2="Parti"
-set gameslocfol3="Kundër"
-set gamesonlfol1="Battle Royale"
-set gamesonlfol2="MMO"
-set gamesonlfol3="Qitës"
-set gamesonlfol4="Strategjia"
+onlinetools1fol=Diagnostifiko
 
-set newsmediafol1="Far-Left"
-set newsmediafol2="Far-Right"
-set newsmediafol3="ndërkombëtar"
+podcastsfol1=Krim & drama
+podcastsfol2=Past & Present
+podcastsfol3=Politikë
+podcastsfol4=Shkencë & Teknologji
+podcastsfol5=Seks & Psikologji
+podcastsfol6=Sporte
+podcastsfol7=Bisedë, debat
 
-set onlinetools1fol="Diagnostifiko"
+bookmarksfol1=Lajme & media
+bookmarksfol2=Mjete online
+bookmarksfol3=Podcast-e
+bookmarksfol4=Shopping
+bookmarks2=Gmail
+bookmarks3=Google Keep
+bookmarks4=Google Maps
+bookmarks5=Google Photos
+bookmarks6=Disney+
+bookmarks7=Netflix
+bookmarks8=Reddit
+bookmarks9=Steam
+bookmarks10=Twitch
+bookmarks11=YouTube
 
-set podcastsfol1="Krim & drama"
-set podcastsfol2="Past & Present"
-set podcastsfol3="Politikë"
-set podcastsfol4="Shkencë & Teknologji"
-set podcastsfol5="Seks & Psikologji"
-set podcastsfol6="Sporte"
-set podcastsfol7="Bisedë, debat"
+advanced1=Shtypesi i komandave
+advanced2=Menaxheri i pajisjeve
+advanced3=Pastruesi i diskut
+advanced4=Menaxheri i diskut
+advanced5=Editori i regjistrave
+advanced6=Vëzhguesi i resurseve
+advanced7=Aplikacionet startuese
+advanced8=Hapësira ruajtëse
+advanced9=Konfigurimi i sistemit
+advanced10=Windows firewall
+advanced11=Windows PowerShell
+advanced12=Windows sherbimet
 
-set bookmarksfol1="Lajme & media"
-set bookmarksfol2="Mjete online"
-set bookmarksfol3="Podcast-e"
-set bookmarksfol4="Shopping"
-set bookmarks2="Gmail"
-set bookmarks3="Google Keep"
-set bookmarks4="Google Maps"
-set bookmarks5="Google Photos"
-set bookmarks6="Disney+"
-set bookmarks7="Netflix"
-set bookmarks8="Reddit"
-set bookmarks9="Steam"
-set bookmarks10="Twitch"
-set bookmarks11="YouTube"
-
-set advanced1="Shtypesi i komandave"
-set advanced2="Menaxheri i pajisjeve"
-set advanced3="Pastruesi i diskut"
-set advanced4="Menaxheri i diskut"
-set advanced5="Editori i regjistrave"
-set advanced6="Vëzhguesi i resurseve"
-set advanced7="Aplikacionet startuese"
-set advanced8="Hapësira ruajtëse"
-set advanced9="Konfigurimi i sistemit"
-set advanced10="Windows firewall"
-set advanced11="Windows PowerShell"
-set advanced12="Windows sherbimet"
-
-set controlfol1="Kontrollat e avancuara"
-set control1="Prapavija e desktopit"
-set control2="Parametrat e ekranit"
-set control3="Zmadho"
-set control4="Tastiera në-ekran"
-set control5="Opsionet e energjisë"
-set control6="Shporta e mbeturinave"
-set control7="Ndërro ekranin"
-set control8="Informacione sistemi"
-set control9="Menaxheri i detyrave"
-set control10="Fshij programe"
-set control11="Llogaritë e perdoruesve"
-
-cd %~dp0
-
-call "RenameShortcuts.bat"
+controlfol1=Kontrollat e avancuara
+control1=Prapavija e desktopit
+control2=Parametrat e ekranit
+control3=Zmadho
+control4=Tastiera në-ekran
+control5=Opsionet e energjisë
+control6=Shporta e mbeturinave
+control7=Ndërro ekranin
+control8=Informacione sistemi
+control9=Menaxheri i detyrave
+control10=Fshij programe
+control11=Llogaritë e perdoruesve
