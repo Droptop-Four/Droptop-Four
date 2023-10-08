@@ -156,3 +156,5 @@ Rename-Item -Path ".\Online multiplayer" -NewName "$gamesfol6" -Force
 Rename-Item -Path ".\Simulation" -NewName "$gamesfol7" -Force
 Rename-Item -Path ".\Sports & racing" -NewName "$gamesfol8" -Force
 Rename-Item -Path ".\Virtual Reality" -NewName "$gamesfol9" -Force
+
+# Start-Sleep

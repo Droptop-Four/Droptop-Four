@@ -520,7 +520,7 @@ git pull
 git add .
 git commit -m %2
 git push
-gh release create v%2 "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop_Beta_Update.rmskin" --latest --notes "See Discord for change notes." --title "Droptop Beta Update"
+gh release create v%2 "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop_Beta_Update.rmskin" --latest --notes "# >>> :arrow_down: [Click here to download the beta](https://github.com/Droptop-Four/Beta-Update/releases/latest/download/Droptop_Beta_Update.rmskin) :arrow_down: <<<" --title "Droptop Update (Beta)"
 
 powershell.exe [console]::beep(800,200); [console]::beep(800,320)
 @echo Press any key to push all remaining versions to GitHub.
@@ -534,7 +534,7 @@ git pull
 git add .
 git commit -m %2
 git push
-gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "See Discord for change notes." --title "Droptop Four"
+gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Click here to download Droptop (New install)](https://github.com/Droptop-Four/Droptop-Four/releases/latest/download/Droptop_Basic_Version.rmskin) :arrow_down: <<<" --title "Droptop Four"
 
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 @echo All versions pushed successfully.
