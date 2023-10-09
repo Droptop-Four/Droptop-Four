@@ -4,7 +4,6 @@ ShowDevTools=0
 [SkinVersionMini]
 Measure=Calc
 Formula=((#SkinVersionMini#+1)>999?0:(#SkinVersionMini#+1))
-RegEx
 Substitute=
 
 [SkinVersionTime]
