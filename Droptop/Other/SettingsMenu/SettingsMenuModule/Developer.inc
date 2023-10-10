@@ -14,7 +14,7 @@ DynamicVariables=1
 [CheckUsernames]
 Measure=String
 String=%USERNAME%
-IfMatch=Carib|thomas.whittaker|Mike.Boynton|mboy
+IfMatch=Carib|thomas.whittaker|Mike.Boynton|mkboy|alebu
 IfMatchAction=[!SetVariable ShowDevTools 1][!UpdateMeter *][!Redraw]
 
 [MeasureReplaceInFile]
