@@ -1,6 +1,8 @@
 [Variables]
 ShowDevTools=0
 
+LastFocusedApp="[#***LastFocusedApp***]"
+
 [SkinVersionMini]
 Measure=Calc
 Formula=((#SkinVersionMini#+1)>999?0:(#SkinVersionMini#+1))
