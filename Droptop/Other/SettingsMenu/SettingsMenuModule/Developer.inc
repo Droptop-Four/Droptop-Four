@@ -23,9 +23,9 @@ IfMatchAction=[!SetVariable ShowDevTools 1][!UpdateMeter *][!Redraw]
 Measure=String
 String=%USERNAME%
 IfMatch=Carib
-IfMatchAction=["powershell.exe" cd "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell"; .\ReplaceInFile.ps1 '\thomas.whittaker\' '\carib\' "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace" 'utf8'][!DisableMeasure #CURRENTSECTION#]
+IfMatchAction=["powershell.exe" cd "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell"; .\ReplaceInFile.ps1 '\\thomas.whittaker\\' '\carib\' "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace" 'utf8'][!DisableMeasure #CURRENTSECTION#]
 IfMatch2=thomas.whittaker
-IfMatchAction2=["powershell.exe" cd "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell"; .\ReplaceInFile.ps1 '\carib\' '\thomas.whittaker\' "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace" 'utf8'][!DsssisableMeasure #CURRENTSECTION#]
+IfMatchAction2=["powershell.exe" cd "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell"; .\ReplaceInFile.ps1 '\\carib\\' '\thomas.whittaker\' "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace" 'utf8'][!DsssisableMeasure #CURRENTSECTION#]
 IfMatchMode=1
 Disabled=1
 
