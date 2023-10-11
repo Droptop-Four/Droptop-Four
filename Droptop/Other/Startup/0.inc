@@ -26,7 +26,8 @@ OutputFile=
 [Start]
 Measure=Calc
 IfCondition=#FirstLoad#=1
-IfTrueAction=[!WriteKeyValue Variables Page 1][!Delay 2000][!CommandMeasure RunCommand.Restart "Run"]
+; IfTrueAction=[!WriteKeyValue Variables Page 1][!Delay 2000][!CommandMeasure RunCommand.Restart "Run"]
+IfTrueAction=[!WriteKeyValue Variables Page 1][!Delay 2000][!Refresh]
 IfFalseAction=[!Delay 1000][!CommandMeasure PSRM "MakeShortcut"][!CommandMeasure MeasureCreateFolders "Run"]
 
 [MeasureOSVersion]

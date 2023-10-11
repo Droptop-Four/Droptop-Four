@@ -335,6 +335,7 @@ robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Droptop 
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables ProcessPath "C:\WINDOWS\Explorer.EXE" %4Droptop\@Resources\GlobalVar\Control.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables ProcessLoc "C:\WINDOWS\" %4Droptop\@Resources\GlobalVar\Control.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables ForceOpaque 0 %4Droptop\@Resources\GlobalVar\Control.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables ForceOpaqueON 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables RegionNum "1" %4Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CategoryNum "1" %4Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SubCatNum "1" %4Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
