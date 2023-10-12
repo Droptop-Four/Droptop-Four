@@ -429,6 +429,7 @@ RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\Other\Folders\Folder
 RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\Other\Folders\Folder6"
 RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\Other\Experiments"
 RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\Other\WindowMenu"
+RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\Other\Startup"
 RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\DropdownBar"
 RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\Folders"
 RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\Other\PowerMenu"
@@ -497,14 +498,11 @@ RD /S /Q "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop"
 
 xcopy /E /I /Y %4Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %4Redistributables\@Rmskins\Update\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
-REM xcopy /E /I /Y %4Redistributables\@Rmskins\Beta-Update\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %4Redistributables\@Rmskins\Beta-Update\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
-REM xcopy /E /I /Y %4Redistributables\@Rmskins\Supporter-Version\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
+xcopy /E /I /Y %4Redistributables\@Rmskins\Supporter-Version\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
 
 xcopy /E /I /Y %4Redistributables\Basic-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
-REM xcopy /E /I /Y %4Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %4Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
-REM xcopy /E /I /Y %4Redistributables\Supporter-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
 
 REM "%USERPROFILE%\AppData\Local\GitHubDesktop\GitHubDesktop.exe"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 0 %4Droptop\Other\Startup\Start.ini"
