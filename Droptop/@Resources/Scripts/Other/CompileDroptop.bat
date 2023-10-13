@@ -513,6 +513,7 @@ powershell.exe [console]::beep(500,100); [console]::beep(1200,120)
 @echo All distributables finished successfully. Press any key to push Beta-Update to GitHub.
 PAUSE
 
+git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 git checkout main
 git pull
@@ -527,6 +528,7 @@ PAUSE
 @echo Are you sure? Press any key to continue.
 PAUSE
 
+git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
 git checkout main
 git pull
