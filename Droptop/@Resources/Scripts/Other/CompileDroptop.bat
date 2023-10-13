@@ -42,6 +42,7 @@ robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Droptop 
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables AlarmMinute 30 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables AlarmNum 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables AlarmOFF 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables PomoNum 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SetColorByWallpaperOFF 0 %4Droptop\@Resources\Themes\1Settings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SetColorByWallpaperOFF 0 %4Droptop\@Resources\Themes\2Settings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SetColorByWallpaperOFF 0 %4Droptop\@Resources\Themes\3Settings.inc"
@@ -513,6 +514,9 @@ powershell.exe [console]::beep(500,100); [console]::beep(1200,120)
 @echo All distributables finished successfully. Press any key to push Beta-Update to GitHub.
 PAUSE
 
+git config --global user.name "%USERNAME%"
+git config --global user.email "N/A"
+
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 git checkout main
@@ -537,6 +541,7 @@ git commit -m %2
 git push
 gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Click here to download Droptop (New install)](https://github.com/Droptop-Four/Droptop-Four/releases/latest/download/Droptop_Basic_Version.rmskin) :arrow_down: <<<" --title "Droptop Four"
 
+git config --global http.sslVerify true
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 @echo All versions pushed successfully.
 PAUSE
