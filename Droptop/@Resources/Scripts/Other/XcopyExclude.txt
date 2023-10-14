@@ -14,3 +14,4 @@ JaxCore
 Hide_Settings_Menu-TheyCallMePapa
 Center_Infos-TheyCallMePapa
 Translator-Bunz
+Speedtest-Bunz

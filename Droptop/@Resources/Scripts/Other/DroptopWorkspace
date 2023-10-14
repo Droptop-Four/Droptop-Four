@@ -323,7 +323,6 @@
             <Folder name="Powershell">
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\Func.ps1" />
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\FetchVars.ps1" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\VirtualDesktop.ps1" />
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\GetFontName.ps1" />
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\Uninstall.ps1" />
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\RemoveDroptop.ps1" />
