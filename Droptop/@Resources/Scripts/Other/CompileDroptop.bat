@@ -289,6 +289,7 @@ robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Droptop 
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DeviceIsNotTouch 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryBacklightIconOFF 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables AltHome 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables UseVirtualDesktop 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables LeftHotCornerActionNum 2 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables RightHotCornerActionNum 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables StretchCount 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
