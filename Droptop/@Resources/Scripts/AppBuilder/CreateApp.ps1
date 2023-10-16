@@ -30,7 +30,7 @@ cd .\Droptop\@Resources\Scripts\AppBuilder
 cd "$skinspath"
 
 Move-Item -Path '.\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\AppTemplate.rmskin' -Destination ".\Droptop Folders\Other files\@Rmskins\Droptop Apps\$newappname - $appauthor (Droptop App).rmskin"
-Copy-Item -Path ".\Droptop Folders\Other files\@Rmskins\Droptop Apps\$newappname - $appauthor (Droptop App).rmskin" -Destination ".\Redistributables\Droptop Community Apps\Apps" -Recurse
+Copy-Item -Path ".\Droptop Folders\Other files\@Rmskins\Droptop Apps\$newappname - $appauthor (Droptop App).rmskin" -Destination ".\Redistributables\Droptop-Community-Apps\Apps" -Recurse
 
 Remove-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\*" -Recurse
 Remove-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Plugins\32bit\*" -Recurse

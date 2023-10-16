@@ -199,14 +199,14 @@
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Wifi\Folder\Folder4.ini" />
             </Folder>
             <Folder name="Sample app">
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-thomas.whittakeroudjan\CustomApp.ini" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-thomas.whittakeroudjan\Config\MainConfig.inc" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-thomas.whittakeroudjan\Folder\Folder1.ini" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-thomas.whittakeroudjan\Folder\Config\FolderConfig.inc" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-thomas.whittakeroudjan\Settings\Settings.ini" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-thomas.whittakeroudjan\Settings\Config\MainConfig.inc" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-thomas.whittakeroudjan\Settings\Folder\Folder1.ini" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-thomas.whittakeroudjan\Settings\Folder\Config\FolderConfig.inc" />
+                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\CustomApp.ini" />
+                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\Config\MainConfig.inc" />
+                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\Folder\Folder1.ini" />
+                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\Folder\Config\FolderConfig.inc" />
+                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\Settings\Settings.ini" />
+                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\Settings\Config\MainConfig.inc" />
+                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\Settings\Folder\Folder1.ini" />
+                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\Settings\Folder\Config\FolderConfig.inc" />
             </Folder>
             <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Notes\Notes.ini" />
         </Folder>
@@ -294,31 +294,12 @@
             <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\FetchVars.ps1" />
             <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.ahk" />
             <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\RestoreFolders.bat" />
-            <Folder name="LanguageScripts">
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\RenameShortcuts.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\ru-ru.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\sk-sk.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\sq.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\tr-tr.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\ar-sa.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\de-de.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\en-ca.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\en-gb.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\en-us.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\es-es.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\fr-fr.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\it-it.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\ja-ja.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\nl-nl.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\pl.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\pt-br.bat" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\LanguageScripts\ko.bat" />
-            </Folder>
             <Folder name="Lua">
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\CScript.lua" />
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\DropScroll.lua" />
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\Func.lua" />
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\SelectMonitor.lua" />
+                <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\InputHandler.lua" />
             </Folder>
             <Folder name="Powershell">
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\Func.ps1" />
@@ -337,11 +318,11 @@
             </Folder>
             <Folder name="Community Apps">
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\CreateApp.ps1" />
-                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\MakeRmSkin.ps1" />
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\CreateTheme.ps1" />
+                <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\MakeRmSkin.ps1" />
                 <File name="C:\users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\CreateCommands.ps1" />
                 <File name="XcopyExclude.txt" />
-                <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-thomas.whittakeroudjan\BarModifier\AutoBarModifier.ps1" />
+                <File name="C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\BarModifier\AutoBarModifier.ps1" />
             </Folder>
         </Folder>
         <Folder name="Other">

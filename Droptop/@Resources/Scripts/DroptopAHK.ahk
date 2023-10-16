@@ -181,6 +181,10 @@ EscapeKey:
  Send, {Esc}
 ExitApp
 
+SendClipboard:
+ SendRaw %clipboard%
+ExitApp
+
 ;----------
 
 Lowercase:
