@@ -568,7 +568,7 @@ gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic
 
 git config --global http.sslVerify true
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
-@echo All versions pushed successfully.
+@echo All versions pushed successfully. Press any key to start Droptop setup...
 PAUSE
 
-REM "C:\Program Files\Rainmeter\Rainmeter.exe" !ActivateConfig "Droptop\Other\Startup" "Start.ini"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !ActivateConfig "Droptop\Other\Startup" "Start.ini"
