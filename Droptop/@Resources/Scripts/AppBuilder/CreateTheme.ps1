@@ -44,9 +44,9 @@ cd .\Droptop\@Resources\Scripts\AppBuilder
 Remove-Item -Path ".\ThemeTemplate\Skins\Droptop\@Resources\Fonts\*" -Recurse
 Remove-Item -Path ".\ThemeTemplate\Skins\Droptop Folders\Other files\Themes\*" -Recurse
 cd "$skinspath"
-Remove-Item -Path ".\Redistributables\Droptop-Community-Themes\$themename - $themeauthor (Droptop Theme).rmskin" -Recurse
-Copy-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\ThemeTemplate.rmskin" -Destination ".\Redistributables\Droptop-Community-Themes" -Recurse
-Rename-Item -Path ".\Redistributables\Droptop-Community-Themes\ThemeTemplate.rmskin" -NewName "$themename - $themeauthor (Droptop Theme).rmskin" -Force -ErrorAction Stop
+# Remove-Item -Path ".\Redistributables\Droptop-Community-Themes\$themename - $themeauthor (Droptop Theme).rmskin" -Recurse
+# Copy-Item -Path ".\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\ThemeTemplate.rmskin" -Destination ".\Redistributables\Droptop-Community-Themes" -Recurse
+# Rename-Item -Path ".\Redistributables\Droptop-Community-Themes\ThemeTemplate.rmskin" -NewName "$themename - $themeauthor (Droptop Theme).rmskin" -Force -ErrorAction Stop
 Move-Item -Path '.\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\ThemeTemplate.rmskin' -Destination ".\Droptop Folders\Other files\@Rmskins\Droptop Themes\$themename - $themeauthor (Droptop Theme).rmskin"
 cd .\Droptop\@Resources\Scripts\AppBuilder
 Remove-Item -Path ".\ThemeTemplate\Skins\Droptop\@Resources\Themes\*" -Recurse
