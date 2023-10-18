@@ -13,11 +13,11 @@ MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Variables\Va
 ; Add your variables below: 
 ; -------------------------------------------------------------------------------
 
-Shortcut.NumberOfShortcuts=5
+Shortcut.NumberOfShortcuts=3
 
 PathShortcutButton1=["C:\"]
 PathShortcutButton2=["%USERPROFILE%\Documents"]
-PathShortcutButton3=["C:\Users\thomas.whittaker\OneDrive - Rio Tinto\Desktop\BigSur.zip"]
+PathShortcutButton3=
 PathShortcutButton4=
 PathShortcutButton5=
 
