@@ -4,8 +4,6 @@ $programpath=$args[1]
 $folderPath = "$skinspath"
 
 $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
-
-Set-ExecutionPolicy RemoteSigned -Force
 	
 if (-not $isAdmin) {
 	$startInfo = New-Object System.Diagnostics.ProcessStartInfo
@@ -15,4 +13,5 @@ if (-not $isAdmin) {
 [System.Diagnostics.Process]::Start($startInfo) | Out-Null
 } else {
 	Add-MpPreference -ExclusionPath $folderPath
+	Set-ExecutionPolicy RemoteSigned -Force
 }

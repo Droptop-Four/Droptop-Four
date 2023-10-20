@@ -455,7 +455,6 @@ RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\Other\Folders\Folder
 RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\Other\Folders\Folder6"
 RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\Other\Experiments"
 RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\Other\WindowMenu"
-RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\Other\Startup"
 RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\DropdownBar"
 RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\Folders"
 RD /S /Q %4Redistributables\Supporter-Version\Skins\Droptop\Other\PowerMenu"
