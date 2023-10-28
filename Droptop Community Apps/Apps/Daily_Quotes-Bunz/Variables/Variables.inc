@@ -22,17 +22,17 @@ AppName=Daily Quotes
 AppAuthor=Bunz
 AppVersion=1.0.3
 
-Quote1=Nine-tenths of wisdom is being wise in time.
-Author1=Theodore Roosevelt
+Quote1=There's a difference between a philosophy and a bumper sticker.
+Author1=Charles M. Schulz
 
-Quote2=When all else is lost, the future still remains.
-Author2=Christian Nestell Bovee
+Quote2=The less we deserve good fortune, the more we hope for it.
+Author2=Lucius Annaeus Seneca
 
-Quote3=To be free is to have achieved your life.
-Author3=Tennessee Williams
-Word1=interlard
-Definition1=verb tr.: To mix, insert, or intersperse, especially with something extraneous.
-HistoryDate1=1906
-HistoryDesc1=Dr Lee DeForest demonstrates his electrical vacuum tube (radio tube)
-Quote4=They're only truly great who are truly good.
-Author4=George Chapman
+Quote3=The human race has one really effective weapon, and that is laughter.
+Author3=Mark Twain
+Word1=argentocracy
+Definition1=noun: 1. Rule by the wealthy. 2. Undue influence of money.
+HistoryDate1=1529
+HistoryDesc1=Thomas More appointed Lord Chancellor of England
+Quote4=All wish to possess knowledge, but few, comparatively speaking, are willing to pay the price.
+Author4=Juvenal

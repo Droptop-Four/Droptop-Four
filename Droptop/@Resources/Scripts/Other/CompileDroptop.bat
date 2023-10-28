@@ -39,6 +39,7 @@ REM robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Drop
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables GmailUsername "" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables GmailPassword "" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DeviceIsMobile 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DisplayIsLandscape 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables AlarmHour 9 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables AlarmMinute 30 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables AlarmNum 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -387,6 +388,7 @@ xcopy /s /e /y /f /i %4Droptop\@Resources\Scripts\Other\Layouts\*" %4Redistribut
 xcopy /s /e /y /f /i %4Droptop\@Resources\Scripts\Other\Plugins\*" %4Redistributables\Basic-Version\Plugins"
 xcopy /s /e /y /f /i %4Droptop\@Resources\Scripts\Other\Plugins\*" %4Redistributables\Update\Plugins"
 xcopy /s /e /y /f /i %4Droptop\@Resources\Scripts\Other\Plugins\*" %4Redistributables\Beta-Update\Plugins"
+xcopy /s /e /y /f /i %4Droptop\@Resources\Scripts\AppBuilder\TemplateBackup\*" %4Droptop\@Resources\Scripts\AppBuilder"
 xcopy /E /I /Y %4Droptop Community Apps" %4Redistributables\Basic-Version\Skins\Droptop Community Apps" /EXCLUDE:XcopyExclude.txt
 robocopy %4Droptop" %4Redistributables\Basic-Version\Skins\Droptop" /E
 robocopy %4Droptop\@Resources\OriginalFolders" %4Redistributables\Basic-Version\Skins\Droptop Folders" /E

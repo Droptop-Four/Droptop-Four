@@ -7,7 +7,7 @@
 MyAppID=Quick_Settings-Cariboudjan
 MyAppName=Quick Settings
 MyAppAuthor=Cariboudjan
-MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Quick_Settings-Cariboudjan\Variables\VariablesDefault.inc
+MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Quick_Settings-Cariboudjan\Variables\Variables.inc
 
 ; -------------------------------------------------------------------------------
 ; Add your variables below: 
