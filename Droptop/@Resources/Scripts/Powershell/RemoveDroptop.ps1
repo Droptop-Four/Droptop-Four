@@ -6,7 +6,13 @@ $programpath=$args[2]
 
 $ErrorActionPreference= 'silentlycontinue'
 
+$isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+	
+if (-not $isAdmin) {
+[System.Diagnostics.Process]::Start($startInfo) | Out-Null
+} else {
 	Start-Process -FilePath "$programpath" -ArgumentList "!DeactivateConfigGroup", "DroptopSuite"
+	Start-Process -FilePath "$programpath" -ArgumentList "!DeactivateConfig", "Droptop\DropdownBar\AppBar"
 	Start-Process -FilePath "$programpath" -ArgumentList "!Quit"
 	# taskkill /f /im "cmd.exe"
 	
@@ -26,3 +32,4 @@ $ErrorActionPreference= 'silentlycontinue'
 	
 	Start-Process -FilePath "$programpath"
 	Exit
+}

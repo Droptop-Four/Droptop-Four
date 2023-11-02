@@ -4,6 +4,7 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 powershell.exe cd %4Droptop\@Resources\Scripts\Powershell"; .\TranslationEncoding.ps1 %4Droptop\@Resources\GlobalVar"
 REM robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Droptop %1" /E
 "C:\Program Files\Rainmeter\Rainmeter.exe" !DeactivateConfigGroup DroptopSuite
+"C:\Program Files\Rainmeter\Rainmeter.exe" !DeactivateConfig Droptop\DropdownBar\AppBar
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopIsBeta 0 %4Droptop\@Resources\GlobalVar\Control.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Supporter 0 %4Droptop\@Resources\GlobalVar\Supporter.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderLoc1 "#SKINSPATH#Droptop Folders\PinnedApps" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -64,6 +65,7 @@ REM robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Drop
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideSupport 0 %4Droptop\Other\Settings\Settings.ini"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables UnitsMetric 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideIcons 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderMouseOverTimeNum 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideSubIcons 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HomeColumn 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HomeRow 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -162,7 +164,11 @@ REM robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Drop
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideTimeCenter 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables LanguageNum 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables ThemeNum 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatterySaverON 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryPowerLowThreshold0 20 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Time24HourNum 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables TimeFormatTypeNum 2 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CenterTimeFormatTypeNum 3 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopDisplayNum 99 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopDisplayMonitor "" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopPriorityList "Not set" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -538,7 +544,8 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 
 powershell.exe [console]::beep(500,100); [console]::beep(1200,120)
 @echo All distributables finished successfully. Press any key to push Beta-Update to GitHub.
-PAUSE
+
+TIMEOUT 10
 
 git config --global user.name "%USERNAME%"
 git config --global user.email "N/A"

@@ -14,4 +14,7 @@ if (-not $isAdmin) {
 } else {
 	Add-MpPreference -ExclusionPath $folderPath
 	Set-ExecutionPolicy RemoteSigned -Force
+	
+	powercfg /setdcvalueindex SCHEME_CURRENT SUB_ENERGYSAVER ESBATTTHRESHOLD 20
+	powercfg /setactive scheme_current
 }

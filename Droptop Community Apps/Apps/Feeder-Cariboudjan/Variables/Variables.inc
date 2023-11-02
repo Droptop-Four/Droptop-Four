@@ -19,50 +19,54 @@ ShowFeederThumbnails=1
 
 ; --------------------------------------------
 
-FeederTitle1=Here's When You Should (and Shouldn't) Use Silicone Grease for Household Projects
-FeederLink1=https://lifehacker.com/heres-when-you-should-and-shouldnt-use-silicone-greas-1850968671
-FeederDate1=Sat, 28 Oct 2023
-FeederDec1=When it comes to common household tasks that require a lubricant, many people reach for products like petroleum jelly (e.g. Vaseline), cooking oil spray, or WD-40. And while they’re often effective—at least temporarily—some projects could benefit from silicone grease. Here’s what to know about the lubricant and when…                            
-FeederImg1=%SKINSPATH%Droptop\Other\BackgroundProcesses\DownloadFile\FeederImg1.jpg
+FeederTitle1=You Can Get a New, Open-Box Apple Magic Keyboard Folio for $99
+FeederLink1=https://lifehacker.com/you-can-get-a-new-open-box-apple-magic-keyboard-folio-1850976998
+FeederDate1=Thu, 02 Nov 2023
+FeederDec1=This new, open-box Apple Magic Keyboard Folio for the 10th-generation iPad is on sale right now for 60% off. Its keys have a scissor mechanism that offers 1mm travel, and the QWERTY keyboard has a 14-key function row for easy keyboard shortcuts.                                  
+FeederImg1=
 
-FeederTitle2=This Pop-Up Car Tent Is Now Less Than $300
-FeederLink2=https://lifehacker.com/this-pop-up-car-tent-is-now-less-than-300-1850959395
-FeederDate2=Sat, 28 Oct 2023
-FeederDec2=The CARSULE pop-up cabin for your car is now through Oct. 31 on sale for $299.97 (reg. $379). This versatile tent transforms any outdoor setting—whether you’re camping, tailgating, or road tripping—into a spacious living area right at your car’s tailgate.                                    
+FeederTitle2=What to Expect From Walmart's Early Black Friday Deals
+FeederLink2=https://lifehacker.com/what-to-expect-from-walmarts-early-black-friday-deals-1850982935
+FeederDate2=Thu, 02 Nov 2023
+FeederDec2=Walmart is the third major retailer to formally and officially announce its Black Friday plans, after Target and Best Buy. Early Black Friday deals this year are good, and you should be checking them out if you haven’t already. However, make sure to shop smartly this Black Friday so you don’t end up duped or…                                  
 FeederImg2=
 
-FeederTitle3=Level Up Your Productivity With 'Time Pockets'                  
-FeederLink3=https://lifehacker.com/level-up-your-productivity-with-time-pockets-1850966690
-FeederDate3=Fri, 27 Oct 2023
-FeederDec3=Even when you’re timeboxing your whole day, you’ll notice you end up with a few random pockets of time sprinkled throughout your schedule. If you don’t have a plan for what to do with these, they’ll become super unproductive, so start thinking of how you can maximize your productivity with “time pockets.”                    
+FeederTitle3=How to Cheat on a Lie Detector Test                  
+FeederLink3=https://lifehacker.com/how-to-cheat-on-a-lie-detector-test-1819793069
+FeederDate3=Thu, 02 Nov 2023
+FeederDec3=Welcome to Evil Week, our annual dive into all the slightly sketchy hacks we’d usually refrain from recommending. Want to weasel your way into free drinks, play elaborate mind games, or, er, launder some money? We’ve got all the info you need to be successfully unsavory.                    
 FeederImg3=
 
-FeederTitle4=You Can Now React to iMessages With Emojis and Stickers          
-FeederLink4=https://lifehacker.com/you-can-now-react-to-imessages-with-emojis-and-stickers-1850967753
-FeederDate4=Fri, 27 Oct 2023
-FeederDec4=Not every text message needs a written response. If someone said something funny, you hit them with a “Haha” reaction. If you’re good with a proposed plan, reaction with a thumbs up sends the same message as, “Sounds good!”              
-FeederImg4=%SKINSPATH%Droptop\Other\BackgroundProcesses\DownloadFile\FeederImg4.jpg
+FeederTitle4=You Should Move Chrome’s Address Bar to the Bottom of Your iPhone          
+FeederLink4=https://lifehacker.com/you-should-move-chrome-s-address-bar-to-the-bottom-of-y-1850945219
+FeederDate4=Thu, 02 Nov 2023
+FeederDec4=Google Chrome on iOS has finally added one of the best features of Safari—the ability to move the address bar to the bottom of the screen. When you’re using a phone with a massive display, it’s hard to reach the top of the screen to type the name of the site. If the tab bar is at the bottom, it’s much easier to reach.                              
+FeederImg4=
 
-FeederTitle5=Yes, the FDA Really Did Issue a Warning About Black Licorice        
-FeederLink5=https://lifehacker.com/fda-black-licorice-warning-1839441801
-FeederDate5=Fri, 27 Oct 2023
-FeederDec5=The FDA advisory about licorice is a few years old, but the memes about it will live on forever. “FDA issues warning about black licorice for halloween,” one headline read. And then below that, in a screenshot taken for posterity, somebody comments that the warning must have been “It tastes like shit.”  
-FeederImg5=%SKINSPATH%Droptop\Other\BackgroundProcesses\DownloadFile\FeederImg5.jpg
+FeederTitle5=All the New Ways to Use Your Apple Watch        
+FeederLink5=https://lifehacker.com/all-the-new-ways-to-use-your-apple-watch-1850984316
+FeederDate5=Thu, 02 Nov 2023
+FeederDec5=With watchOS 10, Apple breathed new life into the Apple Watch, without even changing the hardware design. Now, watchOS finally embraces buttons, and higher information density across the board. Most importantly, in my view, are widgets, which have the potential to change how you interact with your Apple Watch for the…  
+FeederImg5=
 
-FeederTitle6=I'll Take the Check, When You Have a Moment
-FeederLink6=https://lifehacker.com/lifehackers-best-food-hacks-ever-1850967435
-FeederDate6=Fri, 27 Oct 2023
-FeederDec6=On June 2, 2015, I emailed Whitson Gordon, then editor-in-chief of Lifehacker, about a freelance writing opportunity on a fairly new, food-focused blog called “Skillet.” Eight years, five EICs, four corporate owners, at least as many CEOs, and two union contract negotiations later, I’m moving on. I’m just as surprised…                              
-FeederImg6=%SKINSPATH%Droptop\Other\BackgroundProcesses\DownloadFile\FeederImg6.jpg
+FeederTitle6=You Can Fix These Common Hot Water Heater Problems Yourself
+FeederLink6=https://lifehacker.com/you-can-fix-these-common-hot-water-heater-problems-your-1850982530
+FeederDate6=Thu, 02 Nov 2023
+FeederDec6=Hot water heaters might seem too complicated and intimidating to fix. They have plumbing and electrical components—two things that usually signal that hiring a pro is the best choice when you need help. While this is true for bigger problems, there are some common maintenance and repair tasks that you can do yourself…
+            The Displace TV has started cascading itself down its zip line.                      
+            The Displace TV has started cascading itself down its zip line.                      
+            The Displace TV has started cascading itself down its zip line.                      
+            The Displace TV has started cascading itself down its zip line.                                                    
+FeederImg6=
 
-FeederTitle7=Hot Chicken Sliders Should Make a Football Appearance This Weekend  
-FeederLink7=https://lifehacker.com/2-45-hot-chicken-slider-recipe-1850967503
-FeederDate7=Fri, 27 Oct 2023
-FeederDec7=Hot chicken has foodie virality at the moment, but it isn’t a passing fad. This spicy fried poultry has been searing the taste buds off of Nashvillians for generations. You can give large chicken cuts the hot chicken treatment, or shrink it down to party snack size. Bring a tiny piece of Nashville into your home with…                    
-FeederImg7=%SKINSPATH%Droptop\Other\BackgroundProcesses\DownloadFile\FeederImg7.jpg
+FeederTitle7=Evil Week: 20 Unethical (but Brilliant) Life Hacks From Reddit  
+FeederLink7=https://lifehacker.com/20-unethical-but-brilliant-life-hacks-from-reddit-1847783281
+FeederDate7=Thu, 02 Nov 2023
+FeederDec7=Welcome to Evil Week, our annual dive into all the slightly sketchy hacks we’d usually refrain from recommending. Want to weasel your way into free drinks, play elaborate mind games, or, er, launder some money? We’ve got all the info you need to be successfully unsavory.                    
+FeederImg7=
 
-FeederTitle8=The Fastest Way to Skin an Almond
-FeederLink8=https://lifehacker.com/how-to-blanch-and-skin-almonds-1849639820
-FeederDate8=Fri, 27 Oct 2023
-FeederDec8=You never thought the day would come. You need skinless, blanched almonds, and you need them now. You could rush over to the grocery store and pray that they have blanched almonds on the shelf, but what if they don’t? You can easily de-skin regular almonds at home in record time with a few common household items.                
-FeederImg8=%SKINSPATH%Droptop\Other\BackgroundProcesses\DownloadFile\FeederImg8.jpg
+FeederTitle8=Today’s NYT Connections Hints (and Answer) for Thursday, November 2, 2023
+FeederLink8=https://lifehacker.com/nyt-connections-answer-today-november-2-2023-1850980019
+FeederDate8=Thu, 02 Nov 2023
+FeederDec8=Ready for some INTEL on today’s computer-brand-studded board? If you’re looking for the Connections answer for Thursday, November 2, 2023, read on—I’ll share some clues, tips, and strategies, and finally the solutions to all four categories. Along the way, I’ll explain the meanings of the trickier words and we’ll…                
+FeederImg8=

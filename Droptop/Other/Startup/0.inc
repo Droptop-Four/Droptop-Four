@@ -9,6 +9,18 @@ Measure=Plugin
 Plugin=ActionTimer
 ActionList1=Wait 150 | Start0 | Wait 1500 | Start1 | Wait 750 | Start2 | ClickOn
 
+[MeasureOrientation]
+Measure=Calc
+Formula=#SCREENAREAWIDTH#
+IfAboveValue=#SCREENAREAHEIGHT#
+IfAboveAction=[!SetVariable DisplayIsLandscape 1][!WriteKeyValue Variables DisplayIsLandscape [#DisplayIsLandscape]]
+IfEqualValue=#SCREENAREAHEIGHT#
+IfEqualAction=[!SetVariable DisplayIsLandscape 1][!WriteKeyValue Variables DisplayIsLandscape [#DisplayIsLandscape]]
+IfBelowValue=#SCREENAREAHEIGHT#
+IfBelowAction=[!SetVariable DisplayIsLandscape 0][!WriteKeyValue Variables DisplayIsLandscape [#DisplayIsLandscape]]
+DynamicVariables=1
+UpdateDivider=-1
+
 [PSRM]
 Measure=Plugin
 Plugin=PowershellRM
