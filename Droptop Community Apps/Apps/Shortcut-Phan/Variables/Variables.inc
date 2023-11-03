@@ -5,6 +5,7 @@
 ; -------------------------------------------------------------------------------
 
 MyAppID=Shortcut-Phan
+MyAppGUID=
 MyAppName=Shortcut
 MyAppAuthor=Phan
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Variables\Variables.inc

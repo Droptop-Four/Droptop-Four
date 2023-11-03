@@ -5,6 +5,7 @@
 ; -------------------------------------------------------------------------------
 
 MyAppID=Color_Mode_Toggle-Cariboudjan
+MyAppGUID=
 MyAppName=Color Mode Toggle
 MyAppAuthor=Cariboudjan
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Color_Mode_Toggle-Cariboudjan\Variables\Variables.inc

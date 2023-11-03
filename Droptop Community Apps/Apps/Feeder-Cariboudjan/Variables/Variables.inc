@@ -5,6 +5,7 @@
 ; -------------------------------------------------------------------------------
 
 MyAppID=Feeder-Cariboudjan
+MyAppGUID=
 MyAppName=Feeder
 MyAppAuthor=Cariboudjan
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Feeder-Cariboudjan\Variables\Variables.inc

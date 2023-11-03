@@ -5,6 +5,7 @@
 ; -------------------------------------------------------------------------------
 
 MyAppID=Quick_Settings-Cariboudjan
+MyAppGUID=
 MyAppName=Quick Settings
 MyAppAuthor=Cariboudjan
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Quick_Settings-Cariboudjan\Variables\Variables.inc

@@ -5,6 +5,7 @@
 ; -------------------------------------------------------------------------------
 
 MyAppID=Recycle_Bin-Phan
+MyAppGUID=
 MyAppName=Recycle Bin
 MyAppAuthor=Phan
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Recycle_Bin-Phan\Variables\Variables.inc

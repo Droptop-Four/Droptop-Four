@@ -40,7 +40,7 @@ Hidden=0
 [Background2]
 Meter=Shape
 MeterStyle=BackgroundStyle | DevToolsStyle#ShowDevTools#
-Shape=Rectangle #DropdownMenuCutout#,#DropdownMenuCutout#,(#DropdownMenuWidth#+2-(#DropdownMenuCutout#*2)),(#DropdownItemHeight#*3+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(#ForceOpaque#=1?255:(#DropdownMenuOpacity1#<1?1:#DropdownMenuOpacity1#)) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,#DropdownStrokeOpacity#
+Shape=Rectangle #DropdownMenuCutout#,#DropdownMenuCutout#,(#DropdownMenuWidth#+2-(#DropdownMenuCutout#*2)),(#DropdownItemHeight#*4+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(#ForceOpaque#=1?255:(#DropdownMenuOpacity1#<1?1:#DropdownMenuOpacity1#)) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,#DropdownStrokeOpacity#
 DynamicVariables=1
 
 [Developer1]
@@ -86,3 +86,18 @@ ImageName=#@#Icons\Fixed\#IconSize#\run.png
 ImageAlpha=#DropdownItemOpacity#
 MeterStyle=IconStyle | DevToolsStyle#ShowDevTools#
 Y=[Developer3:Y]
+
+[Developer4]
+Meter=String
+MeterStyle=InfoStyle | DevToolsStyle#ShowDevTools#
+Text=Auto-switch to Alt Home
+LeftMouseDownAction=[!SetVariable AutoAltHome ([#AutoAltHome]=0?1:0)][!WriteKeyValue Variables AutoAltHome [#AutoAltHome] "#@#GlobalVar\UserSettings.inc"][!UpdateMeter #CURRENTSECTION#Icon][!Redraw]
+Y=([Background2:Y]+((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#)+(#DropdownItemHeight#*3))
+
+[Developer4Icon]
+Meter=Image
+ImageName=#@#Icons\Fixed\#IconSize#\toggle.png
+ImageAlpha=([#AutoAltHome]<>1?([#DropdownItemOpacity]/3):[#DropdownItemOpacity])
+ImageFlip=[#IconFlip0[#AutoAltHome]]
+MeterStyle=IconStyle | DevToolsStyle#ShowDevTools#
+Y=[Developer4:Y]
