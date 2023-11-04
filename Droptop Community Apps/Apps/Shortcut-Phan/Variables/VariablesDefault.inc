@@ -5,7 +5,6 @@
 ; -------------------------------------------------------------------------------
 
 MyAppID=Shortcut-Phan
-MyAppGUID=
 MyAppName=Shortcut
 MyAppAuthor=Phan
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Variables\Variables.inc
@@ -22,20 +21,9 @@ PathShortcutButton3=
 PathShortcutButton4=
 PathShortcutButton5=
 
-LocationShortcutButton1=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Icons\Button[#TopIconShadows[#TopBarFontShadow][#ChamLum1][#ReverseDarkLight]]1.png
-LocationShortcutButton2=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Icons\Button[#TopIconShadows[#TopBarFontShadow][#ChamLum1][#ReverseDarkLight]]2.png
-LocationShortcutButton3=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Icons\Button[#TopIconShadows[#TopBarFontShadow][#ChamLum1][#ReverseDarkLight]]3.png
-LocationShortcutButton4=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Icons\Button[#TopIconShadows[#TopBarFontShadow][#ChamLum1][#ReverseDarkLight]]4.png
-LocationShortcutButton5=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Icons\Button[#TopIconShadows[#TopBarFontShadow][#ChamLum1][#ReverseDarkLight]]5.png
-
-ShortcutButton1=1
-ShortcutButton2=2
-ShortcutButton3=3
-ShortcutButton4=4
-ShortcutButton5=5
-
 ShortcutButtonCustomAppNum=#Shortcut-Phan#
 CurrentShortcut=1
 QuickLinkMode=0
 
 Shortcut.Greyscale=0
+MyAppGUID=b09aea21-6371-4fbf-a472-0d5edada8967
