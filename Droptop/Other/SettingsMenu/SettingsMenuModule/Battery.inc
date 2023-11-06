@@ -17,3 +17,6 @@ MeterStyle=IconStyle | DisabledStyle#Win10Apps#
 
 [2Arrow]
 MeterStyle=ArrowStyle | DisabledStyle#Win10Apps#
+
+[FolderBlock]
+H=(#DropdownItemHeight#*[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber]FolderCount]-(#DropdownItemHeight#*#Win10Apps#))
