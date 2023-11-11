@@ -39,14 +39,14 @@ TaskView:
  Send, #{Tab}
 ExitApp
 
-OpenCortana:
+OpenCopilot:
  SetStoreCapsLockMode, Off
  Send, #c
 ExitApp
 
-CloseCortana:
+CloseCopilot:
  SetStoreCapsLockMode, Off
- ControlClick, x0 y0, Cortana
+ ControlClick, x0 y0, Copilot
  Send, {Esc}
 ExitApp
 
@@ -102,6 +102,12 @@ ClipToggle:
  Send, #v
 ExitApp
 
+EmojiToggle:
+ Send, !{Esc}
+ Sleep, 100
+ Send, #;
+ExitApp
+
 LangSwitcher:
  Send, !{Esc}
  Send, {LAlt down}{LShift}
@@ -118,6 +124,11 @@ ExitApp
 HangulToggle:
  Send, !{Esc}
  Sendinput, {vk15}
+ExitApp
+
+GameBar:
+ SetStoreCapsLockMode, Off
+ Send, #g
 ExitApp
 
 ;----------

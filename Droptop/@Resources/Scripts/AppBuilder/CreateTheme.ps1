@@ -53,3 +53,5 @@ Remove-Item -Path ".\ThemeTemplate\Skins\Droptop\@Resources\Themes\*" -Recurse
 Remove-Item -Path ".\@Rmskins\*.zip" -Recurse
 
 Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"'
+
+Invoke-Item '.\Droptop Folders\Other files\@Rmskins\Droptop Themes'

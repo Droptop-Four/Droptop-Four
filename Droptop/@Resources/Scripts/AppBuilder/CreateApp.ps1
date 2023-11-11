@@ -48,3 +48,5 @@ if ($gitinit -eq 1)
 
 Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"'
 
+Invoke-Item '.\Droptop Folders\Other files\@Rmskins\Droptop Apps'
+
