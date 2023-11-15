@@ -15,10 +15,10 @@ MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Variables\Va
 
 Shortcut.NumberOfShortcuts=5
 
-PathShortcutButton1=["C:\Users\thomas.whittaker\OneDrive - Rio Tinto\Desktop\RTTMS.url"]
-PathShortcutButton2=["C:\Users\thomas.whittaker\OneDrive - Rio Tinto\Desktop\strings.ini"]
-PathShortcutButton3=["C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Folders\Games\Online multiplayer\Battle Royale"]
-PathShortcutButton4=["C:\Users\thomas.whittaker\Documents\Rainmeter\Skins\Droptop Folders\Games\Indie"]
+PathShortcutButton1=["C:\"]
+PathShortcutButton2=["%USERPROFILE%\Documents"]
+PathShortcutButton3=
+PathShortcutButton4=
 PathShortcutButton5=
 
 ShortcutButtonCustomAppNum=#Shortcut-Phan#
