@@ -1,0 +1,152 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon preload"
+			type="image/webp"
+			href="../img/DroptopFourLogo.webp"
+			as="image" />
+		<meta name="theme-color" content="#4BD765" />
+		<script
+			src="https://kit.fontawesome.com/e8027f79c9.js"
+			crossorigin="anonymous"></script>
+		<title>Community Themes | Droptop Four Store</title>
+		<link rel="stylesheet preload" href="../style.css" as="style" />
+	</head>
+
+	<body>
+		<header>
+			<a class="skip-to-main-content" href="#main-content">
+				Skip to main content
+			</a>
+			<nav class="navbar">
+				<!-- LOGO -->
+				<div class="logo">
+					<a href="index.html">
+						<img
+							src="../img/DroptopFourLogo.webp"
+							alt="Droptop Four Logo" />
+					</a>
+				</div>
+				<div class="site-name">
+					<a href="index.html">
+						<h4>Droptop Store</h4>
+					</a>
+				</div>
+				<!-- NAVIGATION MENU -->
+				<ul class="nav-links">
+					<!-- USING CHECKBOX HACK -->
+					<input type="checkbox" id="checkbox_toggle" />
+					<label for="checkbox_toggle" class="hamburger">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="28"
+							fill="none"
+							viewBox="0 0 24 24">
+							<path
+								stroke="currentColor"
+								stroke-width="4"
+								stroke-linecap="round"
+								d="M2 4h20M2 14h20M2 24h20"></path>
+						</svg>
+					</label>
+					<!-- NAVIGATION MENUS -->
+					<div class="menu">
+						<li><a href="community-apps.html">Community Apps</a></li>
+						<li>
+							<a href="community-themes.html">Community Themes</a>
+						</li>
+						<li>
+							<a href="search.html"><i class="fa fa-search"></i></a>
+						</li>
+						<li>
+							<a href="javascript:openExternalLink('https://droptopfour.com')">
+								Droptop Website
+							</a>
+						</li>
+					</div>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main Content -->
+		<main class="community-themes-page">
+			<section class="community-themes-banner">
+				<div class="community-themes-banner-text">
+					<h1>COMMUNITY THEMES</h1>
+				</div>
+			</section>
+
+			<div aria-hidden="true" class="body-divider" id="divider-2">
+				<hr />
+			</div>
+
+			<section class="community-themes-contents" id="main-content">
+				<div class="themesList" id="themesList">
+					<!-- Content from community-themes.js -->
+				</div>
+
+				<div aria-hidden="true" class="body-divider" id="divider-4">
+					<hr />
+				</div>
+			</section>
+		</main>
+		<!-- Main Content End -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="social">
+				<a
+					href="javascript:openExternalLink('https://www.deviantart.com/cariboudjan/art/droptop-four-762812007')"
+					aria-label="DeviantArt link">
+					<i class="fa-brands fa-deviantart"></i>
+				</a>
+				<a
+					href="javascript:openExternalLink('https://github.com/Droptop-Four')"
+					aria-label="Github link">
+					<i class="fa-brands fa-github"></i>
+				</a>
+				<a
+					href="javascript:openExternalLink('https://discord.gg/aGQ6uE4Fgp')"
+					aria-label="Discord link">
+					<i class="fa-brands fa-discord"></i>
+				</a>
+			</div>
+			<ul class="list">
+				<li><a href="javascript:openExternalLink('https://droptopfour.com')">Website</a></li>
+				<li><a href="community-apps.html">Community Apps</a></li>
+				<li><a href="community-themes.html">Community Themes</a></li>
+				<li>
+					<a href="javascript:openExternalLink('https://docs.droptopfour.com/help/faqs')"">FAQs</a>
+				</li>
+				<li><a href="javascript:openExternalLink('https://docs.droptopfour.com')" >Docs</a></li>
+			</ul>
+			<p class="copyright">&copy; Droptop Four 2018-2023</p>
+		</footer>
+		<!-- Footer End -->
+
+		<!-- Scroll to top Button -->
+		<button
+			onclick="topFunction()"
+			class="scroll-to-top"
+			id="scroll-to-top"
+			title="Scroll to the top">
+			<i class="fa-solid fa-up-long"></i>
+		</button>
+		<!-- Scroll to top Button End -->
+
+		<!-- Script -->
+		<script src="../js/main.js"></script>
+		<script src="../js/community-themes.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/marked-gfm-heading-id/lib/index.umd.js"></script>
+		<!-- Script End -->
+	</body>
+</html>

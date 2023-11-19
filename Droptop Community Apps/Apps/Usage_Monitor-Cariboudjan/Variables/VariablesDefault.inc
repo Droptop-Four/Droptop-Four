@@ -10,7 +10,6 @@
 ; -------------------------------------------------------------------------------
 
 MyAppID=Usage_Monitor-Cariboudjan
-MyAppGUID=
 MyAppName=Usage Monitor
 MyAppAuthor=Cariboudjan
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Usage_Monitor-Cariboudjan\Variables\Variables.inc

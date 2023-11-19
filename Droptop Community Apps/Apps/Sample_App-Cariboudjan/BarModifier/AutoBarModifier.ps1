@@ -18,17 +18,3 @@ $path = ".\BarModifier4.inc"
 
 $path = ".\BarModifier5.inc"
 (Get-Content $path) -replace "CustomApp1","CustomApp5" | out-file $path 
-
-# ----
-
-$path = ".\BarModifier2.inc"
-(Get-Content $path) -replace "AppButton1","AppButton2" | out-file $path
-
-$path = ".\BarModifier3.inc"
-(Get-Content $path) -replace "AppButton1","AppButton3" | out-file $path 
-
-$path = ".\BarModifier4.inc"
-(Get-Content $path) -replace "AppButton1","AppButton4" | out-file $path 
-
-$path = ".\BarModifier5.inc"
-(Get-Content $path) -replace "AppButton1","AppButton5" | out-file $path 

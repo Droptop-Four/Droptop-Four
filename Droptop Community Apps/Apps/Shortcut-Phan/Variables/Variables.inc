@@ -16,14 +16,13 @@ MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Variables\Va
 Shortcut.NumberOfShortcuts=5
 
 PathShortcutButton1=["C:\"]
-PathShortcutButton2=["%USERPROFILE%\Documents"]
-PathShortcutButton3=
-PathShortcutButton4=
-PathShortcutButton5=
+PathShortcutButton2=["C:\Program Files\Meta Quest Remote Desktop\Meta Quest Remote Desktop.exe"]
+PathShortcutButton3=["C:\Users\Carib\Videos"]
+PathShortcutButton4=["C:\Users\Carib\Desktop\Cyberpunk 2077.url"]
+PathShortcutButton5=["C:\Users\Carib\Desktop\Disco Elysium.url"]
 
 ShortcutButtonCustomAppNum=#Shortcut-Phan#
 CurrentShortcut=1
 QuickLinkMode=0
 
 Shortcut.Greyscale=0
-MyAppGUID=b09aea21-6371-4fbf-a472-0d5edada8967

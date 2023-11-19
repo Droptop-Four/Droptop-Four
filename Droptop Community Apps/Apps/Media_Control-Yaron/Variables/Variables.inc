@@ -5,7 +5,6 @@
 ; -------------------------------------------------------------------------------
 
 MyAppID=Media_Control-Yaron
-MyAppGUID=
 MyAppName=Media Control
 MyAppAuthor=Yaron
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Media_Control-Yaron\Variables\Variables.inc

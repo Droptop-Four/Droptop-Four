@@ -5,7 +5,6 @@
 ; -------------------------------------------------------------------------------
 
 MyAppID=Disks-Phan
-MyAppGUID=
 MyAppName=Disks
 MyAppAuthor=Phan
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Disks-Phan\Variables\Variables.inc

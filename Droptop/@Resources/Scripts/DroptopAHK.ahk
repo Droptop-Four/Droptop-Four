@@ -155,6 +155,28 @@ ExitApp
 
 ;----------
 
+WebBack:
+ SetStoreCapsLockMode, Off
+ Send, !{Left}
+ExitApp
+
+WebForward:
+ SetStoreCapsLockMode, Off
+ Send, !{Right}
+ExitApp
+
+WebRefresh:
+ SetStoreCapsLockMode, Off
+ Send, ^r
+ExitApp
+
+WebCapture:
+ SetStoreCapsLockMode, Off
+ Send, ^+s
+ExitApp
+
+;----------
+
 PrintScreen:
  Send, {PrintScreen}
 ExitApp
