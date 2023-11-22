@@ -1,11 +1,5 @@
 Add-Type -AssemblyName PresentationFramework
 
-$skinspath=$args[0]
-$appdata=$args[1]
-$programpath=$args[2]
-
-$ErrorActionPreference= 'silentlycontinue'
-
 $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 	
 if (-not $isAdmin) {
