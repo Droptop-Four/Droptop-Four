@@ -127,6 +127,9 @@ if ($downloadMode -eq 1)
 
 Write-Host ""
 Write-Host "Installing Droptop update $newVersion. Please wait..."
-		Start-Process -FilePath "$programPath" -ArgumentList "!SetVariable","DownloadState","12","Droptop\Other\BackgroundProcesses"
 
-& ".\Droptop\@Resources\Scripts\AppBuilder\RMSKINInstaller.exe" --skin ".\Droptop Folders\Other files\@Downloads\Droptop Updates\Droptop Update $downloadDate.rmskin"
+Start-Process -FilePath "$programPath" -ArgumentList "!SetVariable","DownloadState","12","Droptop\Other\BackgroundProcesses"
+
+& ".\Droptop\@Resources\Scripts\AppBuilder\RMSKINInstaller.exe" --norestart --skin ".\Droptop Folders\Other files\@Downloads\Droptop Updates\Droptop Update $downloadDate.rmskin"
+
+Start-Process -FilePath "$programPath" -ArgumentList "!SetVariable","DownloadState","13","Droptop\Other\BackgroundProcesses"
