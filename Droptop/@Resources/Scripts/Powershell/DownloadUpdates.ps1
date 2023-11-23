@@ -30,7 +30,6 @@ Invoke-WebRequest -Uri "https://github.com/Droptop-Four/Droptop-Four/releases/la
 
 Invoke-WebRequest -Uri "$appURL1" -OutFile ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName1.rmskin"
 
-
 # Write-Host "Downloading latest version of $appname2. Please wait..."
 	
 Invoke-WebRequest -Uri "$appURL2" -OutFile ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName2.rmskin"
