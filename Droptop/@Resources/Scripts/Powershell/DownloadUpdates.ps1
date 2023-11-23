@@ -110,7 +110,7 @@ if ($downloadMode -eq 1)
 		Write-Host ""
 		Write-Host "Installing latest version of $appname5. Please wait..."
 		
-		& ".\Droptop\@Resources\Scripts\AppBuilder\RMSKINInstaller.exe" --skin ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName5.rmskin"
+		& ".\Droptop\@Resources\Scripts\AppBuilder\RMSKINInstaller.exe" --norestart --skin ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName5.rmskin"
 	}
 }
 
@@ -118,4 +118,4 @@ Write-Host ""
 Write-Host "Installing Droptop update $newVersion. Please wait..."
 
 # & ".\Droptop\@Resources\Scripts\AppBuilder\RMSKINInstaller.exe" --norestart --skin ".\Droptop Folders\Other files\@Downloads\Droptop Updates\Droptop Update $downloadDate.rmskin"
-Start-Process -FilePath "$programPath" -ArgumentList "!ActivateConfig","Droptop\DropdownBar","DropdownBar.ini"
+Start-Process -FilePath "$programPath" -ArgumentList "!ActivateConfig",'"Droptop\DropdownBar"','"DropdownBar.ini"'
