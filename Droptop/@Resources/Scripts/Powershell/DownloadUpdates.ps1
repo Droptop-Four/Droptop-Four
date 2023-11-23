@@ -2,9 +2,6 @@ $downloadDate = Get-Date -Format "yy.MMdd"
 
 $folderPath = "$skinspath"
 
-$ProgressPreference = 'SilentlyContinue'
-$ErrorActionPreference= 'silentlycontinue'
-
 cd $skinsPath
 
 $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
