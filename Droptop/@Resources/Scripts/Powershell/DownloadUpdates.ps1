@@ -16,14 +16,6 @@ if (-not $isAdmin) {
 	Start-Process -FilePath "$programPath" -ArgumentList "!Quit"
 }
 
-$isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
-	
-if (-not $isAdmin) {
-	Start-Process -FilePath "$programPath" -ArgumentList "!Quit"
-} else {
-	Start-Process -FilePath "$programPath" -ArgumentList "!Quit"
-}
-
 Write-Host ""
 Write-Host "Droptop update in progress..."
 
