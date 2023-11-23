@@ -118,4 +118,4 @@ Write-Host ""
 Write-Host "Installing Droptop update $newVersion. Please wait..."
 
 # & ".\Droptop\@Resources\Scripts\AppBuilder\RMSKINInstaller.exe" --norestart --skin ".\Droptop Folders\Other files\@Downloads\Droptop Updates\Droptop Update $downloadDate.rmskin"
-Start-Process -FilePath "$programPath" -ArgumentList "!CommandMeasure","RunCommand.Restart",'"Run"'
+Start-Process -FilePath "$programPath" -ArgumentList "!CommandMeasure","RunCommand.Restart",'"Run"','"Droptop\Other\WindowMenu"'
