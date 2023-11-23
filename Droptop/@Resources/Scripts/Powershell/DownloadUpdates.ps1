@@ -16,6 +16,10 @@ if (-not $isAdmin) {
 	Start-Process -FilePath "$programPath" -ArgumentList "!Quit"
 }
 
+if (-not $isAdmin) {
+	Start-Process -FilePath "$programPath" -ArgumentList "!Quit"
+}
+
 Write-Host ""
 Write-Host "Droptop update in progress..."
 
