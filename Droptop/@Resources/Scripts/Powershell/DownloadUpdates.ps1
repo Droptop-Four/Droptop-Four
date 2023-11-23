@@ -112,7 +112,7 @@ if ($downloadMode -eq 1)
 		Write-Host "Installing latest version of $appname4. Please wait..."
 		Start-Process -FilePath "$programPath" -ArgumentList "!SetVariable","DownloadState","10",'"Droptop\Other\BackgroundProcesses"'
 		
-		& ".\Droptop\@Resources\Scripts\AppBuilder\RMSKINInstaller.exe" --norestart --skin ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName4.rmskin"
+		& ".\Droptop\@Resources\Scripts\AppBuilder\RMSKINInstaller.exe" --skin ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName4.rmskin"
 	}
 
 	if ( $updateAvailable5 -eq 1 )
