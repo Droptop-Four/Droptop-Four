@@ -4,7 +4,7 @@ $folderPath = "$skinspath"
 
 cd $skinsPath
 
-#$isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+$isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 	
 if (-not $isAdmin) {
 	$startInfo = New-Object System.Diagnostics.ProcessStartInfo
