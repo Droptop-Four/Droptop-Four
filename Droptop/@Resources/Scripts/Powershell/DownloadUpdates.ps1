@@ -13,8 +13,7 @@ if (-not $isAdmin) {
 	$startInfo.Verb = "runas"
 [System.Diagnostics.Process]::Start($startInfo) | Out-Null
 } else {
-	# Add-MpPreference -ExclusionPath $folderPath
-	# Set-ExecutionPolicy RemoteSigned -Force
+	Start-Process -FilePath "$programPath" -ArgumentList "!Quit"
 }
 
 Write-Host ""
