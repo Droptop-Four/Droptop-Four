@@ -1,6 +1,6 @@
 $downloadDate = Get-Date -Format "yy.MMdd"
 
-$folderPath = "$skinsPath"
+$folderPath = "$skinspath"
 
 cd $skinsPath
 
@@ -13,7 +13,8 @@ if (-not $isAdmin) {
 	$startInfo.Verb = "runas"
 [System.Diagnostics.Process]::Start($startInfo) | Out-Null
 } else {
-
+	Add-MpPreference -ExclusionPath $folderPath
+	Set-ExecutionPolicy RemoteSigned -Force
 }
 
 Write-Host ""
