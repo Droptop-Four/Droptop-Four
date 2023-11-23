@@ -95,7 +95,7 @@ if ($downloadMode -eq 1)
 		Write-Host ""
 		Write-Host "Installing latest version of $appname3. Please wait..."
 		
-		& ".\Droptop\@Resources\Scripts\AppBuilder\RMSKINInstaller.exe" --skin ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName3.rmskin"
+		& ".\Droptop\@Resources\Scripts\AppBuilder\RMSKINInstaller.exe" --norestart --skin ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName3.rmskin"
 	}
 
 	if ( $updateAvailable4 -eq 1 )
