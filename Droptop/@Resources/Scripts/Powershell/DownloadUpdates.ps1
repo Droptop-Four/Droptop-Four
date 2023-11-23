@@ -20,6 +20,8 @@ $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIde
 	
 if (-not $isAdmin) {
 	Start-Process -FilePath "$programPath" -ArgumentList "!Quit"
+} else {
+	Start-Process -FilePath "$programPath" -ArgumentList "!Quit"
 }
 
 Write-Host ""
