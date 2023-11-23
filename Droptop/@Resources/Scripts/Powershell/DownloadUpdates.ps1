@@ -74,9 +74,6 @@ if ($downloadMode -eq 1)
 Write-Host ""
 Write-Host "Downloading Droptop update $newVersion. Please wait..."
 		Start-Process -FilePath "$programPath" -ArgumentList "!SetVariable","DownloadState","6","Droptop\Other\BackgroundProcesses"
-		Start-Process -FilePath "$programPath" -ArgumentList "!SetVariable","DownloadState","6","Droptop\Other\WindowMenu"
-		Start-Process -FilePath "$programPath" -ArgumentList "!UpdateMeter","*","Droptop\Other\WindowMenu"
-		Start-Process -FilePath "$programPath" -ArgumentList "!Redraw","Droptop\Other\WindowMenu"
 
 Invoke-WebRequest -Uri "https://github.com/Droptop-Four/Droptop-Four/releases/latest/download/Droptop_Update.rmskin" -OutFile ".\Droptop Folders\Other files\@Downloads\Droptop Updates\Droptop Update $downloadDate.rmskin"
 
