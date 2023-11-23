@@ -26,40 +26,28 @@ New-Item -ItemType Directory -Path ".\Droptop Folders\Other files\@Downloads\Com
 
 Invoke-WebRequest -Uri "https://github.com/Droptop-Four/Droptop-Four/releases/latest/download/Droptop_Update.rmskin" -OutFile ".\Droptop Folders\Other files\@Downloads\Droptop Updates\Droptop Update $downloadDate.rmskin"
 
-if ( $updateAvailable1 -eq 1 )
-{
-	# Write-Host "Downloading latest version of $appname1. Please wait..."
+# Write-Host "Downloading latest version of $appname1. Please wait..."
 
-	Invoke-WebRequest -Uri "$appURL1" -OutFile ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName1.rmskin"
-}
+Invoke-WebRequest -Uri "$appURL1" -OutFile ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName1.rmskin"
 
-if ( $updateAvailable2 -eq 1 )
-{
-	# Write-Host "Downloading latest version of $appname2. Please wait..."
+
+# Write-Host "Downloading latest version of $appname2. Please wait..."
 	
-	Invoke-WebRequest -Uri "$appURL2" -OutFile ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName2.rmskin"
-}
+Invoke-WebRequest -Uri "$appURL2" -OutFile ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName2.rmskin"
 
-if ( $updateAvailable3 -eq 1 )
-{
-	# Write-Host "Downloading latest version of $appname3. Please wait..."
-	
-	Invoke-WebRequest -Uri "$appURL3" -OutFile ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName3.rmskin"
-}
 
-if ( $updateAvailable4 -eq 1 )
-{
-	# Write-Host "Downloading latest version of $appname4. Please wait..."
+# Write-Host "Downloading latest version of $appname3. Please wait..."
 	
-	Invoke-WebRequest -Uri "$appURL4" -OutFile ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName4.rmskin"
-}
+Invoke-WebRequest -Uri "$appURL3" -OutFile ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName3.rmskin"
 
-if ( $updateAvailable5 -eq 1 )
-{
-	# Write-Host "Downloading latest version of $appname5. Please wait..."
+# Write-Host "Downloading latest version of $appname4. Please wait..."
 	
-	Invoke-WebRequest -Uri "$appURL5" -OutFile ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName5.rmskin"
-}
+Invoke-WebRequest -Uri "$appURL4" -OutFile ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName4.rmskin"
+
+
+# Write-Host "Downloading latest version of $appname5. Please wait..."
+	
+Invoke-WebRequest -Uri "$appURL5" -OutFile ".\Droptop Folders\Other files\@Downloads\Community App Updates\$appName5.rmskin"
 
 
 
