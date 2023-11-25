@@ -5,25 +5,20 @@ $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIde
 if (-not $isAdmin) {
 [System.Diagnostics.Process]::Start($startInfo) | Out-Null
 } else {
-	Start-Process -FilePath "$programpath" -ArgumentList "!DeactivateConfigGroup", "DroptopSuite"
-	Start-Process -FilePath "$programpath" -ArgumentList "!DeactivateConfig", "Droptop\DropdownBar\AppBar"
-	Start-Process -FilePath "$programpath" -ArgumentList "!Quit"
-	# taskkill /f /im "cmd.exe"
+	Start-Process -FilePath "$programPath" -ArgumentList "!DeactivateConfigGroup", "DroptopSuite"
+	Start-Process -FilePath "$programPath" -ArgumentList "!DeactivateConfig", "Droptop\DropdownBar\AppBar"
+	Start-Process -FilePath "$programPath" -ArgumentList "!Quit"
 	
-	cd "$skinspath"
+	cd "$skinsPath"
 
 	Remove-Item -Path ".\Droptop Community Apps" -Recurse
 	Remove-Item -Path ".\Droptop Folders" -Recurse
 	Remove-Item -Path ".\Droptop" -Recurse
 
-	cd "$appdata"
+	cd "$appData"
 
 	Remove-Item -Path ".\Rainmeter\Layouts\Droptop" -Recurse
 
-	# Write-Host 'Files have been successfully removed from your PC. Starting Rainmeter...'
-
-	# Start-Sleep -Seconds 5
-	
-	Start-Process -FilePath "$programpath"
+	Start-Process -FilePath "$programPath"
 	Exit
 }
