@@ -14,7 +14,29 @@ Copy-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Sk
 
 & "$skinspath\Droptop Community Apps\Apps\$appname\Scripts\AutoCompile.ps1"
 
-$skinspath\Droptop\@Resources\Scripts\AppBuilder\MakeRmSkin.ps1 -Skin AppTemplate
+[CmdletBinding()]
+param (
+    [Parameter()]
+    [string]
+    AppTemplate
+)
+
+$skins = (Get-ChildItem -Directory).Name.ToLower()
+if (AppTemplate.ToLower() -notin $skins) {
+    Write-Output "AppTemplate is not a valid template!"
+    return
+}
+
+[System.IO.Directory]::CreateDirectory("$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins") | Out-Null
+Write-Host $skinspath\Droptop\@Resources\Scripts\AppBuilder
+
+Get-ChildItem -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\" -rec -file *.* | Where-Object { $_.LastWriteTime -lt (Get-Date).AddYears(-20) } | ForEach-Object { try { $_.LastWriteTime = '01/01/2020 00:00:00' } catch {} }
+
+Compress-Archive -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\*" -DestinationPath "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\AppTemplate.zip" -CompressionLevel Optimal -Force -ErrorAction Stop
+Rename-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\AppTemplate.zip" -NewName "AppTemplate.rmskin" -Force -ErrorAction Stop
+
+&"$skinspath\Droptop\@Resources\Scripts\AppBuilder\AddRmFooter" "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\AppTemplate.rmskin"
+
 
 Move-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\AppTemplate.rmskin" -Destination "$skinspath\Droptop Folders\Other files\@Rmskins\Droptop Apps\$newappname - $appauthor (Droptop App).rmskin"
 Copy-Item -Path "$skinspath\Droptop Folders\Other files\@Rmskins\Droptop Apps\$newappname - $appauthor (Droptop App).rmskin" -Destination "$skinspath\Redistributables\Droptop-Community-Apps\Apps" -Recurse
