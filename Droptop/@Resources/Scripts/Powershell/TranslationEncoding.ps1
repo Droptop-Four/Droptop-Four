@@ -1,6 +1,6 @@
 # Specify the zip folder path
 # $zipFolderPath = $args[0]
-$parentFolderPath = $args[0]
+# $parentFolderPath = $args[0]
 
 # # Parent folder path
 # $parentFolderPath = (Get-Item $zipFolderPath).Directory.FullName
