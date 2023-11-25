@@ -1,10 +1,3 @@
-$appname=$args[0]
-$appauthor=$args[1]
-$newappname=$args[2]
-$skinspath=$args[3]
-$gitinit=$args[4]
-$programpath=$args[5]
-
 $exclude = @('*.rmskin','*.md','Variables.inc','*.org')
 
 $ErrorActionPreference= 'silentlycontinue'
