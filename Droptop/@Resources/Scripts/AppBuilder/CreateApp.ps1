@@ -1,3 +1,10 @@
+$appname = 'test-test'
+$appauthor = 'test'
+$newappname = 'test'
+$skinspath = 'C:\users\carib\documents\rainmeter\skins\'
+$gitinit = 0
+$programpath = 'C:\Program Files\Rainmeter\Rainmeter.exe'
+
 $exclude = @('*.rmskin','*.md','Variables.inc','*.org')
 
 New-Item -ItemType "directory" -Path "$skinspath\Droptop Folders\Other files\@Rmskins\Droptop Apps"
@@ -12,9 +19,15 @@ Copy-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Sk
 Copy-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\Plugins\64bit\*" -Destination "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Plugins\64bit\" -Recurse
 Copy-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\Images\RMSKIN.bmp" -Destination "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\" -Recurse
 
-&"$skinspath\Droptop Community Apps\Apps\$appname\Scripts\AutoCompile.ps1"
+# $skinspath\Droptop\@Resources\Scripts\AppBuilder\start-process -FilePath "$skinspath\Droptop Community Apps\Apps\$appname\Scripts\AutoCompile.ps1"
+
+# & "$skinspath\Droptop\@Resources\Scripts\AppBuilder\MakeRmSkin.ps1"
 
 $skins = (Get-ChildItem -Directory).Name.ToLower()
+#if ($Skin.ToLower() -notin $skins) {
+#    Write-Output "$Skin is not a valid template!"
+#    return
+#}
 
 [System.IO.Directory]::CreateDirectory("$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins") | Out-Null
 Write-Host $skinspath\Droptop\@Resources\Scripts\AppBuilder
