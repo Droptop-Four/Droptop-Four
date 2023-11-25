@@ -1,8 +1,8 @@
+REM "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned" required to create RMSKIN files.
+
 @echo Reseting configurations to default
 attrib -h /s %4Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
-powershell.exe cd %4Droptop\@Resources\Scripts\Powershell"; .\TranslationEncoding.ps1 %4Droptop\@Resources\GlobalVar"
-REM robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Droptop %1" /E
 "C:\Program Files\Rainmeter\Rainmeter.exe" !DeactivateConfigGroup DroptopSuite
 "C:\Program Files\Rainmeter\Rainmeter.exe" !DeactivateConfig Droptop\DropdownBar\AppBar
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopIsBeta 0 %4Droptop\@Resources\GlobalVar\Control.inc"
@@ -18,21 +18,21 @@ REM robocopy %4Redistributables\@Rmskins\Update" %4Redistributables\Archive\Drop
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderLoc10 "#SKINSPATH#Droptop Folders\CustomFolder5" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderLoc11 "#SKINSPATH#Droptop Folders\CustomFolder6" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderLoc12 "#SKINSPATH#Droptop Folders\CustomFolder7" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID1 "Daily_Quotes-Bunz" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID2 "Droptop_Store-Bunz" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID1 "Droptop_Store-Bunz" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID2 "Daily_Quotes-Bunz" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID3 "Usage_Monitor-Cariboudjan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID4 "Disks-Phan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID5 "Sample_WebView-Cariboudjan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID5 "YouTube-Cariboudjan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppInstallDate1 %3" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppInstallDate2 %3" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppInstallDate3 %3" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppInstallDate4 %3" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppInstallDate5 %3" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Daily_Quotes-Bunz 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Droptop_Store-Bunz 2 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Droptop_Store-Bunz 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Daily_Quotes-Bunz 2 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Usage_Monitor-Cariboudjan 3 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Disks-Phan 4 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Sample_WebView-Cariboudjan 5 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables YouTube-Cariboudjan 5 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables ReverseDarkLight 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables RecentFileFilter "" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables NowPlayingClipNum 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -531,6 +531,19 @@ attrib -h /s %4Redistributables\Basic-Version\Skins\Droptop Folders\desktop.ini"
 attrib -s /d /s %4Redistributables\Basic-Version\Skins\Droptop Folders\Games\*"
 powershell.exe cd %4Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; .\MakeRmSkin.ps1 -Skin Beta-Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'; Rename-Item -Path '.\@Rmskins\Beta-Update\Beta-Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop-Community-Apps\Apps' -Recurse
 
+REM git config --global user.name "%USERNAME%"
+REM git config --global user.email "N/A"
+
+REM git config --global http.sslVerify false
+REM cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
+REM git checkout main
+REM git pull
+
+REM git config --global http.sslVerify false
+REM cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
+REM git checkout main
+REM git pull
+
 RD /S /Q "%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop"
 RD /S /Q "%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop Folders"
 RD /S /Q "%USERPROFILE%\Documents\GitHub\Basic-Version\Droptop Community Apps"
@@ -566,7 +579,7 @@ git pull
 git add .
 git commit -m %2
 git push
-gh release create v%2 "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop_Beta_Update.rmskin" --latest --notes "# >>> :arrow_down: [Click here to download the beta](https://github.com/Droptop-Four/Beta-Update/releases/latest/download/Droptop_Beta_Update.rmskin) :arrow_down: <<<" --title "Droptop Update (Beta)"
+gh release create v%2 "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop_Beta_Update.rmskin" --latest --notes "See download link below (Droptop_Beta_Update.rmskin). See [Droptop Discord](https://discord.gg/droptop-four-800124057923485728) channel [#Preview-Updates](https://discord.com/channels/800124057923485728/801786468426973185) for change notes." --title "Droptop Update (Beta)"
 
 powershell.exe [console]::beep(800,200); [console]::beep(800,320)
 @echo Press any key to push all remaining versions to GitHub.
@@ -581,7 +594,7 @@ git pull
 git add .
 git commit -m %2
 git push
-gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Click here to download Droptop (New install)](https://github.com/Droptop-Four/Droptop-Four/releases/latest/download/Droptop_Basic_Version.rmskin) :arrow_down: <<<" --title "Droptop Four"
+gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Click here to update Droptop)](https://github.com/Droptop-Four/Droptop-Four/releases/latest/download/Droptop_Update.rmskin) :arrow_down: <<<" --title "Droptop Four"
 
 git config --global http.sslVerify true
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)

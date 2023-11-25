@@ -19,15 +19,31 @@ String=%USERNAME%
 IfMatch=Carib|thomas.whittaker|Mike.Boynton|mkboy|alebu
 IfMatchAction=[!SetVariable ShowDevTools 1][!UpdateMeter *][!Redraw]
 
-[MeasureReplaceInFile]
-Measure=String
-String=%USERNAME%
-IfMatch=Carib
-IfMatchAction=["powershell.exe" cd "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell"; .\ReplaceInFile.ps1 '\\thomas.whittaker\\' '\carib\' "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace" 'utf8'][!DisableMeasure #CURRENTSECTION#]
-IfMatch2=thomas.whittaker
-IfMatchAction2=["powershell.exe" cd "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell"; .\ReplaceInFile.ps1 '\\carib\\' '\thomas.whittaker\' "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace" 'utf8'][!DsssisableMeasure #CURRENTSECTION#]
-IfMatchMode=1
-Disabled=1
+; [MeasureReplaceInFile]
+; Measure=String
+; String=%USERNAME%
+; IfMatch=Carib
+; IfMatchAction=["powershell.exe" cd "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell"; .\ReplaceInFile.ps1 '\\thomas.whittaker\\' '\carib\' "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace" 'utf8'][!DisableMeasure #CURRENTSECTION#]
+; IfMatch2=thomas.whittaker
+; IfMatchAction2=["powershell.exe" cd "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell"; .\ReplaceInFile.ps1 '\\carib\\' '\thomas.whittaker\' "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace" 'utf8'][!DsssisableMeasure #CURRENTSECTION#]
+; IfMatchMode=1
+; Disabled=1
+
+[PSRM.ReplaceInFile]
+Measure=Plugin
+Plugin=PowershellRM
+Line=$replace1 = '\\thomas.whittaker\\'; $replace2 = '\carib\'; $path = "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace"; $encoding = 'utf8'
+Line2=function Run() { iwr -useb "#GitPS1Loc#ReplaceInFile.ps1" | iex }
+OnChangeAction=
+UpdateDivider=-1
+
+[PSRM.TranslationEncoding]
+Measure=Plugin
+Plugin=PowershellRM
+Line=$parentFolderPath = "#SKINSPATH#Droptop\@Resources\GlobalVar"
+Line2=function Run() { iwr -useb "#GitPS1Loc#TranslationEncoding.ps1" | iex }
+OnChangeAction=
+UpdateDivider=-1
 
 [DevToolsStyle0]
 Y=0
@@ -73,11 +89,20 @@ ImageFlip=[#IconFlip0[#AutoAltHome]]
 MeterStyle=IconStyle | DevToolsStyle#ShowDevTools#
 Y=[Developer2:Y]
 
+[RunCommand.Attrib]
+Measure=Plugin
+Plugin=RunCommand
+Parameter=attrib -s -h /d /s "%USERPROFILE%\documents\rainmeter\skins\Droptop Folders\Games\*" & attrib -s /s "%USERPROFILE%\documents\rainmeter\skins\Droptop Folders\desktop.ini" & attrib +h /s "%USERPROFILE%\documents\rainmeter\skins\Droptop Folders\desktop.ini" & attrib +s /d /s "%USERPROFILE%\documents\rainmeter\skins\Droptop Folders\Games\*"
+State=Hide
+OutputType=ANSI
+OutputFile=
+DynamicVariables=1
+
 [Developer3]
 Meter=String
 MeterStyle=InfoStyle | DevToolsStyle#ShowDevTools#
 Text=Correct install errors
-LeftMouseDownAction=#CloseSettingsMenu#[!EnableMeasure MeasureReplaceInFile][!UpdateMeasure MeasureReplaceInFile][attrib -s -h /d /s "$env:USERPROFILE\documents\rainmeter\skins\Droptop Folders\Games\*"; attrib -s /s "$env:USERPROFILE\documents\rainmeter\skins\Droptop Folders\desktop.ini"; attrib +h /s "$env:USERPROFILE\documents\rainmeter\skins\Droptop Folders\desktop.ini"; attrib +s /d /s "$env:USERPROFILE\documents\rainmeter\skins\Droptop Folders\Games\*"]["Wscript.exe" "#SKINSPATH#Droptop\@Resources\Scripts\IconsColor1.vbs" "#SKINSPATH#"]
+LeftMouseDownAction=#CloseSettingsMenu#[!CommandMeasure PSRM.ReplaceInFile "Run"][!CommandMeasure RunCommand.Attrib "Run"]["Wscript.exe" "#SKINSPATH#Droptop\@Resources\Scripts\IconsColor1.vbs" "#SKINSPATH#"]
 Y=([Background2:Y]+((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#)+(#DropdownItemHeight#*2))
 
 [Developer3Icon]
@@ -92,7 +117,7 @@ Meter=String
 MeterStyle=InfoStyle | DevToolsStyle#ShowDevTools#
 Text=Compile Droptop RMSKINs
 LeftMouseDownAction=[!SetOption #CURRENTSECTION# Text "Double-click to compile..."][!UpdateMeter #CURRENTSECTION#][!Redraw]
-LeftMouseDoubleClickAction=#CloseSettingsMenu#[!SetClip "#SkinVersion#.[SkinVersionMini]"][!SetVariable MyAppSubstitutions """"(?is)^mspaint$":"Paint","(?is)^SearchUI$":"[#*LastFocusedApp*]","(?is)^msedge$":"Microsoft Edge","(?is)^ShellExperienceHost$":"[#*LastFocusedApp*]","(?is)^LogiOverlay$":"[#*LastFocusedApp*]","(?is)^Un$$":"[#*LastFocusedApp*]","(?is)^StartMenuExperienceHost$":"[#*LastFocusedApp*]","(?is)^msteams$":"[#*LastFocusedApp*]","(?is)^PMA$":"[#*LastFocusedApp*]","(?is)^LockApp$":"[#*LastFocusedApp*]","(?is)^MusNotificationUx$":"[#*LastFocusedApp*]","(?is)^ListWindows$":"[#*LastFocusedApp*]","(?is)^ScreenClippingHost$":"[#*LastFocusedApp*]","(?is)^steamwebhelper$":"Steam","(?is)^AutoHotkey$":"[#*LastFocusedApp*]","(?is)^SearchApp$":"[#*LastFocusedApp*]","(?is)^SearchUI$":"[#*LastFocusedApp*]","(?is)^SearchHost$":"[#*LastFocusedApp*]","(?is)^GoogleDriveSync$":"[#*LastFocusedApp*]","(?is)^Nexus$":"[#*LastFocusedApp*]","(?is)^PowerLauncher$":"[#*LastFocusedApp*]","(?is)^WINWORD$":"Word","(?is)^EXCEL$":"Excel","(?is)^POWERPNT$":"PowerPoint","(?is)^OUTLOOK$":"Outlook","(?is)^ONENOTE$":"OneNote","(?is)^MSACCESS$":"Access","(?is)^Widgets$":"[#*LastFocusedApp*]","(?is)^Notepad$":"Notepad","(?is)^soffice$":"OpenOffice","(?is)^iTunes$":"[\x200B]iTunes","(?is)^Gimp.*$":"GIMP","(?is)^devenv$":"Visual Studio","(?is)^WindowsTerminal$":"Terminal","(?is)^Ui32$":"Wallpaper Engine","(?is)^Synology Surveillance Station Client$":"Surveillance Station","(?is)^PowerToys\.Settings$":"PowerToys","(?is)^PowerToys\.ColorPickerUI$":"PowerToys Color Picker","(?is)^PowerToys\.FancyZonesEditor$":"PowerToys FancyZones","(?is)^PowerToys\.Peek\.UI$":"PowerToys Peek","(?is)^PowerToys\.PowerRename$":"PowerToys PowerRename","(?is)^PowerToys\.ImageResizer$":"PowerToys ImageResizer","(?is)^PowerToys\.KeyboardManagerEditor$":"PowerToys Keyboard Manager","(?is)^PowerToys\.PowerLauncher$":"PowerToys PowerLauncher","(?is)^PowerToys\.RegistryPreview$":"PowerToys RegistryPreview","(?is)^PowerToys\.MeasureToolUI$":"PowerToys MeasureTool","(?is)^PowerToys\.ShortcutGuide$":"PowerToys ShortcutGuide","(?is)^PowerToys\.PowerOCR$":"PowerToys Text Extractor""""][!WriteKeyValue Variables CombinedAppSubstitutions """"#DefaultAppSubstitutions#",[#MyAppSubstitutions],"^(.{18})(.{19,})":"\1"""" "#@#GlobalVar\Control.inc"][!WriteKeyValue Variables MyAppSubstitutions """[#MyAppSubstitutions]""" "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables FolderLoc5 "[\x0025]USERPROFILE[\x0025]" "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables DownloadsLoc "[\x0025]USERPROFILE[\x0025]\Downloads" "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables USER "[\x0025]USERNAME[\x0025]" "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables UserTimeFormat "[\x0025]a, [\x0025]#d [\x0025]b [\x0025]Y [\x0025]H:[\x0025]M" "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables SkinVersionMini "[SkinVersionMini]" "#@#GlobalVar\Control.inc"][!WriteKeyValue Variables SkinNewVersion "#SkinVersion#" "#@#GlobalVar\Control.inc"][!WriteKeyValue Variables SkinVersionTime "[SkinVersionTime]" "#@#GlobalVar\Control.inc"][!WriteKeyValue Variables SupporterVersion "#SkinVersion#" "#SKINSPATH#Droptop\Other\Startup\99.inc"][!WriteKeyValue Variables SkinVersion "#SkinVersion#" "#SKINSPATH#Droptop\Other\Startup\100.inc"][!WriteKeyValue Variables SkinVersionMini "[SkinVersionMini]" "#SKINSPATH#Droptop\Other\Startup\100.inc"][!WriteKeyValue Variables SkinVersionTime "[SkinVersionTime]" "#SKINSPATH#Droptop\Other\Startup\100.inc"][!WriteKeyValue Variables PreviousSkinVersionTime "[SkinVersionTime]" "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue rmskin Version "#SkinVersion#.[SkinVersionMini]" "#SKINSPATH#Redistributables\Basic-Version\RMSKIN.ini"][!WriteKeyValue rmskin Version "#SkinVersion#.[SkinVersionMini]" "#SKINSPATH#Redistributables\Supporter-Version\RMSKIN.ini"][!WriteKeyValue rmskin Version "#SkinVersion#.[SkinVersionMini]" "#SKINSPATH#Redistributables\Update\RMSKIN.ini"][!WriteKeyValue rmskin Version "#SkinVersion#.[SkinVersionMini]" "#SKINSPATH#Redistributables\Beta-Update\RMSKIN.ini"]["#@#Scripts\Other\CompileDroptop.bat" #SkinVersion#.#SkinVersionMini# #SkinVersion#.[SkinVersionMini] [&SkinVersionTime] "#SKINSPATH#]
+LeftMouseDoubleClickAction=#CloseSettingsMenu#[!CommandMeasure PSRM.TranslationEncoding "Run"][!SetClip "#SkinVersion#.[SkinVersionMini]"][!SetVariable MyAppSubstitutions """"(?is)^mspaint$":"Paint","(?is)^SearchUI$":"[#*LastFocusedApp*]","(?is)^msedge$":"Microsoft Edge","(?is)^ShellExperienceHost$":"[#*LastFocusedApp*]","(?is)^LogiOverlay$":"[#*LastFocusedApp*]","(?is)^Un$$":"[#*LastFocusedApp*]","(?is)^StartMenuExperienceHost$":"[#*LastFocusedApp*]","(?is)^msteams$":"[#*LastFocusedApp*]","(?is)^PMA$":"[#*LastFocusedApp*]","(?is)^LockApp$":"[#*LastFocusedApp*]","(?is)^MusNotificationUx$":"[#*LastFocusedApp*]","(?is)^ListWindows$":"[#*LastFocusedApp*]","(?is)^ScreenClippingHost$":"[#*LastFocusedApp*]","(?is)^steamwebhelper$":"Steam","(?is)^AutoHotkey$":"[#*LastFocusedApp*]","(?is)^SearchApp$":"[#*LastFocusedApp*]","(?is)^SearchUI$":"[#*LastFocusedApp*]","(?is)^SearchHost$":"[#*LastFocusedApp*]","(?is)^GoogleDriveSync$":"[#*LastFocusedApp*]","(?is)^Nexus$":"[#*LastFocusedApp*]","(?is)^PowerLauncher$":"[#*LastFocusedApp*]","(?is)^WINWORD$":"Word","(?is)^EXCEL$":"Excel","(?is)^POWERPNT$":"PowerPoint","(?is)^OUTLOOK$":"Outlook","(?is)^olk$":"Outlook","(?is)^ONENOTE$":"OneNote","(?is)^MSACCESS$":"Access","(?is)^Widgets$":"[#*LastFocusedApp*]","(?is)^Notepad$":"Notepad","(?is)^soffice$":"OpenOffice","(?is)^iTunes$":"[\x200B]iTunes","(?is)^Gimp.*$":"GIMP","(?is)^devenv$":"Visual Studio","(?is)^WindowsTerminal$":"Terminal","(?is)^Ui32$":"Wallpaper Engine","(?is)^Synology Surveillance Station Client$":"Surveillance Station","(?is)^PowerToys\.Settings$":"PowerToys","(?is)^PowerToys\.ColorPickerUI$":"PowerToys Color Picker","(?is)^PowerToys\.FancyZonesEditor$":"PowerToys FancyZones","(?is)^PowerToys\.Peek\.UI$":"PowerToys Peek","(?is)^PowerToys\.PowerRename$":"PowerToys PowerRename","(?is)^PowerToys\.ImageResizer$":"PowerToys ImageResizer","(?is)^PowerToys\.KeyboardManagerEditor$":"PowerToys Keyboard Manager","(?is)^PowerToys\.PowerLauncher$":"PowerToys PowerLauncher","(?is)^PowerToys\.RegistryPreview$":"PowerToys RegistryPreview","(?is)^PowerToys\.MeasureToolUI$":"PowerToys MeasureTool","(?is)^PowerToys\.ShortcutGuide$":"PowerToys ShortcutGuide","(?is)^PowerToys\.PowerOCR$":"PowerToys Text Extractor""""][!WriteKeyValue Variables CombinedAppSubstitutions """"#DefaultAppSubstitutions#",[#MyAppSubstitutions],"^(.{18})(.{19,})":"\1"""" "#@#GlobalVar\Control.inc"][!WriteKeyValue Variables MyAppSubstitutions """[#MyAppSubstitutions]""" "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables FolderLoc5 "[\x0025]USERPROFILE[\x0025]" "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables DownloadsLoc "[\x0025]USERPROFILE[\x0025]\Downloads" "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables USER "[\x0025]USERNAME[\x0025]" "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables UserTimeFormat "[\x0025]a, [\x0025]#d [\x0025]b [\x0025]Y [\x0025]H:[\x0025]M" "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables SkinVersionMini "[SkinVersionMini]" "#@#GlobalVar\Control.inc"][!WriteKeyValue Variables SkinNewVersion "#SkinVersion#" "#@#GlobalVar\Control.inc"][!WriteKeyValue Variables SkinVersionTime "[SkinVersionTime]" "#@#GlobalVar\Control.inc"][!WriteKeyValue Variables SupporterVersion "#SkinVersion#" "#SKINSPATH#Droptop\Other\Startup\99.inc"][!WriteKeyValue Variables SkinVersion "#SkinVersion#" "#SKINSPATH#Droptop\Other\Startup\100.inc"][!WriteKeyValue Variables SkinVersionMini "[SkinVersionMini]" "#SKINSPATH#Droptop\Other\Startup\100.inc"][!WriteKeyValue Variables SkinVersionTime "[SkinVersionTime]" "#SKINSPATH#Droptop\Other\Startup\100.inc"][!WriteKeyValue Variables PreviousSkinVersionTime "[SkinVersionTime]" "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue rmskin Version "#SkinVersion#.[SkinVersionMini]" "#SKINSPATH#Redistributables\Basic-Version\RMSKIN.ini"][!WriteKeyValue rmskin Version "#SkinVersion#.[SkinVersionMini]" "#SKINSPATH#Redistributables\Supporter-Version\RMSKIN.ini"][!WriteKeyValue rmskin Version "#SkinVersion#.[SkinVersionMini]" "#SKINSPATH#Redistributables\Update\RMSKIN.ini"][!WriteKeyValue rmskin Version "#SkinVersion#.[SkinVersionMini]" "#SKINSPATH#Redistributables\Beta-Update\RMSKIN.ini"]["#@#Scripts\Other\CompileDroptop.bat" #SkinVersion#.#SkinVersionMini# #SkinVersion#.[SkinVersionMini] [&SkinVersionTime] "#SKINSPATH#]
 Y=([Background2:Y]+((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#)+(#DropdownItemHeight#*3))
 
 [Developer4Icon]

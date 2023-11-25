@@ -16,3 +16,7 @@ Center_Infos-TheyCallMePapa
 Translator-Bunz
 Speedtest-Bunz
 Feeder-Cariboudjan
+Headlines-Cariboudjan
+GSuite-Cariboudjan
+Translator-Bunz
+SearchBar-Mike_Boynton

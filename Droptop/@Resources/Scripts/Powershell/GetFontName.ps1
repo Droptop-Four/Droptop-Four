@@ -1,4 +1,4 @@
-Add-Type -AssemblyName System.Drawing
+﻿Add-Type -AssemblyName System.Drawing
 $path = "$filePath$fileName$extension"
 
 $fontFiles = Get-ChildItem $path

@@ -10,8 +10,8 @@
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\WeatherParser.ini" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\ChangeMode.ini" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\Diagnostics.ini" />
-                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\CheckUpdate.ini" />
-                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\GetGUID.ini" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\CheckUpdate.ini" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\GetGUID.ini" />
             </Folder>
             <Folder name="ContextBox">
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\ContextBox\ContextBox1.ini" />
@@ -35,9 +35,9 @@
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Startup\100.inc" />
         </Folder>
         <Folder name="GlobalVar">
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Control.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\UserSettings.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop Folders\Other files\UserAppCommands.inc" />
-            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Control.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\FolderSettings.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\TopBarPos.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\IncludedCommands.inc" />
@@ -77,14 +77,13 @@
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Shadows.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\MoreOptions.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\TimeFormat.inc" />
-                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\TimeFormatCenter.inc" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\TimeFormatCenter.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\InputFieldUsername.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\InputFieldFolderTitle.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\InputFieldDownloadsLoc.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\InputFieldGmail.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\InputFieldWeather.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\InputFieldRecentFilter.inc" />
-                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\InputFieldFont.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\GenerateRmskin.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\NoAppOptions.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\HotCorner.inc" />
@@ -97,40 +96,40 @@
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\RemoveDroptop.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\AppDrawer.inc" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\PlayerType.inc" />
-                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\VolumeSliders.inc" />
-                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Developer.inc" />
-                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Battery.inc" />
-                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\BatterySaver.inc" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\VolumeSliders.inc" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Developer.inc" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Battery.inc" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\BatterySaver.inc" />
             </Folder>
         </Folder>
         <Folder name="Languages">
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\ar-SA.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\cs-CZ.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\da-DK.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\de-DE.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\en-CA.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\en-GB.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\en-US.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\es-ES.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\fa-IR.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\fr-FR.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\id-ID.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\it-IT.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\ja-JP.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\ko-KR.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\lv-LV.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\nl-NL.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\pl-PL.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\pt-BR.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\ro-RO.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\ru-RU.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\sk-SK.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\th-TH.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\tr-TR.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\uk-UA.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\vi-VN.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\zh-CN.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\zh-TW.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\ar-SA.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\cs-CZ.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\da-DK.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\de-DE.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\en-CA.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\en-GB.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\en-US.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\es-ES.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\fa-IR.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\fr-FR.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\id-ID.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\it-IT.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\ja-JP.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\ko-KR.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\lv-LV.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\nl-NL.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\pl-PL.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\pt-BR.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\ro-RO.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\ru-RU.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\sk-SK.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\th-TH.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\tr-TR.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\uk-UA.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\vi-VN.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\zh-CN.inc" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\zh-TW.inc" />
         </Folder>
         <Folder name="App Buttons">
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\Action.ini" />
@@ -162,7 +161,7 @@
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\Application.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Alarm\Alarm.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Battery\Battery.ini" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Copy.ini" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Copy.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Downloads\Downloads.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Mail\Mail.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\MOND\MOND.ini" />
@@ -211,13 +210,15 @@
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\Settings\Folder\Config\FolderConfig.inc" />
             </Folder>
             <Folder name="Sample WebView">
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\CustomApp.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\Config\MainConfig.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\Folder\Config\FolderConfig.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\Settings\Settings.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\Settings\Config\MainConfig.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\Folder\Config\FolderConfig.inc" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\CustomApp.ini" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\Config\MainConfig.inc" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\Folder\Config\FolderConfig.inc" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\Settings\Settings.ini" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\Settings\Config\MainConfig.inc" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_WebView-Cariboudjan\Folder\Config\FolderConfig.inc" />
             </Folder>
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Update\Update0.ini" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Update\Update1.ini" />
         </Folder>
         <Folder name="Windows">
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\FunctionSetting.ini" />
@@ -228,8 +229,9 @@
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\ThemeBuilder.Create.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\ThemeBuilder.Share.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\CommandBuilder.Create.ini" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\AppName.Create.ini" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\UpdateDroptop.ini" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\AppName.Create.ini" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\UpdateDroptop.ini" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\DownloadUpdates.ini" />
         </Folder>
         <Folder name="Power">
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\Other\PowerMenu\dialogLock.ini" />
@@ -246,7 +248,7 @@
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\SettingsSubMenuMeters.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\MenubarInfoMeters.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\PowerMenuMeters.inc" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\MonitorBrightness0.ini" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\MonitorBrightness0.ini" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\WindowMeters.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\CommunityAppStartup.inc" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\CommunityAppMeters.inc" />
@@ -261,7 +263,7 @@
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\Droparea1.ini" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\Droparea\Droparea.ini" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\Mail0.ini" />
-                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\LoadingScreen.inc" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\LoadingScreen.inc" />
             </Folder>
             <Folder name="ArrowStyles">
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\ArrowStyle\ArrowStyle1.ini" />
@@ -304,28 +306,26 @@
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\CreateShortcut.vbs" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\FetchVars.ps1" />
             <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.ahk" />
-            <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\RestoreFolders.bat" />
+            <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\RestoreFolders.bat" />
             <Folder name="Lua">
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\CScript.lua" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\DropScroll.lua" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\Func.lua" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\SelectMonitor.lua" />
-                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\InputHandler.lua" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\InputHandler.lua" />
             </Folder>
             <Folder name="Powershell">
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\Func.ps1" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\FetchVars.ps1" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\GetFontName.ps1" />
-                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\Uninstall.ps1" />
-                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\RemoveDroptop.ps1" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\ExcludeDefender.ps1" />
-                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\ReplaceInFile.ps1" />
-                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\RenameFolders.ps1" />
-                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\TranslationEncoding.ps1" />
-                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\DownloadUpdates.ps1" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\ReplaceInFile.ps1" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\TranslationEncoding.ps1" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\DownloadUpdates.ps1" />
             </Folder>
             <Folder name="Other">
                 <File name="CompileDroptop.bat" />
+                <File name="DroptopWorkspace" />
             </Folder>
             <Folder name="Community Apps">
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\CreateApp.ps1" />
@@ -333,7 +333,7 @@
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\MakeRmSkin.ps1" />
                 <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\CreateCommands.ps1" />
                 <File name="XcopyExclude.txt" />
-                <File name="C:\Users\carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\BarModifier\AutoBarModifier.ps1" />
+                <File name="C:\users\carib\Documents\Rainmeter\Skins\Droptop Community Apps\Apps\Sample_App-Cariboudjan\BarModifier\AutoBarModifier.ps1" />
             </Folder>
         </Folder>
         <Folder name="Other">

@@ -22,17 +22,17 @@ AppName=Daily Quotes
 AppAuthor=Bunz
 AppVersion=1.0.3
 
-Quote1=Laughter is the sun that drives winter from the human face.
-Author1=Victor Hugo
+Quote1=Change is the end result of all true learning.
+Author1=Leo Buscaglia
 
-Quote2=Start with what is right rather than what is acceptable.
-Author2=Franz Kafka
+Quote2=Laughter is the sun that drives winter from the human face.
+Author2=Victor Hugo
 
-Quote3=If you do not conquer self, you will be conquered by self.
-Author3=Napoleon Hill
-Word1=aprosexia
-Definition1=noun: The inability to concentrate.
-HistoryDate1=1644
-HistoryDesc1=First protestant ministry society in New England
-Quote4=The undertaking of a new action brings new strength.
-Author4=Richard L. Evans
+Quote3=Start with what is right rather than what is acceptable.
+Author3=Franz Kafka
+Word1=back-form
+Definition1=verb tr.: To make a word by dropping an apparent affix from a longer word.
+HistoryDate1=1789
+HistoryDesc1=New Jersey is 1st state to ratify Bill of Rights
+Quote4=If you do not conquer self, you will be conquered by self.
+Author4=Napoleon Hill
