@@ -26,7 +26,7 @@ Copy-Item "$skinspath\Droptop Folders\Other files\Themes\*.otf" -Destination "$s
 # Removes measures from rmskin if not needed (Does not remove original file)
 If ($includemeasures -eq "0")
 {
-    Remove-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplate\Skins\Droptop Folders\Other files\Themes\ThemeMeasures.inc" -Recurse
+	Remove-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplate\Skins\Droptop Folders\Other files\Themes\ThemeMeasures.inc" -Recurse
 	New-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplate\Skins\Droptop Folders\Other files\Themes\ThemeMeasures.inc"
 }
 
@@ -47,7 +47,7 @@ Remove-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplat
 # Remove-Item -Path "$skinspath\Redistributables\Droptop-Community-Themes\$themename - $themeauthor (Droptop Theme).rmskin" -Recurse
 # Copy-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\ThemeTemplate.rmskin" -Destination "$skinspath\Redistributables\Droptop-Community-Themes" -Recurse
 # Rename-Item -Path "$skinspath\Redistributables\Droptop-Community-Themes\ThemeTemplate.rmskin" -NewName "$themename - $themeauthor (Droptop Theme).rmskin" -Force -ErrorAction Stop
-Move-Item -Path '$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\ThemeTemplate.rmskin' -Destination "$skinspath\Droptop Folders\Other files\@Rmskins\Droptop Themes\$themename - $themeauthor (Droptop Theme).rmskin"
+Move-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\ThemeTemplate.rmskin" -Destination "$skinspath\Droptop Folders\Other files\@Rmskins\Droptop Themes\$themename - $themeauthor (Droptop Theme).rmskin"
 
 Remove-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplate\Skins\Droptop\@Resources\Themes\*" -Recurse
 Remove-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\*.zip" -Recurse
