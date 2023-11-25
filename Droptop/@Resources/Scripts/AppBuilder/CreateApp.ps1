@@ -1,7 +1,5 @@
 $exclude = @('*.rmskin','*.md','Variables.inc','*.org')
 
-$ErrorActionPreference= 'silentlycontinue'
-
 cd "$skinspath"
 New-Item -ItemType "directory" -Path ".\Droptop Folders\Other files\@Rmskins\Droptop Apps"
 Remove-Item -Path ".\Droptop Folders\Other files\@Rmskins\Droptop Apps\$newappname - $appauthor (Droptop App).rmskin" -Recurse
