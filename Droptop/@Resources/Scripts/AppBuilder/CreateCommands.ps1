@@ -14,7 +14,7 @@ Compress-Archive -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\Command
 Rename-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\CommandsTemplate.zip" -NewName "CommandsTemplate.rmskin" -Force -ErrorAction Stop
 &"$skinspath\Droptop\@Resources\Scripts\AppBuilder\AddRmFooter" "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\CommandsTemplate.rmskin"
 
-Move-Item -Path '$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\CommandsTemplate.rmskin' -Destination "$skinspath\Droptop Folders\Other files\@Rmskins\Droptop App Commands\Droptop App Commands - $commandsauthor.rmskin"
+Move-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\CommandsTemplate.rmskin" -Destination "$skinspath\Droptop Folders\Other files\@Rmskins\Droptop App Commands\Droptop App Commands - $commandsauthor.rmskin"
 
 Remove-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\CommandsTemplate\Skins\Droptop Folders\Other files\UserAppCommands.inc" -Recurse
 Remove-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\*.zip" -Recurse
