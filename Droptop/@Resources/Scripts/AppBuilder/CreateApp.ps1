@@ -48,8 +48,8 @@ if ($gitinit -eq 1)
 	(Get-Content "$skinspath\Droptop Community Apps\Apps\$appname\README.md") -replace "Your App Name - Author Name","$newappname - $appauthor" | out-file "$skinspath\Droptop Community Apps\Apps\$appname\README.md"
 	Set-Content -NoNewline -Encoding OEM "$skinspath\Droptop Community Apps\Apps\$appname\README.md" -Value (Get-Content -Raw -Encoding 'utf8' "$skinspath\Droptop Community Apps\Apps\$appname\README.md")
 }
-# Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"', '"Droptop\Other\WindowMenu"'
-Start-Process -FilePath "$programpath" -ArgumentList "!Quit"
+
+Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"', '"Droptop\Other\WindowMenu"'
 
 Start-Sleep -Seconds 3
 
