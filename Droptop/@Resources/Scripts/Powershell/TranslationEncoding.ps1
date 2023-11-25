@@ -1,7 +1,3 @@
-# Specify the zip folder path
-# $zipFolderPath = $args[0]
-$parentFolderPath = $args[0]
-
 # # Parent folder path
 # $parentFolderPath = (Get-Item $zipFolderPath).Directory.FullName
 
@@ -28,4 +24,4 @@ foreach ($incFile in $incFiles) {
     [System.IO.File]::WriteAllBytes($incFile.FullName, $outputContent)
 }
 
-Write-Host "File transformation completed."
+# Write-Host "File transformation completed."
