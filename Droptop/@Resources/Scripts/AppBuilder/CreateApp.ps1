@@ -33,7 +33,7 @@ Rename-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\App
 
 
 Move-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\AppTemplate.rmskin" -Destination "$skinspath\Droptop Folders\Other files\@Rmskins\Droptop Apps\$newappname - $appauthor (Droptop App).rmskin"
-Copy-Item -Path "$skinspath\Droptop Folders\Other files\@Rmskins\Droptop Apps\$newappname - $appauthor (Droptop App).rmskin" -Destination "$skinspath\Redistributables\Droptop-Community-Apps\Apps" -Recurse
+# Copy-Item -Path "$skinspath\Droptop Folders\Other files\@Rmskins\Droptop Apps\$newappname - $appauthor (Droptop App).rmskin" -Destination "$skinspath\Redistributables\Droptop-Community-Apps\Apps" -Recurse
 
 Remove-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\*" -Recurse
 Remove-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Plugins\32bit\*" -Recurse
