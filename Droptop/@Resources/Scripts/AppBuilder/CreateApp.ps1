@@ -1,3 +1,5 @@
+$ErrorActionPreference= 'silentlycontinue'
+
 $exclude = @('*.rmskin','*.md','Variables.inc','*.org')
 
 New-Item -ItemType "directory" -Path "$skinspath\Droptop Folders\Other files\@Rmskins\Droptop Apps"
