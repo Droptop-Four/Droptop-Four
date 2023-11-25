@@ -28,4 +28,4 @@ foreach ($incFile in $incFiles) {
     [System.IO.File]::WriteAllBytes($incFile.FullName, $outputContent)
 }
 
-Write-Host "File transformation completed."
+# Write-Host "File transformation completed."
