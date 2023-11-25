@@ -1,5 +1,9 @@
+# Specify the zip folder path
+# $zipFolderPath = $args[0]
+$parentFolderPath = $args[0]
+
 # # Parent folder path
-$parentFolderPath = "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\"
+# $parentFolderPath = (Get-Item $zipFolderPath).Directory.FullName
 
 # # Extract the "Translations" folder from the zip to the parent folder
 # Expand-Archive -Path $zipFolderPath -DestinationPath $parentFolderPath -Force
@@ -24,4 +28,4 @@ foreach ($incFile in $incFiles) {
     [System.IO.File]::WriteAllBytes($incFile.FullName, $outputContent)
 }
 
-# Write-Host "File transformation completed."
+Write-Host "File transformation completed."
