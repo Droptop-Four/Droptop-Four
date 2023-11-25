@@ -1,10 +1,3 @@
-$appname = 'test-test'
-$appauthor = 'test'
-$newappname = 'test'
-$skinspath = 'C:\users\carib\documents\rainmeter\skins\'
-$gitinit = 0
-$programpath = 'C:\Program Files\Rainmeter\Rainmeter.exe'
-
 $exclude = @('*.rmskin','*.md','Variables.inc','*.org')
 
 New-Item -ItemType "directory" -Path "$skinspath\Droptop Folders\Other files\@Rmskins\Droptop Apps"
