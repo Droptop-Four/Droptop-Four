@@ -1,5 +1,5 @@
 # # Parent folder path
-$parentFolderPath = "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar"
+$parentFolderPath = "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\"
 
 # # Extract the "Translations" folder from the zip to the parent folder
 # Expand-Archive -Path $zipFolderPath -DestinationPath $parentFolderPath -Force
