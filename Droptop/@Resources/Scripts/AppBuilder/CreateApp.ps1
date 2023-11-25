@@ -12,20 +12,9 @@ Copy-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Sk
 Copy-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\Plugins\64bit\*" -Destination "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Plugins\64bit\" -Recurse
 Copy-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\Images\RMSKIN.bmp" -Destination "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\" -Recurse
 
-& "$skinspath\Droptop Community Apps\Apps\$appname\Scripts\AutoCompile.ps1"
-
-[CmdletBinding()]
-param (
-    [Parameter()]
-    [string]
-    AppTemplate
-)
+&"$skinspath\Droptop Community Apps\Apps\$appname\Scripts\AutoCompile.ps1"
 
 $skins = (Get-ChildItem -Directory).Name.ToLower()
-if (AppTemplate.ToLower() -notin $skins) {
-    Write-Output "AppTemplate is not a valid template!"
-    return
-}
 
 [System.IO.Directory]::CreateDirectory("$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins") | Out-Null
 Write-Host $skinspath\Droptop\@Resources\Scripts\AppBuilder
@@ -34,7 +23,6 @@ Get-ChildItem -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplat
 
 Compress-Archive -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\AppTemplate\*" -DestinationPath "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\AppTemplate.zip" -CompressionLevel Optimal -Force -ErrorAction Stop
 Rename-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\AppTemplate.zip" -NewName "AppTemplate.rmskin" -Force -ErrorAction Stop
-
 &"$skinspath\Droptop\@Resources\Scripts\AppBuilder\AddRmFooter" "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\AppTemplate.rmskin"
 
 
@@ -55,7 +43,8 @@ if ($gitinit -eq 1)
 	Set-Content -NoNewline -Encoding OEM "$skinspath\Droptop Community Apps\Apps\$appname\README.md" -Value (Get-Content -Raw -Encoding 'utf8' "$skinspath\Droptop Community Apps\Apps\$appname\README.md")
 }
 
-Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"'
+Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"', '"Droptop\Other\WindowMenu"'
+
+Start-Sleep -Seconds 3
 
 Invoke-Item "$skinspath\Droptop Folders\Other files\@Rmskins\Droptop Apps"
-
