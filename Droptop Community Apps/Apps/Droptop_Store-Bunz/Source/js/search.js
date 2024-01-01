@@ -56,6 +56,12 @@ const search_bar = document.getElementById('searchbar');
 		}
 	}
 
+	selezionati.sort((a, b) => {
+		const nameA = (a.app ? a.app.name : a.theme.name).toLowerCase();
+		const nameB = (b.app ? b.app.name : b.theme.name).toLowerCase();
+		return nameA.localeCompare(nameB);
+	  });
+;
 	const searchList = document.getElementById('searchList');
 
 	let result = '';
@@ -65,18 +71,18 @@ const search_bar = document.getElementById('searchbar');
 
 		if (item.app) {
 			let selected_app = item.app;
-
+			
 			result += `
         <div>
           <div class="app-card" id="${selected_app.id}" onclick="window.location='community-apps.html?id=${selected_app.id}';" style="cursor: pointer;">
             <div class="app-card-container">
-              <img class="app-card-image" src="${selected_app.image_url}" alt="${selected_app.name} image" loading="lazy">
+              <a><img class="app-card-image" src="${selected_app.image_url}" alt="${selected_app.name} image" loading="lazy"><span class="ribbon-app">APP</span></a>
               <h3 class="app-card-name">${selected_app.name}</h3>
               <p class="app-card-version">v${selected_app.version}</p>
               <p class="app-card-author">Created by <a class="app-card-author-link">${selected_app.author}</a></p>
               <p class="app-card-desc">${selected_app.desc}</p>
               <div class="app-card-buttons">
-                  <a class="app-card-button bold" href="community-apps.html?id=${selected_app.id}">View</a>
+                  <a class="app-card-button bold" href="community-apps.html?id=${selected_app.id}">View App</a>
               </div>
             </div>
           </div>
@@ -84,16 +90,17 @@ const search_bar = document.getElementById('searchbar');
         `;
 		} else {
 			let selected_theme = item.theme;
+			
 			result += `
               <div>
                 <div class="theme-card" id="${selected_theme.id}" onclick="window.location='community-themes.html?id=${selected_theme.id}';" style="cursor: pointer;">
                   <div class="theme-card-container">
-                    <img class="theme-card-image" src="${selected_theme.image_url}" alt="${selected_theme.name} image" loading="lazy">
+                    <img class="theme-card-image" src="${selected_theme.image_url}" alt="${selected_theme.name} image" loading="lazy"><span class="ribbon-theme">THEME</span>
                     <h3 class="theme-card-name">${selected_theme.name}</h3>
                     <p class="theme-card-author">Created by <a class="theme-card-author-link">${selected_theme.author}</a></p>
                     <p class="theme-card-desc">${selected_theme.desc}</p>
                     <div class="theme-card-buttons">
-                        <a class="theme-card-button bold" href="community-themes.html?id=${selected_theme.id}">View</a>
+                        <a class="theme-card-button bold" href="community-themes.html?id=${selected_theme.id}">View Theme</a>
                     </div>
                   </div>
                 </div>

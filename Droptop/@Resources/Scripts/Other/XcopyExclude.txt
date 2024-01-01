@@ -20,3 +20,14 @@ Headlines-Cariboudjan
 GSuite-Cariboudjan
 Translator-Bunz
 SearchBar-Mike_Boynton
+WakaTime-Bunz
+ToolTipster-TheyCallMePapa
+Spotify_Web_Player-Cariboudjan
+Quick_Search-KazukiGames82
+Quick_Settings-Cariboudjan
+PC_Scanner-TheyCallMePapa
+Multiples_Mails-KazukiGames82
+KeysLocks-KazukiGames82
+Dynamic_Infos-KazukiGames82
+Sample_App-Cariboudjan
+Sample_WebView-Cariboudjan

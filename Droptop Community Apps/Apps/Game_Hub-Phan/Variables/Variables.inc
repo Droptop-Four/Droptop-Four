@@ -1,11 +1,18 @@
-[Rainmeter]
-
 [Variables]
 
+; -------------------------------------------------------------------------------
+; Below variables are required for the app's function. Do not remove or change.
+; -------------------------------------------------------------------------------
+
 MyAppID=Game_Hub-Phan
+MyAppGUID=d7a2bf71-bc19-4308-8e3a-a5acb3762ce0
 MyAppName=Game Hub
 MyAppAuthor=Phan
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Game_Hub-Phan\Variables\Variables.inc
+
+; -------------------------------------------------------------------------------
+; Add your variables below: 
+; -------------------------------------------------------------------------------
 
 GameHub.FileLoc1=
 GameHub.FileLoc2=

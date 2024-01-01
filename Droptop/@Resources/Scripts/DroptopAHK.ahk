@@ -12,6 +12,23 @@ ExitApp
 
 ;----------
 
+ToggleCapsLock:
+ SetStoreCapsLockMode, Off
+ Send, {CapsLock}
+ExitApp
+
+ToggleNumLock:
+ SetStoreCapsLockMode, Off
+ Send, {NumLock}
+ExitApp
+
+ToggleScrollLock:
+ SetStoreCapsLockMode, Off
+ Send, {ScrollLock}
+ExitApp
+
+;----------
+
 WindowsSearch:
  SetStoreCapsLockMode, Off
  Send, #s

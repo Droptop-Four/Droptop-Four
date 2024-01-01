@@ -1,0 +1,16 @@
+???Add-Type : The term '???Add-Type' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ ???Add-Type -AssemblyName System.Drawing
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (???Add-Type:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+Poppins
+Copy-Item : The requested operation cannot be performed on a file with a user-mapped section open.
+At line:19 char:1
++ Copy-Item "$filePath$fontName$extension" -Destination "${skinsPath}Dr ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Copy-Item], IOException
+    + FullyQualifiedErrorId : System.IO.IOException,Microsoft.PowerShell.Commands.CopyItemCommand
+ 

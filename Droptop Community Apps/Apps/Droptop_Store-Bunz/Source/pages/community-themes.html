@@ -27,50 +27,20 @@
 			<nav class="navbar">
 				<!-- LOGO -->
 				<div class="logo">
-					<a href="index.html">
+					<a>
 						<img
 							src="../img/DroptopFourLogo.webp"
 							alt="Droptop Four Logo" />
 					</a>
 				</div>
 				<div class="site-name">
-					<a href="index.html">
+					<a>
 						<h4>Droptop Store</h4>
 					</a>
 				</div>
 				<!-- NAVIGATION MENU -->
-				<ul class="nav-links">
-					<!-- USING CHECKBOX HACK -->
-					<input type="checkbox" id="checkbox_toggle" />
-					<label for="checkbox_toggle" class="hamburger">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="28"
-							fill="none"
-							viewBox="0 0 24 24">
-							<path
-								stroke="currentColor"
-								stroke-width="4"
-								stroke-linecap="round"
-								d="M2 4h20M2 14h20M2 24h20"></path>
-						</svg>
-					</label>
-					<!-- NAVIGATION MENUS -->
-					<div class="menu">
-						<li><a href="community-apps.html">Community Apps</a></li>
-						<li>
-							<a href="community-themes.html">Community Themes</a>
-						</li>
-						<li>
-							<a href="search.html"><i class="fa fa-search"></i></a>
-						</li>
-						<li>
-							<a href="javascript:openExternalLink('https://droptopfour.com')">
-								Droptop Website
-							</a>
-						</li>
-					</div>
+				<ul class="nav-search">
+					<a href="search.html"><i class="fa fa-search"></i></a>
 				</ul>
 			</nav>
 		</header>
@@ -88,6 +58,39 @@
 			</div>
 
 			<section class="community-themes-contents" id="main-content">
+				<div class="sorting-options" id="sorting-options">
+					<label for="sort-criteria">Sort by: </label>
+					<select
+						id="sort-criteria"
+						onchange="displaythemes.sortThemes()">
+						<option value="name">Name (A-Z)</option>
+						<option value="name_reverse">Name (Z-A)</option>
+						<option value="author">Author (A-Z)</option>
+						<option value="author_reverse">Author (Z-A)</option>
+						<option value="release" selected>
+							Release (Newest first)
+						</option>
+						<option value="release_reverse">
+							Release (Oldest first)
+						</option>
+						<option value="last_update">
+							Last Update (Newest first)
+						</option>
+						<option value="last_update_reverse">
+							Last Update (Oldest first)
+						</option>
+						<option value="type" disabled>
+							Type (Classic first)
+						</option>
+						<option value="type_reverse" disabled>
+							Type (Webview first)
+						</option>
+					</select>
+				</div>
+
+				<div aria-hidden="true" class="body-divider" id="divider-2">
+					<hr />
+				</div>
 				<div class="themesList" id="themesList">
 					<!-- Content from community-themes.js -->
 				</div>

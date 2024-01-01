@@ -58,7 +58,7 @@ Container=Container
 
 [String:S]
 AntiAlias=1
-FontFace=SF Pro Rounded
+FontFace=Urbanist
 Clipstring=2
 Container=Container
 
@@ -72,12 +72,12 @@ FontColor=255,255,255
 Container=Container
 
 [Header2:S]
-FontFace=SF Pro Rounded
+FontFace=Urbanist
 FontSize=(15*#Scale#)
 FontColor=255,255,255
 
 [Text:S]
-FontFace=SF Pro Rounded
+FontFace=Urbanist
 FontSize=(14*#Scale#)
 FontColor=255,255,255
 
@@ -121,7 +121,7 @@ Measure=Plugin
 Plugin=InputText.dll
 SolidColor=43,43,43
 FontColor=255,255,255
-FontFace=SF Pro Rounded
+FontFace=Urbanist
 FontSize=([Input:FontSize]*#Scale#)
 StringAlign=LeftCenter
 W=(380*#Scale#-#Sec.P#)

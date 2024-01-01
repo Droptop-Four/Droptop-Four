@@ -15,3 +15,4 @@ MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Color_Mode_Toggle-Cariboud
 
 ColorToggleFlip0=None
 ColorToggleFlip1=Horizontal
+MyAppGUID=6fabdc94-1ad4-4f96-b2b0-5226dd14c4b9

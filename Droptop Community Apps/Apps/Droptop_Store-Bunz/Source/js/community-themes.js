@@ -17,6 +17,8 @@ function convertToRawGitHubURL(githubURL) {
 	return rawURL;
 }
 
+let displaythemes;
+
 class Themes {
 	async Items() {
 		try {
@@ -112,9 +114,17 @@ class Themes {
 }
 
 class DisplayThemes {
-	displayThemes(themes) {
+	constructor() {
+		this.themes = [];
+	}
+
+	setThemes(themes) {
+		this.themes = themes;
+	}
+
+	displayThemes() {
 		let result = '';
-		themes.forEach((item) => {
+		this.themes.forEach((item) => {
 			if (item.hidden != 1) {
 				if (item.author_link == '') {
 					if (item.official_link == '') {
@@ -234,6 +244,47 @@ class DisplayThemes {
 			}
 		});
 		themesList.innerHTML = result;
+	}
+
+	sortThemes() {
+		const sortCriteria = document.getElementById('sort-criteria').value;
+
+		switch (sortCriteria) {
+			case 'name':
+				this.themes.sort((a, b) => a.name.localeCompare(b.name));
+				break;
+			case 'name_reverse':
+				this.themes.sort((a, b) => b.name.localeCompare(a.name));
+				break;
+			case 'author':
+				this.themes.sort((a, b) => a.author.localeCompare(b.author));
+				break;
+			case 'author_reverse':
+				this.themes.sort((a, b) => b.author.localeCompare(a.author));
+				break;
+			case 'release':
+				this.themes.sort((a, b) => b.id - a.id);
+				break;
+			case 'release_reverse':
+				this.themes.sort((a, b) => a.id - b.id);
+				break;
+			case 'last_update':
+				this.themes.sort((a, b) => b.version.localeCompare(a.version));
+				break;
+			case 'last_update_reverse':
+				this.themes.sort((a, b) => a.version.localeCompare(b.version));
+				break;
+			case 'type':
+				this.themes.sort((a, b) => a.type.localeCompare(b.type));
+				break;
+			case 'type_reverse':
+				this.themes.sort((a, b) => b.type.localeCompare(a.type));
+				break;
+			default:
+				break;
+		}
+
+		this.displayThemes();
 	}
 }
 
@@ -376,9 +427,12 @@ function enableScroll() {
 
 document.addEventListener('DOMContentLoaded', () => {
 	const themes = new Themes();
-	const displaythemes = new DisplayThemes();
+	displaythemes = new DisplayThemes();
 
 	themes.Items()
-		.then((themes) => displaythemes.displayThemes(themes))
+		.then((themes) => {
+			displaythemes.setThemes(themes);
+			displaythemes.sortThemes();
+		})
 		.then(Scroll);
 });

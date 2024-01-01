@@ -17,6 +17,8 @@ function convertToRawGitHubURL(githubURL) {
 	return rawURL;
 }
 
+let displayapps;
+
 class Apps {
 	async Items() {
 		try {
@@ -112,9 +114,17 @@ class Apps {
 }
 
 class DisplayApps {
-	displayApps(apps) {
+	constructor() {
+		this.apps = [];
+	}
+
+	setApps(apps) {
+		this.apps = apps;
+	}
+
+	displayApps() {
 		let result = '';
-		apps.forEach((item) => {
+		this.apps.forEach((item) => {
 			if (item.hidden != 1) {
 				if (item.author_link == '') {
 					if (item.official_link == '') {
@@ -240,6 +250,47 @@ class DisplayApps {
 			}
 		});
 		appsList.innerHTML = result;
+	}
+
+	sortApps() {
+		const sortCriteria = document.getElementById('sort-criteria').value;
+
+		switch (sortCriteria) {
+			case 'name':
+				this.apps.sort((a, b) => a.name.localeCompare(b.name));
+				break;
+			case 'name_reverse':
+				this.apps.sort((a, b) => b.name.localeCompare(a.name));
+				break;
+			case 'author':
+				this.apps.sort((a, b) => a.author.localeCompare(b.author));
+				break;
+			case 'author_reverse':
+				this.apps.sort((a, b) => b.author.localeCompare(a.author));
+				break;
+			case 'release':
+				this.apps.sort((a, b) => b.id - a.id);
+				break;
+			case 'release_reverse':
+				this.apps.sort((a, b) => a.id - b.id);
+				break;
+			case 'last_update':
+				this.apps.sort((a, b) => b.version.localeCompare(a.version));
+				break;
+			case 'last_update_reverse':
+				this.apps.sort((a, b) => a.version.localeCompare(b.version));
+				break;
+			case 'type':
+				this.apps.sort((a, b) => a.type.localeCompare(b.type));
+				break;
+			case 'type_reverse':
+				this.apps.sort((a, b) => b.type.localeCompare(a.type));
+				break;
+			default:
+				break;
+		}
+
+		this.displayApps();
 	}
 }
 
@@ -382,9 +433,12 @@ function enableScroll() {
 
 document.addEventListener('DOMContentLoaded', () => {
 	const apps = new Apps();
-	const displayapps = new DisplayApps();
+	displayapps = new DisplayApps();
 
 	apps.Items()
-		.then((apps) => displayapps.displayApps(apps))
+		.then((apps) => {
+			displayapps.setApps(apps);
+			displayapps.sortApps();
+		})
 		.then(Scroll);
 });

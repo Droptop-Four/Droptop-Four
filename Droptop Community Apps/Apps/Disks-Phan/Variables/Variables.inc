@@ -20,11 +20,4 @@ disk4=P
 disk5=Z
 
 NumberOfDisks=3
-FColor=0,255,0,255
-VPNOnOffText=ON
-VPNOnOff=1
-VPNWANIP=57.69.48.49
-VPNRegion=Leinster
-VPNCity=Dublin
-VPNLat=53.3165322
-VPNLong=-6.3425318
+MyAppGUID=11e8fc64-14e8-4791-a994-6590d02a4a3d

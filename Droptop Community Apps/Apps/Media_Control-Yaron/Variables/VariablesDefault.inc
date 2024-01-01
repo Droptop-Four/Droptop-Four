@@ -21,3 +21,4 @@ MediaControlColour=#TopBarFontColor1#
 MediaControlBackgroundHeight=1
 
 MediaControlHighlight=222,79,44
+MyAppGUID=93d9fd5d-5751-4e0f-91e3-e106bedf972d

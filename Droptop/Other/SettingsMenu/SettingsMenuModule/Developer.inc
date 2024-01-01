@@ -16,7 +16,7 @@ DynamicVariables=1
 [CheckUsernames]
 Measure=String
 String=%USERNAME%
-IfMatch=Carib|thomas.whittaker|Mike.Boynton|mkboy|alebu
+IfMatch=Carib|thomas.whittaker|Mike.Boynton|mkboy|alebu|saagg|KazukiGames82
 IfMatchAction=[!SetVariable ShowDevTools 1][!UpdateMeter *][!Redraw]
 
 ; [MeasureReplaceInFile]
@@ -32,7 +32,7 @@ IfMatchAction=[!SetVariable ShowDevTools 1][!UpdateMeter *][!Redraw]
 [PSRM.ReplaceInFile]
 Measure=Plugin
 Plugin=PowershellRM
-Line=$replace1 = '\\thomas.whittaker\\'; $replace2 = '\carib\'; $path = "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace"; $encoding = 'utf8'
+Line=$replace1 = 'C:\\Users\\.*?\\'; $replace2 = 'C:\Users\%USERNAME%\'; $path = "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace"; $encoding = 'utf8'
 Line2=function Run() { iwr -useb "#GitPS1Loc#ReplaceInFile.ps1" | iex }
 OnChangeAction=
 UpdateDivider=-1
@@ -109,6 +109,7 @@ Y=([Background2:Y]+((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#Dropdown
 Meter=Image
 ImageName=#@#Icons\Fixed\#IconSize#\fix.png
 ImageAlpha=#DropdownItemOpacity#
+ImageFlip=None
 MeterStyle=IconStyle | DevToolsStyle#ShowDevTools#
 Y=[Developer3:Y]
 
@@ -124,5 +125,6 @@ Y=([Background2:Y]+((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#Dropdown
 Meter=Image
 ImageName=#@#Icons\Fixed\#IconSize#\run.png
 ImageAlpha=#DropdownItemOpacity#
+ImageFlip=None
 MeterStyle=IconStyle | DevToolsStyle#ShowDevTools#
 Y=[Developer4:Y]
