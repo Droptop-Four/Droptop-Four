@@ -1,0 +1,2 @@
+@echo "Transfering files from OneDrive to the local Documents folder... please wait..." & @echo off & "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SkinPath "C:\Users\%USERNAME%\Documents\Rainmeter\Skins\" "%APPDATA%\Rainmeter\Rainmeter.ini" & taskkill /f /im "Rainmeter.exe" & xcopy /s /e /y /f /i "C:\Users\%USERNAME%\OneDrive\Documents\Rainmeter\Skins" "C:\Users\%USERNAME%\Documents\Rainmeter\Skins" & timeout 1 & start "" "C:\Program Files\Rainmeter\Rainmeter.exe" & exit
+

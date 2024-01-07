@@ -1,0 +1,18 @@
+Remove-Item '.\@Rmskins\Basic-Version\Droptop Basic Version.zip'
+Remove-Item '.\@Rmskins\Supporter-Version\Droptop Supporter Version.zip'
+Remove-Item '.\@Rmskins\Update\Droptop Update.zip'
+Remove-Item '.\@Rmskins\Basic-Version\Droptop Basic Version.rmskin'
+Remove-Item '.\@Rmskins\Supporter-Version\Droptop Supporter Version.rmskin'
+Remove-Item '.\@Rmskins\Update\Droptop Update.rmskin'
+Remove-Item '.\@Rmskins\Beta-Update\Droptop Beta Update.rmskin'
+.\MakeRmSkin.ps1 -Skin Basic-Version
+.\MakeRmSkin.ps1 -Skin Supporter-Version
+.\MakeRmSkin.ps1 -Skin Update
+Remove-Item '.\@Rmskins\Basic-Version\Basic-Version.zip'
+Remove-Item '.\@Rmskins\Supporter-Version\Supporter-Version.zip'
+Remove-Item '.\@Rmskins\Update\Update.zip'
+Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop Basic Version.rmskin'
+Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop Supporter Version.rmskin'
+Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop Update.rmskin'
+Copy-Item '.\@Rmskins\Update\Droptop Update.rmskin' -Destination '.\@Rmskins\Beta-Update'
+Rename-Item -Path '.\@Rmskins\Beta-Update\Droptop Update.rmskin' -NewName 'Droptop Beta Update.rmskin'
