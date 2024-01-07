@@ -549,8 +549,10 @@ RD /S /Q "%USERPROFILE%\Documents\GitHub\Droptop-Four\Meters on Demand"
 del /f "%USERPROFILE%\Documents\GitHub\Droptop-Four\*.zip"
 del /f "%USERPROFILE%\Documents\GitHub\Droptop-Four\*.rmskin"
 
-del /f "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop\*.zip"
-del /f "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop\*.rmskin"
+RD /S /Q "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop"
+RD /S /Q "%USERPROFILE%\Documents\GitHub\Beta-Update\Meters on Demand"
+del /f "%USERPROFILE%\Documents\GitHub\Beta-Update\*.zip"
+del /f "%USERPROFILE%\Documents\GitHub\Beta-Update\*.rmskin"
 
 powershell.exe cd %4Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; .\MakeRmSkin.ps1 -Skin Beta-Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'; Rename-Item -Path '.\@Rmskins\Beta-Update\Beta-Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop-Community-Apps\Apps' -Recurse
 
@@ -616,5 +618,5 @@ git config --global http.sslVerify true
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 @echo All versions pushed successfully. Press any key to start Droptop setup...
 PAUSE
-
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 0 %4Droptop\Other\Startup\Start.ini"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !ActivateConfig "Droptop\Other\Startup" "Start.ini"
