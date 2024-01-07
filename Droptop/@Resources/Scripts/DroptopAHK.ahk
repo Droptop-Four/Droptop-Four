@@ -333,7 +333,10 @@ ExitApp
 
 ;----------
 
-ActivateTray:
+
+
+;Windows 10 tray
+ActivateTray1:
 X = %2%
 Y = %3%
 direction = %4%
@@ -358,4 +361,38 @@ loop
 }
 }
 
+;Windows 11 tray
+ActivateTray0:
+X = %2%
+Y = %3%
+direction = %4%
+clicbutton = %5%
 
+IfWinActive, ahk_class TopLevelWindowForOverflowXamlIsland
+{
+    WinHide, ahk_class TopLevelWindowForOverflowXamlIsland
+    WinSet, Transparent, 0, ahk_class TopLevelWindowForOverflowXamlIsland
+    ExitApp
+}
+Else 
+{
+    Send, {Esc}
+    Send, #b
+    Send, {Space}
+    WinGetPos,,,WidthOfTray,HeightOfTray,ahk_class TopLevelWindowForOverflowXamlIsland
+    TrueX := X-WidthOfTray/2
+    TrueY := Y-1.5
+    WinSet, Transparent, 0, ahk_class TopLevelWindowForOverflowXamlIsland
+    WinMove, ahk_class TopLevelWindowForOverflowXamlIsland, , %TrueX%, %TrueY%
+    WinSet, Transparent, OFF, ahk_class TopLevelWindowForOverflowXamlIsland
+loop 
+{
+    WinMove, ahk_class TopLevelWindowForOverflowXamlIsland, , %TrueX%, %TrueY%
+    IfWinNotActive, ahk_class TopLevelWindowForOverflowXamlIsland
+    ExitApp
+}
+}
+
+
+
+;----------
