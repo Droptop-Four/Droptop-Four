@@ -3,6 +3,7 @@ REM "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned" required to create RMSKI
 @echo Reseting configurations to default
 attrib -h /s %4Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
+"C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.ahk" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.exe"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !DeactivateConfigGroup DroptopSuite
 "C:\Program Files\Rainmeter\Rainmeter.exe" !DeactivateConfig Droptop\DropdownBar\AppBar
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopIsBeta 0 %4Droptop\@Resources\GlobalVar\Control.inc"
