@@ -583,6 +583,8 @@ REM "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 0 %
 attrib -h /s %4Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables DroptopIsUpdate 0 %4Droptop\@Resources\GlobalVar\Control.inc"
+
 powershell.exe [console]::beep(500,100); [console]::beep(1200,120)
 @echo All distributables finished successfully. Press any key to push Beta-Update to GitHub.
 
