@@ -8,6 +8,7 @@ Remove-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplat
 Remove-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplate\Skins\Droptop Community Apps\@Resources\Fonts\*" -Recurse
 Copy-Item "$skinspath\Droptop\@Resources\Themes\99.inc" -Destination "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplate\Skins\Droptop\@Resources\Themes" -Recurse
 Copy-Item "$skinspath\Droptop\@Resources\Themes\99Settings.inc" -Destination "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplate\Skins\Droptop\@Resources\Themes" -Recurse
+Copy-Item "$skinspath\Droptop\@Resources\Themes\ThemePreviewImage.png" -Destination "$skinspath\Droptop\@Resources\Scripts\AppBuilder\ThemeTemplate\Skins\Droptop\@Resources\Themes" -Recurse
 
 If ($PreviewImageUploaded -eq "1")
 {
