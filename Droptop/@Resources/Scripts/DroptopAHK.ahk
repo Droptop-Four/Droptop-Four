@@ -196,8 +196,7 @@ WebCapture:
 ExitApp
 
 HideWebView:
- WinHide ahk_class Chrome_WidgetWin_1 ahk_exe msedgewebview2.exe
- ; WinHide %2%
+ WinHide ahk_class Chrome_WidgetWin_1 ahk_exe msedgewebview2.exe,,,Chrome Legacy Window
 ExitApp
 
 ;----------
@@ -342,6 +341,7 @@ IfWinActive, ahk_class NotifyIconOverflowWindow
 	WinHide, ahk_class NotifyIconOverflowWindow
 Else 
 {
+    WinHide, ahk_class Shell_TrayWnd
 	ControlClick, %5%, ahk_class Shell_TrayWnd
 	WinGetPos,,,WidthOfTray,HeightOfTray,ahk_class NotifyIconOverflowWindow
 	TrueX := X-WidthOfTray/2
@@ -353,6 +353,7 @@ Else
 loop 
 {
 	WinMove, ahk_class NotifyIconOverflowWindow, , %TrueX%, %TrueY%
+    WinShow, ahk_class Shell_TrayWnd
 	IfWinNotActive, ahk_class NotifyIconOverflowWindow
 	ExitApp
 
@@ -374,6 +375,7 @@ IfWinActive, ahk_class TopLevelWindowForOverflowXamlIsland
 }
 Else 
 {
+    WinHide, ahk_class Shell_TrayWnd
     Send, {Esc}
     Send, #b
     Send, {Space}
@@ -386,6 +388,7 @@ Else
 loop 
 {
     WinMove, ahk_class TopLevelWindowForOverflowXamlIsland, , %TrueX%, %TrueY%
+    WinShow, ahk_class Shell_TrayWnd
     IfWinNotActive, ahk_class TopLevelWindowForOverflowXamlIsland
     ExitApp
 }

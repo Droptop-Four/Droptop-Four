@@ -852,7 +852,6 @@ objShortcut186.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Sti
 
 
 
-
 objShortcut2.Save
 
 objShortcut3.Save

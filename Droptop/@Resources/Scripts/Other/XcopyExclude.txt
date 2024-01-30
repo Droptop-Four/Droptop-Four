@@ -27,6 +27,7 @@ Quick_Search-KazukiGames82
 Quick_Settings-Cariboudjan
 PC_Scanner-TheyCallMePapa
 Multiples_Mails-KazukiGames82
+Karmy-KazukiGames82
 KeysLocks-KazukiGames82
 Dynamic_Infos-KazukiGames82
 Sample_App-Cariboudjan
@@ -38,3 +39,5 @@ Steam-Cariboudjan
 Media_Control-Yaron
 Color_Mode_Toggle-Cariboudjan
 Disks-Phan
+Uptimer-KazukiGames82
+Rainmeter_Store-Cariboudjan
