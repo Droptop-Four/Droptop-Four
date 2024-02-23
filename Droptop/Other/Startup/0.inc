@@ -26,6 +26,7 @@ Measure=Plugin
 Plugin=PowershellRM
 DynamicVariables=1
 ScriptFile=#@#Scripts\Powershell\Func.ps1
+ExecutionPolicy=Unrestricted
 
 [RunCommand.Restart]
 Measure=Plugin
@@ -41,6 +42,7 @@ Measure=Plugin
 Plugin=PowershellRM
 Line=$skinsPath = "#SKINSPATH#"; $programPath = "#PROGRAMPATH#Rainmeter.exe"
 Line2=function Run() { iwr -useb "#GitPS1Loc#ExcludeDefender.ps1" | iex }
+ExecutionPolicy=Unrestricted
 OnChangeAction=
 UpdateDivider=-1
 

@@ -55,4 +55,3 @@ MyAppID=Game_Hub-Phan
 MyAppName=Game Hub
 MyAppAuthor=Phan
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Game_Hub-Phan\Variables\Variables.inc
-MyAppGUID=d7a2bf71-bc19-4308-8e3a-a5acb3762ce0
