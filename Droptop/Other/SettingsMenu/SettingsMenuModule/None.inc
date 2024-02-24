@@ -2,4 +2,4 @@
 
 [Variables]
 @IncludeFolderSettings=#@#GlobalVar\FolderSettings.inc
-@IncludeTopBarPositions=#@#GlobalVar\TopBarPositions.inc
+@IncludeTopBarPositions=#@#GlobalVar\TopBarPos.inc

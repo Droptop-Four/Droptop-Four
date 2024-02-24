@@ -2,7 +2,7 @@
 
 [Variables]
 @IncludeFolderSettings=#@#GlobalVar\FolderSettings.inc
-@IncludeTopBarPositions=#@#GlobalVar\TopBarPositions.inc
+@IncludeTopBarPositions=#@#GlobalVar\TopBarPos.inc
 
 DropdownItemPadding1=((#DropdownIconPadding#*3)+#IconW#)
 DropdownItemHeight=(#DropdownItemFontSize#*7)

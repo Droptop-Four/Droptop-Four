@@ -4,7 +4,7 @@ MouseLeaveAction=#ResetActiveFolders#[!CommandMeasure MeasureActionTimer "Stop 1
 
 [Variables]
 @IncludeFolderSettings=#@#GlobalVar\FolderSettings.inc
-@IncludeTopBarPositions=#@#GlobalVar\TopBarPositions.inc
+@IncludeTopBarPositions=#@#GlobalVar\TopBarPos.inc
 
 CurrentFolder=5
 
