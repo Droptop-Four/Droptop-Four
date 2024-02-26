@@ -364,7 +364,7 @@ ActivateTray0:
 X = %2%
 Y = %3%
 direction = %4%
-clicbutton = %5%
+clickbutton = %5%
 autohide = 0
 
 IfWinActive, ahk_class TopLevelWindowForOverflowXamlIsland
