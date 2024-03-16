@@ -8,6 +8,3 @@ if (-not $isAdmin) {
 [System.Diagnostics.Process]::Start($startInfo) | Out-Null
 } else {
 }
-
-powercfg /setdcvalueindex SCHEME_CURRENT SUB_ENERGYSAVER ESBATTTHRESHOLD 20
-powercfg /setactive scheme_current

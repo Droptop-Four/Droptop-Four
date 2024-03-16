@@ -1,6 +1,26 @@
 REM "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned" required to create RMSKIN files.
 
+cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
+git fetch
+git pull
+
+cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
+git fetch
+git pull
+
+cd "%USERPROFILE%\Documents\GitHub\Community-Apps"
+git fetch
+git pull
+
 @echo Reseting configurations to default
+TIMEOUT 5
+
+del /f %4Droptop\@Resources\GlobalVar\Languages\ca-ES.inc"
+del /f %4Droptop\@Resources\GlobalVar\Languages\ro-RO.inc"
+del /f %4Droptop\@Resources\GlobalVar\Languages\th-TH.inc"
+del /f %4Droptop\@Resources\GlobalVar\Languages\zh-CN.inc"
+del /f %4Droptop\@Resources\GlobalVar\Languages\zh-TW.inc"
+
 attrib -h /s %4Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 "C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.ahk" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.exe"
@@ -21,14 +41,14 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderLoc11 "#SKINSPATH#Droptop Folders\CustomFolder6" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderLoc12 "#SKINSPATH#Droptop Folders\CustomFolder7" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID1 "Droptop_Store-Bunz" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID2 "Daily_Quotes-Bunz" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID3 "Usage_Monitor-Cariboudjan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID4 "Messenger-Cariboudjan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID5 "YouTube-Cariboudjan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID2 "YouTube-Cariboudjan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID3 "Messenger-Cariboudjan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID4 "Usage_Monitor-Cariboudjan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID5 "Daily_Quotes-Bunz" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID6 "Recycle_Bin-Phan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID7 "Shortcut-Phan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID8 "Game_Hub-Phan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID9 "Discord-Cariboudjan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID9 "Google_Gemini-Cariboudjan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppID10 "Functions-Cariboudjan" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppInstallDate1 %3" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppInstallDate2 %3" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -41,14 +61,14 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppInstallDate9 %3" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CustomAppInstallDate10 %3" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Droptop_Store-Bunz 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Daily_Quotes-Bunz 2 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Usage_Monitor-Cariboudjan 3 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Messenger-Cariboudjan 4 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables YouTube-Cariboudjan 5 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Messenger-Cariboudjan 3 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables YouTube-Cariboudjan 2 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Usage_Monitor-Cariboudjan 4 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Daily_Quotes-Bunz 5 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Recycle_Bin-Phan 6 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Shortcut-Phan 7 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Game_Hub-Phan 8 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Discord-Cariboudjan 9 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Google_Gemini-Cariboudjan 9 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Functions-Cariboudjan 10 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables ReverseDarkLight 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables RecentFileFilter "" %4Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -83,6 +103,8 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables TopBarGradient 0 %4Droptop\@Resources\Themes\4Settings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideSupport 0 %4Droptop\Other\Settings\Settings.ini"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables UnitsMetric 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideWeatherSymbol 1 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideWeatherTemp 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideIcons 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderMouseOverTimeNum 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideSubIcons 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -208,8 +230,8 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SlotFolder12 12 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName1 #SideAppName1# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName2 #SideAppName2# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName3 #SideAppName3# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName4 #SideAppName4# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName3 #SideAppName21# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName4 #SideAppName22# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName5 #SideAppName5# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName6 #SideAppName6# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName7 #SideAppName7# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
@@ -226,12 +248,12 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName18 #SideAppName18# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName19 #SideAppName19# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName20 #SideAppName20# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName21 #SideAppName21# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName22 #SideAppName22# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName21 #SideAppName3# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlotName22 #SideAppName4# %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot1 1 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot2 2 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot3 3 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot4 4 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot3 21 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot4 22 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot5 5 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot6 6 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot7 7 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
@@ -248,12 +270,12 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot18 18 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot19 19 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot20 20 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot21 21 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot22 22 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot21 3 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppSlot22 4 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosNewDesktop 1 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosTime 2 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosAlarm 3 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosVolume 4 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosAlarm 21 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosVolume 22 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosMail 5 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosWeather 6 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosBattery 7 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
@@ -270,8 +292,8 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosCustomApp6 18 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosCustomApp7 19 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosCustomApp8 20 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosCustomApp9 21 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosCustomApp10 22 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosCustomApp9 3 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SideAppPosCustomApp10 4 %4Droptop\@Resources\GlobalVar\TopBarPos.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderHidden1 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderHidden2 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables FolderHidden3 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
@@ -297,10 +319,10 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCopy 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppAppDrawer 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp1 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp2 1 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp3 1 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp4 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
-"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp5 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp2 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp3 0 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp4 1 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp5 1 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp6 1 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp7 1 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables HideAppCustomApp8 1 %4Droptop\@Resources\GlobalVar\FolderSettings.inc"
@@ -388,8 +410,59 @@ attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables CategoryNum "1" %4Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables SubCatNum "1" %4Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
 "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables VarNum "1" %4Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel00 40 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel01 60 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel02 80 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel03 100 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel04 100 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel05 80 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel06 60 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel07 40 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel08 20 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel09 20 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel10 40 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel11 60 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel12 80 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel13 100 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel14 100 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel15 80 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel16 60 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel17 40 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel18 20 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel19 20 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel20 40 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel21 60 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel22 80 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryHourLevel23 100 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting00 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting01 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting02 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting03 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting04 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting05 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting06 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting07 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting08 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting09 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting10 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting11 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting12 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting13 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting14 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting15 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting16 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting17 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting18 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting19 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting20 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting21 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting22 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
+"C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables BatteryReporting23 0 %4Droptop\@Resources\GlobalVar\UserSettings.inc"
 xcopy /y /c /h %4Droptop Community Apps\Apps\Sample_App-Cariboudjan" %4Droptop\@Resources\Scripts\AppBuilder\Sample Apps"
 xcopy /y /c /h %4Droptop Community Apps\Apps\Sample_WebView-Cariboudjan" %4Droptop\@Resources\Scripts\AppBuilder\Sample Apps"
+attrib +h /s "%USERPROFILE%\Documents\GitHub\Community-Apps\.gitattributes"
+xcopy /y /c /e "%USERPROFILE%\Documents\GitHub\Community-Apps\*" %4Droptop Community Apps\Apps" 
+xcopy /y /c /h /e %4Droptop Community Apps\Apps\*" "%USERPROFILE%\Documents\GitHub\Community-Apps"
 del /f /q %4Droptop\@Resources\Images\Media\Cover.png"
 del /f /q %4Droptop\@Resources\Images\Media\CoverBlur.png"
 call %4Droptop\@Resources\Scripts\LanguageScripts\RestoreFolders.bat" %4
@@ -546,19 +619,6 @@ del /f "%USERPROFILE%\Documents\GitHub\Beta-Update\*.rmskin"
 
 powershell.exe cd %4Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; .\MakeRmSkin.ps1 -Skin Beta-Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'; Rename-Item -Path '.\@Rmskins\Beta-Update\Beta-Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop-Community-Apps\Apps' -Recurse
 
-REM git config --global user.name "%USERNAME%"
-REM git config --global user.email "N/A"
-
-REM git config --global http.sslVerify false
-REM cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
-REM git checkout main
-REM git pull
-
-REM git config --global http.sslVerify false
-REM cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
-REM git checkout main
-REM git pull
-
 xcopy /E /I /Y %4Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %4Redistributables\@Rmskins\Update\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %4Redistributables\@Rmskins\Beta-Update\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
@@ -567,8 +627,6 @@ xcopy /E /I /Y %4Redistributables\@Rmskins\Supporter-Version\*" "%USERPROFILE%\D
 xcopy /E /I /Y %4Redistributables\Basic-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %4Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
 
-REM "%USERPROFILE%\AppData\Local\GitHubDesktop\GitHubDesktop.exe"
-REM "C:\Program Files\Rainmeter\Rainmeter.exe" !WriteKeyValue Variables Page 0 %4Droptop\Other\Startup\Start.ini"
 attrib -h /s %4Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %4Droptop\@Resources\OriginalFolders\Games\*"
 
@@ -586,11 +644,17 @@ git config --global user.email "N/A"
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 git checkout main
-git pull
 git add .
 git commit -m %2
 git push
 gh release create v%2 "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop_Beta_Update.rmskin" --latest --notes "See download link below (Droptop_Beta_Update.rmskin). See [Droptop Discord](https://discord.gg/droptop-four-800124057923485728) channel [#Preview-Updates](https://discord.com/channels/800124057923485728/801786468426973185) for change notes." --title "Droptop Update (Beta)"
+
+git config --global http.sslVerify false
+cd "%USERPROFILE%\Documents\GitHub\Community-Apps"
+git checkout main
+git add .
+git commit -m %2
+git push
 
 powershell.exe [console]::beep(800,200); [console]::beep(800,320)
 @echo Press any key to push all remaining versions to GitHub.
@@ -601,11 +665,10 @@ PAUSE
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
 git checkout main
-git pull
 git add .
 git commit -m %2
 git push
-gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Click here to update Droptop](https://github.com/Droptop-Four/Droptop-Four/releases/latest/download/Droptop_Update.rmskin) :arrow_down: <<<" --title "Droptop Four"
+gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Visit droptopfour.com to download](https://droptopfour.com/download/) :arrow_down: <<<" --title "Droptop Four"
 
 git config --global http.sslVerify true
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)

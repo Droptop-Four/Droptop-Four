@@ -10,7 +10,6 @@
 ; -------------------------------------------------------------------------------
 
 MyAppID=Usage_Monitor-Cariboudjan
-MyAppGUID=
 MyAppName=Usage Monitor
 MyAppAuthor=Cariboudjan
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Usage_Monitor-Cariboudjan\Variables\Variables.inc
@@ -23,3 +22,4 @@ UsageCPUInactive=0
 UsageRAMInactive=0
 UsageGPUInactive=0
 UsageHDDInactive=1
+MyAppGUID=0bdf33b5-6b67-499b-809b-0b90a0f56dc5

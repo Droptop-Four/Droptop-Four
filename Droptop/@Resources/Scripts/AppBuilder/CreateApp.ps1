@@ -51,6 +51,7 @@ if ($gitinit -eq 1)
 	Set-Content -NoNewline -Encoding OEM "${skinsPath}Droptop Community Apps\Apps\$appname\README.md" -Value (Get-Content -Raw -Encoding 'utf8' "${skinsPath}Droptop Community Apps\Apps\$appname\README.md")
 }
 
+Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Stop 1"', '"Droptop\Other\WindowMenu"'
 Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"', '"Droptop\Other\WindowMenu"'
 
 Start-Sleep -Seconds 3
