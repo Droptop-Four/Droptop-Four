@@ -4,8 +4,8 @@
 NumberOfItems=4
 NumberOfDividers=1
 
-FolderLoc=C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps
-ParentConfig=Droptop\Other\Folders\Folder1
+FolderLoc=C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\Games
+ParentConfig=Droptop\Other\Folders\Folder2
 
 [PrepareLyricsSearch]
 Measure=String
