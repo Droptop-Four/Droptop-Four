@@ -11,7 +11,7 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\ChangeMode.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\Diagnostics.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\CheckUpdate.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\GetGUID.ini" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\CommunityAppSlotAssign.ini" />
             </Folder>
             <Folder name="ContextBox">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\ContextBox\ContextBox1.ini" />
@@ -258,6 +258,8 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\CommunityAppMeters.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\PopupMenuMeters.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PopupMenu\PopupMenu.ini" />
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\CommunityAppWebView0.inc" />
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\CommunityAppWebView1.inc" />
             <Folder name="Include">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\FolderItems0.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\FolderItems1.ini" />
