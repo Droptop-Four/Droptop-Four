@@ -8,8 +8,10 @@ Remove-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\@Rmskins\*.
 Remove-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\@Rmskins\*.zip" -Recurse
 
 Copy-Item -Path "${skinsPath}Droptop Community Apps\Apps\$appname" -Destination "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\" -Recurse -Exclude $exclude
+Copy-Item -Path "${skinsPath}Droptop Community Apps\Apps\$appname" -Destination "C:\Users\${Env:UserName}\Documents\GitHub\Community-Apps\" -Recurse -Exclude $exclude
 
 Remove-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\.git" -Recurse -Force
+Remove-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\CustomApp.ini" -Recurse -Force
 Copy-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\Plugins\32bit\*" -Destination "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Plugins\32bit\" -Recurse
 Copy-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\Plugins\64bit\*" -Destination "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Plugins\64bit\" -Recurse
 Copy-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\Images\RMSKIN.bmp" -Destination "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\" -Recurse
@@ -51,6 +53,7 @@ if ($gitinit -eq 1)
 	Set-Content -NoNewline -Encoding OEM "${skinsPath}Droptop Community Apps\Apps\$appname\README.md" -Value (Get-Content -Raw -Encoding 'utf8' "${skinsPath}Droptop Community Apps\Apps\$appname\README.md")
 }
 
+Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Stop 1"', '"Droptop\Other\WindowMenu"'
 Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"', '"Droptop\Other\WindowMenu"'
 
 Start-Sleep -Seconds 3

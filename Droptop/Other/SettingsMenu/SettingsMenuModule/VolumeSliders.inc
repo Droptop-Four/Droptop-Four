@@ -109,6 +109,7 @@ Write=[#SliderDeactivateAction1]
 Measure=Plugin
 Plugin=FrostedGlass
 BlurEnabled=0
+DynamicVariables=1
 
 ; -------------------------
 

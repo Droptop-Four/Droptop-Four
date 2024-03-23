@@ -259,6 +259,12 @@ SendClipboard:
  SendRaw %clipboard%
 ExitApp
 
+AlwaysOnTop:
+ Send, !{Esc}
+ Sleep, 200
+ Winset, Alwaysontop, , A
+ExitApp
+
 ;----------
 
 Lowercase:

@@ -5,10 +5,10 @@
 ; -------------------------------------------------------------------------------
 
 MyAppID=Recycle_Bin-Phan
-MyAppGUID=a2b832eb-8937-49a2-b4ab-6e8ce6a63396
 MyAppName=Recycle Bin
 MyAppAuthor=Phan
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Recycle_Bin-Phan\Variables\Variables.inc
+MyAppGUID=4cdab24f-5a15-45ea-9756-4c425be1f17d
 
 ; -------------------------------------------------------------------------------
 ; Add your variables below: 
