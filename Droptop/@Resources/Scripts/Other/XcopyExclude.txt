@@ -16,13 +16,11 @@ Center_Infos-TheyCallMePapa
 Translator-Bunz
 Speedtest-Bunz
 Feeder-Cariboudjan
-Headlines-Cariboudjan
 GSuite-Cariboudjan
 Translator-Bunz
 SearchBar-Mike_Boynton
 WakaTime-Bunz
 ToolTipster-TheyCallMePapa
-Spotify_Web_Player-Cariboudjan
 Quick_Search-KazukiGames82
 Quick_Settings-Cariboudjan
 PC_Scanner-TheyCallMePapa
@@ -32,7 +30,6 @@ KeysLocks-KazukiGames82
 Dynamic_Infos-KazukiGames82
 Sample_App-Cariboudjan
 Sample_WebView-Cariboudjan
-Microsoft_Copilot-Cariboudjan
 Google_Translate-Cariboudjan
 To_Do-Cariboudjan
 Steam-Cariboudjan
@@ -47,3 +44,8 @@ Droptop-Community-Apps
 Taskbar-KazukiGames82
 MiniTools-Cariboudjan
 Color_Hunt-Cariboudjan
+Twitch.TV-Cariboudjan
+Instant_Messengers_Webview-Haywee
+Iconic-TheyCallMePapa
+Speedtest-EternalTheGod
+WhatIsMyIP-notAperson
