@@ -14,6 +14,8 @@ cd "%USERPROFILE%\Documents\GitHub\Community-Apps"
 git fetch
 git pull
 
+cd "C:\"
+
 @echo Reseting configurations to default
 TIMEOUT 5
 
