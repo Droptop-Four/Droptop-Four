@@ -82,7 +82,7 @@ Y=[Developer2:Y]
 [RunCommand.Attrib]
 Measure=Plugin
 Plugin=RunCommand
-Parameter=attrib -s -h /d /s "%USERPROFILE%\documents\rainmeter\skins\Droptop Folders\Games\*" & attrib -s /s "%USERPROFILE%\documents\rainmeter\skins\Droptop Folders\desktop.ini" & attrib +h /s "%USERPROFILE%\documents\rainmeter\skins\Droptop Folders\desktop.ini" & attrib +s /d /s "%USERPROFILE%\documents\rainmeter\skins\Droptop Folders\Games\*"
+Parameter=attrib -s -h /d /s "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Games\*" & attrib -s /s "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\desktop.ini" & attrib +h /s "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\desktop.ini" & attrib +s /d /s "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Games\*"
 State=Hide
 OutputType=ANSI
 OutputFile=
@@ -92,7 +92,7 @@ DynamicVariables=1
 Meter=String
 MeterStyle=InfoStyle | DevToolsStyle#ShowDevTools#
 Text=Correct install errors
-LeftMouseDownAction=#CloseSettingsMenu#[!CommandMeasure PSRM.ReplaceInFile "Run"][!CommandMeasure RunCommand.Attrib "Run"]["Wscript.exe" "#SKINSPATH#Droptop\@Resources\Scripts\IconsColor1.vbs" "#SKINSPATH#"]
+LeftMouseDownAction=#CloseSettingsMenu#[!DeactivateConfigGroup Folders][!CommandMeasure PSRM.ReplaceInFile "Run"][!CommandMeasure RunCommand.Attrib "Run"]["Wscript.exe" "#SKINSPATH#Droptop\@Resources\Scripts\IconsColor1.vbs" "#SKINSPATH#"]
 Y=([Background2:Y]+((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#)+(#DropdownItemHeight#*2))
 
 [Developer3Icon]

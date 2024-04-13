@@ -190,7 +190,7 @@ MouseLeaveAction=[!SetOptionGroup SliderBar FillColor ""][!SetOptionGroup Slider
 [InfoStyle]
 StringAlign=CenterCenter
 FontColor=0,0,0,185
-FontFace=[#FontName[#AltFont[#LanguageNum]]]
+FontFace=#FontName0#
 FontSize=#DropdownItemFontSize#
 InlineSetting=
 FontWeight=#FontWeight#
@@ -213,7 +213,7 @@ Hidden=(#NumberOfItems#>=[##CURRENTSECTION#]?0:1)
 [InfoStyleB]
 StringAlign=#TextDirection#Center
 FontColor=#DropdownFontColor1#,#DropdownItemOpacity#
-FontFace=[#FontName[#AltFont[#LanguageNum]]]
+FontFace=#FontName0#
 FontSize=#DropdownItemFontSize#
 InlineSetting=CharacterSpacing | #DropdownCharacterSpacing#
 InlineSetting2=[#DropdownTextShadow[#DropdownFontShadow][#ChamLum1]]

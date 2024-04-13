@@ -1,5 +1,7 @@
 REM "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned" required to create RMSKIN files.
 
+set startTime=%time%
+
 git config --global http.sslVerify false
 
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
@@ -240,13 +242,13 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables SideAppSlotName6 #SideAppName6# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlotName7 #SideAppName7# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlotName8 #SideAppName8# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
-%4 !WriteKeyValue Variables SideAppSlotName9 #SideAppName9# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
-%4 !WriteKeyValue Variables SideAppSlotName10 #SideAppName10# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+%4 !WriteKeyValue Variables SideAppSlotName9 #SideAppName14# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+%4 !WriteKeyValue Variables SideAppSlotName10 #SideAppName15# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlotName11 #SideAppName11# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlotName12 #SideAppName12# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlotName13 #SideAppName13# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
-%4 !WriteKeyValue Variables SideAppSlotName14 #SideAppName14# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
-%4 !WriteKeyValue Variables SideAppSlotName15 #SideAppName15# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+%4 !WriteKeyValue Variables SideAppSlotName14 #SideAppName9# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+%4 !WriteKeyValue Variables SideAppSlotName15 #SideAppName10# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlotName16 #SideAppName16# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlotName17 #SideAppName17# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlotName18 #SideAppName18# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
@@ -262,13 +264,13 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables SideAppSlot6 6 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlot7 7 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlot8 8 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
-%4 !WriteKeyValue Variables SideAppSlot9 9 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
-%4 !WriteKeyValue Variables SideAppSlot10 10 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+%4 !WriteKeyValue Variables SideAppSlot9 14 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+%4 !WriteKeyValue Variables SideAppSlot10 15 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlot11 11 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlot12 12 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlot13 13 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
-%4 !WriteKeyValue Variables SideAppSlot14 14 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
-%4 !WriteKeyValue Variables SideAppSlot15 15 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+%4 !WriteKeyValue Variables SideAppSlot14 9 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+%4 !WriteKeyValue Variables SideAppSlot15 10 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlot16 16 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlot17 17 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlot18 18 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
@@ -284,13 +286,13 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables SideAppPosWeather 6 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosBattery 7 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosWifi 8 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
-%4 !WriteKeyValue Variables SideAppPosDownloads 9 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
-%4 !WriteKeyValue Variables SideAppPosRecent 10 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+%4 !WriteKeyValue Variables SideAppPosDownloads 14 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+%4 !WriteKeyValue Variables SideAppPosRecent 15 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosCopy 11 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosAppDrawer 12 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosCustomApp1 13 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
-%4 !WriteKeyValue Variables SideAppPosCustomApp2 14 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
-%4 !WriteKeyValue Variables SideAppPosCustomApp3 15 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+%4 !WriteKeyValue Variables SideAppPosCustomApp2 9 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+%4 !WriteKeyValue Variables SideAppPosCustomApp3 10 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosCustomApp4 16 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosCustomApp5 17 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosCustomApp6 18 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
@@ -666,6 +668,9 @@ git add .
 git commit -m %2
 git push
 
+echo Start Time: %startTime%
+echo Finish Time: %time%
+
 powershell.exe [console]::beep(800,200); [console]::beep(800,320)
 @echo Press any key to push all remaining versions to GitHub.
 PAUSE
@@ -681,6 +686,10 @@ git push
 gh release create v%2 "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Visit droptopfour.com to download](https://droptopfour.com/download/) :arrow_down: <<<" --title "Droptop Four"
 
 git config --global http.sslVerify true
+
+echo Start Time: %startTime%
+echo Finish Time: %time%
+
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 @echo All versions pushed successfully. Press any key to start Droptop setup...
 PAUSE

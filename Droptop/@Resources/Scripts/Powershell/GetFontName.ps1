@@ -25,5 +25,4 @@ Remove-Item -Path "${skinsPath}Droptop Folders\Other files\Themes\*.*tf" -Recurs
 Copy-Item "${skinsPath}Droptop\@Resources\Fonts\${fontName}.*" "${skinsPath}Droptop Folders\Other files\Themes"
 
 Start-Process -FilePath "`"$programPath`"" -ArgumentList "!WriteKeyValue","Variables","FontName0","`"$fontName`"","`"${skinspath}Droptop\@Resources\Themes\${themeNum}Settings.inc`""
-Start-Process -FilePath "`"$programPath`"" -ArgumentList "!WriteKeyValue","Variables","FontName1","`"$fontName`"","`"${skinspath}Droptop\@Resources\Themes\${themeNum}Settings.inc`""
 Start-Process -FilePath "`"$programPath`"" -ArgumentList "!RefreshGroup","DroptopSuite"

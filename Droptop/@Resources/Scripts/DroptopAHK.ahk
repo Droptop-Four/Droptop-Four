@@ -386,6 +386,7 @@ Else
     Send, {Esc}
     Send, #b
     Send, {Space}
+    WinWait, ahk_class TopLevelWindowForOverflowXamlIsland
     WinGetPos,,,WidthOfTray,HeightOfTray,ahk_class TopLevelWindowForOverflowXamlIsland
     TrueX := X-WidthOfTray/2
     TrueY := Y-1.5

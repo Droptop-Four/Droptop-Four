@@ -106,6 +106,8 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\DroptopStore.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\FontWeight.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\LanguageSelect.inc" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\LanguageCredits.inc" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\PluginCredits.inc" />
             </Folder>
         </Folder>
         <Folder name="Languages">
@@ -127,15 +129,11 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\nl-NL.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\pl-PL.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\pt-BR.inc" />
-            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\ro-RO.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\ru-RU.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\sk-SK.inc" />
-            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\th-TH.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\tr-TR.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\uk-UA.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\vi-VN.inc" />
-            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\zh-CN.inc" />
-            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\zh-TW.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\es-MX.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\hi-IN.inc" />
         </Folder>
