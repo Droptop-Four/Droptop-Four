@@ -28,7 +28,7 @@ MouseOverAction=[!UpdateMeasure Plugin.WebView]
 
 [ActionIconStyle]
 ImageName=#CURRENTPATH#Icons\#CURRENTSECTION#.png
-SolidColor=#DropdownFontColor1#,(#WebNum#<>[##CURRENTSECTION#]?0:35)
+ImageAlpha=(#WebNum#<>[##CURRENTSECTION#]?155:255)
 LeftMouseDownAction=[!SetOption Plugin.WebView URL "[#WebViewURL[##CURRENTSECTION#]]"][!SetVariable WebNum [##CURRENTSECTION#]][!WriteKeyValue Variables WebNum [#WebNum] "#MyVariablesLoc#"][!UpdateMeasure Plugin.WebView][!UpdateMeter *][!Redraw]
 X=(#DropdownMenuWidth#-([#CURRENTSECTION#:W]*[##CURRENTSECTION#])-((#WebViewTopHeight#/2)-(#IconW#/2)))
 ; X=-[#CURRENTSECTION#:W]r

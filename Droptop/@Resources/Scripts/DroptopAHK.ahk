@@ -185,6 +185,16 @@ WebForward:
  Send, !{Right}
 ExitApp
 
+WebZoomIn:
+ SetStoreCapsLockMode, Off
+ Send, ^{+}
+ExitApp
+
+WebZoomOut:
+ SetStoreCapsLockMode, Off
+ Send, ^{-}
+ExitApp
+
 WebRefresh:
  SetStoreCapsLockMode, Off
  Send, ^r
@@ -374,7 +384,10 @@ clickbutton = %5%
 autohide = 0
 
 IfWinActive, ahk_class TopLevelWindowForOverflowXamlIsland
+{
     WinHide, ahk_class TopLevelWindowForOverflowXamlIsland
+    ExitApp
+}
 Else 
 {
     WinGetPos,,YOfTaskbar,,, ahk_class Shell_TrayWnd
@@ -397,16 +410,16 @@ Else
         WinShow, ahk_class Shell_TrayWnd
     }
     WinSet, Transparent, OFF, ahk_class TopLevelWindowForOverflowXamlIsland
+    WinMove, ahk_class TopLevelWindowForOverflowXamlIsland, , %TrueX%, %TrueY%
+    If (autohide = 1)
+    {
+        WinShow, ahk_class Shell_TrayWnd
+    }
     loop
     {
         WinMove, ahk_class TopLevelWindowForOverflowXamlIsland, , %TrueX%, %TrueY%
-        If (autohide = 1)
-        {
-            WinShow, ahk_class Shell_TrayWnd
-        }
-        IfWinNotActive, ahk_class TopLevelWindowForOverflowXamlIsland 
-        ExitApp
     }
+    ExitApp
 }
 
 
