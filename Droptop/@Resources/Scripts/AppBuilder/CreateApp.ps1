@@ -59,3 +59,4 @@ Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "Loading
 Start-Sleep -Seconds 3
 
 Invoke-Item "${skinsPath}Droptop Folders\Other files\@Rmskins\Droptop Apps"
+Start-Process -FilePath "$programpath" -ArgumentList "!DeactivateConfig", '"Droptop\Other\WindowMenu"'

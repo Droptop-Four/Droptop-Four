@@ -270,9 +270,10 @@ SendClipboard:
 ExitApp
 
 AlwaysOnTop:
- Send, !{Esc}
+ Send, !{Tab}
  Sleep, 200
- Winset, Alwaysontop, , A
+ Send, #^t
+ Send, {Esc}
 ExitApp
 
 ;----------

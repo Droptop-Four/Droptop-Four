@@ -22,6 +22,20 @@ DefaultKeepOnScreen=1
 DefaultAutoSelectScreen=1
 
 [Variables]
+Win10.BlurType00=Blur
+Win10.BlurType10=Acrylic
+
+Win10.BlurType01=Blur
+Win10.BlurType11=Blur
+
+[BlurBehind]
+Measure=Plugin
+Plugin=FrostedGlass
+BlurEnabled=(#ForceOpaque#=1?0:#DropdownMenuBlur#)
+Type=[#Win10.BlurType[#BlurTypeNum][#Win10Apps]]
+Border=[#Shadows[#DropdownMenuShadow]]
+Corner=[#BlurCorner[#DropdownRoundCorners]]
+DynamicVariables=1
 
 [PopoutIconStyle]
 ImageName=#SKINSPATH#Droptop Community Apps\Apps\#MyAppID#\Popout\Icons\#CURRENTSECTION#.png

@@ -77,7 +77,7 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables Google_Gemini-Cariboudjan 9 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables Functions-Cariboudjan 10 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables ReverseDarkLight 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables RecentFileFilter "" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables RecentFileFilter "." %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables NowPlayingClipNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables GmailUsername "" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables GmailPassword "" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -690,6 +690,12 @@ git config --global http.sslVerify true
 
 echo Start Time: %startTime%
 echo Finish Time: %time%
+
+REM TESTING below attrib to fix missing attributes for shortcuts after compile - April 16
+attrib -s -h /d /s %5Droptop Folders\Games\*"
+attrib -s /s %5Droptop Folders\desktop.ini"
+attrib +h /s %5Droptop Folders\desktop.ini"
+attrib +s /d /s %5Droptop Folders\Games\*"
 
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 @echo All versions pushed successfully. Press any key to start Droptop setup...

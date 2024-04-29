@@ -62,4 +62,7 @@ Remove-Item -Path "$skinspath\Droptop\@Resources\Scripts\AppBuilder\@Rmskins\*.z
 
 Start-Process -FilePath "$programpath" -ArgumentList "!CommandMeasure", "LoadingTimer", '"Execute 2"'
 
+Start-Sleep -Seconds 3
+
 Invoke-Item "$skinspath\Droptop Folders\Other files\@Rmskins\Droptop Themes"
+Start-Process -FilePath "$programpath" -ArgumentList "!DeactivateConfig", '"Droptop\Other\WindowMenu"'
