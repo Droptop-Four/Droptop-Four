@@ -1,15 +1,8 @@
-﻿﻿Add-Type -AssemblyName System.Drawing
+Add-Type -AssemblyName PresentationCore
+
 $path = "$filePath$fileName$extension"
 
-$fontFiles = Get-ChildItem $path
-
-$fontCollection = new-object System.Drawing.Text.PrivateFontCollection
-
-$fontFiles | ForEach-Object {
-    $fontCollection.AddFontFile($_.fullname)
-    $fontCollection.Families[-1].Name
-    $fontName = $fontCollection.Families[-1].Name
-}
+$fontname = (New-Object -TypeName Windows.Media.GlyphTypeFace -ArgumentList $path).Win32FamilyNames.Values
 
 Rename-Item -Path "$path" -NewName ${fontName}"$extension" -Force
 
