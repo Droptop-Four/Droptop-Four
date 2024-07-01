@@ -4,7 +4,7 @@
 @IncludeFolderSettings=#@#GlobalVar\FolderSettings.inc
 @IncludeTopBarPositions=#@#GlobalVar\TopBarPos.inc
 
-DropdownItemPadding1=((#DropdownIconXoffset#+((#DropdownMenuWidth#-#DropdownIconXoffset#-#IconW#-#DropdownHLOffsetX#-(#DropdownIconPadding#*2))*#RTLText#))+(#DropdownIconPadding#*2)+#IconW#)
+DropdownItemPadding1=((#DropdownIconXoffset#)+(#DropdownIconPadding#*2)+#IconW#)
 DropdownMenuWidth=((325*#DroptopSize#)-((325*#DroptopSize#)%1))
 DropdownItemHeight=(#DropdownItemFontSize#*7)
 

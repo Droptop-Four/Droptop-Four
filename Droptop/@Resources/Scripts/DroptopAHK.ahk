@@ -120,11 +120,13 @@ ExitApp
 
 ClipToggle:
  Send, !{Esc}
+ Sleep, 100
  Send, #v
 ExitApp
 
 EmojiToggle:
  Send, !{Esc}
+ Sleep, 100
  Send, #;
 ExitApp
 
@@ -206,7 +208,8 @@ WebCapture:
 ExitApp
 
 HideWebView:
- WinHide ahk_class Chrome_WidgetWin_1 ahk_exe msedgewebview2.exe,,,Chrome Legacy Window
+SetTitleMatchMode RegEx
+ WinHide ahk_class Chrome_WidgetWin_1 ahk_exe msedgewebview2.exe,,%2%,Chrome Legacy Window
 ExitApp
 
 ;----------

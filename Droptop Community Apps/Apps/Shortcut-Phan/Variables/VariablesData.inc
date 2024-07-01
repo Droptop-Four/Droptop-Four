@@ -15,4 +15,4 @@ ShortcutButton2=2
 ShortcutButton3=3
 ShortcutButton4=4
 ShortcutButton5=5
-MyAppVersion=24.0414
+MyAppVersion=24.0625

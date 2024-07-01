@@ -1,6 +1,25 @@
+﻿# ﻿Add-Type -AssemblyName System.Drawing
+
 Add-Type -AssemblyName PresentationCore
 
+# $filePath=$args[0]
+# $fileName=$args[1]
+# $extension=$args[2]
+# $skinsPath=$args[3]
+# $programPath=$args[4]
+# $themeNum=$args[5]
+
 $path = "$filePath$fileName$extension"
+
+# $fontFiles = Get-ChildItem $path
+
+# $fontCollection = new-object System.Drawing.Text.PrivateFontCollection
+
+# $fontFiles | ForEach-Object {
+    # $fontCollection.AddFontFile($_.fullname)
+    # $fontCollection.Families[-1].Name
+    # $fontName = $fontCollection.Families[-1].Name
+# }
 
 $fontname = (New-Object -TypeName Windows.Media.GlyphTypeFace -ArgumentList $path).Win32FamilyNames.Values
 
