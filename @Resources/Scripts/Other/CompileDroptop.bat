@@ -629,13 +629,13 @@ git config --global user.email "N/A"
 
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
-git checkout main
+git checkout %USERNAME%_Branch
 git add .
 git commit -m %2
 git push
 
 powershell.exe [console]::beep(800,800); [console]::beep(800,800)
-@echo Droptop successfully pushed to main branch. Press any key to push a beta release and create all rmskins...
+@echo Droptop successfully pushed to %USERNAME%_Branch. Press any key to push a beta release and create all rmskins...
 PAUSE
 
 powershell.exe cd %5Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; .\MakeRmSkin.ps1 -Skin Beta-Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'; Rename-Item -Path '.\@Rmskins\Beta-Update\Beta-Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop-Community-Apps\Apps' -Recurse
