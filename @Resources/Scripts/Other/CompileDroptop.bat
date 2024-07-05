@@ -629,6 +629,8 @@ git config --global user.email "N/A"
 
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
+git add .
+git commit -m %2
 git checkout %USERNAME%_Branch
 git add .
 git commit -m %2
