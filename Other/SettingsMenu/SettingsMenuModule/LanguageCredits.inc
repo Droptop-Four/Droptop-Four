@@ -90,6 +90,21 @@ IgnoreWarnings=1
 [1]
 Y=((#DropdownIconYoffset#+([#CURRENTSECTION#:H]/2))-((#DropdownIconYoffset#+([#CURRENTSECTION#:H]/2))%1)+#DropdownItemYOffset#)
 
+[1Icon]
+ImageName=#@#Icons\Fixed\Large\Flags\[&mIndex[##CURRENTSECTION#]Name].png
+
+[2Icon]
+ImageName=#@#Icons\Fixed\Large\Flags\[&mIndex[##CURRENTSECTION#]Name].png
+
+[3Icon]
+ImageName=#@#Icons\Fixed\Large\Flags\[&mIndex[##CURRENTSECTION#]Name].png
+
+[4Icon]
+ImageName=#@#Icons\Fixed\Large\Flags\[&mIndex[##CURRENTSECTION#]Name].png
+
+[5Icon]
+ImageName=#@#Icons\Fixed\Large\Flags\[&mIndex[##CURRENTSECTION#]Name].png
+
 ;----------------------------------------------------
 ; Name & Icon measures
 ;----------------------------------------------------
@@ -228,7 +243,8 @@ MouseScrollDownAction=[!SetVariable ScrollTracker (#ScrollTracker#>=[AnalyzeTota
 AntiAlias=1
 
 [IconStyle]
-ImageName=#@#Icons\Fixed\Large\Flags\[&mIndex[##CURRENTSECTION#]Name].png
+ImageName=
+; #@#Icons\Fixed\Large\Flags\[&mIndex[##CURRENTSECTION#]Name].png
 ImageAlpha=#DropdownItemOpacity#
 
 ;----------------------------------------------------
