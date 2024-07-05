@@ -16,7 +16,7 @@ DynamicVariables=1
 [CheckUsernames]
 Measure=String
 String=%USERNAME%
-IfMatch=Carib|thomas.whittaker|Mike.Boynton|mkboy|alebu|saagg|KazukiGames82
+IfMatch=Carib|thomas.whittaker|Mike.Boynton|mkboy|alebu|KazukiGames82
 IfMatchAction=[!SetVariable ShowDevTools 1][!UpdateMeter *][!Redraw]
 
 [PSRM.ReplaceInFile]
@@ -125,3 +125,15 @@ ImageAlpha=#DropdownItemOpacity#
 ImageFlip=None
 MeterStyle=IconStyle | DevToolsStyle#ShowDevTools#
 Y=[Developer4:Y]
+
+[Developer1Arrow]
+Meter=String
+
+[Developer2Arrow]
+Meter=String
+
+[Developer3Arrow]
+Meter=String
+
+[Developer4Arrow]
+Meter=String
