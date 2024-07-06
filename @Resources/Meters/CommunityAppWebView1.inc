@@ -2,7 +2,7 @@
 Measure=Calc
 Formula=Counter
 IfCondition=(AutoStartup=1)
-IfTrueAction=[!Delay [##MyAppID#]00][!UpdateMeasure Plugin.WebView]
+IfTrueAction=[!Delay [##MyAppID#]00][!UpdateMeasure Plugin.WebView][!Zpos 0]
 
 [Plugin.WebView]
 Measure=Plugin
