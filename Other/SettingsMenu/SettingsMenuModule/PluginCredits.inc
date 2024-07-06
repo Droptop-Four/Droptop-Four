@@ -25,7 +25,7 @@ Backlight.Author=cfixd
 Backlight.Link=["https://github.com/cfixd"]
 
 BatterySaver.Author=KazukiGames82
-BatterySaver.Link=["https://github.com/KazukiGames82"]
+BatterySaver.Link=["https://github.com/KazukiGames"]
 
 Chameleon.Author=Socks the Fox
 Chameleon.Link=["https://github.com/socks-the-fox"]
@@ -280,8 +280,7 @@ MouseScrollDownAction=[!SetVariable ScrollTracker (#ScrollTracker#>=[AnalyzeTota
 AntiAlias=1
 
 [IconStyle]
-ImageName=
-; #@#Icons\Fixed\Large\Flags\[&mIndex[##CURRENTSECTION#]Name].png
+ImageName=#@#Icons\Fixed\Large\Flags\[&mIndex[##CURRENTSECTION#]Name].png
 ImageAlpha=#DropdownItemOpacity#
 ;----------------------------------------------------
 ; Scrollbar

@@ -35,7 +35,6 @@ Compress-Archive -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTem
 Rename-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\@Rmskins\AppTemplate.zip" -NewName "AppTemplate.rmskin" -Force -ErrorAction Stop
 &"${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AddRmFooter" "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\@Rmskins\AppTemplate.rmskin"
 
-
 Move-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\@Rmskins\AppTemplate.rmskin" -Destination "${skinsPath}Droptop Folders\Other files\@Rmskins\Droptop Apps\$newappname - $appauthor (Droptop App).rmskin"
 # Copy-Item -Path "${skinsPath}Droptop Folders\Other files\@Rmskins\Droptop Apps\$newappname - $appauthor (Droptop App).rmskin" -Destination "${skinsPath}Redistributables\Droptop-Community-Apps\Apps" -Recurse
 

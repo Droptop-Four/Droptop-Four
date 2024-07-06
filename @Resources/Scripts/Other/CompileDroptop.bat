@@ -8,9 +8,9 @@ cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 git fetch
 git pull
 
-cd "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
-git fetch
-git pull
+REM cd "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
+REM git fetch
+REM git pull
 
 cd "%USERPROFILE%\Documents\GitHub\Community-Apps"
 git fetch
@@ -629,6 +629,8 @@ git config --global user.email "N/A"
 
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
+git add .
+git commit -m %2
 git checkout %USERNAME%_Branch
 git add .
 git commit -m %2
@@ -700,10 +702,10 @@ PAUSE
 
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
-REM git checkout main
-REM git add .
-REM git commit -m %2
-REM git push
+git checkout main
+git add .
+git commit -m %2
+git push
 gh release create v%2 "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\Droptop_Basic_Version.rmskin" "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\Droptop-Four\Droptop_Update.rmskin" --latest --notes "# >>> :arrow_down: [Visit droptopfour.com to download](https://droptopfour.com/download/) :arrow_down: <<<" --title "Droptop Four"
 
 git config --global http.sslVerify true
