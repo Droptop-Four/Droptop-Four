@@ -4,17 +4,17 @@ set startTime=%time%
 
 git config --global http.sslVerify false
 
-cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
-git fetch
-git pull
+REM cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
+REM git fetch
+REM git pull
 
-cd "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
-git fetch
-git pull
+REM cd "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop"
+REM git fetch
+REM git pull
 
-cd "%USERPROFILE%\Documents\GitHub\Community-Apps"
-git fetch
-git pull
+REM cd "%USERPROFILE%\Documents\GitHub\Community-Apps"
+REM git fetch
+REM git pull
 
 cd "C:\"
 

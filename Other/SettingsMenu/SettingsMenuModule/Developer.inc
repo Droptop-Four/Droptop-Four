@@ -19,21 +19,39 @@ String=%USERNAME%
 IfMatch=Carib|thomas.whittaker|Mike.Boynton|mkboy|alebu|saagg|KazukiGames82
 IfMatchAction=[!SetVariable ShowDevTools 1][!UpdateMeter *][!Redraw]
 
+; [PSRM.ReplaceInFile]
+; Measure=Plugin
+; Plugin=PowershellRM
+; Line=$replace1 = 'C:\\Users\\.*?\\'; $replace2 = 'C:\Users\%USERNAME%\'; $path = "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace"; $encoding = 'utf8'
+; Line2=function Run() { iwr -useb "#GitPS1Loc#ReplaceInFile.ps1" | iex }
+; OnChangeAction=
+; UpdateDivider=-1
+
 [PSRM.ReplaceInFile]
 Measure=Plugin
-Plugin=PowershellRM
-Line=$replace1 = 'C:\\Users\\.*?\\'; $replace2 = 'C:\Users\%USERNAME%\'; $path = "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace"; $encoding = 'utf8'
-Line2=function Run() { iwr -useb "#GitPS1Loc#ReplaceInFile.ps1" | iex }
-OnChangeAction=
-UpdateDivider=-1
+Plugin=RunCommand
+Program=PowerShell
+Parameter=$replace1 = 'C:\\Users\\.*?\\'; $replace2 = 'C:\Users\%USERNAME%\'; $path = "$env:USERPROFILE\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Other\DroptopWorkspace"; $encoding = 'utf8'; iwr -useb "#GitPS1Loc#ReplaceInFile.ps1" | iex
+State=Hide
+OutputType=ANSI
+DynamicVariables=1
+
+; [PSRM.TranslationEncoding]
+; Measure=Plugin
+; Plugin=PowershellRM
+; Line=$parentFolderPath = "#SKINSPATH#Droptop\@Resources\GlobalVar"
+; Line2=function Run() { iwr -useb "#GitPS1Loc#TranslationEncoding.ps1" | iex }
+; OnChangeAction=
+; UpdateDivider=-1
 
 [PSRM.TranslationEncoding]
 Measure=Plugin
-Plugin=PowershellRM
-Line=$parentFolderPath = "#SKINSPATH#Droptop\@Resources\GlobalVar"
-Line2=function Run() { iwr -useb "#GitPS1Loc#TranslationEncoding.ps1" | iex }
-OnChangeAction=
-UpdateDivider=-1
+Plugin=RunCommand
+Program=PowerShell
+Parameter=$parentFolderPath = "#SKINSPATH#Droptop\@Resources\GlobalVar"; iwr -useb "#GitPS1Loc#TranslationEncoding.ps1" | iex
+State=Hide
+OutputType=ANSI
+DynamicVariables=1
 
 [DevToolsStyle0]
 Y=0
