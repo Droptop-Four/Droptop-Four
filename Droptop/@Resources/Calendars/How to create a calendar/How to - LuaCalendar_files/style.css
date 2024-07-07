@@ -1,0 +1,233 @@
+/*border-style: top right bottom left;*/
+
+/* ===== Main Styles ===== */
+body {
+	background-color: #cb60b3;
+	background: -webkit-linear-gradient(#db36a4, #cb60b3); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#db36a4, #cb60b3); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#db36a4, #cb60b3); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#db36a4, #cb60b3); /* Standard syntax */
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	color: rgb(255, 255, 255);
+	font-family: arial;
+	font-size: 12pt;
+}
+
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.3em;}
+
+a img {border: none;}
+a {color: inherit;}
+
+p {
+	margin-top: 0px;
+	text-indent: 20px;
+}
+
+code {
+	background: #cb60b3;
+	opacity: 0.8;
+	border: rgb(255, 255, 255) solid 1px;
+	padding: 0 3pt 0 3pt;
+}
+
+code.block {
+	display:block;
+	margin-bottom: 1em;
+}
+
+span.tab {
+	display: inline-block;
+	width: 2em;
+}
+
+ul.none { list-style-type:none; }
+
+dl {margin-left: 2em;}
+
+dd,dt {margin-top: 0.5em;}
+
+dt {
+	padding: 0.3em;
+	margin-top: 20pt;
+	border-style: solid solid none solid;
+	border-color: rgb(100, 100, 100);
+	border-width: 1pt;
+	border-bottom: 1pt solid rgb(255, 255, 255);
+	display: block;
+	font-weight: bold;
+	background-color: rgb(80, 80, 80);
+}
+
+dd {
+	border-style: none solid solid solid;
+	border-color: rgb(100, 100, 100);
+	border-width: 1pt;
+	padding: 0.5em 0.5em 0.5em 2em;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+/* ===== Balloons ===== */
+article {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgb(50,50,50);
+	opacity: 0.8;
+	margin-bottom: 20px;
+	padding: 20px;
+	z-index: 0;
+}
+
+article h1,article h2,article h3 {
+	margin: 0;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	margin-bottom: 10px;
+}
+
+/* ===== NEW Header Section ===== */
+header {
+	position: fixed;
+	top: 0px;
+	left: 50%;
+	width: 940px;
+	margin-left: -470px;
+	height: 30px;
+	background: rgb(70,70,70);
+	/*opacity: 0.8;*/
+	z-index: 1;
+	border-bottom: 1px solid white;
+}
+
+header h2 {
+	margin: 0 15px 0 10px;
+	display: inline;
+}
+
+header a {
+	text-decoration: none;
+	margin-right: 15px;
+}
+
+header nav {
+	/*display: table-cell;*/
+	display: inline;
+	visibility: hidden;
+	background: rgb(50,50,50);
+}
+
+/*header nav a:after {
+    content: "\000A";
+    white-space: pre;
+}*/
+
+header:hover nav {visibility: visible;}
+header a:hover {color: #cb60b3;}
+
+footer {
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	background: rgb(50,50,50);
+	opacity: 0.8;
+}
+
+/* ==== Introduction Section  ==== */
+#intro {margin-top:60px;}
+
+#intro td:first-child {
+	width:30%;
+	text-align:center;
+}
+
+#intro td:first-child a {
+	text-decoration:none;
+	font-size:0.8em;
+}
+
+#intro td:last-child ul {
+	margin-top:0;
+	padding-left:0;
+}
+
+/* ===== Settings Section ===== */
+#settings dt code {
+	float:right;
+	position: relative;
+}
+
+#settings dt code:before {
+	content: "Default: ";
+	position: absolute;
+	left: -4em;
+	font-family: arial;
+}
+
+/* ===== Holiday Section ===== */
+#holiday li  {padding-bottom: 8pt;}
+#holiday ul  {margin-top: 10pt;}
+
+/* ===== StyleSheets Section ===== */
+#styles dt {
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+/* ====== ChangeLog Section ===== */
+#changelog h2 {position: relative;}
+
+#changelog h2 span {
+	font-size: 0.66em;
+	text-align: right;
+	position: absolute; 
+	bottom: 0;
+	right: 0;
+	line-height: 1.44em;
+}
+
+#changelog h2 span:before {content: "Released: ";}
+
+#changelog ul {
+	margin-top: 0px;
+	list-style-type: none;
+}
+
+#changelog li:before {
+	content: "\2022";
+	font-size: 2em;
+	line-height: 0.5em;
+	vertical-align: middle;
+	padding-right: 3pt;
+}
+
+#changelog .change:before {
+	color: rgb(0,255,0);
+}
+
+#changelog .add:before {
+	color: rgb(0,0,255);
+}
+
+#changelog .fix:before {
+	color: rgb(255,153,0);
+}
+
+#changelog .remove:before {
+	color: rgb(255,0,0);
+}
+
+#changelog aside ul li {
+	display: inline;
+}
+
+#changelog aside ul {
+	float: right;
+	line-height: 2em;
+	padding-top: 0.5em;
+}
