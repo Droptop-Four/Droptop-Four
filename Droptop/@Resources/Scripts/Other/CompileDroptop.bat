@@ -4,14 +4,20 @@ set startTime=%time%
 
 git config --global http.sslVerify false
 
+cd "%USERPROFILE%\Documents\GitHub"
+git clone https://github.com/Droptop-Four/Beta-Update.git --depth 1  --branch main 
 cd "%USERPROFILE%\Documents\GitHub\Beta-Update"
 git fetch
 git pull
 
+cd "%USERPROFILE%\Documents\GitHub"
+git clone https://github.com/Droptop-Four/Droptop-Four.git --depth 1  --branch main 
 cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
 git fetch
 git pull
 
+cd "%USERPROFILE%\Documents\GitHub"
+git clone https://github.com/Droptop-Four/Community-Apps.git --depth 1  --branch main 
 cd "%USERPROFILE%\Documents\GitHub\Community-Apps"
 git fetch
 git pull
