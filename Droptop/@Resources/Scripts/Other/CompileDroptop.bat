@@ -30,8 +30,8 @@ TIMEOUT 5
 del /f %5Droptop\@Resources\GlobalVar\Languages\ca-ES.inc"
 del /f %5Droptop\@Resources\GlobalVar\Languages\ro-RO.inc"
 del /f %5Droptop\@Resources\GlobalVar\Languages\th-TH.inc"
-del /f %5Droptop\@Resources\GlobalVar\Languages\zh-CN.inc"
 del /f %5Droptop\@Resources\GlobalVar\Languages\zh-TW.inc"
+del /f %5Droptop\@Resources\GlobalVar\Languages\el-GR.inc"
 
 attrib -h /s %5Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
@@ -700,8 +700,8 @@ echo Finish Time: %time%
 REM TESTING below attrib to fix missing attributes for shortcuts after compile - April 16
 REM attrib -s -h /d /s %5Droptop Folders\Games\*"
 REM attrib -s /s %5Droptop Folders\desktop.ini"
-REM attrib +h /s %5Droptop Folders\desktop.ini"
-REM attrib +s /d /s %5Droptop Folders\Games\*"
+attrib +h /s %5Droptop Folders\desktop.ini"
+attrib +s /d /s %5Droptop Folders\Games\*"
 
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 @echo All versions pushed successfully. Press any key to start Droptop setup...

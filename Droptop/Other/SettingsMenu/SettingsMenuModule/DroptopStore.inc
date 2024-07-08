@@ -32,6 +32,7 @@ Y=([1Icon:Y]+(#IconH#/2))
 H=1
 DynamicVariables=1
 Hidden=0
+Container=AnimationContainer
 
 [1Icon]
 ImageName=[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber].[##CURRENTSECTION#].Icon]
