@@ -2,6 +2,11 @@ $ErrorActionPreference= 'silentlycontinue'
 
 $exclude = @('*.rmskin','*.md','Variables.inc','*.org')
 
+if ($replacedefault -eq 1)
+{
+    Copy-Item -Path "${skinsPath}Droptop Community Apps\Apps\$appname\Variables\Variables.inc" -Destination "${skinsPath}Droptop Community Apps\Apps\$appname\Variables\VariablesDefault.inc" -Recurse
+}
+
 New-Item -ItemType "directory" -Path "${skinsPath}Droptop Folders\Other files\@Rmskins\Droptop Apps"
 Remove-Item -Path "${skinsPath}Droptop Folders\Other files\@Rmskins\Droptop Apps\$newappname - $appauthor (Droptop App).rmskin" -Recurse
 Remove-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\@Rmskins\*.rmskin" -Recurse
