@@ -75,7 +75,6 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Apps.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\CustomApps.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\CustomAppSelect.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\FolderSelect.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Icons.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Shadows.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\MoreOptions.inc" />
@@ -137,6 +136,9 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\vi-VN.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\es-MX.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\hi-IN.inc" />
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\no-NO.inc" />
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\zh-CN.inc" />
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Languages\el-GR.inc" />
         </Folder>
         <Folder name="App Buttons">
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\AppButtons\NewDesktop.ini" />
@@ -258,6 +260,7 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\Droparea\Droparea.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\Mail0.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\LoadingScreen.inc" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\MonitorBrightness0.ini" />
             </Folder>
             <Folder name="ArrowStyles">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\ArrowStyle\ArrowStyle1.ini" />

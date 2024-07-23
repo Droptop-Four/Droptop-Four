@@ -21,8 +21,8 @@ U=[!UpdateMeasureGroup Animation][!UpdateMeterGroup Animation][!Redraw]
 AppBar.Author=deathcrafter
 AppBar.Link=["https://github.com/deathcrafter"]
 
-Backlight.Author=cfixd
-Backlight.Link=["https://github.com/cfixd"]
+ScreenBrightness.Author=FlyingHyrax
+ScreenBrightness.Link=["https://github.com/FlyingHyrax"]
 
 BatterySaver.Author=KazukiGames82
 BatterySaver.Link=["https://github.com/KazukiGames82"]

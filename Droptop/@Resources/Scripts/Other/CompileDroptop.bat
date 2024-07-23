@@ -31,7 +31,6 @@ del /f %5Droptop\@Resources\GlobalVar\Languages\ca-ES.inc"
 del /f %5Droptop\@Resources\GlobalVar\Languages\ro-RO.inc"
 del /f %5Droptop\@Resources\GlobalVar\Languages\th-TH.inc"
 del /f %5Droptop\@Resources\GlobalVar\Languages\zh-TW.inc"
-del /f %5Droptop\@Resources\GlobalVar\Languages\el-GR.inc"
 
 attrib -h /s %5Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
@@ -84,6 +83,7 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables Functions-Cariboudjan 10 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables ReverseDarkLight 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables RecentFileFilter "." %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables RecentFileTypeNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables NowPlayingClipNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables GmailUsername "" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables GmailPassword "" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -94,6 +94,8 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables AlarmNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables AlarmOFF 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables PomoNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables ActionTimer.StartAnimation.Steps 16 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables ActionTimer.StartAnimation.StepsNum 2 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables AutoAltHome 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables ShowSeconds 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables ShowSecondsBar 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -193,7 +195,7 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables DPIRescaleOFF 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CurrentDesktopNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables PreviousDesktopTotal 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables AutohideDelayNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables AutohideDelayNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables AutohideSpeedNum 2 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables DisableAllNotifications 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables PlayerNum 6 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -219,6 +221,7 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables ThemeNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatterySaverON 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryPowerLowThreshold0 20 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BatteryPowerLowThresholdNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables Time24HourNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables TimeFormatTypeNum 2 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CenterTimeFormatTypeNum 3 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -326,7 +329,7 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables HideAppVolume 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppWeather 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppWifi 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppBattery 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppBattery 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppDownloads 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppRecent 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideAppCopy 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
@@ -374,10 +377,10 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables CustomApp9UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CustomApp10UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables DeviceIsNotTouch 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BatteryBacklightIconOFF 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables ShowBacklightBar 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables AltHome 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables LeftHotCornerActionNum 2 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables RightHotCornerActionNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables LeftHotCornerActionNum 3 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables RightHotCornerActionNum 2 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables StretchCount 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideWinButton 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideProgramsApp 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -385,7 +388,9 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables HideMailCount 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideGmailPreviews 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables AHKNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables BarXposOffsetNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables BarXposOffsetNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables FontSizeOffsetNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables FontYposOffsetNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables DebugModeOFF 1 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables TopBarWidth "#SCREENAREAWIDTH#" %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables LocationLatitude "" %5Droptop\@Resources\GlobalVar\Control.inc"
@@ -471,8 +476,8 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables BatteryReporting21 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryReporting22 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryReporting23 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-xcopy /y /c /h %5Droptop Community Apps\Apps\Sample_App-Cariboudjan" %5Droptop\@Resources\Scripts\AppBuilder\Sample Apps"
-xcopy /y /c /h %5Droptop Community Apps\Apps\Sample_WebView-Cariboudjan" %5Droptop\@Resources\Scripts\AppBuilder\Sample Apps"
+xcopy /y /c /h /e %5Droptop Community Apps\Apps\Sample_App-Cariboudjan" %5Droptop\@Resources\Scripts\AppBuilder\Sample Apps\Sample_App-Cariboudjan"
+xcopy /y /c /h /e %5Droptop Community Apps\Apps\Sample_WebView-Cariboudjan" %5Droptop\@Resources\Scripts\AppBuilder\Sample Apps\Sample_WebView-Cariboudjan"
 attrib +h /s "%USERPROFILE%\Documents\GitHub\Community-Apps\.gitattributes"
 xcopy /y /c /h /e %5Droptop Community Apps\Apps\*" "%USERPROFILE%\Documents\GitHub\Community-Apps"
 del /f /q %5Droptop\@Resources\Images\Media\Cover.png"
@@ -629,14 +634,9 @@ RD /S /Q "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop"
 del /f "%USERPROFILE%\Documents\GitHub\Beta-Update\*.zip"
 del /f "%USERPROFILE%\Documents\GitHub\Beta-Update\*.rmskin"
 
-powershell.exe cd %5Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; .\MakeRmSkin.ps1 -Skin Beta-Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'; Rename-Item -Path '.\@Rmskins\Beta-Update\Beta-Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop-Community-Apps\Apps' -Recurse
+powershell.exe cd %5Redistributables"; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Beta-Update; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Beta-Update\Beta-Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop-Community-Apps\Apps' -Recurse
 
-xcopy /E /I /Y %5Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
-xcopy /E /I /Y %5Redistributables\@Rmskins\Update\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %5Redistributables\@Rmskins\Beta-Update\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
-xcopy /E /I /Y %5Redistributables\@Rmskins\Supporter-Version\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
-
-xcopy /E /I /Y %5Redistributables\Basic-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %5Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
 
 attrib -h /s %5Droptop\@Resources\OriginalFolders\desktop.ini"
@@ -675,6 +675,13 @@ git add .
 git commit -m %2
 git push
 
+attrib -h /s %5Droptop Folders\desktop.ini"
+attrib +s /d /s %5Droptop Folders\Games\*"
+attrib -s /s %5Droptop Folders\desktop.ini"
+attrib +h /s %5Droptop Folders\desktop.ini"
+
+"Wscript.exe" %5Droptop\@Resources\Scripts\IconsColor1.vbs" %5"
+
 echo Start Time: %startTime%
 echo Finish Time: %time%
 
@@ -683,6 +690,14 @@ powershell.exe [console]::beep(800,200); [console]::beep(800,320)
 PAUSE
 @echo Are you sure? Press any key to continue.
 PAUSE
+
+powershell.exe cd %5Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'
+
+xcopy /E /I /Y %5Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
+xcopy /E /I /Y %5Redistributables\@Rmskins\Update\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
+xcopy /E /I /Y %5Redistributables\@Rmskins\Supporter-Version\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
+
+xcopy /E /I /Y %5Redistributables\Basic-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"
@@ -696,12 +711,6 @@ git config --global http.sslVerify true
 
 echo Start Time: %startTime%
 echo Finish Time: %time%
-
-REM TESTING below attrib to fix missing attributes for shortcuts after compile - April 16
-REM attrib -s -h /d /s %5Droptop Folders\Games\*"
-REM attrib -s /s %5Droptop Folders\desktop.ini"
-attrib +h /s %5Droptop Folders\desktop.ini"
-attrib +s /d /s %5Droptop Folders\Games\*"
 
 powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 @echo All versions pushed successfully. Press any key to start Droptop setup...

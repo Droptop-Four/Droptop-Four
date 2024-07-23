@@ -61,3 +61,6 @@ Lichess-EternalTheGod
 Jisho-Filete
 Last_FM-KazukiGames82
 IdleScreen-TheyCallMePapa
+Wallpaper_Changer-Cariboudjan
+QuickConnect-Cariboudjan
+Wealthsimple-Cariboudjan

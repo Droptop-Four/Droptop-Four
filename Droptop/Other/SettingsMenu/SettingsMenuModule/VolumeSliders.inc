@@ -253,6 +253,7 @@ Hidden=(#NumberOfItems#>=[##CURRENTSECTION#]?0:1)
 X=1
 Y=R
 Group=MouseMove | SliderBar
+Container=AnimationContainer
 
 ; -------------------------
 
@@ -294,6 +295,7 @@ Y=(#DividerSpace#*2)R
 
 [Divider1]
 Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DividerSpace#*1)+(#DropdownItemHeight#*3)+2)
+Container=AnimationContainer
 
 [Slider4]
 Meter=Shape
@@ -324,6 +326,7 @@ Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DividerSpace#*3)+(#DropdownItem
 [5]
 MeterStyle=InfoStyleB
 Y=(#DividerSpace#*2)R
+Container=AnimationContainer
 
 [5Icon]
 Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DividerSpace#*4)+#DividerHeight#+(#DropdownItemHeight#*4)+2)

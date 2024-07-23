@@ -37,7 +37,7 @@ GameHub.ImageScale2=200
 GameHub.ImageScale3=250
 GameHub.ImageScale4=300
 
-GameHub.WHImageNum=2
+GameHub.WHImageNum=3
 GameHub.WidthImage1=150
 GameHub.HeightImage1=195
 GameHub.WidthImage2=200
@@ -56,3 +56,5 @@ MyAppName=Game Hub
 MyAppAuthor=Phan
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Game_Hub-Phan\Variables\Variables.inc
 MyAppGUID=d7a2bf71-bc19-4308-8e3a-a5acb3762ce0
+Shortcut.AboveTotal=0
+Shortcut.NumberOfItems=4
