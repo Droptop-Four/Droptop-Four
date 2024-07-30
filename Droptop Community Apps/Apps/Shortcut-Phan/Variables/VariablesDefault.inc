@@ -14,9 +14,10 @@ MyAppGUID=b09aea21-6371-4fbf-a472-0d5edada8967
 ; Add your variables below: 
 ; -------------------------------------------------------------------------------
 
-Shortcut.IconSize=0.5
+Shortcut.IconSizeNum=1
 
 Shortcut.Greyscale=0
 
 Shortcut.NumberOfItems=4
+
 Shortcut.AboveTotal=0

@@ -4,6 +4,8 @@
 ; Variables in this document should be used to control the app's general functionality.
 ; -------------------------------------------------------------------------------
 
+MyAppVersion=24.0730
+
 LocationShortcutButton1=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Icons\ButtonS1.png
 LocationShortcutButton2=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Icons\ButtonS2.png
 LocationShortcutButton3=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Icons\ButtonS3.png
@@ -15,4 +17,9 @@ ShortcutButton2=2
 ShortcutButton3=3
 ShortcutButton4=4
 ShortcutButton5=5
-MyAppVersion=24.0625
+
+Shortcut.IconSize1=0.3
+Shortcut.IconSize2=0.5
+Shortcut.IconSize3=0.7
+
+Shortcut.IconSize=[#Shortcut.IconSize[#Shortcut.IconSizeNum]]
