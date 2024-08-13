@@ -5,7 +5,7 @@ SkinHeight=
 LeftMouseDownAction=
 OnRefreshAction=[!DeactivateConfig "Droptop Community Apps\Apps\#MyAppID#\Popout\MinimizeIcon"]
 OnCloseAction=[!WriteKeyValue Variables PopoutZpos 1][!Zpos 1]
-OnFocusAction=#HideAll#[!#Hide#Group WebView]
+OnFocusAction=#HideAll#[!HideFadeGroup WebView]
 
 DefaultWindowX=#TopHeight#
 DefaultWindowY=(#TopHeight#*2)
