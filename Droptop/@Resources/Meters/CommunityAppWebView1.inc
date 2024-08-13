@@ -3,7 +3,7 @@ Measure=Calc
 Formula=Counter
 IfCondition=(AutoStartup=1)
 IfTrueAction=[!Delay [##MyAppID#]00][!UpdateMeasure Plugin.WebView]
-OnUpdateAction=[!Zpos 1][!Zpos 0]
+OnUpdateAction=[!Zpos 1][!Zpos #PopoutZpos#]
 UpdateDivider=-1
 
 [Plugin.WebView]
