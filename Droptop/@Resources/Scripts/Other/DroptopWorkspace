@@ -7,12 +7,13 @@
             <Folder name="Tasks">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\Chameleon.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\ToggleFolders.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\LocationParser.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\WeatherParser.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\ChangeMode.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\Diagnostics.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\CheckUpdate.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\CommunityAppSlotAssign.ini" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\MailParser.ini" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\LocationParser.ini" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\WeatherParser.ini" />
             </Folder>
             <Folder name="ContextBox">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\ContextBox\ContextBox1.ini" />
@@ -56,6 +57,8 @@
             <Folder name="Modules">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Main.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\MainAlt.inc" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\HomeIcon.inc" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\HomeIconSelect.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\ArrowStyle.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\ColorOpacity.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\ColorOpacitySliders.inc" />
@@ -184,21 +187,9 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\AppControls\Folder\Folder2.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\AppControls\Folder\Folder3.ini" />
             </Folder>
-            <Folder name="Vol Folders">
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Volume\Folder\Folder2.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Volume\Folder\Folder3.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Volume\Folder\Folder4.ini" />
-            </Folder>
             <Folder name="Alarm Folders">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Alarm\Folder\Folder2.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Alarm\Folder\Folder3.ini" />
-            </Folder>
-            <Folder name="Copy Folders">
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Folder\Folder1.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Folder\Folder2.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Folder\Folder3.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Folder\Folder4.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Notes\Notes.ini" />
             </Folder>
             <Folder name="Wifi Folders">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Wifi\Folder\Folder3.ini" />

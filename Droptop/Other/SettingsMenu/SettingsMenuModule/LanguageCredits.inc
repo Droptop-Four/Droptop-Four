@@ -1,5 +1,5 @@
 [Rainmeter]
-OnRefreshAction=[!ShowMeterGroup #MaxItem#][!UpdateMeterGroup #MaxItem#][!Redraw]
+OnRefreshAction=[!ShowMeterGroup #MaxItem#][!UpdateMeterGroup #MaxItem#]
 
 [Variables]
 ;----------------------------------

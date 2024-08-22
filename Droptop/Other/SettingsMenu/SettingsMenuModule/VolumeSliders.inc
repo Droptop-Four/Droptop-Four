@@ -223,7 +223,7 @@ Text=[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber].[##CURRENTSECTION#
 LeftMouseDownAction=[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber].[##CURRENTSECTION#Icon].Action]
 X=1
 Y=R
-W=(#DropdownMenuWidth#-#DropdownArrowHighlightW#-(#HideIcons#=1?#DropdownNoIconPadding#:#DropdownItemPadding1#))
+W=(#DropdownMenuWidth#-#DropdownArrowHighlightW#-#DropdownItemPadding1#)
 H=#DropdownItemHeight#
 FontWeight=#FontWeight#
 Padding=#Padding0B#
