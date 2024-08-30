@@ -13,7 +13,6 @@ if ($GeoWatcher.Permission -eq 'Denied'){
 		$MyLoc = $GeoWatcher.Position.Location | Select Latitude,Longitude
 	}
 	
-Start-Process -FilePath "`"$programPath`"" -ArgumentList "!Quit"
 Start-Process -FilePath "`"$programPath`"" -ArgumentList "!SetOption","MeasureLatLong","String","`"${MyLoc}`"","`"${skinspath}Droptop\Other\BackgroundProcesses`""
 Start-Process -FilePath "`"$programPath`"" -ArgumentList "!UpdateMeasure","MeasureLatLong","`"${skinspath}Droptop\Other\BackgroundProcesses`""
 Start-Process -FilePath "`"$programPath`"" -ArgumentList "!EnableMeasureGroup","MeasureLatLong","`"${skinspath}Droptop\Other\BackgroundProcesses`""
