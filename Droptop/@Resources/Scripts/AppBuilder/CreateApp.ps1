@@ -13,7 +13,7 @@ Remove-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\@Rmskins\*.
 Remove-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\@Rmskins\*.zip" -Recurse
 
 Copy-Item -Path "${skinsPath}Droptop Community Apps\Apps\$appname" -Destination "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\" -Recurse -Exclude $exclude
-Copy-Item -Path "${skinsPath}Droptop Community Apps\Apps\$appname" -Destination "C:\Users\${Env:UserName}\Documents\GitHub\Community-Apps\" -Recurse -Exclude $exclude
+Copy-Item -Path "${skinsPath}Droptop Community Apps\Apps\$appname" -Destination "${Env:UserProfile}\Documents\GitHub\Community-Apps\" -Recurse -Exclude $exclude
 
 Remove-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\$appname\.git" -Recurse -Force
 Remove-Item -Path "${skinsPath}Droptop\@Resources\Scripts\AppBuilder\AppTemplate\Skins\Droptop Community Apps\Apps\CustomApp.ini" -Recurse -Force

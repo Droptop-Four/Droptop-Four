@@ -1,0 +1,28 @@
+<!-- Event File v6.0 -->
+ <EventFile Repeat="None">
+  <Set Month="1">
+  </Set>
+  <Set Month="2">
+  </Set>
+  <Set Month="3">
+  </Set>
+  <Set Month="4">
+  </Set>
+  <Set Month="5">
+  </Set>
+  <Set Month="6">
+  </Set>
+  <Set Month="7">
+  </Set>
+  <Set Month="8">
+  </Set>
+  <Set Month="9">
+  </Set>
+  <Set Month="10">
+  </Set>
+  <Set Month="11">
+  </Set>
+  <Set Month="12">
+    <!-- <Event Day="16" Year="2003" Anniversary="true" Repeat="Year">Happy Birthday, KazukiGames82 🎉</Event> -->
+  </Set>
+</EventFile>

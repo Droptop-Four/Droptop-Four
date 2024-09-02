@@ -6,6 +6,20 @@ IfTrueAction=[!Delay [##MyAppID#]00][!UpdateMeasure Plugin.WebView]
 OnUpdateAction=[!Zpos 1][!Zpos #PopoutZpos#]
 UpdateDivider=-1
 
+[BlurBehind]
+Measure=Plugin
+Plugin=FrostedGlass
+BlurEnabled=#DropdownMenuBlur#
+Type=[#BlurType[#BlurTypeNum]0]
+Border=[#Shadows[#DropdownMenuShadow]]
+Corner=[#BlurCorner[#DropdownRoundCorners]]
+BorderVisible=#ShowDropdownBlurBorder#
+DynamicVariables=1
+UpdateDivider=-1
+
+[Background]
+Container=
+
 [Plugin.WebView]
 Measure=Plugin
 Plugin=WebView

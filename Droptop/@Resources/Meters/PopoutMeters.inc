@@ -1,5 +1,5 @@
 [Rainmeter]
-Group=None
+Group=None | Popout
 SkinWidth=
 SkinHeight=
 LeftMouseDownAction=
@@ -28,11 +28,19 @@ Win10.BlurType10=Acrylic
 Win10.BlurType01=Blur
 Win10.BlurType11=Blur
 
+DropdownBGColor1=0,0,0
+DropdownFontColor1=255,255,255
+DropdownFontColor2=255,255,255
+DropdownItemHL=255,255,255
+DropdownItemHL2=255,255,255
+DropdownItemOpacity=185
+DropdownHLOpacity=100
+
 [BlurBehind]
 BlurEnabled=0
 ; Measure=Plugin
 ; Plugin=FrostedGlass
-; BlurEnabled=(#ForceOpaque#=1?0:#DropdownMenuBlur#)
+; ; BlurEnabled=(#ForceOpaque#=1?0:#DropdownMenuBlur#)
 ; Type=[#Win10.BlurType[#BlurTypeNum][#Win10Apps]]
 ; Border=[#Shadows[#DropdownMenuShadow]]
 ; Corner=[#BlurCorner[#DropdownRoundCorners]]
@@ -55,9 +63,6 @@ Measure=Calc
 IfCondition=([&MeasureMouseX]>[#CURRENTCONFIGX]) && ([&MeasureMouseX]<([#CURRENTCONFIGX]+[#CURRENTCONFIGWIDTH])) && ([&MeasureMouseY]>[#CURRENTCONFIGY]) && ([&MeasureMouseY]<([#CURRENTCONFIGY]+[#CURRENTCONFIGHEIGHT]))
 IfTrueAction=[!CommandMeasure MeasureActionTimer "Execute 7"]
 IfFalseAction=[!SetVariable ActionTimer.PopoutFadeIn 0][!UpdateMeter *][!Redraw]
-; IfTrueAction=[!SetOptionGroup PopoutMeters ImageAlpha #*DropdownItemOpacity*#][!SetOptionGroup PopoutMeters FontColor "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!ShowMeter Background][!Redraw]
-; IfFalseAction=[!SetOptionGroup PopoutMeters ImageAlpha 0][!SetOptionGroup PopoutMeters FontColor "#*DropdownFontColor1*#,0"][!HideMeter Background][!Redraw]
-; IfConditionMode=1
 DynamicVariables=1
 Group=MouseMove
 
@@ -66,7 +71,6 @@ MouseOverAction=[!SetVariable ActionTimer.HLFadeIn 0.2][!SetVariable CurrentSubF
 MouseLeaveAction=[!SetOption #CURRENTSECTION# ImageAlpha (#*DropdownItemOpacity*#*#*ActionTimer.PopoutFadeIn*#)][!CommandMeasure MeasureActionTimer "Stop 2"][!SetOption #CURRENTSECTION# ImageTint ""][!SetOption #CURRENTSECTION# SolidColor ""][!SetOption #CURRENTSECTION# SolidColor2 ""][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor1*#,(#*DropdownItemOpacity*#*#*ActionTimer.PopoutFadeIn*#)"][!UpdateMeter #CURRENTSECTION#][!Redraw]
 
 [PopoutIconStyle]
-; ImageAlpha=(#DropdownItemOpacity#/3)
 ImageAlpha=(#DropdownItemOpacity#*#ActionTimer.PopoutFadeIn#)
 ImageName=#SKINSPATH#Droptop Community Apps\Apps\#MyAppID#\Popout\Icons\#CURRENTSECTION#.png
 Hidden=[#HideIcon.[#CURRENTSECTION]]
@@ -82,8 +86,7 @@ SolidColor=0,0,0,0
 Group=PopoutMeters | Animation.SU
 
 [Background]
-; Shape=Rectangle #DropdownMenuCutout#,(#DropdownMenuShapeOffsetH#+#DropdownMenuCutout#),(#DropdownMenuWidth#+#SysAppMenuWOffset#+2-(#DropdownMenuCutout#*2)),(#WebViewHeight#+(#DropdownItemYOffset#*2)+(#DropdownStrokeWidth#/2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(#ForceOpaque#=1?255:(#DropdownMenuOpacity1#<1?1:#DropdownMenuOpacity1#)) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,#DropdownStrokeOpacity#
-Shape=Rectangle #DropdownMenuCutout#,(#DropdownMenuShapeOffsetH#+#DropdownMenuCutout#),(#DropdownMenuWidth#+#SysAppMenuWOffset#+2-(#DropdownMenuCutout#*2)),(#WebViewHeight#+(#DropdownItemYOffset#*2)+(#DropdownStrokeWidth#/2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(255*#ActionTimer.PopoutFadeIn#) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,(#DropdownStrokeOpacity#*#ActionTimer.PopoutFadeIn#)
+Shape=Rectangle #DropdownMenuCutout#,(#DropdownMenuShapeOffsetH#+#DropdownMenuCutout#),(#DropdownMenuWidth#+#SysAppMenuWOffset#+2-(#DropdownMenuCutout#*2)),(#WebViewHeight#+(#DropdownItemYOffset#*2)+(#DropdownStrokeWidth#/2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(185*#ActionTimer.PopoutFadeIn#) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,(#DropdownStrokeOpacity#*#ActionTimer.PopoutFadeIn#)
 Shape2=
 DynamicVariables=1
 LeftMouseDownAction=
@@ -95,7 +98,7 @@ FontColor=#DropdownFontColor1#,(#DropdownItemOpacity#*#ActionTimer.PopoutFadeIn#
 Group=PopoutMeters | Animation.SU
 
 [PinIcon]
-ImageAlpha=(255*#ActionTimer.PopoutFadeIn#)
+ImageAlpha=(#DropdownItemOpacity#*#ActionTimer.PopoutFadeIn#)
 ImageName=#SKINSPATH#Droptop\@Resources\Icons\Fixed\#CURRENTSECTION##PopoutZpos#.png
 Group=PopoutMeters | Animation.SU
 

@@ -155,6 +155,34 @@ ExitApp
 
 ;----------
 
+; WindowsApp:
+	; Run %2%
+	; WinWaitActive, %3%
+	; WinMove, %3%, , %4%, %5%, %6%, %7%, 100
+		; ; WinMove, ahk_class ApplicationFrameWindow, , 1200, 80, 400, 1500, 100
+	; ; Sleep, 1000
+    ; ; WinMove, %3%, , %4%, %5%, %6%, %7%, , 
+; ExitApp
+
+WindowsApp:
+Process, Exist, %2%
+If Not ErrorLevel
+{
+    Run, %2%
+}
+Else
+{
+    ; If the process exists, activate the window
+    IfWinNotActive, %3%
+    {
+        WinActivate, %3%
+    }
+}
+WinMove, %3%, , %4%, %5%, %6%, %7%, 100
+ExitApp
+
+;----------
+
 NextDesktop:
  SetStoreCapsLockMode, Off
  Send, #^{Right}

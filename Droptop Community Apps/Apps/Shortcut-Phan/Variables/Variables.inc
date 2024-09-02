@@ -21,3 +21,4 @@ Shortcut.Greyscale=0
 Shortcut.NumberOfItems=4
 
 Shortcut.AboveTotal=0
+CustomCheckmark1=1
