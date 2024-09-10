@@ -330,8 +330,6 @@
         </Folder>
         <Folder name="Other">
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Tutorial\Tutorial.ini" />
-            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\HomeIconSelector\HomeIconSelector0.ini" />
-            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\HomeIconSelector\HomeIconSelector1.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\Droparea\Droparea.ini" />
             <Folder name="Symbols">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Symbols\Symbols1.inc" />
@@ -350,10 +348,6 @@
         <Folder name="Themes">
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\99.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\99Settings.inc" />
-            <Folder name="10 Snow Leopard">
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\10.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\10Settings.inc" />
-            </Folder>
             <Folder name="6 Cathode">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\6.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\6Settings.inc" />
@@ -409,6 +403,10 @@
             <Folder name="21 Senja">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\21.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\21Settings.inc" />
+            </Folder>
+            <Folder name="10 Snow Leopard">
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\10.inc" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\10Settings.inc" />
             </Folder>
             <Folder name="20 Terminal">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\20.inc" />

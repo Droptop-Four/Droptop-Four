@@ -33,6 +33,7 @@ H=1
 DynamicVariables=1
 Hidden=0
 Container=AnimationContainer
+Group=None
 
 [1Icon]
 ImageName=[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber].[##CURRENTSECTION#].Icon]

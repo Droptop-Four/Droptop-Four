@@ -20,8 +20,11 @@ MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Usage_Monitor-Cariboudjan\
 ; -------------------------------------------------------------------------------
 
 UsageCPUInactive=0
-UsageRAMInactive=0
 UsageGPUInactive=0
+UsageRAMInactive=0
 UsageHDDInactive=0
-UsageTCPINInactive=0
-UsageTCPOUTInactive=0
+UsageNETInactive=0
+
+UsageMonitor.BoxColorNum=1
+
+UsageMonitor.UseKilobytes=0

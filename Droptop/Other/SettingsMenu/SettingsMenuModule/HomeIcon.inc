@@ -10,12 +10,12 @@ HomeColorTint1=255,255,255
 HomeColorTintB0=[#*DropdownFontColor2*]
 HomeColorTintB1=255,255,255
 
-CategoryLogos.IconIndex=12
-CategoryCreatures.IconIndex=11
+CategoryLogos.IconIndex=2
+CategoryCreatures.IconIndex=1
 CategoryFood.IconIndex=11
-CategorySeasonal.IconIndex=9
-CategoryObjects.IconIndex=11
-CategorySymbols.IconIndex=9
+CategorySeasonal.IconIndex=1
+CategoryObjects.IconIndex=17
+CategorySymbols.IconIndex=8
 
 ; HomeColorB0=
 ; HomeColorB1=Color
@@ -89,6 +89,8 @@ MouseOverAction=[!SetOption MeasureActionTimer FolderMouseOver[&mItemSubFolderID
 MouseLeaveAction=[!SetOption MeasureActionTimer FolderMouseOver[&mItemSubFolderID].1 """[]"""][!UpdateMeasure MeasureActionTimer][!UpdateMeasure mItemSubFolderID][!CommandMeasure MeasureActionTimer "Stop 3"][!SetVariable [##CURRENTSECTION#]FolderActive 0][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!HideMeterGroup Highlight][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption CustomIcon ImageTint "[#HomeColorTint[#*HomeColorNum*]]"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor1*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter CustomIcon][!UpdateMeter #CURRENTSECTION#][!Redraw]
 MiddleMouseDoubleClickAction=#CloseSettingsMenu#[!CommandMeasure FileChoose "ChooseImage 6" "Droptop\DropdownBar"]
 Y=((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#)
+Hidden=0
+Group=None
 
 [1Icon]
 MeterStyle=IconStyle | LockedIconStyle#Supporter#
@@ -103,6 +105,8 @@ Meter=Image
 MeterStyle=IconStyle
 ImageFlip=None
 ImageTint=[#HomeColorTint[#HomeColorNum]]
+MaskImagePath=
+MaskImageName=
 Padding=0,0,0,0
 ImageCrop=-52,-52,104,104,5
 ; ImageName=#@#Icons\Fixed\#IconSize#\dice.png
@@ -149,6 +153,9 @@ Meter=Image
 MeterStyle=IconStyle
 ImageName=#@#Icons\Fixed\#IconSize#\dice.png
 ImageAlpha=(#DropdownItemOpacity#/1.5)
+MaskImagePath=
+MaskImageName=
+ImageFlip=None
 X=(#DropdownMenuWidth#-[#CURRENTSECTION#:W]-#DropdownIconXoffset#)
 Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*3)+(#DividerSpace#*2))
 LeftMouseDownAction=[!SetOption #CURRENTSECTION# ImageFlip [#Roll[&RandomRoll]]][!SetVariable CustomHomeButton 0][!SetVariable CustomHomeButton [#CustomHomeButton] "Droptop\DropdownBar"][!WriteKeyValue Variables CustomHomeButton [#CustomHomeButton] "#@#GlobalVar\UserSettings.inc"][!SetVariable HomeIconCatNum [RandomHomeCategory]][!SetVariable HomeIconCatNum [RandomHomeCategory] "Droptop\DropdownBar"][!WriteKeyValue Variables HomeIconCatNum [RandomHomeCategory] "#@#GlobalVar\UserSettings.inc"][!SetVariable HomeIconIndex [RandomHomeIndex]][!SetVariable HomeIconIndex [RandomHomeIndex] "Droptop\DropdownBar"][!WriteKeyValue Variables HomeIconIndex [RandomHomeIndex] "#@#GlobalVar\UserSettings.inc"][!UpdateMeasureGroup RandomHome][!UpdateMeter *][!UpdateMeter Home "Droptop\DropdownBar"][!UpdateMeter WinButton "Droptop\DropdownBar"][!Redraw "Droptop\DropdownBar"][!Redraw]
@@ -156,6 +163,7 @@ MouseOverAction=[!SetOption #CURRENTSECTION# ImageAlpha "#*DropdownItemOpacity*#
 MouseLeaveAction=[!SetOption #CURRENTSECTION# ImageAlpha "(#*DropdownItemOpacity*#/1.5)"][!UpdateMeter #CURRENTSECTION#][!Redraw]
 Hidden=0
 Container=AnimationContainer
+Group=None
 
 [Divider2]
 Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DividerSpace#*3)+(#DropdownItemHeight#*4)-(#DividerHeight#/2))
