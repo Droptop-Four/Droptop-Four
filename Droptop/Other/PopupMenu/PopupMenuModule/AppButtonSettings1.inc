@@ -109,7 +109,7 @@ Hidden=0
 MeterStyle=IconStyle | VariantIconStyle
 ImageName=#@#TopImages\[#SideAppName[#PopupModuleIndex]]\Medium\1\[#SideAppName[#PopupModuleIndex]].png
 X=#DropdownIconXoffset#
-Y=(#DropdownIconYoffset#+((#DropdownItemHeight#*3)+#DividerHeight#+(#DividerSpace#*2))+#DropdownItemYOffset#)
+Y=(#DropdownIconYOffset#+((#DropdownItemHeight#*3)+#DividerHeight#+(#DividerSpace#*2))+#DropdownItemYOffset#)
 Group=VariantIcon
 
 [5Icon]

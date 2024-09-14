@@ -10,11 +10,11 @@ HomeColorTint1=255,255,255
 HomeColorTintB0=[#*DropdownFontColor2*]
 HomeColorTintB1=255,255,255
 
-CategoryLogos.IconIndex=2
+CategoryLogos.IconIndex=12
 CategoryCreatures.IconIndex=1
-CategoryFood.IconIndex=11
+CategoryFood.IconIndex=12
 CategorySeasonal.IconIndex=1
-CategoryObjects.IconIndex=17
+CategoryObjects.IconIndex=3
 CategorySymbols.IconIndex=8
 
 ; HomeColorB0=
@@ -60,13 +60,13 @@ DynamicVariables=1
 [Background]
 Meter=Shape
 MeterStyle=BackgroundStyle
-Shape=Rectangle #DropdownMenuCutout#,#DropdownMenuCutout#,(#DropdownMenuWidth#+2-(#DropdownMenuCutout#*2)),(#DropdownItemHeight#*(#NumberOfItems#+0)+((#DropdownIconYoffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(#ForceOpaque#=1?255:(#DropdownMenuOpacity1#<1?1:#DropdownMenuOpacity1#)) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,#DropdownStrokeOpacity#
+Shape=Rectangle #DropdownMenuCutout#,#DropdownMenuCutout#,(#DropdownMenuWidth#+2-(#DropdownMenuCutout#*2)),(#DropdownItemHeight#*(#NumberOfItems#+0)+((#DropdownIconYOffset#+#DropdownItemYOffset#)*2)+(((#DividerSpace#*2)+#DividerHeight#)*#NumberOfDividers#)-(#DividerHeight#*#NumberOfDividers#)-(#DropdownMenuCutout#*2)),#DropdownBGCorner# | Fill Color #DropdownBGColor1#,(#ForceOpaque#=1?255:(#DropdownMenuOpacity1#<1?1:#DropdownMenuOpacity1#)) | StrokeWidth #DropdownStrokeWidth# | Stroke Color #DropdownStrokeColor#,#DropdownStrokeOpacity#
 DynamicVariables=1
 
 [FolderBlock]
 ; SolidColor=255,55,55,55
 H=(#DropdownItemHeight#*[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber]FolderCount])
-Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*4)+(#DividerSpace#*4))
+Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*4)+(#DividerSpace#*4))
 
 [LockedStyle0]
 LeftMouseDownAction=[!WriteKeyValue Variables NotificationText "#NotificationSupporter#" "#SKINSPATH#Droptop\Other\NotificationPopup\NotificationPopup.ini"][!DeactivateConfig "Droptop\Other\NotificationPopup"][!ActivateConfig "Droptop\Other\NotificationPopup" "NotificationPopup.ini"][!Move [#CURRENTCONFIGX] ([#CURRENTCONFIGY]+[[#CURRENTSECTION]:Y]) "Droptop\Other\NotificationPopup"]
@@ -88,7 +88,7 @@ MeterStyle=InfoStyle | ItemStyle | LockedStyle#Supporter#
 MouseOverAction=[!SetOption MeasureActionTimer FolderMouseOver[&mItemSubFolderID].1 """[!SetVariable ActionTimer.ActionNum 1][!EnableMeasure MeasureActionTimer.Actions][!UpdateMeasure MeasureActionTimer.Actions]"""][!SetOption MeasureActionTimer ActionList1 """Wait 400|FolderMouseOver[&mItemSubFolderID].#*FolderMode*#"""][!SetVariable ActionTimer.HLFadeIn 0.2][!SetVariable [##CURRENTSECTION#]FolderActive 1][!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetVariable CurrentFolder #CURRENTSECTION#][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption CustomIcon ImageTint "[#HomeColorTintB[#*HomeColorNum*]]"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor2*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!ShowMeterGroup Highlight][!UpdateMeterGroup Highlight][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter CustomIcon][!UpdateMeter #CURRENTSECTION#][!UpdateMeter FolderBlock][!Redraw][!CommandMeasure MeasureActionTimer "Execute 1"][!CommandMeasure MeasureActionTimer "Execute 3"]
 MouseLeaveAction=[!SetOption MeasureActionTimer FolderMouseOver[&mItemSubFolderID].1 """[]"""][!UpdateMeasure MeasureActionTimer][!UpdateMeasure mItemSubFolderID][!CommandMeasure MeasureActionTimer "Stop 3"][!SetVariable [##CURRENTSECTION#]FolderActive 0][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!HideMeterGroup Highlight][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption CustomIcon ImageTint "[#HomeColorTint[#*HomeColorNum*]]"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor1*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter CustomIcon][!UpdateMeter #CURRENTSECTION#][!Redraw]
 MiddleMouseDoubleClickAction=#CloseSettingsMenu#[!CommandMeasure FileChoose "ChooseImage 6" "Droptop\DropdownBar"]
-Y=((#DropdownIconYoffset#+(#DropdownItemHeight#/2))-((#DropdownIconYoffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#)
+Y=((#DropdownIconYOffset#+(#DropdownItemHeight#/2))-((#DropdownIconYOffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#)
 Hidden=0
 Group=None
 
@@ -109,14 +109,12 @@ MaskImagePath=
 MaskImageName=
 Padding=0,0,0,0
 ImageCrop=-52,-52,104,104,5
-; ImageName=#@#Icons\Fixed\#IconSize#\dice.png
-; ImageName=[#HomeImageName[#CustomHomeButton]]
 ImageName=[#HomeButtonLocation[#CustomHomeButton[#CustomHomeButton]][#HomeColorNum]]
 ImageAlpha=(#DropdownItemOpacity#/1.5)
 X=(#DropdownMenuWidth#-[#CURRENTSECTION#:W]-#DropdownIconXoffset#)
-Y=(#DropdownIconYoffset#+#DropdownItemYOffset#)
+Y=(#DropdownIconYOffset#+#DropdownItemYOffset#)
 H=#DropdownItemHeight#
-W=100
+W=#DropdownItemHeight#
 GreyScale=0
 PreserveAspectRatio=1
 LeftMouseDownAction=[!SetVariable CustomHomeButton (#CustomHomeButton#=1?0:1)][!SetVariable CustomHomeButton [#CustomHomeButton] "Droptop\DropdownBar"][!WriteKeyValue Variables CustomHomeButton [#CustomHomeButton] "#@#GlobalVar\UserSettings.inc"][!UpdateMeter *][!UpdateMeter Home "Droptop\DropdownBar"][!UpdateMeter WinButton "Droptop\DropdownBar"][!Redraw "Droptop\DropdownBar"][!Redraw]
@@ -126,7 +124,7 @@ Hidden=0
 Container=AnimationContainer
 
 [Divider1]
-Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DividerSpace#*1)+(#DropdownItemHeight#*1)-(#DividerHeight#/2))
+Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DividerSpace#*1)+(#DropdownItemHeight#*1)-(#DividerHeight#/2))
 
 [2]
 LeftMouseDownAction=#ToggleAnimation#[!SetVariable HomeColorNum (#HomeColorNum#=0?1:0)][!SetVariable HomeColorNum [#HomeColorNum] "Droptop\DropdownBar"][!SetVariable HomeColorNum [#HomeColorNum] "Droptop\Other\SettingsMenu\SettingsMenu3"][!WriteKeyValue Variables HomeColorNum [#HomeColorNum] "#@#GlobalVar\UserSettings.inc"][!SetOption Home ImageTint "[#HomeButtonColor[#*HomeColorNum*]]" "Droptop\DropdownBar"][!SetOption WinButton ImageTint "[#HomeButtonColor[#*HomeColorNum*]]" "Droptop\DropdownBar"][!UpdateMeter *][!UpdateMeter * "Droptop\Other\SettingsMenu\SettingsMenu3"][!UpdateMeter Home "Droptop\DropdownBar"][!UpdateMeter WinButton "Droptop\DropdownBar"][!Redraw "Droptop\Other\SettingsMenu\SettingsMenu3"][!Redraw "Droptop\DropdownBar"]
@@ -157,7 +155,7 @@ MaskImagePath=
 MaskImageName=
 ImageFlip=None
 X=(#DropdownMenuWidth#-[#CURRENTSECTION#:W]-#DropdownIconXoffset#)
-Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*3)+(#DividerSpace#*2))
+Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*3)+(#DividerSpace#*2))
 LeftMouseDownAction=[!SetOption #CURRENTSECTION# ImageFlip [#Roll[&RandomRoll]]][!SetVariable CustomHomeButton 0][!SetVariable CustomHomeButton [#CustomHomeButton] "Droptop\DropdownBar"][!WriteKeyValue Variables CustomHomeButton [#CustomHomeButton] "#@#GlobalVar\UserSettings.inc"][!SetVariable HomeIconCatNum [RandomHomeCategory]][!SetVariable HomeIconCatNum [RandomHomeCategory] "Droptop\DropdownBar"][!WriteKeyValue Variables HomeIconCatNum [RandomHomeCategory] "#@#GlobalVar\UserSettings.inc"][!SetVariable HomeIconIndex [RandomHomeIndex]][!SetVariable HomeIconIndex [RandomHomeIndex] "Droptop\DropdownBar"][!WriteKeyValue Variables HomeIconIndex [RandomHomeIndex] "#@#GlobalVar\UserSettings.inc"][!UpdateMeasureGroup RandomHome][!UpdateMeter *][!UpdateMeter Home "Droptop\DropdownBar"][!UpdateMeter WinButton "Droptop\DropdownBar"][!Redraw "Droptop\DropdownBar"][!Redraw]
 MouseOverAction=[!SetOption #CURRENTSECTION# ImageAlpha "#*DropdownItemOpacity*#"][!UpdateMeter #CURRENTSECTION#][!Redraw]
 MouseLeaveAction=[!SetOption #CURRENTSECTION# ImageAlpha "(#*DropdownItemOpacity*#/1.5)"][!UpdateMeter #CURRENTSECTION#][!Redraw]
@@ -166,7 +164,7 @@ Container=AnimationContainer
 Group=None
 
 [Divider2]
-Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DividerSpace#*3)+(#DropdownItemHeight#*4)-(#DividerHeight#/2))
+Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DividerSpace#*3)+(#DropdownItemHeight#*4)-(#DividerHeight#/2))
 
 [5]
 Y=(#DividerSpace#*2)R
@@ -197,35 +195,29 @@ ImageCrop=-32,-32,64,64,5
 ImageName=#SKINSPATH#Droptop\@Resources\TopImages\Home\64\Symbols\Mono\#CategorySymbols.IconIndex#
 
 [5Arrow]
-Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*4)+(#DividerSpace#*4))
+Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*4)+(#DividerSpace#*4))
 Hidden=0
 
 [6Arrow]
-Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*5)+(#DividerSpace#*4))
+Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*5)+(#DividerSpace#*4))
 Hidden=0
 
 [7Arrow]
-Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*6)+(#DividerSpace#*4))
+Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*6)+(#DividerSpace#*4))
 Hidden=0
 
 [8Arrow]
-Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*7)+(#DividerSpace#*4))
+Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*7)+(#DividerSpace#*4))
 Hidden=0
 
 [9Arrow]
-Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*8)+(#DividerSpace#*4))
+Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*8)+(#DividerSpace#*4))
 Hidden=0
 
 [10Arrow]
-Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*9)+(#DividerSpace#*4))
+Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*9)+(#DividerSpace#*4))
 Hidden=0
 
 [11Arrow]
-Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*10)+(#DividerSpace#*4))
+Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DropdownItemHeight#*10)+(#DividerSpace#*4))
 Hidden=0
-
-; [5]
-; Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DividerSpace#*4)+(#DropdownItemHeight#*4)+(#DropdownItemHeight#/2)+(#DividerHeight#*2))
-
-; [5Icon]
-; Y=(#DropdownIconYoffset#+#DropdownItemYOffset#+(#DividerSpace#*2)+(#DropdownItemHeight#*1)+#DividerHeight#+1)

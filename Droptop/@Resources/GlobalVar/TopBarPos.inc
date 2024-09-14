@@ -15,6 +15,8 @@ SlotFolder10=10
 SlotFolder11=11
 SlotFolder12=12
 
+SlotFolder13=13
+
 SideAppNumNewDesktop=1
 SideAppNumTime=2
 SideAppNumAlarm=3
