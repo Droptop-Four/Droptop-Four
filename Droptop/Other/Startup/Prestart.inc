@@ -1,7 +1,7 @@
 [Rainmeter]
-OnRefreshAction=[!Move 0 0][!Zpos 1][!KeepOnScreen 0][!Draggable 1][!WriteKeyValue Variables TopBarWidth #SCREENAREAWIDTH# "#@#GlobalVar\Control.inc"][!DeactivateConfig "Droptop\DropdownBar"][!DeactivateConfig "Droptop\Other\BackgroundProcesses"][!DeactivateConfig "Droptop\DropdownBar\AppBar"][!DeactivateConfigGroup Folders][!DeactivateConfigGroup DroptopSuite][!DeactivateConfig "illustro\Welcome"][!DeactivateConfig "illustro\System"][!DeactivateConfig "illustro\Disk"][!DeactivateConfig "illustro\Clock"][!Zpos 1][!Delay 60000][!WriteKeyValue Variables FirstLoad 1 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables Page 1][!WriteKeyValue Rainmeter SkinPath "%USERPROFILE%\Documents\Rainmeter\Skins\" "#SETTINGSPATH#Rainmeter.ini"][!DeactivateConfig]
+OnRefreshAction=[!Move 0 0][!Zpos 0][!KeepOnScreen 0][!Draggable 1][!WriteKeyValue Variables TopBarWidth #SCREENAREAWIDTH# "#@#GlobalVar\Control.inc"][!DeactivateConfig "Droptop\DropdownBar"][!DeactivateConfig "Droptop\Other\BackgroundProcesses"][!DeactivateConfig "Droptop\DropdownBar\AppBar"][!DeactivateConfigGroup Folders][!DeactivateConfigGroup DroptopSuite][!DeactivateConfig "illustro\Welcome"][!DeactivateConfig "illustro\System"][!DeactivateConfig "illustro\Disk"][!DeactivateConfig "illustro\Clock"]
 OnCloseAction=[!WriteKeyValue Variables FirstLoad 1 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Rainmeter SkinPath "%USERPROFILE%\Documents\Rainmeter\Skins\" "#SETTINGSPATH#Rainmeter.ini"]
-RightMouseUpAction=
+; RightMouseUpAction=
 Update=1000
 
 [Variables]
