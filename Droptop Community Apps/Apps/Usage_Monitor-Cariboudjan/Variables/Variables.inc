@@ -27,4 +27,4 @@ UsageNETInactive=0
 
 UsageMonitor.BoxColorNum=1
 
-UsageMonitor.UseKilobytes=0
+UsageMonitor.UseKilobytes=1
