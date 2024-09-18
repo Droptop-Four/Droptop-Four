@@ -76,3 +76,4 @@ MultiCalc-Cariboudjan
 TradingView-Cariboudjan
 QR_Snapper-Cariboudjan
 Stopwatch-Cariboudjan
+Radio_Paradise-Cariboudjan
