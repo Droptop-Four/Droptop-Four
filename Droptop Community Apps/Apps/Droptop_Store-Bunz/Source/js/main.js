@@ -25,5 +25,5 @@ function topFunction() {
 }
 
 function openExternalLink(link) {
-	RainmeterAPI.Bang(`${link}`)
+	RainmeterAPI.Bang(`${link}`);
 }

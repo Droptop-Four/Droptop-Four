@@ -61,7 +61,7 @@ class Themes {
 					image_url,
 					hidden,
 					changelog,
-					downloads
+					downloads,
 				} = item.theme;
 
 				if (item.theme.official_link == '') {
@@ -168,13 +168,19 @@ class DisplayThemes {
 			<div>
 				<div class="theme-card" id="${item.id}">
 					<div class="theme-card-container">
-					<a href="${item.image_url}" target="_blank"><img class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+						<div class="tooltip-share">
+							<a class="theme-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><img class="theme-share-button" src="../icons/share.webp" /></a>
+						</div>
+					<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false" class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 					<h3 class="theme-card-name">${item.name}</h3>
 					<p class="theme-card-author">Created by <a class="theme-card-author-link">${item.author}</a></p>
 					<p class="theme-card-desc">${item.desc}</p>
+					<div class="tooltip-downloads">
 					<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
+					<span class="tooltiptext-downloads">This number is updated once a day</span>
+					</div>
 					<div class="theme-card-buttons">
-						<a class="theme-card-button bold" href="${item.direct_download_link}">Download</a>
+						<a class="theme-card-button bold" href="javascript:void(0)" onclick="downloadTheme('${item.uuid}', '${item.direct_download_link}')">Download</a>
 					</div>
 					</div>  
 				</div>
@@ -189,13 +195,19 @@ class DisplayThemes {
 			<div>
 				<div class="theme-card" id="${item.id}">
 					<div class="theme-card-container">
-					<a href="${item.image_url}" target="_blank"><img class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+						<div class="tooltip-share">
+							<a class="theme-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><img class="theme-share-button" src="../icons/share.webp" /></a>
+						</div>
+					<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false" class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 					<h3 class="theme-card-name pointer" href="javascript:void(0)" onclick="openReadmeModal('${baseLink}')">${item.name}</h3>
 					<p class="theme-card-author">Created by <a class="theme-card-author-link">${item.author}</a></p>
 					<p class="theme-card-desc">${item.desc}</p>
+					<div class="tooltip-downloads">
 					<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
+					<span class="tooltiptext-downloads">This number is updated once a day</span>
+					</div>
 					<div class="theme-card-buttons">
-						<a class="theme-card-button bold" href="${item.direct_download_link}">Download</a>
+						<a class="theme-card-button bold" href="javascript:void(0)" onclick="downloadTheme('${item.uuid}', '${item.direct_download_link}')">Download</a>
 						<a class="theme-card-button" href="${item.official_link}" target="_blank">See on Github</a>
 					</div>
 					</div>  
@@ -207,13 +219,19 @@ class DisplayThemes {
 			<div>
 				<div class="theme-card" id="${item.id}">
 					<div class="theme-card-container">
-					<a href="${item.image_url}" target="_blank"><img class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+						<div class="tooltip-share">
+							<a class="theme-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><img class="theme-share-button" src="../icons/share.webp" /></a>
+						</div>
+					<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false" class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 					<h3 class="theme-card-name">${item.name}</h3>
 					<p class="theme-card-author">Created by <a class="theme-card-author-link">${item.author}</a></p>
 					<p class="theme-card-desc">${item.desc}</p>
+					<div class="tooltip-downloads">
 					<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
+					<span class="tooltiptext-downloads">This number is updated once a day</span>
+					</div>
 					<div class="theme-card-buttons">
-						<a class="theme-card-button bold" href="${item.direct_download_link}">Download</a>
+						<a class="theme-card-button bold" href="javascript:void(0)" onclick="downloadTheme('${item.uuid}', '${item.direct_download_link}')">Download</a>
 						<a class="theme-card-button" href="${item.official_link}" target="_blank">See on Github</a>
 					</div>
 					</div>  
@@ -228,13 +246,19 @@ class DisplayThemes {
 			<div>
 				<div class="theme-card" id="${item.id}">
 					<div class="theme-card-container">
-						<a href="${item.image_url}" target="_blank"><img class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+						<div class="tooltip-share">
+							<a class="theme-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><img class="theme-share-button" src="../icons/share.webp" /></a>
+						</div>
+						<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false" class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 						<h3 class="theme-card-name">${item.name}</h3>
 						<p class="theme-card-author">Created by <a class="theme-card-author-link" href="${item.author_link}">${item.author}</a></p>
 						<p class="theme-card-desc">${item.desc}</p>
-					<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
+						<div class="tooltip-downloads">
+						<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
+						<span class="tooltiptext-downloads">This number is updated once a day</span>
+						</div>
 						<div class="theme-card-buttons">
-							<a class="theme-card-button bold" href="${item.direct_download_link}">Download</a>
+							<a class="theme-card-button bold" href="javascript:void(0)" onclick="downloadTheme('${item.uuid}', '${item.direct_download_link}')">Download</a>
 						</div>
 					</div>
 				</div>
@@ -249,13 +273,19 @@ class DisplayThemes {
 			<div>
 				<div class="theme-card" id="${item.id}">
 					<div class="theme-card-container">
-						<a href="${item.image_url}" target="_blank"><img class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+						<div class="tooltip-share">
+							<a class="theme-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><img class="theme-share-button" src="../icons/share.webp" /></a>
+						</div>
+						<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false" class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 						<h3 class="theme-card-name pointer" href="javascript:void(0)" onclick="openReadmeModal('${baseLink}')">${item.name}</h3>
 						<p class="theme-card-author">Created by <a class="theme-card-author-link" href="${item.author_link}">${item.author}</a></p>
 						<p class="theme-card-desc">${item.desc}</p>
-					<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
+						<div class="tooltip-downloads">
+						<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
+						<span class="tooltiptext-downloads">This number is updated once a day</span>
+						</div>
 						<div class="theme-card-buttons">
-							<a class="theme-card-button bold" href="${item.direct_download_link}">Download</a>
+							<a class="theme-card-button bold" href="javascript:void(0)" onclick="downloadTheme('${item.uuid}', '${item.direct_download_link}')">Download</a>
 							<a class="theme-card-button" href="${item.official_link}" target="_blank">See on Github</a>
 						</div>
 					</div>  
@@ -267,13 +297,19 @@ class DisplayThemes {
 			<div>
 				<div class="theme-card" id="${item.id}">
 					<div class="theme-card-container">
-						<a href="${item.image_url}" target="_blank"><img class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
+						<div class="tooltip-share">
+							<a class="theme-card-share" onclick="copy_to_clipboard('${item.id}')" onmouseout="out_function('${item.id}')"><span class="tooltiptext-share" id="TooltipShare${item.id}">Copy to clipboard</span><img class="theme-share-button" src="../icons/share.webp" /></a>
+						</div>
+						<a><img href="javascript:void(0)" onclick="openImageModal('${item.image_url}', '${item.name}');  return false" class="theme-card-image" src="${item.image_url}" alt="${item.name} image"></a>
 						<h3 class="theme-card-name">${item.name}</h3>
 						<p class="theme-card-author">Created by <a class="theme-card-author-link" href="${item.author_link}">${item.author}</a></p>
 						<p class="theme-card-desc">${item.desc}</p>
-					<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
+						<div class="tooltip-downloads">
+						<p class="theme-card-downloads">Downloaded ${item.downloads} times</p>
+						<span class="tooltiptext-downloads">This number is updated once a day</span>
+						</div>
 						<div class="theme-card-buttons">
-							<a class="theme-card-button bold" href="${item.direct_download_link}">Download</a>
+							<a class="theme-card-button bold" href="javascript:void(0)" onclick="downloadTheme('${item.uuid}', '${item.direct_download_link}')">Download</a>
 							<a class="theme-card-button" href="${item.official_link}" target="_blank">See on Github</a>
 						</div>
 					</div>  
@@ -316,6 +352,12 @@ class DisplayThemes {
 			case 'last_update_reverse':
 				this.themes.sort((a, b) => a.version.localeCompare(b.version));
 				break;
+			case 'downloads':
+				this.themes.sort((a, b) => a.downloads - b.downloads);
+				break;
+			case 'downloads_reverse':
+				this.themes.sort((a, b) => b.downloads - a.downloads);
+				break;
 			case 'type':
 				this.themes.sort((a, b) => a.type.localeCompare(b.type));
 				break;
@@ -328,6 +370,22 @@ class DisplayThemes {
 
 		this.displayThemes();
 	}
+}
+
+// ---- SHARE BUTTON ----
+
+function copy_to_clipboard(id) {
+	navigator.clipboard.writeText(
+		'https://www.droptopfour.com/community-themes/?id=' + id
+	);
+
+	var tooltip = document.getElementById('myTooltip' + id);
+	tooltip.innerHTML = 'Copied';
+}
+
+function out_function(id) {
+	var tooltip = document.getElementById('myTooltip' + id);
+	tooltip.innerHTML = 'Copy to clipboard';
 }
 
 // ---- README MODAL ----
@@ -465,16 +523,39 @@ function enableScroll() {
 	document.head.querySelector('style')?.remove();
 }
 
+// ---- DOWNLOAD THEME ----
+
+function downloadTheme(uuid, link) {
+	window.open(link);
+
+	fetch(`https://api.droptopfour.com/v1/downloads/community-themes/${uuid}`, {
+		method: 'POST',
+	});
+}
+
 // ---- MAIN ----
+
+function HideBufferingIcon() {
+	const bufferingIcon = document.getElementById('themes-buffering');
+	bufferingIcon.style.display = 'none';
+}
+
+function EnableSelect() {
+	const sortCriteria = document.getElementById('sort-criteria');
+	sortCriteria.removeAttribute('disabled');
+}
 
 document.addEventListener('DOMContentLoaded', () => {
 	const themes = new Themes();
 	displaythemes = new DisplayThemes();
 
-	themes.Items()
+	themes
+		.Items()
 		.then((themes) => {
 			displaythemes.setThemes(themes);
 			displaythemes.sortThemes();
 		})
+		.then(HideBufferingIcon)
+		.then(EnableSelect)
 		.then(Scroll);
 });
