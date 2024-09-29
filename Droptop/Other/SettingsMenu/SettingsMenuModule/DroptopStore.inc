@@ -5,7 +5,6 @@
 @IncludeTopBarPositions=#@#GlobalVar\TopBarPos.inc
 
 DropdownItemPadding1=((#DropdownIconXoffset#)+(#DropdownIconPadding#*2)+#IconW#)
-DropdownMenuWidth=((325*#DroptopSize#)-((325*#DroptopSize#)%1))
 DropdownItemHeight=(#DropdownItemFontSize#*7)
 
 [IconStyle]

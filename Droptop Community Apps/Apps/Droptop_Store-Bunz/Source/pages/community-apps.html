@@ -12,6 +12,9 @@
 			href="../img/DroptopFourLogo.webp"
 			as="image" />
 		<meta name="theme-color" content="#4BD765" />
+		<script
+			src="https://kit.fontawesome.com/e8027f79c9.js"
+			crossorigin="anonymous"></script>
 		<title>Community Apps | Droptop Four Store</title>
 		<link rel="stylesheet preload" href="../style.css" as="style" />
 	</head>
@@ -24,22 +27,20 @@
 			<nav class="navbar">
 				<!-- LOGO -->
 				<div class="logo">
-					<a href="index.html">
+					<a>
 						<img
 							src="../img/DroptopFourLogo.webp"
 							alt="Droptop Four Logo" />
 					</a>
 				</div>
 				<div class="site-name">
-					<a href="index.html">
+					<a>
 						<h4>Droptop Store</h4>
 					</a>
 				</div>
 				<!-- NAVIGATION MENU -->
 				<ul class="nav-search">
-					<a href="search.html"
-						><img class="search-icon" src="../icons/search.webp"
-					/></a>
+					<a href="search.html"><i class="fa fa-search"></i></a>
 				</ul>
 			</nav>
 		</header>
@@ -63,8 +64,7 @@
 					<label for="sort-criteria">Sort by: </label>
 					<select
 						id="sort-criteria"
-						onchange="displayapps.sortApps()"
-						disabled>
+						onchange="displayapps.sortApps()">
 						<option value="name">Name (A-Z)</option>
 						<option value="name_reverse">Name (Z-A)</option>
 						<option value="author">Author (A-Z)</option>
@@ -81,21 +81,17 @@
 						<option value="last_update_reverse">
 							Last Update (Oldest first)
 						</option>
-						<option value="downloads">Downloads (Ascending)</option>
-						<option value="downloads_reverse">
-							Downloads (Descending)
+						<option value="type" disabled>
+							Type (Classic first)
+						</option>
+						<option value="type_reverse" disabled>
+							Type (Webview first)
 						</option>
 					</select>
 				</div>
 
 				<div aria-hidden="true" class="body-divider" id="divider-2">
 					<hr />
-				</div>
-
-				<div id="apps-buffering">
-					<img
-						class="apps-buffering-icon"
-						src="../icons/loading.webp" />
 				</div>
 
 				<div class="appsList" id="appsList">
@@ -113,57 +109,31 @@
 		<footer class="footer">
 			<div class="social">
 				<a
-					href="https://www.deviantart.com/cariboudjan/art/droptop-four-762812007"
-					target="_blank"
+					href="javascript:openExternalLink('https://www.deviantart.com/cariboudjan/art/droptop-four-762812007')"
 					aria-label="DeviantArt link">
-					<img
-						src="../icons/deviantart.webp"
-						class="social-icon"
-						alt="DeviantArt" />
+					<i class="fa-brands fa-deviantart"></i>
 				</a>
 				<a
-					href="https://github.com/Droptop-Four"
-					target="_blank"
+					href="javascript:openExternalLink('https://github.com/Droptop-Four')"
 					aria-label="Github link">
-					<img
-						src="../icons/github.webp"
-						class="social-icon"
-						alt="GitHub" />
+					<i class="fa-brands fa-github"></i>
 				</a>
 				<a
-					href="https://discord.gg/aGQ6uE4Fgp"
-					target="_blank"
+					href="javascript:openExternalLink('https://discord.gg/aGQ6uE4Fgp')"
 					aria-label="Discord link">
-					<img
-						src="../icons/discord.webp"
-						class="social-icon"
-						alt="Discord" />
+					<i class="fa-brands fa-discord"></i>
 				</a>
 			</div>
 			<ul class="list">
-				<li>
-					<a
-						href="javascript:openExternalLink('https://droptopfour.com')"
-						>Website</a
-					>
-				</li>
+				<li><a href="javascript:openExternalLink('https://droptopfour.com')">Website</a></li>
 				<li><a href="community-apps.html">Community Apps</a></li>
 				<li><a href="community-themes.html">Community Themes</a></li>
 				<li>
-					<!-- prettier ignore -->
-					<a
-						href="javascript:openExternalLink('https://docs.droptopfour.com/help/faqs')"
-						>FAQs</a
-					>
+					<a href="javascript:openExternalLink('https://docs.droptopfour.com/help/faqs')"">FAQs</a>
 				</li>
-				<li>
-					<a
-						href="javascript:openExternalLink('https://docs.droptopfour.com')"
-						>Docs</a
-					>
-				</li>
+				<li><a href="javascript:openExternalLink('https://docs.droptopfour.com')" >Docs</a></li>
 			</ul>
-			<p class="copyright">&copy; Droptop Four 2018-2024</p>
+			<p class="copyright">&copy; Droptop Four 2018-2023</p>
 		</footer>
 		<!-- Footer End -->
 
@@ -173,7 +143,7 @@
 			class="scroll-to-top"
 			id="scroll-to-top"
 			title="Scroll to the top">
-			<img class="up-arrow-icon" src="../icons/up-arrow.webp" />
+			<i class="fa-solid fa-up-long"></i>
 		</button>
 		<!-- Scroll to top Button End -->
 

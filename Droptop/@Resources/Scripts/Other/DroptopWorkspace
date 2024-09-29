@@ -311,11 +311,8 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\Func.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\FetchVars.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\GetFontName.ps1" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\ExcludeDefender.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\ReplaceInFile.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\TranslationEncoding.ps1" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\DownloadUpdates.ps1" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\GetLatLong.ps1" />
             </Folder>
             <Folder name="Other">
                 <File name="CompileDroptop.bat" />
@@ -332,19 +329,6 @@
         <Folder name="Other">
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Tutorial\Tutorial.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\Droparea\Droparea.ini" />
-            <Folder name="Symbols">
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Symbols\Symbols1.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Symbols\Symbols2.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Symbols\Symbols3.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Symbols\Symbols4.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Symbols\Symbols5.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Symbols\Symbols6.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Symbols\Symbols7.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Symbols\Symbols8.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Symbols\Symbols9.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Symbols\Symbols10.inc" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Symbols\Symbols11.inc" />
-            </Folder>
         </Folder>
         <Folder name="Themes">
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\99.inc" />
