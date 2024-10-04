@@ -19,9 +19,12 @@ AnimationUserSettings1=#@#GlobalVar\UserSettings.inc
 AnimationLanguage0=
 AnimationLanguage1=#@#GlobalVar\Languages\[#Language[#LanguageNum]].inc
 
-@IncludeControl=[#AnimationControl[#NoAnimationNum]]
-@IncludeUserSettings=[#AnimationUserSettings[#NoAnimationNum]]
-@IncludeLanguage=[#AnimationLanguage[#NoAnimationNum]]
+; @IncludeControl=[#AnimationControl[#NoAnimationNum]]
+; @IncludeUserSettings=[#AnimationUserSettings[#NoAnimationNum]]
+; @IncludeLanguage=[#AnimationLanguage[#NoAnimationNum]]
+@IncludeControl=#@#GlobalVar\Control.inc
+@IncludeUserSettings=#@#GlobalVar\UserSettings.inc
+@IncludeLanguage=#@#GlobalVar\Languages\[#Language[#LanguageNum]].inc
 
 RefreshAction0=[!CommandMeasure LoadActions "Execute 1"][!ClickThrough 1][!Delay 2000][!ShowMeter ErrorString]
 RefreshAction1=[!CommandMeasure LoadActions "Execute 1"][!ClickThrough 0]
