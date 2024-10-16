@@ -10,10 +10,11 @@ UpdateDivider=-1
 Measure=Plugin
 Plugin=FrostedGlass
 BlurEnabled=#DropdownMenuBlur#
-Type=[#BlurType[#BlurTypeNum]0[#Win10Apps]]
+Type=[#BlurType[#BlurTypeNum]0[#Win10Apps][#UseMicaBlur]]
 Border=[#Shadows[#DropdownMenuShadow]]
 Corner=[#BlurCorner[#DropdownRoundCorners]]
 BorderVisible=#ShowDropdownBlurBorder#
+DarkMode=((#ChamLum1#-1)*-1)
 DynamicVariables=1
 UpdateDivider=-1
 

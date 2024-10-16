@@ -40,7 +40,7 @@ SideAppNumCustomApp8=20
 SideAppNumCustomApp9=21
 SideAppNumCustomApp10=22
 
-SideAppSlotName1=#SideAppName1#
+SideAppSlotName1=#SideAppName4#
 SideAppSlotName2=#SideAppName2#
 SideAppSlotName3=#SideAppName21#
 SideAppSlotName4=#SideAppName22#
@@ -61,9 +61,9 @@ SideAppSlotName18=#SideAppName18#
 SideAppSlotName19=#SideAppName19#
 SideAppSlotName20=#SideAppName20#
 SideAppSlotName21=#SideAppName3#
-SideAppSlotName22=#SideAppName4#
+SideAppSlotName22=#SideAppName1#
 
-SideAppSlot1=1
+SideAppSlot1=4
 SideAppSlot2=2
 SideAppSlot3=21
 SideAppSlot4=22
@@ -84,9 +84,9 @@ SideAppSlot18=18
 SideAppSlot19=19
 SideAppSlot20=20
 SideAppSlot21=3
-SideAppSlot22=4
+SideAppSlot22=1
 
-SideAppPosNewDesktop=1
+SideAppPosNewDesktop=4
 SideAppPosTime=2
 SideAppPosAlarm=21
 SideAppPosVolume=22
@@ -107,7 +107,7 @@ SideAppPosCustomApp6=18
 SideAppPosCustomApp7=19
 SideAppPosCustomApp8=20
 SideAppPosCustomApp9=3
-SideAppPosCustomApp10=4
+SideAppPosCustomApp10=1
 
 SideAppSettingsNumNewDesktop=1
 SideAppSettingsNumTime=2
