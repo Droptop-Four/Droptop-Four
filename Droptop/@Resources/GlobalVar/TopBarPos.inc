@@ -40,10 +40,10 @@ SideAppNumCustomApp8=20
 SideAppNumCustomApp9=21
 SideAppNumCustomApp10=22
 
-SideAppSlotName1=#SideAppName4#
+SideAppSlotName1=#SideAppName22#
 SideAppSlotName2=#SideAppName2#
 SideAppSlotName3=#SideAppName21#
-SideAppSlotName4=#SideAppName22#
+SideAppSlotName4=#SideAppName1#
 SideAppSlotName5=#SideAppName13#
 SideAppSlotName6=#SideAppName6#
 SideAppSlotName7=#SideAppName7#
@@ -61,7 +61,7 @@ SideAppSlotName18=#SideAppName18#
 SideAppSlotName19=#SideAppName19#
 SideAppSlotName20=#SideAppName20#
 SideAppSlotName21=#SideAppName3#
-SideAppSlotName22=#SideAppName1#
+SideAppSlotName22=#SideAppName4#
 
 SideAppSlot1=4
 SideAppSlot2=2
