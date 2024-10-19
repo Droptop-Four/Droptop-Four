@@ -63,10 +63,10 @@ SideAppSlotName20=#SideAppName20#
 SideAppSlotName21=#SideAppName3#
 SideAppSlotName22=#SideAppName4#
 
-SideAppSlot1=4
+SideAppSlot1=22
 SideAppSlot2=2
 SideAppSlot3=21
-SideAppSlot4=22
+SideAppSlot4=1
 SideAppSlot5=13
 SideAppSlot6=6
 SideAppSlot7=7
@@ -84,7 +84,7 @@ SideAppSlot18=18
 SideAppSlot19=19
 SideAppSlot20=20
 SideAppSlot21=3
-SideAppSlot22=1
+SideAppSlot22=4
 
 SideAppPosNewDesktop=4
 SideAppPosTime=2
