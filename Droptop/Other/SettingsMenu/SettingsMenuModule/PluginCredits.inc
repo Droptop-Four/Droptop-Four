@@ -54,8 +54,8 @@ MouseXY.Link=["https://forum.rainmeter.net/viewtopic.php?t=22900"]
 PowershellRM.Author=khanhas
 PowershellRM.Link=["https://github.com/khanhas"]
 
-SysColor.Author=Brian
-SysColor.Link=["https://forum.rainmeter.net/memberlist.php?mode=viewprofile&u=19264"]
+Bluetooth.Author=Bunz
+Bluetooth.Link=["https://www.deviantart.com/bunz66"]
 
 WebNowPlaying.Author=keifufu
 WebNowPlaying.Link=["https://github.com/keifufu"]
