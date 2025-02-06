@@ -1,7 +1,10 @@
 #Persistent
 #SingleInstance, force
+#ErrorStdOut
 
 Menu, Tray, Tip, Droptop Task Helper
+
+PROGRAMPATH := "C:\Program Files\Rainmeter\Rainmeter.exe"
 
 FileRead, fileContent, DroptopData.ini
 Loop, Parse, fileContent, `n, `r
