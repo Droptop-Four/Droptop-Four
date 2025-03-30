@@ -294,6 +294,11 @@ CustomHotkey:
  Goto, %3%
 ExitApp
 
+CustomHotkey2:
+ Sleep, 50
+ Goto, %3%
+ExitApp
+
 Send:
  Send, %2%
 ExitApp
