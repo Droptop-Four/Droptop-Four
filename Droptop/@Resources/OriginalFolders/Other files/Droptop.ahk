@@ -47,6 +47,14 @@ IfWinNotExist, ahk_exe Rainmeter.exe
 else
 {
 	ShowState := 0
+	ProcessNum := 0, ProcessName := "Droptop.exe"
+	for Process in ComObjGet("winmgmts:").ExecQuery("Select * from Win32_Process")
+	ProcessNum += Process.Name = ProcessName
+	; MsgBox,% ProcessNum " " ProcessName
+	if ProcessNum > 1
+	{
+		Process, Close, %ProcessName%
+	}
 }
 return
 

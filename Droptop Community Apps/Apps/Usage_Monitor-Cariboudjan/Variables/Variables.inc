@@ -25,6 +25,6 @@ UsageRAMInactive=0
 UsageHDDInactive=0
 UsageNETInactive=0
 
-UsageMonitor.BoxColorNum=1
+UsageMonitor.BoxColorNum=0
 
-UsageMonitor.UseKilobytes=1
+UsageMonitor.UseKilobytes=0

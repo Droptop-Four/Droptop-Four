@@ -484,7 +484,7 @@ function enableScroll() {
 // ---- DOWNLOAD THEME ----
 
 function downloadTheme(uuid, link) {
-	window.open(link);
+	window.open(link, '_self');
 
 	fetch(`https://api.droptopfour.com/v1/downloads/community-themes/${uuid}`, {
 		method: 'POST',

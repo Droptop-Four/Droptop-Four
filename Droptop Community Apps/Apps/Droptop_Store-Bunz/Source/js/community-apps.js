@@ -490,7 +490,7 @@ function enableScroll() {
 // ---- DOWNLOAD APP ----
 
 function downloadApp(uuid, link) {
-	window.open(link);
+	window.open(link, '_self');
 
 	fetch(`https://api.droptopfour.com/v1/downloads/community-apps/${uuid}`, {
 		method: 'POST',

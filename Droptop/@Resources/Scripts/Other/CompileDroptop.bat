@@ -632,7 +632,7 @@ RD /S /Q "%USERPROFILE%\Documents\GitHub\Beta-Update\Droptop"
 del /f "%USERPROFILE%\Documents\GitHub\Beta-Update\*.zip"
 del /f "%USERPROFILE%\Documents\GitHub\Beta-Update\*.rmskin"
 
-powershell.exe cd %5Redistributables"; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Beta-Update; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Beta-Update\Beta-Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop-Community-Apps\Apps' -Recurse
+%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe cd %5Redistributables"; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Beta-Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Beta-Update; Remove-Item '.\@Rmskins\Beta-Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Beta-Update\Beta-Update.rmskin' -NewName 'Droptop_Beta_Update.rmskin'; cd ../; Copy-Item -Path '.\Droptop Community Apps\Apps\*\*.rmskin' -Destination '.\Redistributables\Droptop-Community-Apps\Apps' -Recurse
 
 xcopy /E /I /Y %5Redistributables\@Rmskins\Beta-Update\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
 xcopy /E /I /Y %5Redistributables\Update\Skins\*" "%USERPROFILE%\Documents\GitHub\Beta-Update\"
@@ -643,7 +643,7 @@ attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 %4 !WriteKeyValue Variables DroptopIsUpdate 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables FirstLoad 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 
-powershell.exe [console]::beep(500,100); [console]::beep(1200,120)
+%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe [console]::beep(500,100); [console]::beep(1200,120)
 
 del /f /q %5Droptop Community Apps\Apps\CustomApp.ini"
 del /f /q "%USERPROFILE%\Documents\GitHub\Community-Apps\CustomApp.ini"
@@ -683,13 +683,13 @@ attrib +h /s %5Droptop Folders\desktop.ini"
 echo Start Time: %startTime%
 echo Finish Time: %time%
 
-powershell.exe [console]::beep(800,200); [console]::beep(800,320)
+%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe [console]::beep(800,200); [console]::beep(800,320)
 @echo Press any key to push all remaining versions to GitHub.
 PAUSE
 @echo Are you sure? Press any key to continue.
 PAUSE
 
-powershell.exe cd %5Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'
+%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe cd %5Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'
 
 xcopy /E /I /Y %5Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 xcopy /E /I /Y %5Redistributables\@Rmskins\Update\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"

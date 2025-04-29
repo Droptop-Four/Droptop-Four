@@ -88,3 +88,4 @@ Power_State-Cariboudjan
 Metronom-Cariboudjan
 ChatGPT-Cariboudjan
 Spotify_Web_Player-Cariboudjan
+Searchbar-TheyCallMePapa
