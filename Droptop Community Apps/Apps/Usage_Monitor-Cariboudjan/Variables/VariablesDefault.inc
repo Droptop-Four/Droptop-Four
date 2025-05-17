@@ -34,4 +34,6 @@ UsageMonitor.BoxColor.5=205,0,255
 
 UsageMonitor.BoxColorNum=1
 
+UsageMonitor.ShowStringLabels=0
+
 UsageMonitor.UseKilobytes=0

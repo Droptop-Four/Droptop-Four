@@ -18,7 +18,6 @@ Speedtest-Bunz
 Feeder-Cariboudjan
 GSuite-Cariboudjan
 Translator-Bunz
-SearchBar-Mike_Boynton
 WakaTime-Bunz
 ToolTipster-TheyCallMePapa
 Quick_Search-KazukiGames82
@@ -89,3 +88,5 @@ Metronom-Cariboudjan
 ChatGPT-Cariboudjan
 Spotify_Web_Player-Cariboudjan
 Searchbar-TheyCallMePapa
+CoreTemps-TheyCallMePapa
+Any_Skin-Cariboudjan

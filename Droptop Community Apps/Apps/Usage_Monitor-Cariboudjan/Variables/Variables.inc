@@ -25,6 +25,14 @@ UsageRAMInactive=0
 UsageHDDInactive=0
 UsageNETInactive=0
 
-UsageMonitor.BoxColorNum=0
+UsageMonitor.BoxColor.1=0,0,255
+UsageMonitor.BoxColor.2=0,255,0
+UsageMonitor.BoxColor.3=255,255,0
+UsageMonitor.BoxColor.4=255,0,0
+UsageMonitor.BoxColor.5=205,0,255
+
+UsageMonitor.BoxColorNum=1
+
+UsageMonitor.ShowStringLabels=1
 
 UsageMonitor.UseKilobytes=0

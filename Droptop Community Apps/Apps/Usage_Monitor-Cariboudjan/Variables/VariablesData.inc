@@ -4,7 +4,7 @@
 ; Variables in this document should be used to control the app's general functionality.
 ; -------------------------------------------------------------------------------
 
-MyAppVersion=25.0426
+MyAppVersion=25.0517
 
 UsageMonitor.NetDivisor0=1000000
 UsageMonitor.NetDivisor1=1000
