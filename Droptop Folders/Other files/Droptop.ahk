@@ -35,7 +35,7 @@ Run, %PROGRAMPATH%
 Sleep, 5000
 Run, %PROGRAMPATH% !ActivateConfig Droptop\DropdownBar
 
-SetTimer, CheckProgram, 10000 ; Check every 10 seconds
+SetTimer, CheckProgram, 5000 ; Check every 5 seconds
 return
 
 CheckProgram:

@@ -126,6 +126,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables HideWeatherSymbol 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideWeatherTemp 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideIcons 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables EnableBluetooth 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderMouseOverTimeNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HomeColumn 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HomeRow 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -650,6 +651,7 @@ del /f /q "%USERPROFILE%\Documents\GitHub\Community-Apps\CustomApp.ini"
 del /f /q "%USERPROFILE%\GitHub\Droptop-Four\Droptop Community Apps\Apps\CustomApp.ini"
 del /f /q "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\Sample Apps\CustomApp.ini"
 del /f /q "%USERPROFILE%\Documents\GitHub\Droptop-Four\Droptop\@Resources\Scripts\AppBuilder\Sample Apps\CustomApp.ini"
+del /f /q "%USERPROFILE%\Rainmeter\Skins\Redistributables\@Rmskins\Basic-Version\Droptop_Basic_Version.zip\Skins\Droptop Community Apps\Apps\CustomApp.ini
 
 @echo All distributables finished successfully. Press any key to push Beta-Update to GitHub.
 
