@@ -36,7 +36,7 @@ attrib -h /s %5Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 taskkill /f /im "Droptop.exe"
 "C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.ahk" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.exe"
-"C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.ahk" /icon "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Images\Logo.ico" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.exe"
+"C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.ahk" /icon "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Images\4Logo.ico" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.exe"
 xcopy /y /c /h %5Droptop Folders\Other files\DroptopData.ini" %5Droptop\@Resources\OriginalFolders\Other files"
 xcopy /y /c /h %5Droptop Folders\Other files\Droptop.ahk" %5Droptop\@Resources\OriginalFolders\Other files"
 xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\OriginalFolders\Other files"
@@ -440,7 +440,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables DPIRescaleValue 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables PopupInFullscreen 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables SSIDName "Offline" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables HideSSID 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables WifiTextNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderTitle1 "#FolderName1#" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderTitle2 "#FolderName2#" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderTitle3 "#FolderName3#" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -682,6 +682,14 @@ attrib +h /s %5Droptop Folders\desktop.ini"
 
 "Wscript.exe" %5Droptop\@Resources\Scripts\IconsColor1.vbs" %5"
 
+%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe cd %5Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'
+
+xcopy /E /I /Y %5Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
+xcopy /E /I /Y %5Redistributables\@Rmskins\Update\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
+xcopy /E /I /Y %5Redistributables\@Rmskins\Supporter-Version\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
+
+xcopy /E /I /Y %5Redistributables\Basic-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
+
 echo Start Time: %startTime%
 echo Finish Time: %time%
 
@@ -690,14 +698,6 @@ echo Finish Time: %time%
 PAUSE
 @echo Are you sure? Press any key to continue.
 PAUSE
-
-%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\powershell.exe cd %5Redistributables"; Remove-Item '.\@Rmskins\Basic-Version\*.zip'; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Remove-Item '.\@Rmskins\Basic-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.rmskin' -Recurse; Remove-Item '.\@Rmskins\Update\*.rmskin' -Recurse; .\MakeRmSkin.ps1 -Skin Basic-Version; .\MakeRmSkin.ps1 -Skin Supporter-Version; .\MakeRmSkin.ps1 -Skin Update; Remove-Item '.\@Rmskins\Basic-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Supporter-Version\*.zip' -Recurse; Remove-Item '.\@Rmskins\Update\*.zip' -Recurse; Rename-Item -Path '.\@Rmskins\Basic-Version\Basic-Version.rmskin' -NewName 'Droptop_Basic_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Supporter-Version\Supporter-Version.rmskin' -NewName 'Droptop_Supporter_Version.rmskin'; Rename-Item -Path '.\@Rmskins\Update\Update.rmskin' -NewName 'Droptop_Update.rmskin'
-
-xcopy /E /I /Y %5Redistributables\@Rmskins\Basic-Version\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
-xcopy /E /I /Y %5Redistributables\@Rmskins\Update\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
-xcopy /E /I /Y %5Redistributables\@Rmskins\Supporter-Version\*" "%USERPROFILE%\Documents\GitHub\Supporter-Version\"
-
-xcopy /E /I /Y %5Redistributables\Basic-Version\Skins\*" "%USERPROFILE%\Documents\GitHub\Droptop-Four\"
 
 git config --global http.sslVerify false
 cd "%USERPROFILE%\Documents\GitHub\Droptop-Four"

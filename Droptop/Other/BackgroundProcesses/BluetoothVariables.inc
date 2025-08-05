@@ -2,7 +2,7 @@
 
 DevicesNumber=4
 
-Devices=AirPods Pro - Find My|71141739493567|Bluetooth#Bluetootha0:29:42:3a:cd:b0-40:b3:fa:1c:78:bf|0|1|0|Audio/Video|Audio Video Headphones|0|0|0;Surface Arc Mouse|254394102878146|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;Surface Slim Pen 2|234849569145700|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64|0|1|0|HumanInterfaceDevice|DigitalPen|0|0|1;NVIDIA SHIELD Remote|79921510527776|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20|0|1|0|RemoteControl|Unknown|0|0|1;
+Devices=AirPods Pro - Find My|71141739493567|Bluetooth#Bluetootha0:29:42:3a:cd:b0-40:b3:fa:1c:78:bf|0|1|0|Audio/Video|Audio Video Headphones|0|0|0;Surface Slim Pen 2|234849569145700|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64|0|1|0|HumanInterfaceDevice|DigitalPen|0|0|1;Surface Arc Mouse|254394102878146|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;NVIDIA SHIELD Remote|79921510527776|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20|0|1|0|RemoteControl|Unknown|0|0|1;
 
 BTStatus=1
 
@@ -16,8 +16,8 @@ PageDevice7=7
 PageDevice8=8
 
 Device1Name=AirPods Pro - Find My
-Device2Name=Surface Arc Mouse
-Device3Name=Surface Slim Pen 2
+Device2Name=Surface Slim Pen 2
+Device3Name=Surface Arc Mouse
 Device4Name=NVIDIA SHIELD Remote
 Device5Name=NVIDIA SHIELD Remote
 Device6Name=MX Master 2S
@@ -25,8 +25,8 @@ Device7Name=Surface Slim Pen 2
 Device8Name=Surface Slim Pen 2
 
 Device1Address=71141739493567
-Device2Address=254394102878146
-Device3Address=234849569145700
+Device2Address=234849569145700
+Device3Address=254394102878146
 Device4Address=79921510527776
 Device5Address=79921510527776
 Device6Address=223463262609936
@@ -34,8 +34,8 @@ Device7Address=234849569145700
 Device8Address=234849569145700
 
 Device1Id=Bluetooth#Bluetootha0:29:42:3a:cd:b0-40:b3:fa:1c:78:bf
-Device2Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2
-Device3Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64
+Device2Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64
+Device3Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2
 Device4Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20
 Device5Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20
 Device6Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:10
@@ -79,8 +79,8 @@ Device7MajorCategory=HumanInterfaceDevice
 Device8MajorCategory=HumanInterfaceDevice
 
 Device1MinorCategory=Audio Video Headphones
-Device2MinorCategory=Mouse
-Device3MinorCategory=DigitalPen
+Device2MinorCategory=DigitalPen
+Device3MinorCategory=Mouse
 Device4MinorCategory=Unknown
 Device5MinorCategory=Unknown
 Device6MinorCategory=Mouse
