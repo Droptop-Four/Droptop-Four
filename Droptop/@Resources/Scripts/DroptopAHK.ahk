@@ -300,7 +300,7 @@ CustomHotkey2:
 ExitApp
 
 Send:
- Send, %2%
+ SendInput, %2%
 ExitApp
 
 Run:
@@ -321,6 +321,20 @@ AlwaysOnTop:
  Sleep, 200
  Send, #^t
  Send, {Esc}
+ExitApp
+
+RestartDroptop:
+ WinClose ahk_exe Rainmeter.exe
+ WinClose ahk_exe Droptop.exe
+ Sleep, 1000
+ Run, %2%
+ DetectHiddenWindows Off
+ExitApp
+
+ExitDroptop:
+ WinClose ahk_exe Rainmeter.exe
+ WinClose ahk_exe Droptop.exe
+ DetectHiddenWindows Off
 ExitApp
 
 ;----------

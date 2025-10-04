@@ -15,10 +15,13 @@ function RefreshStatus()
         SKIN:Bang("!SetVariable", "BTStatus", Status)
         SKIN:Bang("!SetVariable", "BTStatus", Status, "Droptop\\Other\\Apps\\Wifi")
         SKIN:Bang("!SetVariable", "BTStatus", Status, "Droptop\\Other\\Apps\\Wifi\\Folder")
+        -- SKIN:Bang("!SetVariable", "BTStatus", Status, "Droptop\\DropdownBar")
         SKIN:Bang("!Update", "Droptop\\Other\\Apps\\Wifi")
         SKIN:Bang("!Update", "Droptop\\Other\\Apps\\Wifi\\Folder")
+        -- SKIN:Bang("!UpdateMeterGroup", "FunctionButtons", "Droptop\\DropdownBar")
         SKIN:Bang("!Redraw", "Droptop\\Other\\Apps\\Wifi")
         SKIN:Bang("!Redraw", "Droptop\\Other\\Apps\\Wifi\\Folder")
+        -- SKIN:Bang("!Redraw", "Droptop\\DropdownBar")
         SKIN:Bang("!WriteKeyValue", "Variables", "BTStatus", string.format('%s', Status), "BluetoothVariables.inc")
     end
 end
@@ -518,9 +521,8 @@ function _Populate(PageDevice1, PageDevice2, PageDevice3, PageDevice4, PageDevic
     end
 
     SKIN:Bang("!Update", "Droptop\\Other\\Apps\\Wifi")
-    SKIN:Bang("!Update", "Droptop\\Other\\Apps\\Wifi\\Folder")
     SKIN:Bang("!Redraw", "Droptop\\Other\\Apps\\Wifi")
-    SKIN:Bang("!Redraw", "Droptop\\Other\\Apps\\Wifi\\Folder")
+    SKIN:Bang("!Refresh", "Droptop\\Other\\Apps\\Wifi\\Folder")
 end
 
 function _DivideDevices(DevicesStr)

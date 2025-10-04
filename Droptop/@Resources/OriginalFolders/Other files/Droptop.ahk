@@ -4,36 +4,14 @@
 
 Menu, Tray, Tip, Droptop Task Helper
 
-PROGRAMPATH := "C:\Program Files\Rainmeter\Rainmeter.exe"
+;%1%=PROGRAMPATH
+;%2%=HotkeyModeZ
 
-HotkeyModeZ := 0
 ShowState := 0
 
-FileRead, fileContent, DroptopData.ini
-Loop, Parse, fileContent, `n, `r
-{
-    StringSplit, keyValue, A_LoopField, =
-    if (keyValue1 = "PROGRAMPATH")
-    {
-        PROGRAMPATH := keyValue2
-        break
-    }
-}
-
-FileRead, fileContent, DroptopData.ini
-Loop, Parse, fileContent, `n, `r
-{
-    StringSplit, keyValue, A_LoopField, =
-    if (keyValue1 = "HotkeyModeZ")
-    {
-        HotkeyModeZ := keyValue2
-        break
-    }
-}
-
-Run, %PROGRAMPATH%
-Sleep, 5000
-Run, %PROGRAMPATH% !ActivateConfig Droptop\DropdownBar
+; Run, %1%
+; Sleep, 5000
+; Run, %1% !ActivateConfig Droptop\DropdownBar
 
 SetTimer, CheckProgram, 5000 ; Check every 5 seconds
 return
@@ -41,7 +19,7 @@ return
 CheckProgram:
 IfWinNotExist, ahk_exe Rainmeter.exe
 {
-    Run, %PROGRAMPATH%
+    Run, %1%
 	ShowState := 0
 }
 else
@@ -59,56 +37,56 @@ else
 return
 
 ~!Shift::
-    Run, %PROGRAMPATH% !UpdateMeasure CurrentLanguageID.PSRM Droptop\Other\BackgroundProcesses
+    Run, %1% !UpdateMeasure CurrentLanguageID.PSRM Droptop\Other\BackgroundProcesses
 return
 
 ~#Space::
-    Run, %PROGRAMPATH% !UpdateMeasure CurrentLanguageID.PSRM Droptop\Other\BackgroundProcesses
+    Run, %1% !UpdateMeasure CurrentLanguageID.PSRM Droptop\Other\BackgroundProcesses
 return
 
-~!+d::
+~!+=::
 if ShowState = 0
 {
 	ShowState := 1
-    Run, %PROGRAMPATH% !Hide "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !Zpos 1 "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !ShowFade "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !HideMeter Meter1 "Droptop\Other\BackgroundProcesses"
+    Run, %1% !Hide "Droptop\DropdownBar"
+    Run, %1% !Zpos 1 "Droptop\DropdownBar"
+    Run, %1% !ShowFade "Droptop\DropdownBar"
+    Run, %1% !HideMeter Meter1 "Droptop\Other\BackgroundProcesses"
 }
 else
 {
 	ShowState := 0
-    Run, %PROGRAMPATH% !Zpos %HotkeyModeZ% "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !ShowMeter Meter1 "Droptop\Other\BackgroundProcesses"
+    Run, %1% !Zpos %2% "Droptop\DropdownBar"
+    Run, %1% !ShowMeter Meter1 "Droptop\Other\BackgroundProcesses"
 }
 return
 
-~!+1::
-    Run, %PROGRAMPATH% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !SetVariable HotKeyTriggered 1 "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
-return
+; ~!+1::
+    ; Run, %1% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
+    ; Run, %1% !SetVariable HotKeyTriggered 1 "Droptop\DropdownBar"
+    ; Run, %1% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
+; return
 
-~!+2::
-    Run, %PROGRAMPATH% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !SetVariable HotKeyTriggered 2 "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
-return
+; ~!+2::
+    ; Run, %1% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
+    ; Run, %1% !SetVariable HotKeyTriggered 2 "Droptop\DropdownBar"
+    ; Run, %1% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
+; return
 
-~!+3::
-    Run, %PROGRAMPATH% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !SetVariable HotKeyTriggered 3 "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
-return
+; ~!+3::
+    ; Run, %1% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
+    ; Run, %1% !SetVariable HotKeyTriggered 3 "Droptop\DropdownBar"
+    ; Run, %1% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
+; return
 
-~!4::
-    Run, %PROGRAMPATH% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !SetVariable HotKeyTriggered 4 "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
-return
+; ~!4::
+    ; Run, %1% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
+    ; Run, %1% !SetVariable HotKeyTriggered 4 "Droptop\DropdownBar"
+    ; Run, %1% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
+; return
 
-~!+5::
-    Run, %PROGRAMPATH% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !SetVariable HotKeyTriggered 5 "Droptop\DropdownBar"
-    Run, %PROGRAMPATH% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
-return
+; ~!+5::
+    ; Run, %1% !EnableMeasure CommandHotkey "Droptop\DropdownBar"
+    ; Run, %1% !SetVariable HotKeyTriggered 5 "Droptop\DropdownBar"
+    ; Run, %1% !UpdateMeasureGroup Commands "Droptop\DropdownBar"
+; return

@@ -50,7 +50,7 @@ Set objFolder11 = objShell.NameSpace(arg & "Droptop Folders\Bookmarks\Online too
 
 ' Set objFolder18 = objShell.NameSpace(arg & "Droptop Folders\Bookmarks\News & Media\US Moderate")
 
-Set objFolder19 = objShell.NameSpace(arg & "Droptop Folders\Other files\PaperclipShortcuts")
+' Set objFolder19 = objShell.NameSpace(arg & "Droptop Community Apps\Apps\Shortcut-Phan\Shortcuts")
 
 
 
@@ -811,43 +811,43 @@ objShortcut119.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Wol
 
 
 
-' 'Paperclip Shortcuts ###############################################################################################
+' 'Shortucts app Shortcuts ###############################################################################################
 
 
 
 
-Set objFolderItem183 = objFolder19.ParseName("Calculator.lnk")
+' Set objFolderItem183 = objFolder19.ParseName("Calculator.lnk")
 
-Set objShortcut183 = objFolderItem183.GetLink
+' Set objShortcut183 = objFolderItem183.GetLink
 
-objShortcut183.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Calculator.ico", 0
-
-
-
-
-Set objFolderItem184 = objFolder19.ParseName("Notepad.lnk")
-
-Set objShortcut184 = objFolderItem184.GetLink
-
-objShortcut184.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Notepad.ico", 0
+' objShortcut183.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Calculator.ico", 0
 
 
 
 
-Set objFolderItem185 = objFolder19.ParseName("Paint 3D.lnk")
+' Set objFolderItem184 = objFolder19.ParseName("Notepad.lnk")
 
-Set objShortcut185 = objFolderItem185.GetLink
+' Set objShortcut184 = objFolderItem184.GetLink
 
-objShortcut185.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Paint.ico", 0
-
-
+' objShortcut184.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Notepad.ico", 0
 
 
-Set objFolderItem186 = objFolder19.ParseName("Sticky Notes.lnk")
 
-Set objShortcut186 = objFolderItem186.GetLink
 
-objShortcut186.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Sticky.ico", 0
+' Set objFolderItem185 = objFolder19.ParseName("Paint.lnk")
+
+' Set objShortcut185 = objFolderItem185.GetLink
+
+' objShortcut185.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Paint.ico", 0
+
+
+
+
+' Set objFolderItem186 = objFolder19.ParseName("Sticky Notes.lnk")
+
+' Set objShortcut186 = objFolderItem186.GetLink
+
+' objShortcut186.SetIconLocation arg & "Droptop\@Resources\Icons\Presets\Color\Sticky.ico", 0
 
 
 
@@ -1053,10 +1053,10 @@ objShortcut119.Save
 
 
 
-objShortcut183.Save
+' objShortcut183.Save
 
-objShortcut184.Save
+' objShortcut184.Save
 
-objShortcut185.Save
+' objShortcut185.Save
 
-objShortcut186.Save
+' objShortcut186.Save

@@ -210,30 +210,32 @@ Text=[#SliderPartition[##CURRENTSECTION#]]
 Group=MouseMove | SliderText
 Hidden=(#NumberOfItems#>=[##CURRENTSECTION#]?0:1)
 
-[InfoStyleB]
-StringAlign=LeftCenter
-FontColor=#DropdownFontColor1#,#DropdownItemOpacity#
-FontFace=#FontName0#
-FontSize=#DropdownItemFontSize#
-InlineSetting=CharacterSpacing | #DropdownCharacterSpacing#
-InlineSetting2=[#DropdownTextShadow[#DropdownFontShadow][#ChamLum1]]
-StringEffect=#DropdownStringEffect#
-FontEffectColor=#DropdownFontEffectColor#
-Text=[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber].[##CURRENTSECTION#Icon]]
-LeftMouseDownAction=[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber].[##CURRENTSECTION#Icon].Action]
-X=1
-Y=R
-W=(#DropdownMenuWidth#-#DropdownArrowHighlightW#-#DropdownItemPadding1#)
-H=#DropdownItemHeight#
-FontWeight=#FontWeight#
-Padding=#Padding0B#
-AntiAlias=#DropdownAntiAlias#
-MouseOverAction=[!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetVariable CurrentFolder #CURRENTSECTION#][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor2*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!ShowMeterGroup Highlight][!UpdateMeterGroup Highlight][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter #CURRENTSECTION#][!UpdateMeter FolderBlock][!Redraw][!CommandMeasure MeasureActionTimer "Execute 3"]
-MouseLeaveAction=[!CommandMeasure MeasureActionTimer "Stop 3"][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!HideMeterGroup Highlight][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor1*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter #CURRENTSECTION#][!Redraw]
-MiddleMouseDownAction=#ResetActiveFolders#[!WriteKeyValue Variables NotificationText "#NotificationAdded#" "#SKINSPATH#Droptop\Other\NotificationPopup\NotificationPopup.ini"][!DeactivateConfig "Droptop\Other\NotificationPopup"][!ActivateConfig "Droptop\Other\NotificationPopup" "NotificationPopup.ini"][!Move [#CURRENTCONFIGX] ([#CURRENTCONFIGY]+[[#CURRENTSECTION]:Y]) "Droptop\Other\NotificationPopup"][!SetClip "[\x0060][#SettingsDirectoryCopy[#SettingsMenuBlock]] >> [#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber].[#CurrentFolder]][\x0060]"]
-DynamicVariables=1
-ClipString=1
-Group=Items
+; [InfoStyleB]
+; SolidColor=255,55,55,55
+; StringAlign=LeftCenter
+; FontColor=#DropdownFontColor1#,#DropdownItemOpacity#
+; FontFace=#FontName0#
+; FontSize=#DropdownItemFontSize#
+; InlineSetting=CharacterSpacing | #DropdownCharacterSpacing#
+; InlineSetting2=[#DropdownTextShadow[#DropdownFontShadow][#ChamLum1]]
+; StringEffect=#DropdownStringEffect#
+; FontEffectColor=#DropdownFontEffectColor#
+; ; Text=[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber]]
+; Text=#SettingsMenu4.1.6.4.3.5#
+; LeftMouseDownAction=[#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber].[##CURRENTSECTION#Icon].Action]
+; X=1
+; Y=R
+; W=(#DropdownMenuWidth#-#DropdownArrowHighlightW#-#DropdownItemPadding1#)
+; H=#DropdownItemHeight#
+; FontWeight=#FontWeight#
+; Padding=#Padding0B#
+; AntiAlias=#DropdownAntiAlias#
+; MouseOverAction=[!SetVariable ItemIsHighlighted 1][!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetVariable CurrentFolder #CURRENTSECTION#][!UpdateMeter FolderBlock][!Redraw][!CommandMeasure MeasureActionTimer "Execute 3"]
+; MouseLeaveAction=[!SetVariable ItemIsHighlighted 0][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor1*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter #CURRENTSECTION#][!CommandMeasure MeasureActionTimer "Stop 3"][!Delay 10][!UpdateMeasure CalcItemIsHighlighted]
+; MiddleMouseDownAction=#ResetActiveFolders#[!WriteKeyValue Variables NotificationText "#NotificationAdded#" "#SKINSPATH#Droptop\Other\NotificationPopup\NotificationPopup.ini"][!DeactivateConfig "Droptop\Other\NotificationPopup"][!ActivateConfig "Droptop\Other\NotificationPopup" "NotificationPopup.ini"][!Move [#CURRENTCONFIGX] ([#CURRENTCONFIGY]+[[#CURRENTSECTION]:Y]) "Droptop\Other\NotificationPopup"][!SetClip "[\x0060][#SettingsDirectoryCopy[#SettingsMenuBlock]] >> [#SettingsMenu[#SettingsMenuBlock].[#SettingsMenuNumber].[#CurrentFolder]][\x0060]"]
+; DynamicVariables=1
+; ClipString=1
+; Group=Items
 
 [SliderStyle]
 Shape=Rectangle (#DropdownMenuCutout#+#DropdownHLOffsetX#),0,(#DropdownMenuWidth#-(#DropdownMenuCutout#*2)+((#DropdownMenuWidth#-(#DropdownMenuCutout#*2))%1)-(#DropdownHLOffsetX#*2)),#DropdownItemHeight#,#DropdownHighlightCorner# | StrokeWidth 1 | Stroke Color 0,0,0,55 | Extend FillColor
@@ -319,15 +321,4 @@ MeterStyle=InfoStyle
 [SliderText4]
 Meter=String
 MeterStyle=InfoStyle
-
-[Divider2]
-Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DividerSpace#*3)+(#DropdownItemHeight#*4)+2)
-
-[5]
-MeterStyle=InfoStyleB
-Y=(#DividerSpace#*2)R
-Container=AnimationContainer
-
-[5Icon]
-Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DividerSpace#*4)+#DividerHeight#+(#DropdownItemHeight#*4)+2)
 

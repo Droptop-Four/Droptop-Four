@@ -90,3 +90,7 @@ Spotify_Web_Player-Cariboudjan
 Searchbar-TheyCallMePapa
 CoreTemps-TheyCallMePapa
 Any_Skin-Cariboudjan
+Gumroad-Cariboudjan
+Recycle_Bin-Phan
+Google_Home-Cariboudjan
+IO-KazukiGames82
