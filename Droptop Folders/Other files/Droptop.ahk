@@ -1,6 +1,7 @@
 #Persistent
-#SingleInstance, force
+#SingleInstance Force
 #ErrorStdOut
+#NoTrayIcon
 
 Menu, Tray, Tip, Droptop Task Helper
 
@@ -8,6 +9,10 @@ Menu, Tray, Tip, Droptop Task Helper
 ;%2%=HotkeyModeZ
 
 ShowState := 0
+
+AntiCheatProcess = EAAntiCheat.GameServiceLauncher.exe
+FoundAntiCheatProcess = 
+FullPath := ""
 
 ; Run, %1%
 ; Sleep, 5000
@@ -34,6 +39,44 @@ else
 		Process, Close, %ProcessName%
 	}
 }
+  ; Variable to store the name of the first found process
+
+Loop, parse, AntiCheatProcess, |
+{
+    CurrentProcess := A_LoopField
+    
+    ; The Process command sets ErrorLevel to the PID (non-zero) if found, or 0 if not.
+    Process, Exist, %CurrentProcess%
+    
+    if ErrorLevel  ; ErrorLevel is non-zero (True) if the process was found
+    {
+        ExitApp
+    }
+}
+
+
+
+
+
+
+; Process, Exist, %AntiCheatProcess%
+
+; If ErrorLevel  ; If ErrorLevel is non-zero (meaning the Anti-Cheat process exists)
+; {
+	; ExitApp
+	; ; ; Query WMI for the process by name
+	; ; for process in ComObjGet("winmgmts:").ExecQuery("Select * from Win32_Process where Name = '" AntiCheatProcess "'")
+	; ; {
+		; ; FullPath := process.ExecutablePath
+		; ; ; You can stop after the first match if you only need one instance
+		; ; break
+	; ; }
+
+	; ; if (FullPath)
+	; ; {
+		; ; Process, Close, %AntiCheatProcess%
+	; ; }
+; }
 return
 
 ~!Shift::

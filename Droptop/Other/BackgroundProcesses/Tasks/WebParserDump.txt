@@ -1,0 +1,1 @@
+{"version":"4.380","miniversion":"27","CustomApp1":"25.0428","CustomApp2":"24.0825","CustomApp3":"25.0429","CustomApp4":"25.0517","CustomApp5":"25.0928","CustomApp6":"25.0929","CustomApp7":"24.0915","CustomApp8":"25.0928","CustomApp9":"24.0701","CustomApp10":"25.0609"}

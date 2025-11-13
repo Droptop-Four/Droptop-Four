@@ -81,7 +81,6 @@ GlazeWM_Workspaces-asrma7
 Power_Controls-Cariboudjan
 Microsoft_Copilot-Cariboudjan
 Simple_Search-Cariboudjan
-Game_Library-Cariboudjan
 X-Cariboudjan
 Power_State-Cariboudjan
 Metronom-Cariboudjan
@@ -94,3 +93,5 @@ Gumroad-Cariboudjan
 Recycle_Bin-Phan
 Google_Home-Cariboudjan
 IO-KazukiGames82
+Seeking_Alpha-Cariboudjan
+ChatHub-Obsidience
