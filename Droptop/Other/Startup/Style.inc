@@ -29,10 +29,10 @@ AnimationLanguage1=#@#GlobalVar\Languages\[#Language[#LanguageNum]].inc
 RefreshAction0=[!CommandMeasure LoadActions "Execute 1"][!ClickThrough 1][!Delay 2000][!ShowMeter ErrorString]
 RefreshAction1=[!CommandMeasure LoadActions "Execute 1"][!ClickThrough 0]
 
-DISCOUNTCODE=MHLUJOP
-DroptopSalePrice=8
+DISCOUNTCODE=VLH9T5A
+DroptopSalePrice=5
 DroptopSaleDiscount=4
-DroptopSalePercent=50
+DroptopSalePercent=20
 
 ; ---------------------------------------------------------------------------- ;
 ;                                   Functions                                  ;

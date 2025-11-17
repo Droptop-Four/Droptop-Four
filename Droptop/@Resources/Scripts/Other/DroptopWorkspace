@@ -31,6 +31,7 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Startup\ModeSelect.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Startup\Settings1.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Startup\Settings2.inc" />
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Startup\Settings3.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Startup\ThemeSelect.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Startup\GetSupporter.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Startup\Finish.inc" />
@@ -317,6 +318,7 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\SelectMonitor.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\InputHandler.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Bluetooth.lua" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\InputHandlerWindow.lua" />
             </Folder>
             <Folder name="Powershell">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\Func.ps1" />

@@ -172,7 +172,7 @@ ExitApp
 	; WinMove, %3%, , %4%, %5%, %6%, %7%, 100
 		; ; WinMove, ahk_class ApplicationFrameWindow, , 1200, 80, 400, 1500, 100
 	; ; Sleep, 1000
-    ; ; WinMove, %3%, , %4%, %5%, %6%, %7%, , 
+    ; ; WinMove, %3%, , %4%, %5%, %6%, %7%, ,
 ; ExitApp
 
 WindowsApp:
@@ -243,7 +243,7 @@ ExitApp
 
 WebCapture:
  SetStoreCapsLockMode, Off
- Send, ^+s
+ Send, #+s
 ExitApp
 
 HideWebView:
@@ -375,7 +375,7 @@ Oppositecase:
        Lab_Invert_Char_Out:= Lab_Invert_Char_Out Chr(Asc(Lab_Invert_Char) - 32)
     else
        Lab_Invert_Char_Out:= Lab_Invert_Char_Out Lab_Invert_Char
- }	
+ }
  clipboard := Lab_Invert_Char_Out
 }
 ExitApp
@@ -415,7 +415,7 @@ Y = %3%
 direction = %4%
 IfWinActive, ahk_class NotifyIconOverflowWindow
 	WinHide, ahk_class NotifyIconOverflowWindow
-Else 
+Else
 {
 	ControlClick, %5%, ahk_class Shell_TrayWnd
 	WinGetPos,,,WidthOfTray,HeightOfTray,ahk_class NotifyIconOverflowWindow
@@ -426,7 +426,7 @@ Else
 	WinMove, ahk_class NotifyIconOverflowWindow, , %TrueX%, %TrueY%
     WinShow, ahk_class Shell_TrayWnd
 	WinSet, Transparent, OFF, ahk_class NotifyIconOverflowWindow
-loop 
+loop
 {
 	WinMove, ahk_class NotifyIconOverflowWindow, , %TrueX%, %TrueY%
 	IfWinNotActive, ahk_class NotifyIconOverflowWindow
@@ -448,7 +448,7 @@ IfWinActive, ahk_class TopLevelWindowForOverflowXamlIsland
     WinHide, ahk_class TopLevelWindowForOverflowXamlIsland
     ExitApp
 }
-Else 
+Else
 {
     WinGetPos,,YOfTaskbar,,, ahk_class Shell_TrayWnd
     If (YOfTaskbar = (A_ScreenHeight-2))
