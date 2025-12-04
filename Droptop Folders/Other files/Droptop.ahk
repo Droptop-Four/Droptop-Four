@@ -10,7 +10,7 @@ Menu, Tray, Tip, Droptop Task Helper
 
 ShowState := 0
 
-AntiCheatProcess = EAAntiCheat.GameServiceLauncher.exe
+AntiCheatProcess := "EAAntiCheat.GameServiceLauncher.exe|EasyAntiCheat.exe|EasyAntiCheat_EOS.exe"
 FoundAntiCheatProcess = 
 FullPath := ""
 

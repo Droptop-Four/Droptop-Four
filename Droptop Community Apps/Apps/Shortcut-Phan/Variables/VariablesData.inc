@@ -4,7 +4,7 @@
 ; Variables in this document should be used to control the app's general functionality.
 ; -------------------------------------------------------------------------------
 
-MyAppVersion=25.0929
+MyAppVersion=25.1203
 
 LocationShortcutButton1=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Icons\ButtonS1.png
 LocationShortcutButton2=#SKINSPATH#Droptop Community Apps\Apps\Shortcut-Phan\Icons\ButtonS2.png

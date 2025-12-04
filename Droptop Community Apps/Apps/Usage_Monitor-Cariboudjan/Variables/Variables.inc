@@ -13,6 +13,7 @@ MyAppID=Usage_Monitor-Cariboudjan
 MyAppName=Usage Monitor
 MyAppAuthor=Cariboudjan
 MyAppGUID=0bdf33b5-6b67-499b-809b-0b90a0f56dc5
+MyAppLoc=Droptop Community Apps\Apps\Usage_Monitor-Cariboudjan
 MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Usage_Monitor-Cariboudjan\Variables\Variables.inc
 
 ; -------------------------------------------------------------------------------
@@ -33,6 +34,6 @@ UsageMonitor.BoxColor.5=205,0,255
 
 UsageMonitor.BoxColorNum=1
 
-UsageMonitor.ShowStringLabels=1
+UsageMonitor.ShowStringLabels=0
 
 UsageMonitor.UseKilobytes=0

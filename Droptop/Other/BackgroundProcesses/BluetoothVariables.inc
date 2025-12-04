@@ -1,8 +1,8 @@
 [Variables]
 
-DevicesNumber=5
+DevicesNumber=6
 
-Devices=Arctis Pro Wireless|44643149312662|Bluetooth#Bluetootha0:29:42:3a:cd:b0-28:9a:4b:0e:72:96|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;MX Master 2S|223463262609937|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:11|1|1|0|HumanInterfaceDevice|Mouse|1|90|1;Surface Slim Pen 2|234849569145700|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64|1|1|0|HumanInterfaceDevice|DigitalPen|1|100|1;Surface Arc Mouse|254394102878146|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;NVIDIA SHIELD Remote|79921510527776|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20|0|1|0|RemoteControl|Unknown|0|0|1;
+Devices=AirPods Pro|71141739493567|Bluetooth#Bluetootha0:29:42:3a:cd:b0-40:b3:fa:1c:78:bf|0|1|0|Audio/Video|Audio Video Headphones|0|0|0;Arctis Pro Wireless|44643149312662|Bluetooth#Bluetootha0:29:42:3a:cd:b0-28:9a:4b:0e:72:96|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;Surface Slim Pen 2|234849569145700|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64|0|1|0|HumanInterfaceDevice|DigitalPen|0|0|1;MX Master 2S|223463262609937|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:11|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;Surface Arc Mouse|254394102878146|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;NVIDIA SHIELD Remote|79921510527776|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20|0|1|0|RemoteControl|Unknown|0|0|1;
 
 BTStatus=1
 
@@ -15,36 +15,36 @@ PageDevice6=6
 PageDevice7=7
 PageDevice8=8
 
-Device1Name=Arctis Pro Wireless
-Device2Name=MX Master 2S
+Device1Name=AirPods Pro
+Device2Name=Arctis Pro Wireless
 Device3Name=Surface Slim Pen 2
-Device4Name=Surface Arc Mouse
-Device5Name=NVIDIA SHIELD Remote
-Device6Name=MX Master 2S
+Device4Name=MX Master 2S
+Device5Name=Surface Arc Mouse
+Device6Name=NVIDIA SHIELD Remote
 Device7Name=NVIDIA SHIELD Remote
 Device8Name=NVIDIA SHIELD Remote
 
-Device1Address=44643149312662
-Device2Address=223463262609937
+Device1Address=71141739493567
+Device2Address=44643149312662
 Device3Address=234849569145700
-Device4Address=254394102878146
-Device5Address=79921510527776
-Device6Address=223463262609937
+Device4Address=223463262609937
+Device5Address=254394102878146
+Device6Address=79921510527776
 Device7Address=79921510527776
 Device8Address=79921510527776
 
-Device1Id=Bluetooth#Bluetootha0:29:42:3a:cd:b0-28:9a:4b:0e:72:96
-Device2Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:11
+Device1Id=Bluetooth#Bluetootha0:29:42:3a:cd:b0-40:b3:fa:1c:78:bf
+Device2Id=Bluetooth#Bluetootha0:29:42:3a:cd:b0-28:9a:4b:0e:72:96
 Device3Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64
-Device4Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2
-Device5Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20
-Device6Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:11
+Device4Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:11
+Device5Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2
+Device6Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20
 Device7Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20
 Device8Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20
 
 Device1Connected=0
-Device2Connected=1
-Device3Connected=1
+Device2Connected=0
+Device3Connected=0
 Device4Connected=0
 Device5Connected=0
 Device6Connected=0
@@ -70,26 +70,26 @@ Device7CanPair=0
 Device8CanPair=0
 
 Device1MajorCategory=Audio/Video
-Device2MajorCategory=HumanInterfaceDevice
+Device2MajorCategory=Audio/Video
 Device3MajorCategory=HumanInterfaceDevice
 Device4MajorCategory=HumanInterfaceDevice
-Device5MajorCategory=RemoteControl
-Device6MajorCategory=HumanInterfaceDevice
+Device5MajorCategory=HumanInterfaceDevice
+Device6MajorCategory=RemoteControl
 Device7MajorCategory=RemoteControl
 Device8MajorCategory=RemoteControl
 
-Device1MinorCategory=Audio Video Wearable Headset
-Device2MinorCategory=Mouse
+Device1MinorCategory=Audio Video Headphones
+Device2MinorCategory=Audio Video Wearable Headset
 Device3MinorCategory=DigitalPen
 Device4MinorCategory=Mouse
-Device5MinorCategory=Unknown
-Device6MinorCategory=Mouse
+Device5MinorCategory=Mouse
+Device6MinorCategory=Unknown
 Device7MinorCategory=Unknown
 Device8MinorCategory=Unknown
 
 Device1HasBatteryLevel=0
-Device2HasBatteryLevel=1
-Device3HasBatteryLevel=1
+Device2HasBatteryLevel=0
+Device3HasBatteryLevel=0
 Device4HasBatteryLevel=0
 Device5HasBatteryLevel=0
 Device6HasBatteryLevel=0
@@ -97,8 +97,8 @@ Device7HasBatteryLevel=0
 Device8HasBatteryLevel=0
 
 Device1Battery=0
-Device2Battery=90
-Device3Battery=100
+Device2Battery=0
+Device3Battery=0
 Device4Battery=0
 Device5Battery=0
 Device6Battery=0
@@ -106,7 +106,7 @@ Device7Battery=0
 Device8Battery=0
 
 Device1IsBLE=0
-Device2IsBLE=1
+Device2IsBLE=0
 Device3IsBLE=1
 Device4IsBLE=1
 Device5IsBLE=1
