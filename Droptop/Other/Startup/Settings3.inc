@@ -282,7 +282,7 @@ Y=r
 
 [AppIconStyle]
 ImageName=#@#Icons\Fixed\Large\AppIcons\[#SideAppName[##CURRENTSECTION#]]
-Padding=(24*#Scale#),(19*#Scale#),0,(19*#Scale#)
+Padding=(27*#Scale#),(22*#Scale#),0,(19*#Scale#)
 Container=Container
 X=r
 Y=r
