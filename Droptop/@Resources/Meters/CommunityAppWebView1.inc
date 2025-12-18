@@ -7,6 +7,7 @@ Formula=Counter
 IfCondition=(AutoStartup=1)
 IfTrueAction=[!Delay [##MyAppID#]00][!UpdateMeasure Plugin.WebView]
 OnUpdateAction=[!Zpos 1][!Zpos #PopoutZpos#]
+DynamicVariables=1
 UpdateDivider=-1
 
 [BlurBehind]
