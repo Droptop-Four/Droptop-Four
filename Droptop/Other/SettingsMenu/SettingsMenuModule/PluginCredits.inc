@@ -33,6 +33,9 @@ Chameleon.Link=["https://github.com/socks-the-fox"]
 FileChoose.Author=Setsukka
 FileChoose.Link=["https://forum.rainmeter.net/viewtopic.php?t=33767"]
 
+EasingWindow.Author=KazukiGames82
+EasingWindow.Link=["https://github.com/KazukiGames82"]
+
 Focus.Author=deathcrafter
 Focus.Link=["https://github.com/deathcrafter"]
 

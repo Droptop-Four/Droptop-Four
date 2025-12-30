@@ -11,8 +11,8 @@ HomeColorTintB0=[#*DropdownFontColor2*]
 HomeColorTintB1=255,255,255
 
 CategoryLogos.IconIndex=2
-CategoryCreatures.IconIndex=1
-CategoryFood.IconIndex=19
+CategoryCreatures.IconIndex=4
+CategoryFood.IconIndex=4
 CategorySeasonal.IconIndex=1
 CategoryObjects.IconIndex=15
 CategorySymbols.IconIndex=5
@@ -128,7 +128,7 @@ Group=ItemGroup1
 Y=(#DropdownIconYOffset#+#DropdownItemYOffset#+(#DividerSpace#*1)+(#DropdownItemHeight#*1)-(#DividerHeight#/2))
 
 [2]
-LeftMouseDownAction=#ToggleAnimation#[!SetVariable HomeColorNum (#HomeColorNum#=0?1:0)][!SetVariable HomeColorNum [#HomeColorNum] "Droptop\DropdownBar"][!SetVariable HomeColorNum [#HomeColorNum] "Droptop\Other\SettingsMenu\SettingsMenu3"][!WriteKeyValue Variables HomeColorNum [#HomeColorNum] "#@#GlobalVar\UserSettings.inc"][!SetOption Home ImageTint "[#HomeButtonColor[#*HomeColorNum*]]" "Droptop\DropdownBar"][!SetOption WinButton ImageTint "[#HomeButtonColor[#*HomeColorNum*]]" "Droptop\DropdownBar"][!UpdateMeter *][!UpdateMeter * "Droptop\Other\SettingsMenu\SettingsMenu3"][!UpdateMeter Home "Droptop\DropdownBar"][!UpdateMeter WinButton "Droptop\DropdownBar"][!Redraw "Droptop\Other\SettingsMenu\SettingsMenu3"][!Redraw "Droptop\DropdownBar"]
+LeftMouseDownAction=#ToggleAnimation#[!SetVariable HomeColorNum (#HomeColorNum#=0?1:0)][!SetVariable HomeColorNum [#HomeColorNum] "Droptop\DropdownBar"][!SetVariable HomeColorNum [#HomeColorNum] "Droptop\Other\SettingsMenu\SettingsMenu3"][!WriteKeyValue Variables HomeColorNum [#HomeColorNum] "#@#GlobalVar\UserSettings.inc"][!SetOption Home ImageTint "[#HomeButtonColor[#*HomeColorNum*]]" "Droptop\DropdownBar"][!SetOption WinButton ImageTint "[#HomeButtonColor[#*HomeColorNum*]]" "Droptop\DropdownBar"][!SetOptionGroup ItemIcon ImageTint "[#HomeColorTint[#*HomeColorNum*]],#*DropdownItemOpacity*#" "Droptop\Other\SettingsMenu\SettingsMenu3"][!UpdateMeter *][!UpdateMeter * "Droptop\Other\SettingsMenu\SettingsMenu3"][!UpdateMeter Home "Droptop\DropdownBar"][!UpdateMeter WinButton "Droptop\DropdownBar"][!Redraw "Droptop\Other\SettingsMenu\SettingsMenu3"][!Redraw "Droptop\DropdownBar"]
 Y=(#DividerSpace#*2)R
 
 [2Icon]

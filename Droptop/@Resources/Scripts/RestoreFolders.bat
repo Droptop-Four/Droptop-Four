@@ -11,6 +11,3 @@ rmdir /s /q "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Games"
 rmdir /s /q "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files"
 
 xcopy /s /e /y /f /h "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\OriginalFolders" "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders"
-
-REM attrib +s /d /s "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Games\*"
-REM attrib +h /s "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\desktop.ini"
