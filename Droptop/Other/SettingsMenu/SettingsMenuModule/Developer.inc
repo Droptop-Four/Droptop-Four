@@ -18,7 +18,7 @@ SysInfoType=INTERNET_CONNECTIVITY
 SysInfoData=1
 UpdateDivider=1
 IfEqualValue=-1
-IfEqualAction=[!SetOption 9 PostFix "*"][!SetOption 9 LeftMouseDownAction """#CloseSettingsMenu#[!DeactivateConfigGroup Folders][!CommandMeasure RunCommand.Attrib "Run"]"""][!UpdateMeter 9][!Redraw]
+IfEqualAction=[!SetOption 9 PostFix "*"][!SetOption 9 LeftMouseDownAction """#CloseSettingsMenu#[!DeactivateConfigGroup Folders][!CommandMeasure RunCommand.Attrib "Run"]["Wscript.exe" "#SKINSPATH#Droptop\@Resources\Scripts\IconsColor1.vbs" "#SKINSPATH#"]"""][!UpdateMeter 9][!Redraw]
 IfAboveValue=-1
 IfAboveAction=[!DisableMeasure #CURRENTSECTION#]
 
