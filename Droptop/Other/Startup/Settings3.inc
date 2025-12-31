@@ -257,15 +257,13 @@ Group=Tweenable
 MeterStyle=String:S | Header:S
 
 [AppShapeStyle]
-; X=(30*#Scale#)R
-; X=(([[#AppShapeX[#CURRENTSECTION]]:XW]+[#CURRENTSECTION#:W])>(#DropdownMenuWidth#-(10*#DroptopSize#))?(5*#DroptopSize#):([[#AppShapeX[#CURRENTSECTION]]:XW]+(5*#DroptopSize#)))
 X=(25*#Scale#)R
 Y=r
 ; W=(78*#Scale#)
 ; H=(52*#Scale#)
 Shape=Rectangle 0,0,([#CURRENTSECTION#.Text:W]+(18*#Scale#)),(60*#Scale#),(30*#Scale#) | Extend Stroke | Extend FillColor
 FillColor=Fill Color 255,255,255,30
-Stroke=StrokeWidth (2*#DroptopSize#) | Stroke Color #Lime#,([#HideApp[#SideAppName[#CURRENTSECTION]]]=1?0:255)
+Stroke=StrokeWidth (2*#Scale#) | Stroke Color #Lime#,([#HideApp[#SideAppName[#CURRENTSECTION]]]=1?0:255)
 ; LeftMouseDownAction=[!WriteKeyValue Variables CustomHomeButton 0 "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables HomeIconCatNum [#HomeIconCat.[#[#CURRENTSECTION].Category]] "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables HomeIconCatNum [#HomeIconCat.[#[#CURRENTSECTION].Category]]][!WriteKeyValue Variables HomeIconIndex [#[#CURRENTSECTION].Index] "#@#GlobalVar\UserSettings.inc"][!WriteKeyValue Variables HomeIconIndex [#[#CURRENTSECTION].Index]][!SetOptionGroup HomeIcons ImageTint "255,255,255,155"][!SetOptionGroup HomeIcons ImageName "#@#TopImages\Home\64\[#[#*CURRENTSECTION*].Category]\[#MonoColor[#*HomeColorNum*]]\[#[#*CURRENTSECTION*].Index].png"][!SetOption #CURRENTSECTION# ImageName "#@#TopImages\Home\64\[#[#CURRENTSECTION].Category]\MonoS\[#[#CURRENTSECTION].Index].png"][!SetOption #CURRENTSECTION# ImageTint "56,250,138"][!EnableMouseActionGroup "MouseOverAction|MouseLeaveAction" HomeIcons][!DisableMouseAction #CURRENTSECTION# "MouseOverAction|MouseLeaveAction"][!UpdateMeasure *][!UpdateMeter *][!Redraw]
 LeftMouseDownAction=[!SetVariable HideApp[#SideAppName[#CURRENTSECTION]] ([#HideApp[#SideAppName[#CURRENTSECTION]]]=1?0:1)][!WriteKeyValue Variables HideApp[#SideAppName[#CURRENTSECTION]] [#HideApp[#SideAppName[#CURRENTSECTION]]] "#@#GlobalVar\FolderSettings.inc"][!UpdateMeter #CURRENTSECTION#][!Redraw]
 MouseOverAction=[!SetOption #CURRENTSECTION# FillColor "Fill Color 255,255,255,50"][!UpdateMeter #CURRENTSECTION#][!Redraw]
@@ -282,8 +280,10 @@ Y=r
 
 [AppIconStyle]
 ImageName=#@#Icons\Fixed\Large\AppIcons\[#SideAppName[##CURRENTSECTION#]]
-Padding=(27*#Scale#),(22*#Scale#),0,(19*#Scale#)
+Padding=(27*#Scale#),(18*#Scale#),0,(19*#Scale#)
 Container=Container
+W=(24*#Scale#)
+H=(24*#Scale#)
 X=r
 Y=r
 
