@@ -22,7 +22,7 @@ MyVariablesLoc=#SKINSPATH#Droptop Community Apps\Apps\Usage_Monitor-Cariboudjan\
 
 UsageCPUInactive=0
 UsageGPUInactive=0
-UsageRAMInactive=0
+UsageRAMInactive=1
 UsageHDDInactive=0
 UsageNETInactive=0
 

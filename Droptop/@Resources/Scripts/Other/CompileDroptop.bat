@@ -220,6 +220,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables WebNowPlayingAlbumImage "" %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables WebNowPlayingAlbumImage "" %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables WebNowPlayingAlbumImage "" %5Droptop\@Resources\GlobalVar\Control.inc"
+%4 !WriteKeyValue Variables WebState 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables AlwaysShowSongTitleOFF 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables NowPlayingCustomColor 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables NowPlayingColor "255,255,255" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
