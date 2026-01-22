@@ -10,7 +10,7 @@ HomeColorTint1=255,255,255
 HomeColorTintB0=[#*DropdownFontColor2*]
 HomeColorTintB1=255,255,255
 
-CategoryLogos.IconIndex=2
+CategoryLogos.IconIndex=4
 CategoryCreatures.IconIndex=4
 CategoryFood.IconIndex=4
 CategorySeasonal.IconIndex=1
@@ -75,17 +75,17 @@ LeftMouseDownAction=[!WriteKeyValue Variables NotificationText "#NotificationSup
 
 [LockedStyle1]
 
-[LockedIconStyle0]
-ImageName=#@#Icons\Fixed\#IconSize#\lock.png
-MaskImageName=""
-MaskImagePath=""
-ImageFlip=None
+; [LockedIconStyle0]
+; ImageName=#@#Icons\Fixed\#IconSize#\lock.png
+; MaskImageName=""
+; MaskImagePath=""
+; ImageFlip=None
 
-[LockedIconStyle1]
+; [LockedIconStyle1]
 
 [1]
 MeterStyle=InfoStyle | ItemStyle | LockedStyle#Supporter#
-MouseOverAction=[!SetVariable ItemIsHighlighted 1][!SetVariable ActionTimer.HLFadeIn 0.25][!SetVariable [##CURRENTSECTION#]FolderActive 1][!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetVariable CurrentFolder #CURRENTSECTION#][!SetOption CustomIcon ImageTint "[#HomeColorTintB[#*HomeColorNum*]]"][!UpdateMeter FolderBlock][!CommandMeasure MeasureActionTimer "Execute 1"][!CommandMeasure MeasureActionTimer "Execute 3"]
+MouseOverAction=[!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor2*#,(#*HighlightFontOpacity2*#*#*ContentFade*#)"][!SetOption #CURRENTSECTION#Icon ImageAlpha "#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor2*#,(#*HighlightFontOpacity2*#*#*ContentFade*#)"][!SetVariable ItemIsHighlighted 1][!SetVariable ActionTimer.HLFadeIn 0.25][!SetVariable [##CURRENTSECTION#]FolderActive 1][!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetVariable CurrentFolder #CURRENTSECTION#][!SetOption CustomIcon ImageTint "[#HomeColorTintB[#*HomeColorNum*]]"][!UpdateMeter FolderBlock][!CommandMeasure MeasureActionTimer "Execute 1"][!CommandMeasure MeasureActionTimer "Execute 3"]
 MouseLeaveAction=[!SetVariable ItemIsHighlighted 0][!SetVariable [##CURRENTSECTION#]FolderActive 0][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption CustomIcon ImageTint "[#HomeColorTint[#*HomeColorNum*]]"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor1*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter CustomIcon][!UpdateMeter #CURRENTSECTION#][!CommandMeasure MeasureActionTimer "Stop 3"][!Delay 10][!UpdateMeasure CalcItemIsHighlighted]
 MiddleMouseDoubleClickAction=#CloseSettingsMenu#[!CommandMeasure FileChoose "ChooseImage 6" "Droptop\DropdownBar"]
 Y=((#DropdownIconYOffset#+(#DropdownItemHeight#/2))-((#DropdownIconYOffset#+(#DropdownItemHeight#/2))%1)+#DropdownItemYOffset#)
@@ -93,7 +93,7 @@ Hidden=0
 Group=None
 
 [1Icon]
-MeterStyle=IconStyle | LockedIconStyle#Supporter#
+MeterStyle=IconStyle
 X=#DropdownIconXoffset#
 Y=[1:Y]
 
@@ -141,7 +141,7 @@ Shape=
 Shape=
 
 [4]
-MouseOverAction=[!SetVariable ItemIsHighlighted 1][!SetVariable ActionTimer.HLFadeIn 0.25][!SetVariable [##CURRENTSECTION#]FolderActive 1][!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetVariable CurrentFolder #CURRENTSECTION#][!SetOption DiceIcon ImageTint "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!UpdateMeter FolderBlock][!CommandMeasure MeasureActionTimer "Execute 3"]
+MouseOverAction=[!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor2*#,(#*HighlightFontOpacity2*#*#*ContentFade*#)"][!SetOption #CURRENTSECTION#Icon ImageAlpha "#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor2*#,(#*HighlightFontOpacity2*#*#*ContentFade*#)"][!SetVariable ItemIsHighlighted 1][!SetVariable ActionTimer.HLFadeIn 0.25][!SetVariable [##CURRENTSECTION#]FolderActive 1][!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetVariable CurrentFolder #CURRENTSECTION#][!SetOption DiceIcon ImageTint "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!UpdateMeter FolderBlock][!CommandMeasure MeasureActionTimer "Execute 3"]
 MouseLeaveAction=[!SetVariable ItemIsHighlighted 0][!SetVariable [##CURRENTSECTION#]FolderActive 0][!SetOption #CURRENTSECTION#Arrow StrokeColor "Stroke Color #*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption #CURRENTSECTION#Arrow FillColor "Fill Color #*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption #CURRENTSECTION#Icon ImageTint "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption DiceIcon ImageTint "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!SetOption #CURRENTSECTION#Folder FontColor #*DropdownFontColor1*#][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor1*#,#*DropdownItemOpacity*#"][!UpdateMeter #CURRENTSECTION#Arrow][!UpdateMeter #CURRENTSECTION#Icon][!UpdateMeter DiceIcon][!UpdateMeter #CURRENTSECTION#][!CommandMeasure MeasureActionTimer "Stop 3"][!Delay 10][!UpdateMeasure CalcItemIsHighlighted]
 
 [4Arrow]

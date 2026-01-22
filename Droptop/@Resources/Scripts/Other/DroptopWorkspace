@@ -252,7 +252,6 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\FolderItems1.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\FolderItems00.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\FolderItems01.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\AlwaysShowBox.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\MailBox0.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\Debug0.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\Droparea1.ini" />
@@ -342,6 +341,7 @@
         <Folder name="Other">
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Tutorial\Tutorial.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\Droparea\Droparea.ini" />
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Tips\Tips.ini" />
         </Folder>
         <Folder name="Themes">
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Themes\99.inc" />

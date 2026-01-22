@@ -1,5 +1,6 @@
 [Rainmeter]
 OnRefreshAction=[!ShowMeterGroup [#NumberOfItems.Category[#CategoryNum[#SettingsMenuIndex]]]][!HideMeterGroup Items][!UpdateMeter *]
+MouseLeaveAction=[]
 
 [Variables]
 ;----------------------------------

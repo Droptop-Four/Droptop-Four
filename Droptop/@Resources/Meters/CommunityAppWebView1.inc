@@ -10,6 +10,16 @@ OnUpdateAction=[!Zpos 1][!Zpos #PopoutZpos#]
 DynamicVariables=1
 UpdateDivider=-1
 
+[EasingWindow]
+Measure=Plugin
+Plugin=EasingWindow
+EndY=(#TopHeight#/2)
+RelativePosition=1
+Duration=#DropdownAnimationSpeed#
+OnReverseBeginAction=[!DisableMouseAction * *][!HideMeterGroup Highlight][!Delay 150][!EnableMouseAction * *]
+; SavePosition=1
+UpdateDivider=-1
+
 [BlurBehind]
 Measure=Plugin
 Plugin=FrostedGlass
@@ -58,16 +68,8 @@ Hidden=(#NumberOfActionIcons#>=[##CURRENTSECTION#]?(#WebViewHideTop#=1?1:0):1)
 ImageName=#CURRENTPATH#Icons\[#ActionItemIconFileName[##CURRENTSECTION#]].png
 LeftMouseDownAction=[#ActionItemAction[##CURRENTSECTION#]]
 
-; [IconStyle]
-; MouseOverAction=[!SetVariable ActionTimer.HLFadeIn 0.25][!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetOption #CURRENTSECTION# ImageTint "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION# ImageAlpha "([#ItemIsFolder[##*CURRENTSECTION*#]]=1?0:#*HighlightFontOpacity2*#)"][!SetOption #CURRENTSECTION# SolidColor "#*DropdownItemHL*#,((#*DropdownHLOpacity*#/#HighlightShapeOpacityDivisor1B#)*#*ActionTimer.HLFadeIn*#)"][!SetOption #CURRENTSECTION# SolidColor2 "#*DropdownItemHL2*#,((#*DropdownHLOpacity*#/#HighlightShapeOpacityDivisor1B#)*#*ActionTimer.HLFadeIn*#)"][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!UpdateMeter #CURRENTSECTION#][!Redraw][!CommandMeasure MeasureActionTimer "Execute 2"]
-; MouseLeaveAction=[!CommandMeasure MeasureActionTimer "Stop 2"][!SetOption #CURRENTSECTION# ImageTint ""][!SetOption #CURRENTSECTION# ImageAlpha ""][!SetOption #CURRENTSECTION# SolidColor ""][!SetOption #CURRENTSECTION# SolidColor2 ""][!SetOption #CURRENTSECTION# FontColor ""][!UpdateMeter #CURRENTSECTION#][!Redraw]
-; Padding=((#WebViewTopHeight#/2)-(#IconW#/2)),((#WebViewTopHeight#/2)-(#IconW#/2)),((#WebViewTopHeight#/2)-(#IconW#/2)),((#WebViewTopHeight#/2)-(#IconW#/2))
-; X=R
-; Y=r
-
 [IconStyle]
-; MouseOverAction=[!SetVariable ItemIsHighlighted 1][!SetVariable ActionTimer.HLFadeIn 0.25][!SetVariable CurrentSubFolder #CURRENTSECTION#][!SetOption #CURRENTSECTION# ImageTint "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!SetOption #CURRENTSECTION# ImageAlpha "([#ItemIsFolder[##*CURRENTSECTION*#]]=1?0:#*HighlightFontOpacity2*#)"][!SetOption #CURRENTSECTION# FontColor "#*DropdownFontColor2*#,#*HighlightFontOpacity2*#"][!UpdateMeter #CURRENTSECTION#][!Redraw][!CommandMeasure MeasureActionTimer "Execute 2"]
-MouseOverAction=[!SetVariable ItemIsHighlighted 1][!SetVariable ActionTimer.HLFadeIn 0.25][!SetVariable CurrentSubFolder #CURRENTSECTION#][!CommandMeasure MeasureActionTimer "Execute 2"]
+MouseOverAction=[!SetOption #CURRENTSECTION# ImageTint "#*DropdownFontColor2*#,(#*HighlightFontOpacity2*#*#*ContentFade*#)"][!SetOption #CURRENTSECTION# ImageAlpha "#*HighlightFontOpacity2*#"][!SetVariable ItemIsHighlighted 1][!SetVariable ActionTimer.HLFadeIn 0.25][!SetVariable CurrentSubFolder #CURRENTSECTION#][!CommandMeasure MeasureActionTimer "Execute 2"]
 MouseLeaveAction=[!SetVariable ItemIsHighlighted 0][!SetOption #CURRENTSECTION# ImageTint ""][!SetOption #CURRENTSECTION# ImageAlpha ""][!SetOption #CURRENTSECTION# FontColor ""][!UpdateMeter #CURRENTSECTION#][!CommandMeasure MeasureActionTimer "Stop 2"][!Delay 10][!UpdateMeasure CalcItemIsHighlighted]
 Padding=((#WebViewTopHeight#/2)-(#IconW#/2)),((#WebViewTopHeight#/2)-(#IconW#/2)),((#WebViewTopHeight#/2)-(#IconW#/2)),((#WebViewTopHeight#/2)-(#IconW#/2))
 X=R

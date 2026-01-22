@@ -106,28 +106,33 @@ Loop, parse, AntiCheatProcess, |
 return
 
 ~!Shift::
-    Run, %1% !UpdateMeasure CurrentLanguageID.PSRM Droptop\Other\BackgroundProcesses
+    Run, %1% !UpdateMeasure CurrentLanguageID.PSRM "Droptop\Other\BackgroundProcesses"
 return
 
 ~#Space::
-    Run, %1% !UpdateMeasure CurrentLanguageID.PSRM Droptop\Other\BackgroundProcesses
+    Run, %1% !UpdateMeasure CurrentLanguageID.PSRM "Droptop\Other\BackgroundProcesses"
 return
 
+; ~!+=::
+; if ShowState = 0
+; {
+	; ShowState := 1
+    ; Run, %1% !Hide "Droptop\DropdownBar"
+    ; Run, %1% !Zpos 1 "Droptop\DropdownBar"
+    ; Run, %1% !ShowFade "Droptop\DropdownBar"
+	; Run, %1% !CommandMeasure EasingWindow "Start" "Droptop\DropdownBar"
+; }
+; else
+; {
+	; ShowState := 0
+    ; Run, %1% !Zpos %2% "Droptop\DropdownBar"
+    ; Run, %1% !HideFade "Droptop\DropdownBar"
+	; Run, %1% !CommandMeasure EasingWindow "Reverse" "Droptop\DropdownBar"
+; }
+; return
+
 ~!+=::
-if ShowState = 0
-{
-	ShowState := 1
-    Run, %1% !Hide "Droptop\DropdownBar"
-    Run, %1% !Zpos 1 "Droptop\DropdownBar"
-    Run, %1% !ShowFade "Droptop\DropdownBar"
-    Run, %1% !HideMeter Meter1 "Droptop\Other\BackgroundProcesses"
-}
-else
-{
-	ShowState := 0
-    Run, %1% !Zpos %2% "Droptop\DropdownBar"
-    Run, %1% !ShowMeter Meter1 "Droptop\Other\BackgroundProcesses"
-}
+	Run, %1% !UpdateMeasure ShowHideHotkeyTracker "Droptop\DropdownBar"
 return
 
 ; ~!+1::

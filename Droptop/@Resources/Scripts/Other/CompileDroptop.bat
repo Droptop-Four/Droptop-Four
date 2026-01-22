@@ -44,6 +44,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables DroptopIsBeta 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables DroptopIsUpdate 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables Supporter 0 %5Droptop\@Resources\GlobalVar\Supporter.inc"
+
 %4 !WriteKeyValue Variables FolderLoc1 "#SKINSPATH#Droptop Folders\PinnedApps" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderLoc2 "#SKINSPATH#Droptop Folders\Games" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderLoc3 "#SKINSPATH#Droptop Folders\Bookmarks" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -55,16 +56,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables FolderLoc10 "#SKINSPATH#Droptop Folders\CustomFolder5" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderLoc11 "#SKINSPATH#Droptop Folders\CustomFolder6" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderLoc12 "#SKINSPATH#Droptop Folders\CustomFolder7" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables CustomAppID1 "Droptop_Store-Bunz" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables CustomAppID2 "YouTube-Cariboudjan" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables CustomAppID3 "Messenger-Cariboudjan" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables CustomAppID4 "Game_Library-Cariboudjan" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables CustomAppID5 "Daily_Quotes-Bunz" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables CustomAppID6 "Shortcut-Phan" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables CustomAppID7 "Notepad-Cariboudjan" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables CustomAppID8 "Disks-Phan" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables CustomAppID9 "Google_Gemini-Cariboudjan" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables CustomAppID10 "VirtualDesktop-KazukiGames82" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
 %4 !WriteKeyValue Variables CustomAppInstallDate1 %3" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CustomAppInstallDate2 %3" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CustomAppInstallDate3 %3" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -75,9 +67,21 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables CustomAppInstallDate8 %3" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CustomAppInstallDate9 %3" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CustomAppInstallDate10 %3" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
+%4 !WriteKeyValue Variables CustomAppID1 "Droptop_Store-Bunz" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables CustomAppID2 "YouTube-Cariboudjan" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables CustomAppID3 "Messenger-Cariboudjan" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables CustomAppID4 "Game_Library-Cariboudjan" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables CustomAppID5 "Daily_Quotes-Bunz" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables CustomAppID6 "Shortcut-Phan" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables CustomAppID7 "Notepad-Cariboudjan" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables CustomAppID8 "Disks-Phan" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables CustomAppID9 "Google_Gemini-Cariboudjan" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables CustomAppID10 "VirtualDesktop-KazukiGames82" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
 %4 !WriteKeyValue Variables Droptop_Store-Bunz 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables Messenger-Cariboudjan 3 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables YouTube-Cariboudjan 2 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables Messenger-Cariboudjan 3 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables Game_Library-Cariboudjan 4 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables Daily_Quotes-Bunz 5 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables Shortcut-Phan 6 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -85,6 +89,30 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables Disks-Phan 8 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables Google_Gemini-Cariboudjan 9 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables VirtualDesktop-KazukiGames82 10 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
+%4 !WriteKeyValue Variables HideAppNewDesktop 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppTime 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppMail 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppAlarm 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppVolume 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppWeather 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppWifi 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppBattery 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppDownloads 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppRecent 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppCopy 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppAppDrawer 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppCustomApp1 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppCustomApp2 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppCustomApp3 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppCustomApp4 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppCustomApp5 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppCustomApp6 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppCustomApp7 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppCustomApp8 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppCustomApp9 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables HideAppCustomApp10 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+
 %4 !WriteKeyValue Variables ReverseDarkLight 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables RecentFileFilter "." %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables RecentFileTypeNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -131,6 +159,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables HomeRow 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CustomHomeButton 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HomeColorNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
 %4 !WriteKeyValue Variables FolderColorNum1 "1" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderColorNum2 "1" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderColorNum3 "1" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -143,6 +172,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables FolderColorNum10 "1" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderColorNum11 "1" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderColorNum12 "1" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
 %4 !WriteKeyValue Variables FolderIsSymbol1 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderIsSymbol2 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderIsSymbol3 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -155,6 +185,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables FolderIsSymbol10 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderIsSymbol11 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderIsSymbol12 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
 %4 !WriteKeyValue Variables FolderIsColor1 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderIsColor2 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderIsColor3 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -167,8 +198,10 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables FolderIsColor10 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderIsColor11 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderIsColor12 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
 %4 !WriteKeyValue Variables HideHomeIcon 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables MailNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
 %4 !WriteKeyValue Variables MailLink1 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables MailAuthor1 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables MailSubject1 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
@@ -181,6 +214,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables MailLink4 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables MailAuthor4 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables MailSubject4 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
+
 %4 !WriteKeyValue Variables UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables UpdateCheckFrequency 2 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CrashDetected 0 %5Droptop\@Resources\GlobalVar\Control.inc"
@@ -241,6 +275,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables WNPTooltipDismissed 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables SysIconSizeNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables LegacyAppDrawer 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
 %4 !WriteKeyValue Variables SlotFolder1 1 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SlotFolder2 2 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SlotFolder3 3 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
@@ -253,6 +288,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables SlotFolder10 10 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SlotFolder11 11 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SlotFolder12 12 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+
 %4 !WriteKeyValue Variables SideAppSlotName1 #SideAppName1# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlotName2 #SideAppName10# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlotName3 #SideAppName2# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
@@ -275,6 +311,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables SideAppSlotName20 #SideAppName5# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlotName21 #SideAppName4# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlotName22 #SideAppName22# %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+
 %4 !WriteKeyValue Variables SideAppSlot1 1 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlot2 10 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlot3 2 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
@@ -297,6 +334,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables SideAppSlot20 5 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlot21 4 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppSlot22 22 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+
 %4 !WriteKeyValue Variables SideAppPosNewDesktop 1 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosTime 3 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosAlarm 21 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
@@ -319,6 +357,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables SideAppPosCustomApp8 19 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosCustomApp9 4 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosCustomApp10 22 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+
 %4 !WriteKeyValue Variables FolderHidden1 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderHidden2 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderHidden3 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
@@ -331,6 +370,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables FolderHidden10 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderHidden11 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderHidden12 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+
 %4 !WriteKeyValue Variables FolderListView1 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView2 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView3 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
@@ -343,28 +383,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables FolderListView10 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView11 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderListView12 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppNewDesktop 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppTime 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppMail 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppAlarm 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppVolume 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppWeather 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppWifi 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppBattery 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppDownloads 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppRecent 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppCopy 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppAppDrawer 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppCustomApp1 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppCustomApp2 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppCustomApp3 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppCustomApp4 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppCustomApp5 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppCustomApp6 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppCustomApp7 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppCustomApp8 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppCustomApp9 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
-%4 !WriteKeyValue Variables HideAppCustomApp10 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+
 %4 !WriteKeyValue Variables IsOverflowNewDesktop 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables IsOverflowTime 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables IsOverflowMail 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
@@ -387,6 +406,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables IsOverflowCustomApp8 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables IsOverflowCustomApp9 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables IsOverflowCustomApp10 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+
 %4 !WriteKeyValue Variables HideTopBarDivider1 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideTopBarDivider2 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideTopBarDivider3 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
@@ -409,6 +429,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables HideTopBarDivider20 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideTopBarDivider21 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables HideTopBarDivider22 1 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+
 %4 !WriteKeyValue Variables CustomApp1UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CustomApp2UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CustomApp3UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -419,6 +440,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables CustomApp8UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CustomApp9UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CustomApp10UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
 %4 !WriteKeyValue Variables DeviceIsNotTouch 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables ShowBacklightBar 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables AltHome 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -427,7 +449,6 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables DroptopSleepMode 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables DroptopSleepMinutes 5 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables AutomaticWeatherLoc 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-REM %4 !WriteKeyValue Variables ShowBlackCorners 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideWinButton 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideProgramsApp 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideAppCommands 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -453,6 +474,7 @@ REM %4 !WriteKeyValue Variables ShowBlackCorners 1 %5Droptop\@Resources\GlobalVa
 %4 !WriteKeyValue Variables PopupInFullscreen 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables SSIDName "Offline" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables WifiTextNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
 %4 !WriteKeyValue Variables FolderTitle1 "#FolderName1#" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderTitle2 "#FolderName2#" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderTitle3 "#FolderName3#" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -465,6 +487,7 @@ REM %4 !WriteKeyValue Variables ShowBlackCorners 1 %5Droptop\@Resources\GlobalVa
 %4 !WriteKeyValue Variables FolderTitle10 "#FolderName10#" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderTitle11 "#FolderName11#" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderTitle12 "#FolderName12#" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
 %4 !WriteKeyValue Variables LastFocusedApp "Explorer" %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables LastFocusedIM "Explorer.EXE" %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables LastFocusedTitle "" %5Droptop\@Resources\GlobalVar\Control.inc"
@@ -476,6 +499,9 @@ REM %4 !WriteKeyValue Variables ShowBlackCorners 1 %5Droptop\@Resources\GlobalVa
 %4 !WriteKeyValue Variables CategoryNum "1" %5Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
 %4 !WriteKeyValue Variables SubCatNum "1" %5Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
 %4 !WriteKeyValue Variables VarNum "1" %5Droptop\Other\WindowMenu\ThemeBuilder.Create.ini"
+%4 !WriteKeyValue Variables TopBarAnimationNum "4" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables DropdownAnimationNum "4" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
 %4 !WriteKeyValue Variables BatteryHourLevel00 40 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryHourLevel01 60 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryHourLevel02 80 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -500,6 +526,7 @@ REM %4 !WriteKeyValue Variables ShowBlackCorners 1 %5Droptop\@Resources\GlobalVa
 %4 !WriteKeyValue Variables BatteryHourLevel21 60 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryHourLevel22 80 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryHourLevel23 100 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
 %4 !WriteKeyValue Variables BatteryReporting00 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryReporting01 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryReporting02 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -524,6 +551,15 @@ REM %4 !WriteKeyValue Variables ShowBlackCorners 1 %5Droptop\@Resources\GlobalVa
 %4 !WriteKeyValue Variables BatteryReporting21 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryReporting22 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables BatteryReporting23 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
+%4 !WriteKeyValue Variables PowerShellPermissionsGranted 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables TimeOpensNotifications 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables NumberOfCrashes 0 %5Droptop\@Resources\GlobalVar\Control.inc"
+
+%4 !WriteKeyValue Variables TipFinished1 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables TipFinished2 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables TipFinished3 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+
 xcopy /y /c /h /e %5Droptop Community Apps\Apps\Sample_App-Cariboudjan" %5Droptop\@Resources\Scripts\AppBuilder\Sample Apps\Sample_App-Cariboudjan"
 xcopy /y /c /h /e %5Droptop Community Apps\Apps\Sample_WebView-Cariboudjan" %5Droptop\@Resources\Scripts\AppBuilder\Sample Apps\Sample_WebView-Cariboudjan"
 attrib +h /s "%USERPROFILE%\Documents\GitHub\Community-Apps\.gitattributes"
@@ -536,6 +572,15 @@ forfiles /p "%USERPROFILE%\OneDrive\Droptop\Archive" /s /d -90 /c "cmd /c if @is
 del /f /q %5Droptop\@Resources\Images\Bluetooth\*.jpg"
 del /f /q %5Droptop\@Resources\Images\Media\Cover.png"
 del /f /q %5Droptop\@Resources\Images\Media\CoverBlur.png"
+
+del /f /q %5Droptop Community Apps\Apps\Game_Library-Cariboudjan\MyGames\*"
+del /f /q %5Droptop Community Apps\Apps\Game_Library-Cariboudjan\*.ico"
+%4 !WriteKeyValue Variables Pinned1Icon.Link "" %5Droptop Community Apps\Apps\Game_Library-Cariboudjan\Variables\Variables.inc"
+%4 !WriteKeyValue Variables Pinned2Icon.Link "" %5Droptop Community Apps\Apps\Game_Library-Cariboudjan\Variables\Variables.inc"
+%4 !WriteKeyValue Variables Pinned3Icon.Link "" %5Droptop Community Apps\Apps\Game_Library-Cariboudjan\Variables\Variables.inc"
+%4 !WriteKeyValue Variables Pinned4Icon.Link "" %5Droptop Community Apps\Apps\Game_Library-Cariboudjan\Variables\Variables.inc"
+%4 !WriteKeyValue Variables Pinned5Icon.Link "" %5Droptop Community Apps\Apps\Game_Library-Cariboudjan\Variables\Variables.inc"
+
 xcopy /y /c /h /e %5Droptop\@Resources\Images\Media\CoverBlank.png" %5Droptop\@Resources\Images\Media\CoverBlur.png" 
 call %5Droptop\@Resources\Scripts\RestoreFolders.bat" %5
 reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" /v "C:\Program Files\Rainmeter\Rainmeter.exe" /t "REG_SZ" /d "~ HIGHDPIAWARE" /f
