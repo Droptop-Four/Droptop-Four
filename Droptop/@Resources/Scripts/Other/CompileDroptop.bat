@@ -34,13 +34,14 @@ del /f %5Droptop\@Resources\GlobalVar\Languages\zh-TW.inc"
 
 attrib -h /s %5Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
-taskkill /f /im "Droptop.exe"
+REM taskkill /f /im "Droptop.exe"
 "C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.ahk" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.exe"
-"C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.ahk" /icon "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Images\4Logo.ico" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.exe"
-xcopy /y /c /h %5Droptop Folders\Other files\Droptop.ahk" %5Droptop\@Resources\OriginalFolders\Other files"
-xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\OriginalFolders\Other files"
-%4 !DeactivateConfigGroup DroptopSuite
-%4 !DeactivateConfig Droptop\DropdownBar\AppBar
+REM "C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.ahk" /icon "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Images\4Logo.ico" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.exe"
+xcopy /y /c /h %5Droptop Folders\Other files\DroptopTaskHelper.bat" %5Droptop\@Resources\OriginalFolders\Other files"
+xcopy /y /c /h %5Droptop Folders\Other files\DroptopTaskHelper.vbs" %5Droptop\@Resources\OriginalFolders\Other files"
+REM %4 !DeactivateConfigGroup DroptopSuite
+REM %4 !DeactivateConfig Droptop\DropdownBar\AppBar
+taskkill /f /im "Rainmeter.exe"
 %4 !WriteKeyValue Variables DroptopIsBeta 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables DroptopIsUpdate 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables Supporter 0 %5Droptop\@Resources\GlobalVar\Supporter.inc"
@@ -441,6 +442,7 @@ xcopy /y /c /h %5Droptop Folders\Other files\Droptop.exe" %5Droptop\@Resources\O
 %4 !WriteKeyValue Variables CustomApp9UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CustomApp10UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 
+%4 !WriteKeyValue Variables TabletModeON 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables DeviceIsNotTouch 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables ShowBacklightBar 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables AltHome 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"

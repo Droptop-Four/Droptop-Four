@@ -325,7 +325,7 @@ ExitApp
 
 RestartDroptop:
  WinClose ahk_exe Rainmeter.exe
- WinClose ahk_exe Droptop.exe
+ WinClose ahk_exe cmd.exe
  Sleep, 1000
  Run, %2%
  DetectHiddenWindows Off
@@ -333,7 +333,7 @@ ExitApp
 
 ExitDroptop:
  WinClose ahk_exe Rainmeter.exe
- WinClose ahk_exe Droptop.exe
+ WinClose ahk_exe cmd.exe
  DetectHiddenWindows Off
 ExitApp
 
