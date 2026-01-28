@@ -66,6 +66,12 @@ WebNowPlaying.Link=["https://github.com/keifufu"]
 WebView.Author=khanhas
 WebView.Link=["https://github.com/khanhas"]
 
+SendKeys.Author=NSTechBytes
+SendKeys.Link=["https://github.com/NSTechBytes"]
+
+HotKey.Author=Brian
+HotKey.Link=["https://github.com/brianferguson"]
+
 [ScrollCheck]
 Measure=Calc
 IfCondition=AnalyzeTotal = #ScrollTracker#

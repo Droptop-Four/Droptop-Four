@@ -1,4 +1,5 @@
 @echo off
+title Droptop_Task_Helper
 
 set "app=%~1"
 

@@ -39,9 +39,11 @@ REM taskkill /f /im "Droptop.exe"
 REM "C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.ahk" /icon "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Images\4Logo.ico" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.exe"
 xcopy /y /c /h %5Droptop Folders\Other files\DroptopTaskHelper.bat" %5Droptop\@Resources\OriginalFolders\Other files"
 xcopy /y /c /h %5Droptop Folders\Other files\DroptopTaskHelper.vbs" %5Droptop\@Resources\OriginalFolders\Other files"
-REM %4 !DeactivateConfigGroup DroptopSuite
-REM %4 !DeactivateConfig Droptop\DropdownBar\AppBar
-taskkill /f /im "Rainmeter.exe"
+%4 !DeactivateConfigGroup DroptopSuite
+%4 !DeactivateConfig Droptop\DropdownBar\AppBar
+
+REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
+
 %4 !WriteKeyValue Variables DroptopIsBeta 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables DroptopIsUpdate 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables Supporter 0 %5Droptop\@Resources\GlobalVar\Supporter.inc"
@@ -118,7 +120,7 @@ taskkill /f /im "Rainmeter.exe"
 %4 !WriteKeyValue Variables RecentFileFilter "." %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables RecentFileTypeNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables NowPlayingClipNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables GmailUsername "Unassigned" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables GmailUsername "" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables GmailPassword "" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables DeviceIsMobile 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables DisplayIsLandscape 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -153,6 +155,7 @@ taskkill /f /im "Rainmeter.exe"
 %4 !WriteKeyValue Variables UnitsMetric 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideWeatherSymbol 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideWeatherTemp 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables ShowWeatherTempBar 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HideIcons 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables EnableBluetooth 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderMouseOverTimeNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
@@ -358,6 +361,19 @@ taskkill /f /im "Rainmeter.exe"
 %4 !WriteKeyValue Variables SideAppPosCustomApp8 19 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosCustomApp9 4 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SideAppPosCustomApp10 22 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
+
+%4 !WriteKeyValue Variables FolderItemsPerRow1 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow2 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow3 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow4 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow5 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow6 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow7 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow8 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow9 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow10 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow11 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
+%4 !WriteKeyValue Variables FolderItemsPerRow12 5 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 
 %4 !WriteKeyValue Variables FolderHidden1 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
 %4 !WriteKeyValue Variables FolderHidden2 0 %5Droptop\@Resources\GlobalVar\FolderSettings.inc"
@@ -569,7 +585,6 @@ xcopy /y /c /h /e %5Droptop Community Apps\Apps\*" "%USERPROFILE%\Documents\GitH
 
 xcopy /y /c /h /e /i %5Droptop" "%USERPROFILE%\OneDrive\Droptop\Archive\%2\Droptop"
 xcopy /y /c /h /e /i %5Droptop Folders" "%USERPROFILE%\OneDrive\Droptop\Archive\%2\Droptop Folders"
-forfiles /p "%USERPROFILE%\OneDrive\Droptop\Archive" /s /d -90 /c "cmd /c if @isdir == TRUE rd /s /q @path"
 
 del /f /q %5Droptop\@Resources\Images\Bluetooth\*.jpg"
 del /f /q %5Droptop\@Resources\Images\Media\Cover.png"
@@ -784,3 +799,5 @@ powershell.exe [console]::beep(100,900); [console]::beep(200,820)
 PAUSE
 %4 !WriteKeyValue Variables Page 0 %5Droptop\Other\Startup\Start.ini"
 %4 !ActivateConfig "Droptop\Other\Startup" "Start.ini"
+
+forfiles /p "%USERPROFILE%\OneDrive\Droptop\Archive" /s /d -90 /c "cmd /c if @isdir == TRUE rd /s /q @path"

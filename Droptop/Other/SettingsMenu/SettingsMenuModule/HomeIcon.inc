@@ -10,9 +10,9 @@ HomeColorTint1=255,255,255
 HomeColorTintB0=[#*DropdownFontColor2*]
 HomeColorTintB1=255,255,255
 
-CategoryLogos.IconIndex=4
+CategoryLogos.IconIndex=1
 CategoryCreatures.IconIndex=4
-CategoryFood.IconIndex=4
+CategoryFood.IconIndex=11
 CategorySeasonal.IconIndex=1
 CategoryObjects.IconIndex=15
 CategorySymbols.IconIndex=5

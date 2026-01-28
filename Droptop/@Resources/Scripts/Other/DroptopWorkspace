@@ -11,9 +11,9 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\Diagnostics.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\CheckUpdate.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\CommunityAppSlotAssign.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\MailParser.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\LocationParser.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\WeatherParser.ini" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\MailParser0.ini" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Tasks\WeatherParser0.ini" />
             </Folder>
             <Folder name="ContextBox">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\ContextBox\ContextBox1.ini" />
@@ -191,7 +191,6 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\Folder\Folder\Folder\Folder03.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\Folder\Folder\Folder\Folder\Folder04.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\AppControls\Folder\Folder2.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\AppControls\Folder\Folder3.ini" />
             </Folder>
             <Folder name="Alarm Folders">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Alarm\Folder\Folder2.ini" />
@@ -252,14 +251,13 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\FolderItems1.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\FolderItems00.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\FolderItems01.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\MailBox0.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\Debug0.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\Droparea1.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\Droparea\Droparea.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\Mail0.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\LoadingScreen.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\MonitorBrightness0.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\BluetoothMeasures1.ini" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\Other\SendKeys.ini" />
             </Folder>
             <Folder name="ArrowStyles">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\ArrowStyle\ArrowStyle1.ini" />
@@ -308,7 +306,6 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\FetchVars.ps1" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.ahk" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\RestoreFolders.bat" />
-            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.ahk" />
             <Folder name="Lua">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\CScript.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\DropScroll.lua" />
