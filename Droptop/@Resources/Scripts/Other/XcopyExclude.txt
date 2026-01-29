@@ -100,3 +100,7 @@ Instagram_Chat-Cariboudjan
 Home_Assistant-Cariboudjan
 PTLevel-Cariboudjan
 Google_Keep-Cariboudjan
+Todoist-SmolDog
+TickTick_Viewer-SidTheDev
+Stock_Analysis-Obsidience
+LingoDeer-jelliwi
