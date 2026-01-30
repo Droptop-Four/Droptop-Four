@@ -1,14 +1,33 @@
 The operation completed successfully.
-A
-2024/12/02 16:08:33 ERROR 2 (0x00000002) Accessing Source Directory C:\Users\Carib\OneDrive\Documents\Rainmeter\Skins\Droptop\
+AAA
+2026/01/30 08:37:00 ERROR 2 (0x00000002) Accessing Source Directory C:\Users\Carib\OneDrive\Documents\Rainmeter\Skins\Droptop\
 The system cannot find the file specified.
 
-2024/12/02 16:08:33 ERROR 2 (0x00000002) Accessing Source Directory C:\Users\Carib\OneDrive\Documents\Rainmeter\Skins\Droptop Folders\
+2026/01/30 08:37:00 ERROR 2 (0x00000002) Accessing Source Directory C:\Users\Carib\OneDrive\Documents\Rainmeter\Skins\Droptop Folders\
 The system cannot find the file specified.
 
-2024/12/02 16:08:33 ERROR 2 (0x00000002) Accessing Source Directory C:\Users\Carib\OneDrive\Documents\Rainmeter\Skins\Droptop Community Apps\
+2026/01/30 08:37:00 ERROR 2 (0x00000002) Accessing Source Directory C:\Users\Carib\OneDrive\Documents\Rainmeter\Skins\Droptop Community Apps\
 The system cannot find the file specified.
 
 
 
 
+
+
+
+C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps\Access.lnk
+C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps\Excel.lnk
+C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps\Microsoft Edge.lnk
+C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps\Notepad++.lnk
+C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps\OneDrive.lnk
+C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps\OneNote.lnk
+C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps\Outlook (classic).lnk
+C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps\PowerPoint.lnk
+C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps\Publisher.lnk
+C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps\Rainmeter.lnk
+C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps\Sticky Notes (new).lnk
+C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps\Word.lnk
+C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps\WSL Settings.lnk
+C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\PinnedApps\WSL.lnk
+14 File(s) copied
+TTT
