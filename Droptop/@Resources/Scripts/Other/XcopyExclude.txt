@@ -16,7 +16,7 @@ Center_Infos-TheyCallMePapa
 Translator-Bunz
 Speedtest-Bunz
 Feeder-Cariboudjan
-GSuite-Cariboudjan
+Shortcut-Phan
 Translator-Bunz
 WakaTime-Bunz
 ToolTipster-TheyCallMePapa
