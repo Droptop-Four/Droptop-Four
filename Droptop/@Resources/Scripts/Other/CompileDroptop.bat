@@ -278,7 +278,6 @@ REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 %4 !WriteKeyValue Variables IPAddress "192.168.1.1" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables WNPTooltipDismissed 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables SysIconSizeNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables LegacyAppDrawer 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 
 %4 !WriteKeyValue Variables SlotFolder1 1 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
 %4 !WriteKeyValue Variables SlotFolder2 2 %5Droptop\@Resources\GlobalVar\TopBarPos.inc"
