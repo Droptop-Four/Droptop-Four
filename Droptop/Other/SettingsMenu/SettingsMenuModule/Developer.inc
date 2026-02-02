@@ -3,7 +3,7 @@ LastFocusedApp="[#***LastFocusedApp***]"
 
 [SkinVersionMini]
 Measure=Calc
-Formula=((#SkinVersionMini#+1)>999?0:(#SkinVersionMini#+1))
+Formula=((#SkinVersionMini#+1)>999?10:((#SkinVersionMini#+1)<10?10:(#SkinVersionMini#+1)))
 Substitute=
 
 [SkinVersionTime]

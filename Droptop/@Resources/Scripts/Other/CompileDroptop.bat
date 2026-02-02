@@ -222,7 +222,6 @@ REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 %4 !WriteKeyValue Variables UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables UpdateCheckFrequency 2 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CrashDetected 0 %5Droptop\@Resources\GlobalVar\Control.inc"
-%4 !WriteKeyValue Variables AppCommandCount 1 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables Page 0 %5Droptop\Other\Startup\Start.ini"
 %4 !WriteKeyValue Variables HomeColorNum 1 %5Droptop\Other\Startup\Start.ini"
 %4 !WriteKeyValue Variables IconsSymbolNum 0 %5Droptop\Other\Startup\Start.ini"
