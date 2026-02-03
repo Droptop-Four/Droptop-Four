@@ -2,7 +2,7 @@
 
 DevicesNumber=7
 
-Devices=Arctis Pro Wireless|44643149312662|Bluetooth#Bluetootha0:29:42:3a:cd:b0-28:9a:4b:0e:72:96|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;AirPods Pro|71141739493567|Bluetooth#Bluetootha0:29:42:3a:cd:b0-40:b3:fa:1c:78:bf|0|1|0|Audio/Video|Audio Video Headphones|0|0|0;Surface Slim Pen 2|234849569145700|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64|0|1|0|HumanInterfaceDevice|DigitalPen|0|0|1;MX Master 2S|223463262609937|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:11|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;Surface Arc Mouse|254394102878146|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;NVIDIA SHIELD Remote|79921510527776|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20|0|1|0|RemoteControl|Unknown|0|0|1;Logi M750 L|239457178165969|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d9:c8:f8:0b:22:d1|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;
+Devices=Arctis Pro Wireless|44643149312662|Bluetooth#Bluetootha0:29:42:3a:cd:b0-28:9a:4b:0e:72:96|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;AirPods Pro - Find My|71141739493567|Bluetooth#Bluetootha0:29:42:3a:cd:b0-40:b3:fa:1c:78:bf|0|1|0|Audio/Video|Audio Video Headphones|0|0|0;Surface Slim Pen 2|234849569145700|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64|0|1|0|HumanInterfaceDevice|DigitalPen|0|0|1;MX Master 2S|223463262609937|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:11|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;Surface Arc Mouse|254394102878146|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;NVIDIA SHIELD Remote|79921510527776|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20|0|1|0|RemoteControl|Unknown|0|0|1;Logi M750 L|239457178165969|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d9:c8:f8:0b:22:d1|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;
 
 BTStatus=1
 
@@ -16,7 +16,7 @@ PageDevice7=7
 PageDevice8=8
 
 Device1Name=Arctis Pro Wireless
-Device2Name=AirPods Pro
+Device2Name=AirPods Pro - Find My
 Device3Name=Surface Slim Pen 2
 Device4Name=MX Master 2S
 Device5Name=Surface Arc Mouse
