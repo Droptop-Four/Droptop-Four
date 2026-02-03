@@ -634,6 +634,7 @@ robocopy %5Droptop" %5Redistributables\Supporter-Version\Skins\Droptop" /E
 RD /S /Q %5Redistributables\Supporter-Version\Skins\Droptop\@Resources\Icons"
 RD /S /Q %5Redistributables\Supporter-Version\Skins\Droptop\@Resources\OriginalFolders"
 RD /S /Q %5Redistributables\Supporter-Version\Skins\Droptop\Other"
+robocopy %5Droptop\Other\Startup\Start.ini" %5Redistributables\Supporter-Version\Skins\Droptop\Other\Startup"
 RD /S /Q %5Redistributables\Supporter-Version\Skins\Droptop\DropdownBar"
 RD /S /Q %5Redistributables\Supporter-Version\Skins\Droptop\@Resources\Fonts"
 RD /S /Q %5Redistributables\Supporter-Version\Skins\Droptop\@Resources\Images"
