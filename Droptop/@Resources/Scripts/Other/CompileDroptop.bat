@@ -489,6 +489,7 @@ REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 %4 !WriteKeyValue Variables PopupInFullscreen 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables SSIDName "Offline" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables WifiTextNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables WifiTextHidden 1 %5Droptop\@Resources\GlobalVar\Control.inc"
 
 %4 !WriteKeyValue Variables FolderTitle1 "#FolderName1#" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderTitle2 "#FolderName2#" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
