@@ -7,21 +7,21 @@ SetChangesAction=
 [3Arrow]
 Meter=String
 
-[ColorResetIcon]
-Meter=Image
-MeterStyle=IconStyle
-ImageName=#@#Icons\Fixed\#IconSize#\refresh.png
-ImageAlpha=(#DropdownItemOpacity#/2)
-ImageTint=#DropdownBGColor1#
-MouseOverAction=[!SetOption #CURRENTSECTION# ImageTint #DropdownBGColor1#][!SetOption #CURRENTSECTION# ImageAlpha #*DropdownItemOpacity*#][!UpdateMeter #CURRENTSECTION#][!Redraw]
-MouseLeaveAction=[!SetOption #CURRENTSECTION# ImageTint #DropdownBGColor1#][!SetOption #CURRENTSECTION# ImageAlpha (#*DropdownItemOpacity*#/2)][!UpdateMeter #CURRENTSECTION#][!Redraw]
-LeftMouseDownAction=[!WriteKeyValue Variables NowPlayingCustomColor 0 "#@#GlobalVar\UserSettings.inc"][!SetVariableGroup NowPlayingCustomColor 0 "DroptopSuite"][!UpdateMeter NowPlayingSongTitle "Droptop\DropdownBar"][!Redraw "Droptop\DropdownBar"]
-X=(#DropdownMenuWidth#-((#IconW#+(6*#DroptopSize#))*1.5))
-Y=((#DropdownIconYOffset#-(#DropdownIconYOffset#%1))+#DropdownItemYOffset#+(#DropdownItemHeight#*2))
-; DynamicVariables=1
-; Group=BluetoothToggle | ItemGroup4
-Group=None
-Hidden=0
+; [ColorResetIcon]
+; Meter=Image
+; MeterStyle=IconStyle
+; ImageName=#@#Icons\Fixed\#IconSize#\refresh.png
+; ImageAlpha=(#DropdownItemOpacity#/2)
+; ImageTint=#DropdownBGColor1#
+; MouseOverAction=[!SetOption #CURRENTSECTION# ImageTint #DropdownBGColor1#][!SetOption #CURRENTSECTION# ImageAlpha #*DropdownItemOpacity*#][!UpdateMeter #CURRENTSECTION#][!Redraw]
+; MouseLeaveAction=[!SetOption #CURRENTSECTION# ImageTint #DropdownBGColor1#][!SetOption #CURRENTSECTION# ImageAlpha (#*DropdownItemOpacity*#/2)][!UpdateMeter #CURRENTSECTION#][!Redraw]
+; LeftMouseDownAction=[!WriteKeyValue Variables NowPlayingCustomColor 0 "#@#GlobalVar\UserSettings.inc"][!SetVariableGroup NowPlayingCustomColor 0 "DroptopSuite"][!UpdateMeter NowPlayingSongTitle "Droptop\DropdownBar"][!Redraw "Droptop\DropdownBar"]
+; X=(#DropdownMenuWidth#-((#IconW#+(6*#DroptopSize#))*1.5))
+; Y=((#DropdownIconYOffset#-(#DropdownIconYOffset#%1))+#DropdownItemYOffset#+(#DropdownItemHeight#*2))
+; ; DynamicVariables=1
+; ; Group=BluetoothToggle | ItemGroup4
+; Group=None
+; Hidden=0
 
 ; [InfoStyleB]
 ; FontColor=#DropdownFontColor1#,#DropdownItemOpacity#

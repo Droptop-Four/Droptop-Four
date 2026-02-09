@@ -46,8 +46,13 @@ FontColor=#DropdownFontColor1#,(#DropdownItemOpacity#/2)
 MouseOverAction=[]
 MouseLeaveAction=[]
 
+[DisableOverflowStyle22]
+FontColor=#DropdownFontColor1#,(#DropdownItemOpacity#/2)
+MouseOverAction=[]
+MouseLeaveAction=[]
+
 [2]
-MeterStyle=InfoStyle | ItemStyle | DividerToggleStyle[#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]][#IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]
+MeterStyle=InfoStyle | ItemStyle | DividerToggleStyle[#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]][#IsOverflow[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]] | DisableOverflowStyle#PopupModuleIndex2#
 Text=#PopupMenuContext3.2#
 
 [2Icon]
@@ -66,7 +71,7 @@ MouseOverAction=[]
 MouseLeaveAction=[]
 
 [3]
-MeterStyle=InfoStyle | ItemStyle | OverflowToggleStyle[#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]
+MeterStyle=InfoStyle | ItemStyle | OverflowToggleStyle[#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]] | DisableOverflowStyle#PopupModuleIndex2#
 Text=#PopupMenuContext3.3#
 
 [3Icon]

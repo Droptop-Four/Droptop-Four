@@ -177,3 +177,6 @@ SideAppSettingsIsComCustomApp7=1
 SideAppSettingsIsComCustomApp8=1
 SideAppSettingsIsComCustomApp9=1
 SideAppSettingsIsComCustomApp10=1
+IsOverflowDownloads=0
+IsOverflowCustomApp10=0
+IsOverflowRecent=0

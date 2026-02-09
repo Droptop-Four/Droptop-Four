@@ -42,7 +42,6 @@
         <Folder name="GlobalVar">
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\Control.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\UserSettings.inc" />
-            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\Other files\UserAppCommands.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\FolderSettings.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\SettingsMenuOptions.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\GlobalVar\ThemeBuilderOptions.inc" />
@@ -329,7 +328,6 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\CreateApp.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\CreateTheme.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\MakeRmSkin.ps1" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\AppBuilder\CreateCommands.ps1" />
                 <File name="XcopyExclude.txt" />
             </Folder>
         </Folder>
