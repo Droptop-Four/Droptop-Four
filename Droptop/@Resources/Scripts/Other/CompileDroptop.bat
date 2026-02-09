@@ -42,6 +42,12 @@ xcopy /y /c /h %5Droptop Folders\Other files\DroptopTaskHelper.vbs" %5Droptop\@R
 %4 !DeactivateConfigGroup DroptopSuite
 %4 !DeactivateConfig Droptop\DropdownBar\AppBar
 
+TIMEOUT 20
+
+start "" %4
+
+TIMEOUT 2
+
 REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 
 %4 !WriteKeyValue Variables DroptopIsBeta 0 %5Droptop\@Resources\GlobalVar\Control.inc"
@@ -218,6 +224,12 @@ REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 %4 !WriteKeyValue Variables MailLink4 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables MailAuthor4 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables MailSubject4 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
+%4 !WriteKeyValue Variables MailLink5 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
+%4 !WriteKeyValue Variables MailAuthor5 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
+%4 !WriteKeyValue Variables MailSubject5 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
+%4 !WriteKeyValue Variables MailAuthor6 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
+%4 !WriteKeyValue Variables MailAuthor7 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
+%4 !WriteKeyValue Variables MailAuthor8 """""" %5Droptop\@Resources\GlobalVar\Control.inc"
 
 %4 !WriteKeyValue Variables UpdateAvailable 0 %5Droptop\@Resources\GlobalVar\Control.inc"
 %4 !WriteKeyValue Variables UpdateCheckFrequency 2 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
