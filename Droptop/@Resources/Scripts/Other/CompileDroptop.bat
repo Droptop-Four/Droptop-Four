@@ -42,11 +42,11 @@ xcopy /y /c /h %5Droptop Folders\Other files\DroptopTaskHelper.vbs" %5Droptop\@R
 %4 !DeactivateConfigGroup DroptopSuite
 %4 !DeactivateConfig Droptop\DropdownBar\AppBar
 
-TIMEOUT 20
+REM TIMEOUT 20
 
-start "" %4
+REM start "" %4
 
-TIMEOUT 2
+REM TIMEOUT 2
 
 REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 
@@ -169,6 +169,8 @@ REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 %4 !WriteKeyValue Variables HomeRow 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables CustomHomeButton 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables HomeColorNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables AutohideShowOnDesktop 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables FastLoadNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 
 %4 !WriteKeyValue Variables FolderColorNum1 "1" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables FolderColorNum2 "1" %5Droptop\@Resources\GlobalVar\UserSettings.inc"
