@@ -180,3 +180,4 @@ SideAppSettingsIsComCustomApp10=1
 IsOverflowDownloads=0
 IsOverflowCustomApp10=0
 IsOverflowRecent=0
+IsOverflowWifi=0
