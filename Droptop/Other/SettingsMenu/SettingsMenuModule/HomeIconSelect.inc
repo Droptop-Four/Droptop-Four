@@ -7,6 +7,8 @@ MouseLeaveAction=[]
 LuaLoc=#@#Scripts\Lua\DropScroll.lua
 ;----------------------------------
 
+DropdownIconGreyscale=0
+
 CategoryNum5=1
 CategoryNum6=2
 CategoryNum7=3
