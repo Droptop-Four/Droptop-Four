@@ -106,3 +106,6 @@ Stock_Analysis-Obsidience
 LingoDeer-jelliwi
 Bill_Tracker_Pro-Cariboudjan
 Mario_MsPaint-Cariboudjan
+Droptop_Night_Light-TheyCallMePapa
+Bluetooth-Bunz
+Gsuite-Cariboudjan

@@ -1,8 +1,8 @@
 function Initialize()
-    _Populate(1, 2, 3, 4, 5, 6, 7, 8)
+    _Populate(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
 
     SKIN:Bang("!SetVariable", "PageNumber", 0)
-    for i = 1, 8 do
+    for i = 1, 12 do
         SKIN:Bang("!SetVariable", "PageDevice" .. i, i)
     end
 end
@@ -42,10 +42,10 @@ function Refresh()
         SKIN:Bang("!SetVariable", "DevicesNumber", #Devices, "Droptop\\Other\\Apps\\Wifi\\Folder")
         SKIN:Bang("!WriteKeyValue", "Variables", "DevicesNumber", string.format('%s', #Devices), "BluetoothVariables.inc")
 
-        _Populate(1, 2, 3, 4, 5, 6, 7, 8)
+        _Populate(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
 
         SKIN:Bang("!SetVariable", "PageNumber", 0)
-        for i = 1, 8 do
+        for i = 1, 12 do
             SKIN:Bang("!SetVariable", "PageDevice" .. i, i)
         end
     end
@@ -54,39 +54,39 @@ end
 function PageDown()
     local PageNumber = tonumber(SKIN:GetVariable('PageNumber'))
     if (PageNumber > 0) then
-        PageNumber = PageNumber - 8
-        for i = 1, 8 do
+        PageNumber = PageNumber - 12
+        for i = 1, 12 do
             SKIN:Bang("!SetVariable", "PageDevice" .. i, PageNumber + i)
         end
         SKIN:Bang("!SetVariable", "PageNumber", PageNumber)
         _Populate(PageNumber + 1, PageNumber + 2, PageNumber + 3, PageNumber + 4, PageNumber + 5, PageNumber + 6,
-            PageNumber + 7, PageNumber + 8)
+            PageNumber + 7, PageNumber + 8, PageNumber + 9, PageNumber + 10, PageNumber + 11, PageNumber + 12)
     end
 end
 
 function PageUp()
     local PageNumber = tonumber(SKIN:GetVariable('PageNumber'))
     local DevicesNumber = SKIN:GetVariable('DevicesNumber')
-    if (PageNumber < (tonumber(DevicesNumber) - 8)) then
-        PageNumber = PageNumber + 8
-        for i = 1, 8 do
+    if (PageNumber < (tonumber(DevicesNumber) - 12)) then
+        PageNumber = PageNumber + 12
+        for i = 1, 12 do
             SKIN:Bang("!SetVariable", "PageDevice" .. i, PageNumber + i)
         end
         SKIN:Bang("!SetVariable", "PageNumber", PageNumber)
         _Populate(PageNumber + 1, PageNumber + 2, PageNumber + 3, PageNumber + 4, PageNumber + 5, PageNumber + 6,
-            PageNumber + 7, PageNumber + 8)
+            PageNumber + 7, PageNumber + 8, PageNumber + 9, PageNumber + 10, PageNumber + 11, PageNumber + 12)
     end
 end
 
 ---- [Private functions] ----
 
-function _Populate(PageDevice1, PageDevice2, PageDevice3, PageDevice4, PageDevice5, PageDevice6, PageDevice7, PageDevice8)
+function _Populate(PageDevice1, PageDevice2, PageDevice3, PageDevice4, PageDevice5, PageDevice6, PageDevice7, PageDevice8, PageDevice9, PageDevice10, PageDevice11, PageDevice12)
     local DevicesStr = SKIN:GetVariable('Devices')
     local DevicesNumber = SKIN:GetVariable('DevicesNumber')
 
     local Devices = _DivideDevices(DevicesStr)
 
-    for i, PageDevice in ipairs({ PageDevice1, PageDevice2, PageDevice3, PageDevice4, PageDevice5, PageDevice6, PageDevice7, PageDevice8 }) do
+    for i, PageDevice in ipairs({ PageDevice1, PageDevice2, PageDevice3, PageDevice4, PageDevice5, PageDevice6, PageDevice7, PageDevice8, PageDevice9, PageDevice10, PageDevice11, PageDevice12 }) do
         if PageDevice <= tonumber(DevicesNumber) then
             local Device = _DivideItems(Devices[PageDevice])
             local DeviceName = Device[1]
@@ -143,6 +143,11 @@ function _Populate(PageDevice1, PageDevice2, PageDevice3, PageDevice4, PageDevic
             SKIN:Bang("!WriteKeyValue", "Variables", "Device" .. i .. "Battery", string.format('%s', DeviceBattery),
                 "BluetoothVariables.inc")
             local DeviceIsBLE = Device[11]
+            SKIN:Bang("!SetVariable", "Device" .. i .. "IsBLE", DeviceIsBLE)
+            SKIN:Bang("!SetVariable", "Device" .. i .. "IsBLE", DeviceIsBLE, "Droptop\\Other\\Apps\\Wifi\\Folder")
+            SKIN:Bang("!WriteKeyValue", "Variables", "Device" .. i .. "IsBLE", string.format('%s', DeviceIsBLE),
+                "BluetoothVariables.inc")
+            local DeviceIsBLE = Device[12]
             SKIN:Bang("!SetVariable", "Device" .. i .. "IsBLE", DeviceIsBLE)
             SKIN:Bang("!SetVariable", "Device" .. i .. "IsBLE", DeviceIsBLE, "Droptop\\Other\\Apps\\Wifi\\Folder")
             SKIN:Bang("!WriteKeyValue", "Variables", "Device" .. i .. "IsBLE", string.format('%s', DeviceIsBLE),

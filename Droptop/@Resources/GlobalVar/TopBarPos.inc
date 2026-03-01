@@ -181,3 +181,5 @@ IsOverflowDownloads=0
 IsOverflowCustomApp10=0
 IsOverflowRecent=0
 IsOverflowWifi=0
+IsOverflowCustomApp7=0
+IsOverflowCustomApp5=0

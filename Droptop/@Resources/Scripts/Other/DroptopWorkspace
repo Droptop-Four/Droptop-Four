@@ -207,7 +207,6 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\AppBuilder.Share.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\ThemeBuilder.Create.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\ThemeBuilder.Share.ini" />
-            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\CommandBuilder.Create.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\AppName.Create.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\UpdateDroptop.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\WindowMenu\RestartDroptop.ini" />
@@ -299,7 +298,6 @@
         <Folder name="Scripts">
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\RestartRainmeter.bat" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\CreateShortcut.vbs" />
-            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\FetchVars.ps1" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.ahk" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\RestoreFolders.bat" />
             <Folder name="Lua">
@@ -312,12 +310,13 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\InputHandlerWindow.lua" />
             </Folder>
             <Folder name="Powershell">
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\Func.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\FetchVars.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\GetFontName.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\ReplaceInFile.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\TranslationEncoding.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Redistributables\MakeRmSkin.ps1" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\ExcludeDefender.ps1" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\WallpaperChanger.ps1" />
             </Folder>
             <Folder name="Other">
                 <File name="CompileDroptop.bat" />
@@ -331,7 +330,6 @@
             </Folder>
         </Folder>
         <Folder name="Other">
-            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Tutorial\Tutorial.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\DropdownBar\Other\Droparea\Droparea.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Tips\Tips.ini" />
         </Folder>
