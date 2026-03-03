@@ -244,6 +244,8 @@ REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 %4 !WriteKeyValue Variables NoAnimationNum 0 %5Droptop\Other\Startup\Style.inc"
 %4 !WriteKeyValue Variables HideExtraButtonsVolume 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables DroptopSizeNum 5 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables DroptopSizeNum.Touch 6 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables DroptopSizeNum.NotTouch 6 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables IconSize Medium %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables TopIconSize Medium %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables TopIconWH 32 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
