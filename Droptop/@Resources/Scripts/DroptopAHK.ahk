@@ -7,10 +7,10 @@ Goto, %1%
 
 ;----------
 
-; HideWebView:
-; SetTitleMatchMode RegEx
- ; WinHide ahk_class Chrome_WidgetWin_1 ahk_exe msedgewebview2.exe,,%2%,Chrome Legacy Window
-; ExitApp
+HideWebView:
+SetTitleMatchMode RegEx
+ WinHide ahk_class Chrome_WidgetWin_1 ahk_exe msedgewebview2.exe,,%2%,Chrome Legacy Window
+ExitApp
 
 ;----------
 
