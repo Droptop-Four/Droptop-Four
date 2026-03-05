@@ -1,8 +1,8 @@
 [Variables]
 
-DevicesNumber=9
+DevicesNumber=8
 
-Devices=AirPods Pro - Find My|71141739493567|Bluetooth#Bluetootha0:29:42:3a:cd:b0-40:b3:fa:1c:78:bf|0|1|0|Audio/Video|Audio Video Headphones|0|0|0;iPhoneT|127168605016024|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-73:a8:bf:87:4f:d8|1|1|0|Phone|Unknown|1|55|1;Arctis Pro Wireless|44643149312662|Bluetooth#Bluetootha0:29:42:3a:cd:b0-28:9a:4b:0e:72:96|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;iPhoneT|101735706487923|Bluetooth#Bluetootha0:29:42:3a:cd:b0-5c:87:30:a5:6c:73|0|1|0|Phone|Phone Smart Phone|0|0|0;Surface Slim Pen 2|234849569145700|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64|1|1|0|HumanInterfaceDevice|DigitalPen|1|100|1;Surface Arc Mouse|254394102878146|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;MX Master 2S|223463262609937|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:11|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;NVIDIA SHIELD Remote|79921510527776|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20|0|1|0|RemoteControl|Unknown|0|0|1;Logi M750 L|239457178165969|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d9:c8:f8:0b:22:d1|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;
+Devices=Arctis Pro Wireless|44643149312662|Bluetooth#Bluetootha0:29:42:3a:cd:b0-28:9a:4b:0e:72:96|0|1|0|Audio/Video|Audio Video Wearable Headset|0|0|0;iPhoneT|101735706487923|Bluetooth#Bluetootha0:29:42:3a:cd:b0-5c:87:30:a5:6c:73|1|1|0|Phone|Phone Smart Phone|0|0|0;Surface Slim Pen 2|234849569145700|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d5:98:2d:25:03:64|0|1|0|HumanInterfaceDevice|DigitalPen|0|0|1;MX Master 2S|223463262609937|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-cb:3d:18:63:62:11|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;Surface Arc Mouse|254394102878146|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-e7:5e:be:22:8f:c2|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;NVIDIA SHIELD Remote|79921510527776|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-48:b0:2d:3e:b3:20|0|1|0|RemoteControl|Unknown|0|0|1;iPhoneT|127168605016024|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-73:a8:bf:87:4f:d8|0|1|0|Phone|Unknown|0|0|1;Logi M750 L|239457178165969|BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-d9:c8:f8:0b:22:d1|0|1|0|HumanInterfaceDevice|Mouse|0|0|1;
 
 BTStatus=1
 
@@ -19,7 +19,7 @@ PageDevice10=10
 PageDevice11=11
 PageDevice12=12
 
-Device1Name=AirPods Pro - Find My
+Device1Name=Arctis Pro Wireless
 Device2Name=AirPods Pro - Find My
 Device3Name=iPhoneT
 Device4Name=iPhoneT
@@ -32,7 +32,7 @@ Device10Name=MX Master 2S
 Device11Name=MX Master 2S
 Device12Name=MX Master 2S
 
-Device1Address=71141739493567
+Device1Address=44643149312662
 Device2Address=71141739493567
 Device3Address=127168605016024
 Device4Address=101735706487923
@@ -45,7 +45,7 @@ Device10Address=223463262609937
 Device11Address=223463262609937
 Device12Address=223463262609937
 
-Device1Id=Bluetooth#Bluetootha0:29:42:3a:cd:b0-40:b3:fa:1c:78:bf
+Device1Id=Bluetooth#Bluetootha0:29:42:3a:cd:b0-28:9a:4b:0e:72:96
 Device2Id=Bluetooth#Bluetootha0:29:42:3a:cd:b0-40:b3:fa:1c:78:bf
 Device3Id=BluetoothLE#BluetoothLEa0:29:42:3a:cd:b0-73:a8:bf:87:4f:d8
 Device4Id=Bluetooth#Bluetootha0:29:42:3a:cd:b0-5c:87:30:a5:6c:73
@@ -110,7 +110,7 @@ Device10MajorCategory=HumanInterfaceDevice
 Device11MajorCategory=HumanInterfaceDevice
 Device12MajorCategory=HumanInterfaceDevice
 
-Device1MinorCategory=Audio Video Headphones
+Device1MinorCategory=Audio Video Wearable Headset
 Device2MinorCategory=Audio Video Headphones
 Device3MinorCategory=Unknown
 Device4MinorCategory=Phone Smart Phone

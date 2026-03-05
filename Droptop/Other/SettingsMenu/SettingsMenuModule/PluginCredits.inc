@@ -63,8 +63,8 @@ Bluetooth.Link=["https://www.deviantart.com/bunz66"]
 WebNowPlaying.Author=keifufu
 WebNowPlaying.Link=["https://github.com/keifufu"]
 
-WebView.Author=khanhas
-WebView.Link=["https://github.com/khanhas"]
+WebView.Author=NSTechBytes
+WebView.Link=["https://github.com/NSTechBytes"]
 
 SendKeys.Author=NSTechBytes
 SendKeys.Link=["https://github.com/NSTechBytes"]
