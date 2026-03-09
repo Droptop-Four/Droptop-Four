@@ -15,7 +15,7 @@ CategoryCreatures.IconIndex=11
 CategoryFood.IconIndex=6
 CategorySeasonal.IconIndex=1
 CategoryObjects.IconIndex=7
-CategorySymbols.IconIndex=4
+CategorySymbols.IconIndex=2
 
 ; HomeColorB0=
 ; HomeColorB1=Color
@@ -95,6 +95,7 @@ Group=None
 [1Icon]
 MeterStyle=IconStyle
 X=#DropdownIconXoffset#
+ImageAlpha=#DropdownItemOpacity#
 Y=[1:Y]
 
 [1Arrow]
