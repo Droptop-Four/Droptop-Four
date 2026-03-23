@@ -10,5 +10,5 @@ if %errorlevel% neq 0 (
     start "" "%app%"
 )
 
-timeout /t 5 > nul
+timeout /t 60 > nul
 goto loop

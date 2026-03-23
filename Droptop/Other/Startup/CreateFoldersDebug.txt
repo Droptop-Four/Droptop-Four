@@ -1,5 +1,81 @@
+A
 The operation completed successfully.
 
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
 
+  Started : Saturday, March 14, 2026 4:21:12 PM
+   Source - C:\ProgramData\Microsoft\Windows\Start\
+     Dest - C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Startup\Menu\Programs\
 
+    Files : 
+  Options : /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+ERROR : Invalid Parameter #3 : "C:\Users\Carib\Documents\Rainmeter\Skins\Droptop"
+
+       Simple Usage :: ROBOCOPY source destination /MIR
+
+             source :: Source Directory (drive:\path or \\server\share\path).
+        destination :: Destination Dir  (drive:\path or \\server\share\path).
+               /MIR :: Mirror a complete directory tree.
+
+    For more usage information run ROBOCOPY /?
+
+                                                          
+****  /MIR can DELETE files as well as copy them !
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Saturday, March 14, 2026 4:21:12 PM
+   Source - C:\Users\Carib\AppData\Roaming\Microsoft\Windows\Start\
+     Dest - C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Startup\Menu\Programs\Steam\
+
+    Files : 
+  Options : /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+ERROR : Invalid Parameter #3 : "C:\Users\Carib\Documents\Rainmeter\Skins\Droptop"
+
+       Simple Usage :: ROBOCOPY source destination /MIR
+
+             source :: Source Directory (drive:\path or \\server\share\path).
+        destination :: Destination Dir  (drive:\path or \\server\share\path).
+               /MIR :: Mirror a complete directory tree.
+
+    For more usage information run ROBOCOPY /?
+
+                                                          
+****  /MIR can DELETE files as well as copy them !
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Saturday, March 14, 2026 4:21:12 PM
+   Source - C:\Users\Carib\AppData\Roaming\Microsoft\Windows\Start\
+     Dest - C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Startup\Menu\Programs\Steam\
+
+    Files : 
+  Options : /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+ERROR : Invalid Parameter #3 : "C:\Users\Carib\Documents\Rainmeter\Skins\Droptop"
+
+       Simple Usage :: ROBOCOPY source destination /MIR
+
+             source :: Source Directory (drive:\path or \\server\share\path).
+        destination :: Destination Dir  (drive:\path or \\server\share\path).
+               /MIR :: Mirror a complete directory tree.
+
+    For more usage information run ROBOCOPY /?
+
+                                                          
+****  /MIR can DELETE files as well as copy them !
 

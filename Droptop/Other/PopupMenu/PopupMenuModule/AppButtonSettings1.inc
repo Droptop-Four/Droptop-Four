@@ -71,7 +71,7 @@ MouseOverAction=[]
 MouseLeaveAction=[]
 
 [3]
-MeterStyle=InfoStyle | ItemStyle | OverflowToggleStyle[#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]] | DisableOverflowStyle#PopupModuleIndex2#
+MeterStyle=InfoStyle | ItemStyle | OverflowToggleStyle[#HideApp[#SideAppSlotName[#SideAppPos[#SideAppName[#PopupModuleIndex]]]]]
 Text=#PopupMenuContext3.3#
 
 [3Icon]

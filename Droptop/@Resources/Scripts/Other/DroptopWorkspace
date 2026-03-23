@@ -113,6 +113,7 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\LanguageCredits.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\PluginCredits.inc" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\Blur.inc" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\SettingsMenu\SettingsMenuModule\AppGrid.inc" />
             </Folder>
         </Folder>
         <Folder name="Languages">
@@ -182,10 +183,7 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Copy\Copy.ini" />
             <Folder name="Application Folders">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\AppControls\AppControls.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\Folder\Folder01.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\Folder\Folder\Folder02.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\Folder\Folder\Folder\Folder03.ini" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\Folder\Folder\Folder\Folder\Folder04.ini" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\AppControls\Folder\Folder1.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Apps\Application\AppControls\Folder\Folder2.ini" />
             </Folder>
             <Folder name="Alarm Folders">
@@ -240,7 +238,6 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\PopupMenu\PopupMenu.ini" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\CommunityAppWebView0.inc" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\CommunityAppWebView1.inc" />
-            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\PopoutMeters.inc" />
             <Folder name="Include">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\FolderItems0.ini" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Meters\Include\FolderItems1.ini" />
@@ -296,6 +293,8 @@
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\Folders\Folder13\Folder13.ini" />
         </Folder>
         <Folder name="Scripts">
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\Other files\DroptopTaskHelper.vbs" />
+            <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop Folders\Other files\DroptopTaskHelper.bat" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\RestartRainmeter.bat" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\CreateShortcut.vbs" />
             <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.ahk" />
@@ -303,7 +302,6 @@
             <Folder name="Lua">
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\CScript.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\DropScroll.lua" />
-                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\Func.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\SelectMonitor.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Lua\InputHandler.lua" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\Other\BackgroundProcesses\Bluetooth.lua" />
@@ -317,6 +315,7 @@
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Redistributables\MakeRmSkin.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\ExcludeDefender.ps1" />
                 <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\WallpaperChanger.ps1" />
+                <File name="C:\Users\Carib\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\Powershell\WindowPos.ps1" />
             </Folder>
             <Folder name="Other">
                 <File name="CompileDroptop.bat" />

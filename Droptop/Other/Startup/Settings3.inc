@@ -44,6 +44,7 @@ ExecuteAnimation1=[!WriteKeyvalue Variables Page (#Page#+1)][!Refresh]
 021.Index=21
 022.Index=22
 023.Index=23
+024.Index=24
 
 1.Text=1
 2.Text=2
