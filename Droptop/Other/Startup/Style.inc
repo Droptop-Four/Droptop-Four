@@ -3,7 +3,7 @@ DefaultUpdateDivider=-1
 AccurateText=1
 SkinWidth=#SCREENAREAWIDTH#
 SkinHeight=#SCREENAREAHEIGHT#
-OnRefreshAction=[!Move 0 0][!Delay 2000][!ShowFade][!CommandMeasure MeasureActionTimer "Execute 1"][!WriteKeyValue Droptop\Other\Startup Active 0 "%APPDATA%\Rainmeter\Rainmeter.ini"][!Clickthrough 0]
+OnRefreshAction=[!Move 0 0][!ShowFade][!Delay 2000][!CommandMeasure MeasureActionTimer "Execute 1"][!WriteKeyValue Droptop\Other\Startup Active 0 "%APPDATA%\Rainmeter\Rainmeter.ini"][!Clickthrough 0]
 
 [Variables]
 
