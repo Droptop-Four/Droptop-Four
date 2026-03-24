@@ -1,25 +1,31 @@
 [Rainmeter]
-Update=0
+; Update=0
 
 ; ---------------------------------------------------------------------------- ;
 ;                                   Functions                                  ;
 ; ---------------------------------------------------------------------------- ;
 
-[LoadActions]
-Measure=Plugin
-Plugin=ActionTimer
-ActionList1=Wait 50 | ExportVars | Start0 | Wait 750 | Start1 | Wait 1000 | ClickOn | Start2
+; [LoadActions]
+; Measure=Plugin
+; Plugin=ActionTimer
+; ActionList1=Wait 50 | ExportVars | Start0 | Wait 750 | Start1 | Wait 1000 | ClickOn | Start2
 
 [Variables]
 
 @IncludeFolderSettings=#@#GlobalVar\FolderSettings.inc
 
+AdditionalAction=[!Refresh]
+
+AnimationFinishAction=[]
+
+NextPage=[!WriteKeyValue Variables Page ([#*Page*]+1)]#AdditionalAction#
+
 Sec.L=(500*#Scale#)
 Sec.boxW=(100)
 Sec.SaveLocation="#@#GlobalVar\UserSettings.inc"
 
-ExecuteAnimation0=[!CommandMeasure LoadActions "Execute 2"]
-ExecuteAnimation1=[!WriteKeyvalue Variables Page (#Page#+1)][!Refresh]
+; ExecuteAnimation0=[!CommandMeasure LoadActions "Execute 2"]
+; ExecuteAnimation1=[!WriteKeyvalue Variables Page (#Page#+1)][!Refresh]
 
 01.Index=1
 02.Index=2
@@ -92,34 +98,34 @@ ExecuteAnimation1=[!WriteKeyvalue Variables Page (#Page#+1)][!Refresh]
 21.Icon=21
 22.Icon=22
 
-[LoadActions]
-Measure=Plugin
-Plugin=ActionTimer
-ActionList1=Wait 50 | ExportVars | Start0
+; [LoadActions]
+; Measure=Plugin
+; Plugin=ActionTimer
+; ActionList1=Wait 50 | ExportVars | Start0
 
-[PSRM]
-Measure=Plugin
-Plugin=PowershellRM
-ScriptFile=#@#Scripts\Powershell\FetchVars.ps1
-FetchStringCount=1
-Fetch1=StartP5BTitle1|000
+; [PSRM]
+; Measure=Plugin
+; Plugin=PowershellRM
+; ScriptFile=#@#Scripts\Powershell\FetchVars.ps1
+; FetchStringCount=1
+; Fetch1=StartP5BTitle1|000
 
-[Tween:M]
-Measure=Script
-ScriptFile=#@#Scripts\Lua\Tween\Main.lua
-Tween0=Single | Variable | TweenNode1 | 0 | 1 | 500
-Tween1=Single | Variable | TweenNode2 | 0 | 1 | 1000
-Tween2=Single | Variable | TweenNode3 | 0 | 1 | 1000
-Tween3=Single | Variable | TweenNode4 | 0 | 1 | 1000
-Tween4=Single | Variable | TweenNode5 | 0 | 1 | 1000
-Tween5=Single | Variable | TweenNode6 | 0 | 1 | 500
-Optional1=Easing OutExpo
-Optional2=Easing OutExpo | Group All
-Optional3=Easing OutExpo | Group All
-Optional4=Easing OutExpo | Group All
-Optional5=Easing InOutSine | Group All
-TweenGroup=Tweenable
-UpdateDivider=1
+; [Tween:M]
+; Measure=Script
+; ScriptFile=#@#Scripts\Lua\Tween\Main.lua
+; Tween0=Single | Variable | TweenNode1 | 0 | 1 | 500
+; Tween1=Single | Variable | TweenNode2 | 0 | 1 | 1000
+; Tween2=Single | Variable | TweenNode3 | 0 | 1 | 1000
+; Tween3=Single | Variable | TweenNode4 | 0 | 1 | 1000
+; Tween4=Single | Variable | TweenNode5 | 0 | 1 | 1000
+; Tween5=Single | Variable | TweenNode6 | 0 | 1 | 500
+; Optional1=Easing OutExpo
+; Optional2=Easing OutExpo | Group All
+; Optional3=Easing OutExpo | Group All
+; Optional4=Easing OutExpo | Group All
+; Optional5=Easing InOutSine | Group All
+; TweenGroup=Tweenable
+; UpdateDivider=1
 
 [Box:S]
 FillColor=StrokeWidth (2*#Scale#) | Fill Color 43,43,43 | Stroke Color 55,55,55
@@ -224,8 +230,8 @@ Shape=Rectangle 0,0,(+#Sec.W#),(28+(#Sec.H#-28)),(10*#Scale#) | StrokeWidth (2*#
 Meter=Shape
 X=((#SCREENAREAWIDTH#/2-#Sec.W#/2))
 Y=((#SCREENAREAHEIGHT#/2-#Sec.H#/2))
-Shape=Rectangle 0,0,(+#Sec.W#),(28+(#Sec.H#-28)),(10*#Scale#) | StrokeWidth (2*#Scale#) | Stroke Color 34,34,34 | Fill Color 31,31,31,(#TWeenNode1#*255)
-Group=Tweenable
+Shape=Rectangle 0,0,(+#Sec.W#),(28+(#Sec.H#-28)),(10*#Scale#) | StrokeWidth (2*#Scale#) | Stroke Color 34,34,34 | Fill Color 31,31,31,(#TweenNode1#*255)
+Group=Tweenable | Animation.1
 DynamicVariables=1
 
 [BackgroundImage]
@@ -252,7 +258,7 @@ MeterStyle=String:S
 Meter=String
 X=(#Sec.P#)
 Y=(97*#Scale#)
-Text=Select your apps
+Text=#StartP5BTitle1#
 FontSize=(25*#Scale#)
 DynamicVariables=1
 Group=Tweenable
@@ -603,14 +609,14 @@ Text=[&CustomAppString[##CURRENTSECTION#]]
 
 [Button]
 Meter=Shape
-X=(#Sec.W#-(180*#Scale#+#Sec.P#)*#TweenNode3#)
+X=(#Sec.W#-(180*#Scale#+#Sec.P#)*#TweenNode2#)
 Y=(#SEc.H#-#Sec.P#-40*#Scale#)
 Shape=Rectangle 0,0,(180*#Scale#),(40*#Scale#),(20*#Scale#) | StrokeWidth 0 | Extend FillColor
-FillColor=Fill Color 39,174,96,(255*#TweenNode3#)
+FillColor=Fill Color 39,174,96,(255*#TweenNode2#)
 MouseOverAction=[!SetOption #CURRENTSECTION# FillColor "Fill Color 56,250,138"][!UpdateMeter #CURRENTSECTION#][!Redraw]
 MouseLeaveAction=[!SetOption #CURRENTSECTION# FillColor "Fill Color 39,174,96"][!UpdateMeter #CURRENTSECTION#][!Redraw]
 LeftMouseUpAction=[#ExecuteAnimation[#NoAnimationNum]]
-Group=Button | Tweenable
+Group=Button | Tweenable | Animation.2
 DynamicVariables=1
 Container=Container
 
@@ -620,9 +626,9 @@ X=(180/2*#Scale#)r
 Y=(21*#Scale#)r
 FontSize=(15*#Scale#)
 StringAlign=CenterCenter
-Text=Continue
-FontColor=255,255,255,(255*#TweenNode3#)
+Text=#SayContinue#
+FontColor=255,255,255,(255*#TweenNode2#)
 InlineSetting=Shadow | 0 | 1 | 2 | 0,0,0,175
-Group=Button | Tweenable
+Group=Button | Tweenable | Animation.2
 DynamicVariables=1
 MeterStyle=String:S
