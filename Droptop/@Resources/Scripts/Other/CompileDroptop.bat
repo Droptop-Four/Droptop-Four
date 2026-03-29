@@ -135,7 +135,7 @@ REM taskkill /fi "windowtitle eq Droptop_Task_Helper*" /f
 %4 !WriteKeyValue Variables AlarmNum 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables AlarmOFF 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables PomoNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
-%4 !WriteKeyValue Variables ActionTimer.StartAnimation.Steps 16 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
+%4 !WriteKeyValue Variables ActionTimer.StartAnimation.Steps 48 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables ActionTimer.StartAnimation.StepsNum 3 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables AutoAltHome 1 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
 %4 !WriteKeyValue Variables AltTitleNum 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
