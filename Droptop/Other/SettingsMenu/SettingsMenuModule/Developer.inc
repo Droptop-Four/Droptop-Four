@@ -47,7 +47,7 @@ UpdateDivider=-1
 [RunCommand.Attrib]
 Measure=Plugin
 Plugin=RunCommand
-Parameter=attrib -h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib -s /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini" & robocopy "C:\Users\%USERNAME%\Documents\Rainmeter\Skins\Droptop\@Resources\OriginalFolders" "C:\Users\%USERNAME%\Documents\Rainmeter\Skins\Droptop Folders" /NFL /NDL /NJH /NJS /nc /ns /np /e /XA:O & robocopy "C:\Users\%USERNAME%\Documents\Rainmeter\Skins\Droptop\@Resources\OriginalApps" "C:\Users\%USERNAME%\Documents\Rainmeter\Skins\Droptop Community Apps" /NFL /NDL /NJH /NJS /nc /ns /np /e /XA:O
+Parameter=attrib -h /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +s /d /s "#SKINSPATH#Droptop Folders\Games\*" & attrib -s /s "#SKINSPATH#Droptop Folders\desktop.ini" & attrib +h /s "#SKINSPATH#Droptop Folders\desktop.ini" & robocopy "%USERPROFILE%\Rainmeter\Skins\Droptop\@Resources\OriginalFolders" "%USERPROFILE%\Rainmeter\Skins\Droptop Folders" /NFL /NDL /NJH /NJS /nc /ns /np /e /XA:O & robocopy "%USERPROFILE%\Rainmeter\Skins\Droptop\@Resources\OriginalApps" "%USERPROFILE%\Rainmeter\Skins\Droptop Community Apps" /NFL /NDL /NJH /NJS /nc /ns /np /e /XA:O
 State=Hide
 OutputType=ANSI
 OutputFile=

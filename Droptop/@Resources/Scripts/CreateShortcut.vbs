@@ -32,5 +32,8 @@ Set objFso = Nothing
 
 groupName = WScript.Arguments.Item(2)
 
-runCmd = "!RefreshGroup " & groupName
-objShell.Run """C:\Program Files\Rainmeter\Rainmeter.exe"" " & runCmd, 0, True
+programPath = WScript.Arguments.Item(3)
+
+runCmd = """C:\Program Files\Rainmeter\Rainmeter.exe """ & "!RefreshGroup " & groupName
+' runCmd = "" programPath & "!RefreshGroup " & groupName
+objShell.Run runCmd, 0, True
