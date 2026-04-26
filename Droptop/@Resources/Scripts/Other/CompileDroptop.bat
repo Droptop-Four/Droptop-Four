@@ -27,6 +27,10 @@ cd "C:\"
 @echo Reseting configurations to default
 TIMEOUT 5
 
+REM Add a del for languages that are in Crowdin but incomplete. Remove when language is complete.
+REM When a language is done, look at the Startup page to add the language parameters
+REM Don't forget to add them to the Support page for language credits
+
 del /f %5Droptop\@Resources\GlobalVar\Languages\ca-ES.inc"
 del /f %5Droptop\@Resources\GlobalVar\Languages\ro-RO.inc"
 del /f %5Droptop\@Resources\GlobalVar\Languages\th-TH.inc"
@@ -36,7 +40,6 @@ attrib -h /s %5Droptop\@Resources\OriginalFolders\desktop.ini"
 attrib -s /d /s %5Droptop\@Resources\OriginalFolders\Games\*"
 taskkill /f /im "DroptopAHK.exe"
 "C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.ahk" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Scripts\DroptopAHK.exe"
-REM "C:\Program Files\AutoHotkey\Compiler\Ahk2Exe.exe" /in "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.ahk" /icon "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop\@Resources\Images\4Logo.ico" /out "%USERPROFILE%\Documents\Rainmeter\Skins\Droptop Folders\Other files\Droptop.exe"
 xcopy /y /c /h %5Droptop Folders\Other files\DroptopTaskHelper.bat" %5Droptop\@Resources\OriginalFolders\Other files"
 xcopy /y /c /h %5Droptop Folders\Other files\DroptopTaskHelper.vbs" %5Droptop\@Resources\OriginalFolders\Other files"
 %4 !DeactivateConfigGroup DroptopSuite
@@ -651,8 +654,6 @@ xcopy /e /y /f /i %5Droptop\@Resources\Scripts\AppBuilder\TemplateBackup\*" %5Dr
 
 
 
-REM xcopy /e /i /y %5Droptop Community Apps" %5Redistributables\Basic-Version\Skins\Droptop Community Apps" /EXCLUDE:XcopyExclude.txt
-
 
 del /f /q %5Redistributables\Basic-Version\Skins\Droptop\@Resources\OriginalApps\*"
 xcopy /e /i /y %5Droptop Community Apps" %5Redistributables\Basic-Version\Skins\Droptop\@Resources\OriginalApps" /EXCLUDE:XcopyExclude.txt
@@ -664,12 +665,8 @@ robocopy %5Droptop" %5Redistributables\Basic-Version\Skins\Droptop" /E
 
 
 
-REM robocopy %5Droptop\@Resources\OriginalFolders" %5Redistributables\Basic-Version\Skins\Droptop Folders" /E
 
 
-
-
-REM "Wscript.exe" %5Droptop\@Resources\Scripts\IconsColor1.vbs" %5"
 del /f /q %5Redistributables\Basic-Version\Skins\Droptop Folders\PinnedApps\*"
 @echo Basic Version Complete
 %4 !WriteKeyValue Variables FirstLoad 0 %5Droptop\@Resources\GlobalVar\UserSettings.inc"
