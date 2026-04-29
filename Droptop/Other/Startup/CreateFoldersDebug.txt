@@ -1,7 +1,8 @@
-A
+Y
+
+
+La operaci¢n se complet¢ correctamente.
 
 
 
 
-
-The operation completed successfully.
